@@ -2602,6 +2602,7 @@ The following lists all optional tags.
 |               |   - alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed |
 |               | Note: Also, always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads. |
 |               | Tip: To link an image to another document, simply nest the `<img>` tag inside an `<a>` tag (see example below). |
+
 |               | Attribute      | Value  | Description                                         |
 |               |----------------|--------|-----------------------------------------------------|
 |               | alt            | text            | Specifies an alternate text for an image.  |
@@ -2624,10 +2625,39 @@ The following lists all optional tags.
 |               | width          | pixels   | Specifies the width of an image. |
 |               | See <a href="https://www.w3schools.com/tags/tag_img.asp">img tag</a> |
 
+Optional tags, cont'd
+
 |Tag            |Description  |
 |---------------|-------------|
-|`<input>`      |             |
+|`<input>`      | The `<input>` tag specifies an input field where the user can enter data. |
+|               | The `<input>` element is the most important form element. |
+|               | The `<input>` element can be displayed in several ways, depending on the type attribute. |
 |               | See <a href="https://www.w3schools.com/tags/tag_input.asp">input tag</a> |
+|               | The different input types are as follows: |
+|               | - `<input type="button">` |
+|               | - `<input type="checkbox">` |
+|               | - `<input type="color">` |
+|               | - `<input type="date">` |
+|               | - `<input type="datetime-local">` |
+|               | - `<input type="email">` |
+|               | - `<input type="file">` |
+|               | - `<input type="hidden">` |
+|               | - `<input type="image">` |
+|               | - `<input type="month">` |
+|               | - `<input type="number">` |
+|               | - `<input type="password">` |
+|               | - `<input type="radio">` |
+|               | - `<input type="range">` |
+|               | - `<input type="reset">` |
+|               | - `<input type="search">` |
+|               | - `<input type="submit">` |
+|               | - `<input type="tel">` |
+|               | - `<input type="text"> (default value)` |
+|               | - `<input type="time">` |
+|               | - `<input type="url">` |
+|               | - `<input type="week">` |
+|               | Look at the <a href="https://www.w3schools.com/tags/att_input_type.asp">type</a> attribute to see examples for each input type! |
+|               | Tip: Always use the <label> tag to define labels for `<input type="text">`, `<input type="checkbox">`, `<input type="radio">`, `<input type="file">`, and `<input type="password">`. |
 |`<li>`         |             |
 |               | See <a href="https://www.w3schools.com/tags/tag_li.asp">li tag</a> |
 |`<link>`       |             |
