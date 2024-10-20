@@ -2538,8 +2538,7 @@ The following lists all optional tags.
 |               | There can only be one single `<base>` element in a document, and it must be inside the `<head>` element. |
 |               | See <a href="https://www.w3schools.com/tags/tag_base.asp">base tag</a> |
 |`<body>`       | The `<body>` tag defines the document's body. |
-|               | The `<body>` element contains all the contents 
-|               | of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. |
+|               | The `<body>` element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. |
 |               | Note: There can only be one `<body>` element in an HTML document.            |
 |               | See <a href="https://www.w3schools.com/tags/tag_body.asp">body tag</a> |
 |`<br>`         | The `<br>` tag inserts a single line break. |
@@ -2552,14 +2551,33 @@ The following lists all optional tags.
 |               | See <a href="https://www.w3schools.com/tags/tag_caption.asp">caption tag</a> |
 |`<col>`        | The `<col>` tag specifies column properties for each column within a `<colgroup>` element. |
 |               | The `<col>` tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row. |
-|`<colgroup>`   | See <a href="https://www.w3schools.com/tags/tag_colgroup.asp">colgroup tag</a> |
+|               | See <a href="">col group</a> |
+|`<colgroup>`   | The `<colgroup>` tag specifies a group of one or more columns in a table for formatting. |
+|               | The `<colgroup>` tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row. |
+|               | Note: The `<colgroup>` tag must be a child of a `<table>` element, after any `<caption>` elements and before any `<thead>`, `<tbody>`, `<tfoot>`, and `<tr>` elements. |
+|               | Tip: To define different properties to a column within a `<colgroup>`, use the `<col>` tag within the `<colgroup>` tag. |
+|               | See <a href="https://www.w3schools.com/tags/tag_colgroup.asp">colgroup tag</a> |
 |`<dd>`         | The `<dd>` tag is used to describe a term/name in a description list. |
 |               | The `<dd>` tag is used in conjunction with `<dl>` (defines a description list) and `<dt>` (defines terms/names). |
 |               | Inside a `<dd>` tag you can put paragraphs, line breaks, images, links, lists, etc. |
+|               | See <a href="https://www.w3schools.com/tags/tag_dd.asp">dd tag</a> |
 |`<dt>`         | The `<dt>` tag defines a term/name in a description list. |
 |               | The `<dt>` tag is used in conjunction with `<dl>` (defines a description list) and `<dd>` (describes each term/name). |
-|`<embed>`      |             |
-|`<head>`       |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_dt.asp">dt tag</a> |
+|`<embed>`      | The `<embed>` tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application. |
+|               | See <a href="https://www.w3schools.com/tags/tag_embed.asp">embed tag</a> |
+|`<head>`       | The `<head>` element is a container for metadata (data about data) and is placed between the `<html>` tag and the `<body>` tag. |
+|               | Metadata is data about the HTML document. Metadata is not displayed. |
+|               | Metadata typically define the document title, character set, styles, scripts, and other meta information. |
+|               | The following elements can go inside the `<head>` element: |
+|               | - `<title>` (required in every HTML document) |
+|               | - `<style>` |
+|               | - `<base>`  |
+|               | - `<link>`  |
+|               | - `<meta>`  |
+|               | `<script>` |
+|               | `<noscript>` |
+|               | See <a href="https://www.w3schools.com/tags/tag_head.asp">head tag</a> |
 |`<hr>`         |             |
 |`<html>`       |             |
 |`<img>`        |             |
