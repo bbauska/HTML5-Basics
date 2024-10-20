@@ -2658,39 +2658,92 @@ Optional tags, cont'd
 |               | Look at the <a href="https://www.w3schools.com/tags/att_input_type.asp">type</a> attribute to see examples for each input type! |
 |               | Tip: Always use the <label> tag to define labels for `<input type="text">`, `<input type="checkbox">`, `<input type="radio">`, `<input type="file">`, and `<input type="password">`. |
 |               | See <a href="https://www.w3schools.com/tags/tag_input.asp">input tag</a> |
-|`<li>`         |             |
+|`<li>`         | The `<li>` tag defines a list item.
+|               | The `<li>` tag is used inside ordered lists(`<ol>`), unordered lists (`<ul>`), and in menu lists (`<menu>`). |
+|               | In `<ul>` and `<menu>`, the list items will usually be displayed with bullet points. |
+|               | In `<ol>`, the list items will usually be displayed with numbers or letters. |
+|               | Tip: Use CSS to style lists.            |
 |               | See <a href="https://www.w3schools.com/tags/tag_li.asp">li tag</a> |
-|`<link>`       |             |
+|`<link>`       | The `<link>` tag defines the relationship between the current document and an external resource. |
+|               | The `<link>` tag is most often used to link to external style sheets or to add a favicon to your website. |
+|               | The `<link>` element is an empty element, it contains attributes only.            |
 |               | See <a href="https://www.w3schools.com/tags/tag_link.asp">link tag</a> |
-|`<meta>`       |             |  
+|`<meta>`       | The `<meta>` tag defines metadata about an HTML document. Metadata is data (information) about data. |
+|               | `<meta>` tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. |
+|               | Metadata will not be displayed on the page, but is machine parsable. |
+|               | Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+|               | There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag (See "Setting The Viewport" example below). |
 |               | See <a href="https://www.w3schools.com/tags/tag_meta.asp">meta tag</a> |
-|`<optgroup>`   |             |
+|`<optgroup>`   | The `<optgroup>` tag is used to group related options in a `<select>` element (drop-down list). |
+|               | If you have a long list of options, groups of related options are easier to handle for a user. |
 |               | See <a href="https://www.w3schools.com/tags/tag_optgroup.asp">optgroup tag</a> |
-|`<option>`     |             |
+|`<option>`     | The `<option>` tag defines an option in a select list. |
+|               | `<option>` elements go inside a `<select>`, `<optgroup>`, or `<datalist>` element. |
+|               | Note: The `<option>` tag can be used without any attributes, but you usually need the value attribute, which indicates what is sent to the server on form submission. |
+|               | Tip: If you have a long list of options, you can group related options within the `<optgroup>` tag. |
 |               | See <a href="https://www.w3schools.com/tags/tag_option.asp">option tag</a> |
 |`<p>`          | The `<p>` tag defines a paragraph. |
 |               | Browsers automatically add a single blank line before and after each <p> element. |
 |               | Tip: Use CSS to style paragraphs. |
 |               | See <a href="https://www.w3schools.com/tags/tag_p.asp">p tag</a> |
-|`<param>`      |             |
+|`<param>`      | The <param> tag is used to define parameters for an <object> element. |
 |               | See <a href="https://www.w3schools.com/tags/tag_param.asp">param tag</a> |
-|`<rp>`         |             |
+
+| Attribute | Value | Description |
+|-----------|--------|-------------------------------------------------------------|
+| name	    | name   | Specifies the name of a parameter |
+| value     | value  | Specifies the value of the parameter |
+
+Optional tags, cont'd
+
+|Tag            |Description  |
+|---------------|-------------|
+|`<rp>`         | The `<rp>` tag can be used to provide parentheses around a ruby text, to be shown by browsers that do not support ruby annotations. |
+|               | Use `<rp>` together with `<ruby>` and `<rt>`: The `<ruby>` element consists of one or more characters that needs an explanation/pronunciation, and an `<rt>` element that gives that information, and an optional `<rp>` element that defines what to show for browsers that not support ruby annotations. |
 |               | See <a href="https://www.w3schools.com/tags/tag_rp.asp">rp tag</a> |
-|`<rt>`         |             |
+|`<rt>`         | The `<rt>` tag defines an explanation or pronunciation of characters (for East Asian typography) in a ruby annotation.
+|               | Use `<rt>` together with <ruby> and <rp>: The <ruby> element consists of one or more characters that needs an explanation/pronunciation, and an `<rt>` element that gives that information, and an optional `<rp>` element that defines what to show for browsers that not support ruby annotations.  |
 |               | See <a href="https://www.w3schools.com/tags/tag_rt.asp">rt tag</a> |
-|`<source>`     |             |
+|`<source>`     | The `<source>` tag is used to specify multiple media resources for media elements, such as `<video>`, `<audio>`, and `<picture>`. |
+|               | The `<source>` tag allows you to specify alternative video/audio/image files which the browser may choose from, based on browser support or viewport width. The browser will choose the first `<source>` it supports. |
 |               | See <a href="https://www.w3schools.com/tags/tag_source.asp">source tag</a> |
-|`<tbody>`      |             |
+| `<tbody>`     | The `<tbody>` tag is used to group the body content in an HTML table. |
+|               | The `<tbody>` element is used in conjunction with the `<thead>` and `<tfoot>` elements to specify each part of a table (body, header, footer). |
+|               | Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page. |
+|               | Note: The <tbody> element must have one or more `<tr>` tags inside. |
+|               | The `<tbody>` tag must be used in the following context: As a child of a `<table>` element, after any `<caption>`, `<colgroup>`, and `<thead>` elements. |
+|               | Tip: The `<thead>`, `<tbody>`, and `<tfoot>` elements will not affect the layout of the table by default. However, you can use CSS to style these elements (see example below)!  |
 |               | See <a href="https://www.w3schools.com/tags/tag_tbody.asp">tbody tag</a> |
-|`<td>`         |             |
+|`<td>`         | The `<td>` tag defines a standard data cell in an HTML table. |
+|               | An HTML table has two kinds of cells: |
+|               |   - Header cells - contains header information (created with the `<th>` element) |
+|               |   - Data cells - contains data (created with the `<td>` element) |
+|               | The text in `<td>` elements are regular and left-aligned by default. |
+|               | The text in `<th>` elements are bold and centered by default. |
 |               | See <a href="https://www.w3schools.com/tags/tag_td.asp">td tag</a> |
-|`<tfoot>`      |             |
+|`<tfoot>`      | The `<tfoot>` tag is used to group footer content in an HTML table. |
+|               | The `<tfoot>` element is used in conjunction with the `<thead>` and `<tbody>` elements to specify each part of a table (footer, header, body). |
+|               | Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page. |
+|               | Note: The `<tfoot>` element must have one or more `<tr>` tags inside. |
+|               | The `<tfoot>` tag must be used in the following context: As a child of a `<table>` element, after any `<caption>`, `<colgroup>`, `<thead>`, and `<tbody>` elements. |
+|               | Tip: The `<thead>`, `<tbody>`, and `<tfoot>` elements will not affect the layout of the table by default. However, you can use CSS to style these elements (see example below)! |
 |               | See <a href="https://www.w3schools.com/tags/tag_tfoot.asp">tfoot tag</a> |
-|`<th>`         |             |
+|`<th>`         | The `<th>` tag defines a header cell in an HTML table. |
+|               | An HTML table has two kinds of cells: |
+|               |   - Header cells - contains header information (created with the `<th>` element) |
+|               |   - Data cells - contains data (created with the `<td>` element) |
+|               | The text in `<th>` elements are bold and centered by default. |
+|               | The text in `<td>` elements are regular and left-aligned by default. |
 |               | See <a href="https://www.w3schools.com/tags/tag_th.asp">th tag</a> |
-|`<thead>`      |             |
+|`<thead>`      | The `<thead>` tag is used to group header content in an HTML table. |
+|               | The `<thead>` element is used in conjunction with the `<tbody>` and `<tfoot>` elements to specify each part of a table (header, body, footer). |
+|               | Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page. |
+|               | Note: The `<thead>` element must have one or more `<tr>` tags inside. |
+|               | The `<thead>` tag must be used in the following context: As a child of a `<table>` element, after any `<caption>` and `<colgroup>` elements, and before any `<tbody>`, `<tfoot>`, and `<tr>` elements. |
+|               | Tip: The `<thead>`, `<tbody>`, and `<tfoot>` elements will not affect the layout of the table by default. However, you can use CSS to style these elements (see example below)! |
 |               | See <a href="https://www.w3schools.com/tags/tag_thead.asp">thead tag</a> |
-|`<tr>`         |             |
+|`<tr>`         | The `<tr>` tag defines a row in an HTML table. |
+|               | A `<tr>` element contains one or more `<th>` or `<td>` elements. |
 |               | See <a href="https://www.w3schools.com/tags/tag_tr.asp">tr tag</a> |
 |`<track>`      | The `<track>` tag specifies text tracks for `<audio>` or `<video>` elements. |
 |               | This element is used to specify subtitles, caption files or other files containing text, that should be visible when the media is playing. |
