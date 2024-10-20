@@ -2537,13 +2537,27 @@ The following lists all optional tags.
 |               | The `<base>` tag must have either an href or a target attribute present, or both. |
 |               | There can only be one single `<base>` element in a document, and it must be inside the `<head>` element. |
 |               | See <a href="https://www.w3schools.com/tags/tag_base.asp">base tag</a> |
-|`<body>`       |             |
-|`<br>`         |             |
-|`<caption>`    |             |
-|`<col>`        |             |
-|`<colgroup>`   |             |
-|`<dd>`         |             |
-|`<dt>`         |             |
+|`<body>`       | The `<body>` tag defines the document's body. |
+|               | The `<body>` element contains all the contents 
+|               | of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. |
+|               | Note: There can only be one `<body>` element in an HTML document.            |
+|               | See <a href="https://www.w3schools.com/tags/tag_body.asp">body tag</a> |
+|`<br>`         | The `<br>` tag inserts a single line break. |
+|               | The `<br>` tag is useful for writing addresses or poems. |
+|               | The `<br>` tag is an empty tag which means that it has no end tag. |
+|               | See <a href="https://www.w3schools.com/tags/tag_br.asp">br tag</a> |
+|`<caption>`    | The `<caption>` tag defines a table caption. |
+|               | The `<caption>` tag must be inserted immediately after the `<table>` tag. |
+|               | Tip: By default, a table caption will be center-aligned above a table. However, the CSS properties text-align and caption-side can be used to align and place the caption. |
+|               | See <a href="https://www.w3schools.com/tags/tag_caption.asp">caption tag</a> |
+|`<col>`        | The `<col>` tag specifies column properties for each column within a `<colgroup>` element. |
+|               | The `<col>` tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row. |
+|`<colgroup>`   | See <a href="https://www.w3schools.com/tags/tag_colgroup.asp">colgroup tag</a> |
+|`<dd>`         | The `<dd>` tag is used to describe a term/name in a description list. |
+|               | The `<dd>` tag is used in conjunction with `<dl>` (defines a description list) and `<dt>` (defines terms/names). |
+|               | Inside a `<dd>` tag you can put paragraphs, line breaks, images, links, lists, etc. |
+|`<dt>`         | The `<dt>` tag defines a term/name in a description list. |
+|               | The `<dt>` tag is used in conjunction with `<dl>` (defines a description list) and `<dd>` (describes each term/name). |
 |`<embed>`      |             |
 |`<head>`       |             |
 |`<hr>`         |             |
