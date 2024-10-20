@@ -2575,16 +2575,57 @@ The following lists all optional tags.
 |               | - `<base>`  |
 |               | - `<link>`  |
 |               | - `<meta>`  |
-|               | `<script>` |
-|               | `<noscript>` |
+|               | - `<script>` |
+|               | - `<noscript>` |
 |               | See <a href="https://www.w3schools.com/tags/tag_head.asp">head tag</a> |
-|`<hr>`         | The <hr> tag defines a thematic break in an HTML page (e.g. a shift of topic).
-|               | The <hr> element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page. |
+|`<hr>`         | The `<hr>` tag defines a thematic break in an HTML page (e.g. a shift of topic). |
+|               | The `<hr>` element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page. |
 |               | See <a href="https://www.w3schools.com/tags/tag_hr.asp">hr tag</a> |
-|`<html>`       |             |
+|`<html>`       | The `<html>` tag represents the root of an HTML document. |
+|               | The `<html>` tag is the container for all other HTML elements (except for the `<!DOCTYPE>` tag). |
+|               | Note: You should always include the lang attribute inside the `<html>` tag, to declare the language of the Web page. This is meant to assist search engines and browsers. |
+|               | `<!DOCTYPE html>` |
+|               | `<html lang="en">` |
+|               | `<head>`
+|               |   `<title>`Title of the document`</title>` |
+|               | `</head>` |
+|               | `<body>` |
+|               |   `<h1>`This is a heading`</h1>` |
+|               |   `<p>`This is a paragraph.`</p>` |
+|               | `</body>` |
+|               | `</html>` |
 |               | See <a href="https://www.w3schools.com/tags/tag_html.asp">html tag</a> |
-|`<img>`        |             |
+|`<img>`        | The `<img>` tag is used to embed an image in an HTML page. |
+|               | Images are not technically inserted into a web page; images are linked to web pages. The `<img>` tag creates a holding space for the referenced image. |
+|               | The `<img>` tag has two required attributes: |
+|               |   - src - Specifies the path to the image |
+|               |   - alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed |
+|               | Note: Also, always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads. |
+|               | Tip: To link an image to another document, simply nest the `<img>` tag inside an `<a>` tag (see example below). |
+|               | Attribute      | Value  | Description                                         |
+|               |----------------|--------|-----------------------------------------------------|
+|               | alt            | text            | Specifies an alternate text for an image.  |
+|               | crossorigin    | anonymous       | Allow images from third-party sites that allow cross-origin access to be used with canvas. |
+|               |                | use-credentials |                          |
+|               | height         | pixels	       | Specifies the height of an image |
+|               | ismap          | ismap           | Specifies an image as a server-side image map |
+|               | loading        | eager           | Specifies whether a browser should load an image immediately or to defer loading of images until some conditions are met. |
+|               |                | lazy            |                   |
+|               | longdesc       | URL             | Specifies a URL to a detailed description of an image. |
+|               | referrerpolicy | no-referrer     | Specifies which referrer information to use when fetching an image. |
+|               |                | no-referrer-when-downgrade | |
+|               |                | origin | |
+|               |                | origin-when-cross-origin | |
+|               |                | unsafe-url	| |
+|               | sizes          | sizes | Specifies image sizes for different page layouts. |
+|               | src            | URL   | Specifies the path to the image. |
+|               | srcset         | URL-list | Specifies a list of image files to use in different situations. |
+|               | usemap         | #mapname	| Specifies an image as a client-side image map. |
+|               | width          | pixels   | Specifies the width of an image. |
 |               | See <a href="https://www.w3schools.com/tags/tag_img.asp">img tag</a> |
+
+|Tag            |Description  |
+|---------------|-------------|
 |`<input>`      |             |
 |               | See <a href="https://www.w3schools.com/tags/tag_input.asp">input tag</a> |
 |`<li>`         |             |
