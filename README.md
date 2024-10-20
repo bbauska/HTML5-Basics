@@ -2658,11 +2658,11 @@ Optional tags, cont'd
 |               | Look at the <a href="https://www.w3schools.com/tags/att_input_type.asp">type</a> attribute to see examples for each input type! |
 |               | Tip: Always use the <label> tag to define labels for `<input type="text">`, `<input type="checkbox">`, `<input type="radio">`, `<input type="file">`, and `<input type="password">`. |
 |               | See <a href="https://www.w3schools.com/tags/tag_input.asp">input tag</a> |
-|`<li>`         | The `<li>` tag defines a list item.
+|`<li>`         | The `<li>` tag defines a list item. |
 |               | The `<li>` tag is used inside ordered lists(`<ol>`), unordered lists (`<ul>`), and in menu lists (`<menu>`). |
 |               | In `<ul>` and `<menu>`, the list items will usually be displayed with bullet points. |
 |               | In `<ol>`, the list items will usually be displayed with numbers or letters. |
-|               | Tip: Use CSS to style lists.            |
+|               | Tip: Use CSS to style lists. |
 |               | See <a href="https://www.w3schools.com/tags/tag_li.asp">li tag</a> |
 |`<link>`       | The `<link>` tag defines the relationship between the current document and an external resource. |
 |               | The `<link>` tag is most often used to link to external style sheets or to add a favicon to your website. |
@@ -2671,7 +2671,7 @@ Optional tags, cont'd
 |`<meta>`       | The `<meta>` tag defines metadata about an HTML document. Metadata is data (information) about data. |
 |               | `<meta>` tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. |
 |               | Metadata will not be displayed on the page, but is machine parsable. |
-|               | Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+|               | Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. |
 |               | There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag (See "Setting The Viewport" example below). |
 |               | See <a href="https://www.w3schools.com/tags/tag_meta.asp">meta tag</a> |
 |`<optgroup>`   | The `<optgroup>` tag is used to group related options in a `<select>` element (drop-down list). |
