@@ -2551,7 +2551,7 @@ The following lists all optional tags.
 |               | See <a href="https://www.w3schools.com/tags/tag_caption.asp">caption tag</a> |
 |`<col>`        | The `<col>` tag specifies column properties for each column within a `<colgroup>` element. |
 |               | The `<col>` tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row. |
-|               | See <a href="">col group</a> |
+|               | See <a href="https://www.w3schools.com/tags/tag_col.asp">col tag</a> |
 |`<colgroup>`   | The `<colgroup>` tag specifies a group of one or more columns in a table for formatting. |
 |               | The `<colgroup>` tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row. |
 |               | Note: The `<colgroup>` tag must be a child of a `<table>` element, after any `<caption>` elements and before any `<thead>`, `<tbody>`, `<tfoot>`, and `<tr>` elements. |
@@ -2578,28 +2578,56 @@ The following lists all optional tags.
 |               | `<script>` |
 |               | `<noscript>` |
 |               | See <a href="https://www.w3schools.com/tags/tag_head.asp">head tag</a> |
-|`<hr>`         |             |
+|`<hr>`         | The <hr> tag defines a thematic break in an HTML page (e.g. a shift of topic).
+|               | The <hr> element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page. |
+|               | See <a href="https://www.w3schools.com/tags/tag_hr.asp">hr tag</a> |
 |`<html>`       |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_html.asp">html tag</a> |
 |`<img>`        |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_img.asp">img tag</a> |
 |`<input>`      |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_input.asp">input tag</a> |
 |`<li>`         |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_li.asp">li tag</a> |
 |`<link>`       |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_link.asp">link tag</a> |
 |`<meta>`       |             |  
+|               | See <a href="https://www.w3schools.com/tags/tag_meta.asp">meta tag</a> |
 |`<optgroup>`   |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_optgroup.asp">optgroup tag</a> |
 |`<option>`     |             |
-|`<p>`          |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_option.asp">option tag</a> |
+|`<p>`          | The `<p>` tag defines a paragraph. |
+|               | Browsers automatically add a single blank line before and after each <p> element. |
+|               | Tip: Use CSS to style paragraphs. |
+|               | See <a href="https://www.w3schools.com/tags/tag_p.asp">p tag</a> |
 |`<param>`      |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_param.asp">param tag</a> |
 |`<rp>`         |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_rp.asp">rp tag</a> |
 |`<rt>`         |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_rt.asp">rt tag</a> |
 |`<source>`     |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_source.asp">source tag</a> |
 |`<tbody>`      |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_tbody.asp">tbody tag</a> |
 |`<td>`         |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_td.asp">td tag</a> |
 |`<tfoot>`      |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_tfoot.asp">tfoot tag</a> |
 |`<th>`         |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_th.asp">th tag</a> |
 |`<thead>`      |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_thead.asp">thead tag</a> |
 |`<tr>`         |             |
-|`<track>`      |             |
-|`<wbr>`        |             |
+|               | See <a href="https://www.w3schools.com/tags/tag_tr.asp">tr tag</a> |
+|`<track>`      | The `<track>` tag specifies text tracks for `<audio>` or `<video>` elements. |
+|               | This element is used to specify subtitles, caption files or other files containing text, that should be visible when the media is playing. |
+|               | Tracks are formatted in WebVTT format (.vtt files). |
+|               | See <a href="https://www.w3schools.com/tags/tag_track.asp">track tag</a> |
+|`<wbr>`        | The `<wbr>` (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break. |
+|               | Tip: When a word is too long, the browser might break it at the wrong place. You can use the `<wbr>` element to add word break opportunities. |
+|               | See <a href="https://www.w3schools.com/tags/tag_wbr.asp">wbr tag</a> |
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
