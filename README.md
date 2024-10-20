@@ -2683,10 +2683,10 @@ Optional tags, cont'd
 |               | Tip: If you have a long list of options, you can group related options within the `<optgroup>` tag. |
 |               | See <a href="https://www.w3schools.com/tags/tag_option.asp">option tag</a> |
 |`<p>`          | The `<p>` tag defines a paragraph. |
-|               | Browsers automatically add a single blank line before and after each <p> element. |
+|               | Browsers automatically add a single blank line before and after each `<p>` element. |
 |               | Tip: Use CSS to style paragraphs. |
 |               | See <a href="https://www.w3schools.com/tags/tag_p.asp">p tag</a> |
-|`<param>`      | The <param> tag is used to define parameters for an <object> element. |
+|`<param>`      | The `<param>` tag is used to define parameters for an `<object>` element. |
 |               | See <a href="https://www.w3schools.com/tags/tag_param.asp">param tag</a> |
 
 | Attribute | Value | Description |
@@ -2707,7 +2707,7 @@ Optional tags, cont'd
 |`<source>`     | The `<source>` tag is used to specify multiple media resources for media elements, such as `<video>`, `<audio>`, and `<picture>`. |
 |               | The `<source>` tag allows you to specify alternative video/audio/image files which the browser may choose from, based on browser support or viewport width. The browser will choose the first `<source>` it supports. |
 |               | See <a href="https://www.w3schools.com/tags/tag_source.asp">source tag</a> |
-| `<tbody>`     | The `<tbody>` tag is used to group the body content in an HTML table. |
+|`<tbody>`      | The `<tbody>` tag is used to group the body content in an HTML table. |
 |               | The `<tbody>` element is used in conjunction with the `<thead>` and `<tfoot>` elements to specify each part of a table (body, header, footer). |
 |               | Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page. |
 |               | Note: The <tbody> element must have one or more `<tr>` tags inside. |
