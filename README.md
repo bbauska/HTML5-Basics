@@ -2188,7 +2188,11 @@ Iframes can include videos, maps, or entire web pages from other sources.
 
 <h3>Q. What is an iframe and how does it work?</h3>
 
-The `<iframe>` HTML element represents a nested browsing context, embedding another HTML page into the current one. Each embedded browsing context has its own **session history** and **document**. The browsing context that embeds the others is called the parent browsing context. The topmost browsing context — the one with no parent — is usually the browser window, represented by the **Window** object.
+The `<iframe>` HTML element represents a nested browsing context, embedding another HTML 
+page into the current one. Each embedded browsing context has its own **session history** 
+and **document**. The browsing context that embeds the others is called the parent browsing 
+context. The topmost browsing context — the one with no parent — is usually the browser 
+window, represented by the **Window** object.
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -2236,19 +2240,23 @@ The `<iframe>` HTML element represents a nested browsing context, embedding anot
 |src             |the address of the resource included in the iframe|
 |width           |sets the width of the iframe (if not specified, the default width is 300 pixels)|
 
-*Note: Because each browsing context is a complete document environment, every `&lt;iframe&gt;` in a page requires increased memory and other computing resources.*
+<i>Note: Because each browsing context is a complete document environment, every `<iframe>` 
+in a page requires increased memory and other computing resources.</i>
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-#### Q. Explain the use of rel="nofollow", rel="noreferrer", rel="noopener" attribute? 
+<h3>Q. Explain the use of rel="nofollow", rel="noreferrer", rel="noopener" attribute?</h3>
 
 **1. rel="nofollow"**
 
-When `rel="nofollow"` tag is used, it instruct the search engines not to pass any PageRank from one page to the other. It does not allow it to pass the authority to the specific website. The main advantage of using this attribute is to control the spam attack.
+When `rel="nofollow"` tag is used, it instruct the search engines not to pass any PageRank 
+from one page to the other. It does not allow it to pass the authority to the specific 
+website. The main advantage of using this attribute is to control the spam attack.
 
-There may be times, when you do not have control over what people publish on your websites, for example some blog comments and some kind of forum posting.
+There may be times, when you do not have control over what people publish on your websites, 
+for example some blog comments and some kind of forum posting.
 
 **Example:**
 
@@ -2258,7 +2266,9 @@ There may be times, when you do not have control over what people publish on you
 
 **2. rel="noreferrer"**
 
-Noreferrer is related to analytics and tracking. The referrer value shows the previous page where a user came from. By using the noreferrer attribute on a link, you are preventing other pages from seeing that traffic came from a click on your link.
+Noreferrer is related to analytics and tracking. The referrer value shows the previous 
+page where a user came from. By using the noreferrer attribute on a link, you are 
+preventing other pages from seeing that traffic came from a click on your link.
 
 **Example:**
 
@@ -2268,7 +2278,9 @@ Noreferrer is related to analytics and tracking. The referrer value shows the pr
 
 **3. rel="noopener"**
 
-It prevents the new page from being able to access the `window.opener` property and will make it run in a separate process. noopener tag works as a security fix which prevents malicious links to take control over an opened tab.
+It prevents the new page from being able to access the `window.opener` property and will 
+make it run in a separate process. noopener tag works as a security fix which prevents 
+malicious links to take control over an opened tab.
 
 **Example:**
 
@@ -2280,9 +2292,11 @@ It prevents the new page from being able to access the `window.opener` property 
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-#### Q. How can you highlight text in HTML?
+<h3>Q. How can you highlight text in HTML?</h3>
 
-The `<mark>` HTML element represents text which is marked or highlighted for reference or notation purposes, due to the marked passage\'s relevance or importance in the enclosing context.
+The `<mark>` HTML element represents text which is marked or highlighted for reference or 
+notation purposes, due to the marked passage\'s relevance or importance in the enclosing 
+context.
 
 **Example:**
 
@@ -2295,8 +2309,10 @@ The `<mark>` HTML element represents text which is marked or highlighted for ref
   <body>
     <p>Search results for "salamander":</p>
     <hr>
-    <p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
-    <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+    <p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the 
+	  Pacific Northwest.</p>
+    <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other 
+	  small creatures.</p>
   </body>
 </html>
 ```
@@ -2305,7 +2321,7 @@ The `<mark>` HTML element represents text which is marked or highlighted for ref
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-#### Q. How can I get indexed better by search engines?
+<h3>Q. How can I get indexed better by search engines?</h3>
 
 HTML tags are used to influence the way our pages appear in search results. With the help 
 of certain tags, we can turn regular search snippets into rich snippets, and maybe even 
@@ -2448,14 +2464,20 @@ The meta element includes a content attribute that enables you to specify the mo
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-#### Q. What is an optional tag?
+<h3>Q. What is an optional tag?</h3>
 
 The following lists all optional tags.
 
 |Tag            |Description  |
 |---------------|-------------|
-|`<area>`       |             |
-|`<base>`       |             |
+|`<area>`       | The <area> tag defines an area inside an image map. |
+|               | <area> elements are always nested inside a <map> tag. |
+|               | See <a href="https://www.w3schools.com/tags/tag_area.asp">area tag</a> |
+|               | Note: The usemap attribute in <img> is associated with the <map> element's name attribute, and creates a relationship between the image and the map. |
+|`<base>`       | The <base> tag specifies the base URL and/or target for all relative URLs in a document. |
+|               | The <base> tag must have either an href or a target attribute present, or both. |
+|               | There can only be one single <base> element in a document, and it must be inside the <head> element. |
+|               | See <a href="https://www.w3schools.com/tags/tag_base.asp">base tag</a> |
 |`<body>`       |             |
 |`<br>`         |             |
 |`<caption>`    |             |
@@ -3035,7 +3057,8 @@ Below are the global event attributes that can be added to HTML elements to defi
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<p>cont'd</p>
+<p>Window Event Attributes cont'd</p>
+
 | Attribute      | Value  | Description |
 |----------------|--------|--------------------------------------------------------------------------|
 | ononline       | script | Script to be run when the browser starts to work online |
@@ -3154,7 +3177,7 @@ altering its type attribute. Now, let’s all the list of HTML Form Elements one
 by one:</p>
 
 | Elements     | Descriptions |
-|:----------:|:----------------------------------------------------------------------------------:|
+|----------|----------------------------------------------------------------------------------|
 | &lt;label&gt;    | It defines labels for &lt;form&gt; elements. |
 | &lt;input&gt;    | It is used to get input data from the form in various types such as text, password, |
 |            | email, etc by changing its type. |
