@@ -2702,7 +2702,7 @@ Optional tags, cont'd
 |               | Use `<rp>` together with `<ruby>` and `<rt>`: The `<ruby>` element consists of one or more characters that needs an explanation/pronunciation, and an `<rt>` element that gives that information, and an optional `<rp>` element that defines what to show for browsers that not support ruby annotations. |
 |               | See <a href="https://www.w3schools.com/tags/tag_rp.asp">rp tag</a> |
 |`<rt>`         | The `<rt>` tag defines an explanation or pronunciation of characters (for East Asian typography) in a ruby annotation.
-|               | Use `<rt>` together with <ruby> and <rp>: The <ruby> element consists of one or more characters that needs an explanation/pronunciation, and an `<rt>` element that gives that information, and an optional `<rp>` element that defines what to show for browsers that not support ruby annotations.  |
+|               | Use `<rt>` together with `<ruby>` and `<rp>`: The `<ruby>` element consists of one or more characters that needs an explanation/pronunciation, and an `<rt>` element that gives that information, and an optional `<rp>` element that defines what to show for browsers that not support ruby annotations.  |
 |               | See <a href="https://www.w3schools.com/tags/tag_rt.asp">rt tag</a> |
 |`<source>`     | The `<source>` tag is used to specify multiple media resources for media elements, such as `<video>`, `<audio>`, and `<picture>`. |
 |               | The `<source>` tag allows you to specify alternative video/audio/image files which the browser may choose from, based on browser support or viewport width. The browser will choose the first `<source>` it supports. |
@@ -2710,7 +2710,7 @@ Optional tags, cont'd
 |`<tbody>`      | The `<tbody>` tag is used to group the body content in an HTML table. |
 |               | The `<tbody>` element is used in conjunction with the `<thead>` and `<tfoot>` elements to specify each part of a table (body, header, footer). |
 |               | Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page. |
-|               | Note: The <tbody> element must have one or more `<tr>` tags inside. |
+|               | Note: The `<tbody>` element must have one or more `<tr>` tags inside. |
 |               | The `<tbody>` tag must be used in the following context: As a child of a `<table>` element, after any `<caption>`, `<colgroup>`, and `<thead>` elements. |
 |               | Tip: The `<thead>`, `<tbody>`, and `<tfoot>` elements will not affect the layout of the table by default. However, you can use CSS to style these elements (see example below)!  |
 |               | See <a href="https://www.w3schools.com/tags/tag_tbody.asp">tbody tag</a> |
