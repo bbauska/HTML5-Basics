@@ -129,7 +129,7 @@ HTML5 offers new semantic elements to define different parts of a web page:
     your content is about when rank you properly on search engines. Semantic code tends to 
     improve your placement on search engines, as it is easier for the "search engine spiders" 
     to understand.</li>
-  <li>It\'s easier to read and edit, which saves time and money during maintenance.</li>
+  <li>It's easier to read and edit, which saves time and money during maintenance.</li>
 </ul>
 
 <div align="right">
@@ -186,7 +186,7 @@ the suggestions with the mouse.
 **2. Meter Tag**
 
 Indicates a numeric value that falls within a range. The tag supports a number of attributes:
-value: If you don\'t specify a value, the first numeric value inside the `<meter></meter>` 
+value: If you don't specify a value, the first numeric value inside the `<meter></meter>` 
 pair becomes the value.
 
 <ul>
@@ -434,7 +434,7 @@ a `<div>` is a **block-level-element** and a `<span>` is an **inline element**.
     it&apos;s own line with a width of a 100% of the parent element.</li>
   <li>`&lt;span&gt;` is an inline element which means it will render on the same 
     line as the previous element, if it is also an inline element, and it's width 
-    will be determined by it\'s content.</li>
+    will be determined by it's content.</li>
 </ul>
 
 ```html
@@ -447,7 +447,7 @@ a `<div>` is a **block-level-element** and a `<span>` is an **inline element**.
 
 <h3>Q. What are optional closing tags?</h3>
 
-`<p>, <li>, <td>, <tr>, <th>, <html>, <body>`, etc. don\'t have to provide an end 
+`<p>, <li>, <td>, <tr>, <th>, <html>, <body>`, etc. don't have to provide an end 
 tag. Whenever a browser hits a new tag it automatically end the previous tag. 
 
 <div align="right">
@@ -456,7 +456,7 @@ tag. Whenever a browser hits a new tag it automatically end the previous tag.
 
 <h3>Q. What is a self closing tag?</h3>
 
-In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren\'t required to have specific closing tags are called “self closing” tags.
+In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren't required to have specific closing tags are called “self closing” tags.
 
 An example of a self closing tag is something like a line break (`<br />`) or the meta tag (`<meta>`). This means that the following are both acceptable:
 
@@ -502,7 +502,7 @@ central topic of a document, or the central functionality of an application.
 </main>
 ```
 
-<i>Note: A document mustn\'t have more than one `<main>` element that doesn't have the hidden 
+<i>Note: A document mustn't have more than one `<main>` element that doesn't have the hidden 
 attribute specified.</i>
 
 <div align="right">
@@ -513,18 +513,18 @@ attribute specified.</i>
   <footer>` and how should each be used in structuring html markup?</h4>
 
   - `<header>` is used to contain introductory and navigational information about a section 
-  of the page. This can include the section heading, the author\'s name, time and date of 
+  of the page. This can include the section heading, the author's name, time and date of 
   publication, table of contents, or other navigational information.
 
   - `<article>` is meant to house a self-contained composition that can logically be independently 
-  recreated outside of the page without losing it\'s meaining. Individual blog posts or news 
+  recreated outside of the page without losing it's meaining. Individual blog posts or news 
   stories are good examples.
 
   - `<section>` is a flexible container for holding content that shares a common informational 
   theme or purpose.
 
   - `<footer>` is used to hold information that should appear at the end of a section of content 
-  and contain additional information about the section. Author\'s name, copyright information, 
+  and contain additional information about the section. Author's name, copyright information, 
   and related links are typical examples of such content.
 
 <div align="right">
@@ -534,9 +534,9 @@ attribute specified.</i>
 <h3>Q. When should you use `section`, `div` or `article`?</h3>
 
   - `<section>`, group of content inside is related to a single theme, and should appear as 
-  an entry in an outline of the page. It\'s a chunk of related content, like a subsection 
+  an entry in an outline of the page. It's a chunk of related content, like a subsection 
   of a long article, a major part of the page (eg the news section on the homepage), or a 
-  page in a webapp\'s tabbed interface. A section normally has a heading (title) and maybe 
+  page in a webapp's tabbed interface. A section normally has a heading (title) and maybe 
   a footer too.
 
   - `<article>`, represents a complete, or self-contained, composition in a document, page, 
@@ -766,7 +766,7 @@ has been fully parsed.
 <h3>Q. What is local storage in html5?</h3>
 
 The **localStorage** read-only property of the window interface allows you to access a 
-Storage object for the Document\'s origin; the stored data is saved across browser sessions.
+Storage object for the Document's origin; the stored data is saved across browser sessions.
 
 **Example:**
 
@@ -813,7 +813,7 @@ A cookie is an amount of information that persists between a server-side and a c
 A web browser stores this information at the time of browsing.
 
 A cookie contains the information as a string generally in the form of a name-value pair 
-separated by semi-colons. It maintains the state of a user and remembers the user\'s 
+separated by semi-colons. It maintains the state of a user and remembers the user's 
 information among all the web pages.
 
 **Example 01:** Create a Cookies
@@ -867,7 +867,7 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 | Capacity (per domain) | 4kb        | 5MB            | 5MB              |
 | Accessibility  | Any window        | Any window     | Same tab         |
 
-*Note: If the user decides to clear browsing data via whatever mechanism provided by the browser, this will clear out any `cookie`, `localStorage`, or `sessionStorage` stored. It\'s important to keep this in mind when designing for local persistance, especially when comparing to alternatives such as server side storing in a database or similar (which of course will persist despite user actions).*
+*Note: If the user decides to clear browsing data via whatever mechanism provided by the browser, this will clear out any `cookie`, `localStorage`, or `sessionStorage` stored. It's important to keep this in mind when designing for local persistance, especially when comparing to alternatives such as server side storing in a database or similar (which of course will persist despite user actions).*
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -944,7 +944,7 @@ deprecated in favor of IndexedDB.
 
 **2. IndexedDB**
 
-It is the successor to both LocalStorage and WebSQL, designed to replace them as the “one true” browser database. It exposes an asynchronous API that supposedly avoids blocking the DOM, but as we\'ll see below, it doesn\'t necessarily live up to the hype. Browser support is extremely spotty, with only Chrome and Firefox having fully usable implementations.
+It is the successor to both LocalStorage and WebSQL, designed to replace them as the “one true” browser database. It exposes an asynchronous API that supposedly avoids blocking the DOM, but as we'll see below, it doesn't necessarily live up to the hype. Browser support is extremely spotty, with only Chrome and Firefox having fully usable implementations.
 
 **Advantages**
 
@@ -984,7 +984,7 @@ Syntax:
 </html>
 ```
 
-*Note: Using the application caching feature described here is at this point highly discouraged; it\'s in the process of being removed from the Web platform. Use **Service Workers** instead. In fact as of Firefox 44, when AppCache is used to provide offline support for a page a warning message is now displayed in the console advising developers to use Service workers instead (bug 1204581).*
+*Note: Using the application caching feature described here is at this point highly discouraged; it's in the process of being removed from the Web platform. Use **Service Workers** instead. In fact as of Firefox 44, when AppCache is used to provide offline support for a page a warning message is now displayed in the console advising developers to use Service workers instead (bug 1204581).*
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -992,7 +992,7 @@ Syntax:
 
 <h3>Q. What is the purpose of cache busting and how can you achieve it?</h3>
 
-Browsers have a cache to temporarily store files on websites so they don\'t need to be 
+Browsers have a cache to temporarily store files on websites so they don't need to be 
 re-downloaded again when switching between pages or reloading the same page. The server 
 is set up to send headers that tell the browser to store the file for a given amount of 
 time. This greatly increases website speed and preserves bandwidth.
@@ -1033,8 +1033,8 @@ such as semantic HTML, alt attributes and using [role=button] in the expected wa
 <h3>Q. How to use data- attribute in html5?</h3>
 
 Any attribute on any element whose attribute name starts with **data-** is a data attribute. 
-The data-\* attributes gives us the ability to embed custom data attributes on all HTML 
-elements. The stored (custom) data can then be used in the page\'s JavaScript to create 
+The data-&ast; attributes gives us the ability to embed custom data attributes on all HTML 
+elements. The stored (custom) data can then be used in the page's JavaScript to create 
 a more engaging user experience.
 
 **Example:**
@@ -1128,7 +1128,7 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 
 <h3>Q. What is difference between Select and Datalist?</h3>
 
-For the select element, the user is required to select one of the options you\'ve given. For the datalist element, it is suggested that the user select one of the options you\'ve given, but he can actually enter anything he wants in the input.
+For the select element, the user is required to select one of the options you've given. For the datalist element, it is suggested that the user select one of the options you've given, but he can actually enter anything he wants in the input.
 
 **1. Select:**
 
@@ -1275,7 +1275,7 @@ For HTML documents, browsers use a `<!DOCTYPE html>` in the beginning of the doc
     * performance benefit for our customers
     * Consistent SEO performance
 
-* The main difference is that for SSR your server\'s response to the browser is the HTML of your page that is ready to be rendered, while for CSR the browser gets a pretty empty document with links to your javascript. That means for SSR your browser will start rendering the HTML from your server without having to wait for all the JavaScript to be downloaded and executed.
+* The main difference is that for SSR your server's response to the browser is the HTML of your page that is ready to be rendered, while for CSR the browser gets a pretty empty document with links to your javascript. That means for SSR your browser will start rendering the HTML from your server without having to wait for all the JavaScript to be downloaded and executed.
     
 * for SSR, the user can start viewing the page while all of that is happening. For the CSR world, you need to wait for all of the above to happen and then have the virtual dom moved to the browser dom for the page to be viewable.
 
@@ -1422,8 +1422,8 @@ For HTML documents, browsers use a `<!DOCTYPE html>` in the beginning of the doc
 **1. JavaScript:**
 
 Typically JavaScript is used to handle work that will result in visual changes, whether 
-it\'s jQuery\'s animate function, sorting a data set, or adding DOM elements to the page. 
-It doesn\'t have to be JavaScript that triggers a visual change, though: CSS Animations, 
+it's jQuery's animate function, sorting a data set, or adding DOM elements to the page. 
+It doesn't have to be JavaScript that triggers a visual change, though: CSS Animations, 
 Transitions, and the Web Animations API are also commonly used.
 
 **2. Style:**
@@ -1435,9 +1435,9 @@ rules are known, they are applied and the final styles for each element are calc
 **3. Layout:**
 
 Once the browser knows which rules apply to an element it can begin to calculate how much 
-space it takes up and where it is on screen. The web\'s layout model means that one element 
+space it takes up and where it is on screen. The web's layout model means that one element 
 can affect others, for example the width of the `<body>` element typically affects its 
-children\'s widths and so on all the way up and down the tree, so the process can be quite 
+children's widths and so on all the way up and down the tree, so the process can be quite 
 involved for the browser.
 
 **4. Paint:**
@@ -1579,7 +1579,7 @@ performance.measure("durationFoo", "startFoo", "endFoo");
 This API belongs to the connection property of the `window.navigator` object. It exposes 
 two read-only properties: `bandwidth` and `metered`. The former is a number representing 
 an estimation of the current bandwidth, while the latter is a Boolean whose value is true 
-if the user\'s connection is subject to limitation and bandwidth usage, and false otherwise.
+if the user's connection is subject to limitation and bandwidth usage, and false otherwise.
 
 |Sl.No| API                            | Description
 |-----|--------------------------------|--------------------------------------------------------------------|
@@ -1592,7 +1592,7 @@ if the user\'s connection is subject to limitation and bandwidth usage, and fals
 
 **4.) Vibration API**
 
-It exposes only one method, `vibrate()`, that belongs to the `window.navigator` object. This method accepts one parameter specifying the duration of the vibration in milliseconds. The parameter can be either an integer or an array of integers. In the second case, it\'s interpreted as alternating vibration times and pauses.
+It exposes only one method, `vibrate()`, that belongs to the `window.navigator` object. This method accepts one parameter specifying the duration of the vibration in milliseconds. The parameter can be either an integer or an array of integers. In the second case, it's interpreted as alternating vibration times and pauses.
 
 ```javascript
 // Vibrate once for 2 seconds
@@ -1616,7 +1616,7 @@ var percentageLevel = navigator.battery.level * 100;
 
 The Page Visibility API enables us to determine the current visibility state of the page. 
 The Page Visibility API is especially useful for saving resources and improving performance 
-by letting a page avoid performing unnecessary tasks when the document isn\'t visible.
+by letting a page avoid performing unnecessary tasks when the document isn't visible.
 
 ```javascript
 // document.hidden retuns true if page is not visible.
@@ -1724,7 +1724,7 @@ if ("geolocation" in navigator) {
 
 <h3>Q. What is the use of WebSocket API?</h3>
 
-The **WebSocket API** is an advanced technology that makes it possible to open a two-way interactive communication session between the user\'s browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
+The **WebSocket API** is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
 
 **Interfaces:**  
 
@@ -2142,7 +2142,7 @@ The following elements are not available in HTML5 anymore and their function is 
 
 <h3>Q. How you can Use Modernizr in HTML5?</h3>
 
-Modernizr is a JavaScript library that detects which HTML5 and CSS3 features visitor\'s 
+Modernizr is a JavaScript library that detects which HTML5 and CSS3 features visitor's 
 browser supports. In detecting feature support, it allows developers to test for some of 
 the new technologies and then provide fallbacks for browsers that do not support them. 
 This is called **feature detection** and is much more efficient than browser sniffing.
@@ -2163,7 +2163,7 @@ By default, Modernizr sets classes for all of your tests on the root element (`<
 
 **2. Using Modernizr with JavaScript:**
 
-Modernizr keeps track of the results of all of it\'s feature detections via the `Modernizr` object.
+Modernizr keeps track of the results of all of it's feature detections via the `Modernizr` object.
 
 ```javascript
 if (Modernizr.canvas) {
@@ -2214,7 +2214,7 @@ Typical page load behaviour in SSR —
 
 <p>Since the APIs are usually co-located with the server, the content is loaded super 
 fast (faster than CSR) and the HTML is sent to the browser. Initial JavaScript load 
-doesn\'t block content load as the HTML sent by the server already has the content.</p>
+doesn't block content load as the HTML sent by the server already has the content.</p>
 
 <p align="center">
     <img src="assets/images/progressive-rendering.png" alt="Progressive Rendering" width="500px" />
@@ -2350,7 +2350,7 @@ malicious links to take control over an opened tab.
 <h3>Q. How can you highlight text in HTML?</h3>
 
 The `<mark>` HTML element represents text which is marked or highlighted for reference or 
-notation purposes, due to the marked passage\'s relevance or importance in the enclosing 
+notation purposes, due to the marked passage's relevance or importance in the enclosing 
 context.
 
 **Example:**
@@ -2841,7 +2841,7 @@ it one font-size smaller, such as from `small` to `x-small`.
 
 <h3>Q. How do you serve a page with content in multiple languages?</h3>
 
-The **lang** attribute specifies the language of the element\'s content.
+The **lang** attribute specifies the language of the element's content.
 
 **Example:**
 
@@ -2910,7 +2910,7 @@ entry in the outline of the page.
 
 **The `<div>` Element**
 
-The `<div>` element only represents its child elements and doesn\'t have a special meaning. 
+The `<div>` element only represents its child elements and doesn't have a special meaning. 
 It can be used with the `lang`, `title`, and `class` attributes to add semantics that is 
 common to a group of consecutive elements. This element can also be used in a `<dl>` tag 
 and wrap groups of `<dt>` and `<dd>` elements.
@@ -2943,7 +2943,7 @@ and wrap groups of `<dt>` and `<dd>` elements.
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. Discuss the differences between an HTML specification and a browser\'s implementation thereof.</h3>
+<h3>Q. Discuss the differences between an HTML specification and a browser's implementation thereof.</h3>
 
 HTML specifications such as HTML5 define a set of rules that a document must adhere to in 
 order to be "valid" according to that specification. In addition, a specification provides 
@@ -2970,7 +2970,7 @@ decisions about how to handle malformed documents are left up to the browser.
 used when evaluating the content of this attribute.</h3>
 
 The `srcset` attribute allows to define a list of different image resources along with size 
-information so that browser can pick the most appropriate image based on the actual device\'s 
+information so that browser can pick the most appropriate image based on the actual device's 
 resolution.
 
 **Syntax:**
@@ -3057,7 +3057,7 @@ technology a better way to navigate and identify the different parts of a web pa
  <nav class='mobile-nav' role='navigation' aria-label='Mobile Menu'>List of Links</nav>
 ```
 
-While seeming redundant, is actually useful for screen readers. It wouldn\'t read the 
+While seeming redundant, is actually useful for screen readers. It wouldn't read the 
 aria-label on this navigation, which is really helpful for giving greater context to 
 visually impaired users, without the `role="navigation"`.
 
@@ -3109,7 +3109,7 @@ including in your HTML.
 **Widget ARIA Roles:**
 
 Widget Roles are used to describe what are often javascript-based interfaces, or the more 
-complicated parts of your web page\'s interface. The roles that are starred are the ones 
+complicated parts of your web page's interface. The roles that are starred are the ones 
 we think are the most common elements widget aria roles, and the ones which are useful 
 useful to think about including in your HTML.
 
@@ -3154,7 +3154,7 @@ to be used in HTML.
 
 ARIA states and properties are often used to support ARIA roles that exist on a page. 
 ARIA Properties often describe relationships with other elements, and for the most part, 
-do not change once they\'re set.
+do not change once they're set.
 
 ARIA States are more dynamic and are typically updated with JavaScript as a user interacts 
 with a page. Screen readers are notified when these states change, and can announce these 
@@ -3306,15 +3306,6 @@ Below are the global event attributes that can be added to HTML elements to defi
 | onload         | script | Fires after the page is finished loading |
 | onmessage      | script | Script to be run when the message is triggered |
 | onoffline      | script | Script to be run when the browser starts to work offline |
-
-<div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
-</div>
-
-<p>Window Event Attributes cont'd</p>
-
-| Attribute      | Value  | Description |
-|----------------|--------|--------------------------------------------------------------------------|
 | ononline       | script | Script to be run when the browser starts to work online |
 | onpagehide     | script | Script to be run when a user navigates away from a page |
 | onpageshow     | script | Script to be run when a user navigates to a page |
@@ -3433,8 +3424,7 @@ by one:</p>
 | Elements     | Descriptions |
 |----------|----------------------------------------------------------------------------------|
 | &lt;label&gt;    | It defines labels for &lt;form&gt; elements. |
-| &lt;input&gt;    | It is used to get input data from the form in various types such as text, password, |
-|            | email, etc by changing its type. |
+| &lt;input&gt;    | It is used to get input data from the form in various types such as text, password, email, etc by changing its type. |
 | &lt;button&gt;   | It defines a clickable button to control other elements or execute a functionality. |
 | &lt;select&gt;   | It is used to create a drop-down list. |
 | &lt;textarea&gt; | It is used to get input long text content. |
@@ -3454,8 +3444,6 @@ by one:</p>
 <p>In HTML forms, various input types are used to collect different types of 
 data from users. Here are some commonly used input types:</p>
 
-&lt;input type="text"&gt;
-
 | Input Type | Description |
 |------------|------------------------------------------------------------------------------------|
 | &lt;input type="text"&gt; | Defines a one-line text input field |
@@ -3464,8 +3452,7 @@ data from users. Here are some commonly used input types:</p>
 | &lt;input type="reset"&gt;      | Defines a reset button |
 | &lt;input type="radio"&gt;      | Defines a radio button |
 | &lt;input type="email"&gt;      | Validates that the input is a valid email address. |
-| &lt;input type="number"&gt;     | Allows the user to enter a number. You can specify min, max, and step |
-|                                 | attributes for range. |
+| &lt;input type="number"&gt;     | Allows the user to enter a number. You can specify min, max, and step attributes for range. |
 | &lt;input type="checkbox"&gt;   | Used for checkboxes where the user can select multiple options. |
 | &lt;input type="date"&gt;       | Allows the user to select a date from a calendar. |
 | &lt;input type="time"&gt;       | Allows the user to select a time. |
