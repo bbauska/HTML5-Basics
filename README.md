@@ -37,7 +37,7 @@
 
 <br/>
 
-## Q. What is difference between HTML and XHTML?
+#### Q. What is difference between HTML and XHTML?
 
 The Extensible Hypertext Markup Language, or XHTML, has two important notes for front 
 end developers.
@@ -47,7 +47,7 @@ end developers.
 2) Since it is more strict than HTML is requires less pre-processing by the browser, which 
   may improve your sites performance.
 
-## Q. What are the building blocks of HTML5?
+#### Q. What are the building blocks of HTML5?
 
 * **Semantics**: allowing you to describe more precisely what your content is.
 * **Connectivity**: allowing you to communicate with the server in new and innovative ways.
@@ -64,7 +64,7 @@ end developers.
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-## Q. What are the semantic tags available in html5?
+#### Q. What are the semantic tags available in html5?
 
 HTML5 semantic tags define the function and the category of your text, simplifying the 
 work for browsers and search engines, as well as developers.
@@ -116,7 +116,7 @@ HTML5 offers new semantic elements to define different parts of a web page:
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-## Q. Why you would like to use semantic tag?
+#### Q. Why you would like to use semantic tag?
 
 <ul>
   <li>Search Engine Optimization, accessibility, repurposing, light code.</li>
@@ -137,7 +137,7 @@ HTML5 offers new semantic elements to define different parts of a web page:
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-## Q. What does a `<DOCTYPE html>` do?
+#### Q. What does a `<DOCTYPE html>` do?
 
 A DOCTYPE is always associated to a `DTD` ( **Document Type Definition** ). A DTD defines 
 how documents of a certain type should be structured (i.e. a `button` can contain a `span` 
@@ -151,7 +151,7 @@ Once a user agent has recognized a correct DOCTYPE, it will trigger the `no-quir
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-## Q. What happens when DOCTYPE is not given?
+#### Q. What happens when DOCTYPE is not given?
 
 The web page is rendered in quirks mode. The web browsers engines use quirks mode to 
 support older browsers which does not follow the **W3C specifications**. In quirks mode 
@@ -161,7 +161,7 @@ CSS class and id names are case insensitive. In standards mode they are case sen
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-## Q. What are the new form elements in HTML5?
+#### Q. What are the new form elements in HTML5?
 
 There are five new form elements in the HTML5 forms specification: `<datalist>`, `<output>`, 
 `<progress>`, and `<meter>`. 
@@ -220,7 +220,8 @@ It indicates a section of the page that can be modified by a script (usually Jav
 
 **4. Progress Tag**
 
-Indicates how much of a task has been completed (often marked as a percentage). It is expected to be modified through JavaScript code.
+Indicates how much of a task has been completed (often marked as a percentage). It is 
+expected to be modified through JavaScript code.
 
 ```html
  
@@ -445,7 +446,7 @@ a `<div>` is a **block-level-element** and a `<span>` is an **inline element**.
     <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-## Q. What are optional closing tags?
+#### Q. What are optional closing tags?
 
 `<p>, <li>, <td>, <tr>, <th>, <html>, <body>`, etc. don\'t have to provide an end 
 tag. Whenever a browser hits a new tag it automatically end the previous tag. 
@@ -1237,9 +1238,9 @@ For HTML documents, browsers use a `<!DOCTYPE html>` in the beginning of the doc
 #### Q. Name 3 ways to decrease page load?
 
 1. LocalStorage 
-1. Caching resources 
-1. DNS-prefetch (sample below) 
-1. Keep resources on a CDN
+2. Caching resources 
+3. DNS-prefetch (sample below) 
+4?. Keep resources on a CDN
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1248,61 +1249,48 @@ For HTML documents, browsers use a `<!DOCTYPE html>` in the beginning of the doc
 #### Q. Ways to improve website performance
 
 * Minimize HTTP Requests
-    * Sites are mainly slow because of too many (or too large) HTTP requests. We can eliminate unnecessary request;
-        * combined files: js to a file, css to a file
-        * CSS sprites: CSS Sprites are the preferred method for reducing the number of image requests. Combine your background images into a single image and use the CSS background-image and background-position properties to display the desired image segment.
+  * Sites are mainly slow because of too many (or too large) HTTP requests. We can eliminate unnecessary request;
+    * combined files: js to a file, css to a file
+    * CSS sprites: CSS Sprites are the preferred method for reducing the number of image requests. Combine your background images into a single image and use the CSS background-image and background-position properties to display the desired image segment.
 
 * Use a Content Delivery Network CDN
-
-    * A CDN is essentially many optimized servers around the world that deliver web content to users based on their geographic location. This means big performance improvements for site users. Because, say, if a person accessing your site in India, they will be retrieving web content from a server nearby
+  * A CDN is essentially many optimized servers around the world that deliver web content to users based on their geographic location. This means big performance improvements for site users. Because, say, if a person accessing your site in India, they will be retrieving web content from a server nearby
 
 * Optimize Images:
-
-    * image sizes make a huge difference to site speed. The larger content/images, the slower the site. we could:
-        * Changing the resolution: reducing the “quality” of the image (and thereby the file size)
+  * image sizes make a huge difference to site speed. The larger content/images, the slower the site. we could:
+    * Changing the resolution: reducing the “quality” of the image (and thereby the file size)
         * Compressing the picture: increasing the efficiency of image data storage
         * Cropping the picture: when cropping, you are cutting out unneeded areas and thus making the image smaller in size
 
 * Put Scripts at the Bottom:
-
     * Javascript files can load after the rest of your page. The simplest solution is to place your external Javascript files at the bottom of your page, just before the close of your body tag. Now more of your site can load before your scripts. Another method that allows even more control is to use the defer or async attributes when placing external .js files on your site.
-        
         * Async tags load the scripts while the rest of the page loads, but this means scripts can be loaded out of order. Basically, lighter files load first. This might be fine for some scripts, but can be disastrous for others.
-        
         * The defer attribute loads your scripts after your content has finished loading. It also runs the scripts in order. Just make sure your scripts run so late without breaking your site.
 
 * Add an Expires or a Cache-Control Header
-
     * Web page designs are getting richer and richer, which means more scripts, stylesheets, images, and Flash in the page. A first-time visitor to your page may have to make several HTTP requests, but by using the Expires header you make those components cacheable. This avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often used with images, but they should be used on all components including scripts, stylesheets, and Flash components.
 
 * Gzip Components
-
     * Compression reduces response times by reducing the size of the HTTP response. Gzipping generally reduces the response size by about 70%.
 
 * Put Stylesheets at the Top:
-
     * This is because putting stylesheets in the HEAD allows the page to render progressively.
 
 * Avoid CSS Expressions
 
 * Use GET for AJAX Requests:
-
     * Ajax is that it provides instantaneous feedback to the user because it requests information asynchronously from the backend web server
 
 * Make JavaScript and CSS External:
-
     *  Using external files in the real world generally produces faster pages because the JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined in HTML documents get downloaded every time the HTML document is requested. This reduces the number of HTTP requests that are needed, but increases the size of the HTML document. On the other hand, if the JavaScript and CSS are in external files cached by the browser, the size of the HTML document is reduced without increasing the number of HTTP requests.
 
 * Use get to ajax request:
-
     *  POST is implemented in the browsers as a two-step process: sending the headers first, then sending data. So it's best to use GET, which only takes one TCP packet to send (unless you have a lot of cookies).
 
 * No 404s:
-
     * HTTP requests are expensive so making an HTTP request and getting a useless response (i.e. 404 Not Found) is totally unnecessary and will slow down the user experience without any benefit.
 
 * Reduce Cookie Size:
-
     * HTTP cookies are used for a variety of reasons such as authentication and personalization. Information about cookies is exchanged in the HTTP headers between web servers and browsers. It's important to keep the size of cookies as low as possible to minimize the impact on the user's response time.
 
 * Reduce DNS Lookups
@@ -1383,23 +1371,37 @@ For HTML documents, browsers use a `<!DOCTYPE html>` in the beginning of the doc
 
 **1. JavaScript:**
 
-Typically JavaScript is used to handle work that will result in visual changes, whether it\'s jQuery\'s animate function, sorting a data set, or adding DOM elements to the page. It doesn\'t have to be JavaScript that triggers a visual change, though: CSS Animations, Transitions, and the Web Animations API are also commonly used.
+Typically JavaScript is used to handle work that will result in visual changes, whether 
+it\'s jQuery\'s animate function, sorting a data set, or adding DOM elements to the page. 
+It doesn\'t have to be JavaScript that triggers a visual change, though: CSS Animations, 
+Transitions, and the Web Animations API are also commonly used.
 
 **2. Style:**
 
-This is the process of figuring out which CSS rules apply to which elements based on matching selectors, for example, .headline or .nav > .nav__item. From there, once rules are known, they are applied and the final styles for each element are calculated.
+This is the process of figuring out which CSS rules apply to which elements based on 
+matching selectors, for example, .headline or .nav > .nav__item. From there, once 
+rules are known, they are applied and the final styles for each element are calculated.
 
 **3. Layout:**
 
-Once the browser knows which rules apply to an element it can begin to calculate how much space it takes up and where it is on screen. The web\'s layout model means that one element can affect others, for example the width of the `<body>` element typically affects its children\'s widths and so on all the way up and down the tree, so the process can be quite involved for the browser.
+Once the browser knows which rules apply to an element it can begin to calculate how much 
+space it takes up and where it is on screen. The web\'s layout model means that one element 
+can affect others, for example the width of the `<body>` element typically affects its 
+children\'s widths and so on all the way up and down the tree, so the process can be quite 
+involved for the browser.
 
 **4. Paint:**
 
-Painting is the process of filling in pixels. It involves drawing out text, colors, images, borders, and shadows, essentially every visual part of the elements. The drawing is typically done onto multiple surfaces, often called layers.
+Painting is the process of filling in pixels. It involves drawing out text, colors, images, 
+borders, and shadows, essentially every visual part of the elements. The drawing is typically 
+done onto multiple surfaces, often called layers.
 
 **5. Compositing:**
 
-Since the parts of the page were drawn into potentially multiple layers they need to be drawn to the screen in the correct order so that the page renders correctly. This is especially important for elements that overlap another, since a mistake could result in one element appearing over the top of another incorrectly.
+Since the parts of the page were drawn into potentially multiple layers they need to be 
+drawn to the screen in the correct order so that the page renders correctly. This is 
+especially important for elements that overlap another, since a mistake could result in 
+one element appearing over the top of another incorrectly.
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -1495,9 +1497,13 @@ Using media queries you can define completely different styles for different bro
 
 **1. High Resolution Time API**
 
-The High Resolution Time API provides the current time in sub-millisecond resolution and such that it is not subject to system clock skew or adjustments.
+The High Resolution Time API provides the current time in sub-millisecond resolution and 
+such that it is not subject to system clock skew or adjustments.
 
-It exposes only one method, that belongs to the `window.performance` object, called `now()`. It returns a `DOMHighResTimeStamp` representing the current time in milliseconds. The timestamp is very accurate, with precision to a thousandth of a millisecond, allowing for accurate tests of the performance of our code.
+It exposes only one method, that belongs to the `window.performance` object, called 
+`now()`. It returns a `DOMHighResTimeStamp` representing the current time in milliseconds. 
+The timestamp is very accurate, with precision to a thousandth of a millisecond, allowing 
+for accurate tests of the performance of our code.
 
 ```javascript
 var time = performance.now();
@@ -1505,7 +1511,9 @@ var time = performance.now();
 
 **2. User Timing API**
 
-It allows us to accurately measure and report the performance of a section of JavaScript code. It deals with two main concepts: mark and measure. The former represents an instant (timestamp), while the latter represents the time elapsed between two marks.
+It allows us to accurately measure and report the performance of a section of JavaScript 
+code. It deals with two main concepts: mark and measure. The former represents an instant 
+(timestamp), while the latter represents the time elapsed between two marks.
 
 ```javascript
 performance.mark("startFoo");
@@ -1518,7 +1526,10 @@ performance.measure("durationFoo", "startFoo", "endFoo");
 
 **3. Network Information API**
 
-This API belongs to the connection property of the `window.navigator` object. It exposes two read-only properties: `bandwidth` and `metered`. The former is a number representing an estimation of the current bandwidth, while the latter is a Boolean whose value is true if the user\'s connection is subject to limitation and bandwidth usage, and false otherwise.
+This API belongs to the connection property of the `window.navigator` object. It exposes 
+two read-only properties: `bandwidth` and `metered`. The former is a number representing 
+an estimation of the current bandwidth, while the latter is a Boolean whose value is true 
+if the user\'s connection is subject to limitation and bandwidth usage, and false otherwise.
 
 |Sl.No| API                            | Description
 |-----|--------------------------------|--------------------------------------------------------------------|
@@ -1540,7 +1551,11 @@ navigator.vibrate(2000);
 
 **5.) Battery Status API**
 
-The Battery Status API exposes four properties (`charging`, `chargingTime`, `discharingTime`, and `level`) and four events. The properties specify if the battery is in charge, the seconds remaining until the battery is fully charged, the seconds remaining until the battery is fully discharged, and the current level of the battery. These properties belongs to the `battery` property of the `window.navigator` object.
+The Battery Status API exposes four properties (`charging`, `chargingTime`, `discharingTime`, 
+and `level`) and four events. The properties specify if the battery is in charge, the 
+seconds remaining until the battery is fully charged, the seconds remaining until the 
+battery is fully discharged, and the current level of the battery. These properties 
+belongs to the `battery` property of the `window.navigator` object.
 
 ```javascript
 // Retrieves the percentage of the current level of the device's battery
@@ -1549,16 +1564,21 @@ var percentageLevel = navigator.battery.level * 100;
 
 **6.) Page Visibility API**
 
-The Page Visibility API enables us to determine the current visibility state of the page. The Page Visibility API is especially useful for saving resources and improving performance by letting a page avoid performing unnecessary tasks when the document isn\'t visible.
+The Page Visibility API enables us to determine the current visibility state of the page. 
+The Page Visibility API is especially useful for saving resources and improving performance 
+by letting a page avoid performing unnecessary tasks when the document isn\'t visible.
 
 ```javascript
-//document.hidden retuns true if page is not visible.
+// document.hidden retuns true if page is not visible.
 console.log('Page Visibility: '+document.hidden); 
 ```
 
 **7.) Fullscreen API**
 
-The Fullscreen API provides a way to request fullscreen display from the user, and exit this mode when desired. This API exposes two methods, `requestFullscreen()` and `exitFullscreen()`, allowing us to request an element to become fullscreen and to exit fullscreen.
+The Fullscreen API provides a way to request fullscreen display from the user, and exit 
+this mode when desired. This API exposes two methods, `requestFullscreen()` and 
+`exitFullscreen()`, allowing us to request an element to become fullscreen and to exit 
+fullscreen.
 
 ```javascript
 document.addEventListener("keypress", function(e) {
@@ -1584,7 +1604,8 @@ function toggleFullScreen() {
 
 #### Q. How geolocation api works in html5?
 
-The Geolocation API allows the user to provide their location to web applications if they so desire. For privacy reasons, the user is asked for permission to report location information.
+The Geolocation API allows the user to provide their location to web applications if they 
+so desire. For privacy reasons, the user is asked for permission to report location information.
 
 The Geolocation API is published through the `navigator.geolocation` object.
 
@@ -1861,7 +1882,11 @@ There are following advantages of using SVG over other image formats like JPEG, 
 
 **2. Canvas:**
 
-Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap with an “immediate mode” graphics application programming interface (API) for drawing on it. The `<canvas>` element is only a container for graphics. In order to draw the graphics, you are supposed to use a script. Canvas has several strategies when it comes to drawing paths, boxes, circles, text & adding images.
+Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap with an 
+“immediate mode” graphics application programming interface (API) for drawing on it. The 
+`<canvas>` element is only a container for graphics. In order to draw the graphics, you 
+are supposed to use a script. Canvas has several strategies when it comes to drawing paths, 
+boxes, circles, text & adding images.
 
 **Example:**
 
@@ -1917,26 +1942,27 @@ Example
 ```html
 <!DOCTYPE HTML>
 <html>
-   <head>
-   <script>
-        function allowDrop(ev) {
-            ev.preventDefault();
-        }
+<head>
+  <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
 
-        function drag(ev) {
-            ev.dataTransfer.setData("text", ev.target.id);
-        }
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
 
-        function drop(ev) {
-            ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data));
-        }
-    </script>
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+  </script>
 </head>
 <body>
   <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  <img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+  <img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" 
+    width="336" height="69">
 </body>
 </html>
 ```
@@ -1947,9 +1973,14 @@ Example
 
 #### Q. Explain Microdata in HTML5?
 
-Microdata is a standardized way to provide additional semantics in web pages. Microdata lets you define your own customized elements and start embedding custom properties in your web pages. At a high level, microdata consists of a group of name-value pairs.
+Microdata is a standardized way to provide additional semantics in web pages. Microdata 
+lets you define your own customized elements and start embedding custom properties in 
+your web pages. At a high level, microdata consists of a group of name-value pairs.
 
-The groups are called **items**, and each name-value pair is a **property**. Items and properties are represented by regular elements. Search engines benefit greatly from direct access to this structured data because it allows search engines to understand the information on web pages and provide more 
+The groups are called **items**, and each name-value pair is a **property**. Items and 
+properties are represented by regular elements. Search engines benefit greatly from 
+direct access to this structured data because it allows search engines to understand 
+the information on web pages and provide more 
 relevant results to users.
 
 At a high level, microdata consists of a group of name-value pairs
@@ -2868,15 +2899,22 @@ for most web pages/applications.
   * **aria-describedby**: Identifies the element (or elements) that describes the object.
   * **aria-disabled (state)**: Indicates that the element is perceivable but disabled, so 
   it is not editable or otherwise operable.
-  * **aria-expanded (state)**: Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.
-  * **aria-hidden (state)**: Indicates that the element and all of its descendants are not visible or perceivable to any user as implemented by the author.
-  * **aria-invalid (state)**: Indicates the entered value does not conform to the format expected by the application.
+  * **aria-expanded (state)**: Indicates whether the element, or another grouping element 
+    it controls, is currently expanded or collapsed.
+  * **aria-hidden (state)**: Indicates that the element and all of its descendants are 
+    not visible or perceivable to any user as implemented by the author.
+  * **aria-invalid (state)**: Indicates the entered value does not conform to the format 
+    expected by the application.
   * **aria-label**: Defines a string value that labels the current element.
   * **aria-labelledby**: Identifies the element (or elements) that labels the current element.
-  * **aria-live**: Indicates that an element is dynamic, changing, and will be updated, and describes the types of updates the user can expect from the live region.
-  * **aria-owns**: Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child  relationship between DOM elements where the DOM hierarchy cannot be used to represent the relationship.
+  * **aria-live**: Indicates that an element is dynamic, changing, and will be updated, 
+    and describes the types of updates the user can expect from the live region.
+  * **aria-owns**: Identifies an element (or elements) in order to define a visual, 
+    functional, or contextual parent/child  relationship between DOM elements where the 
+	DOM hierarchy cannot be used to represent the relationship.
   * **aria-pressed (state)**: Indicates the current “pressed” state of toggle buttons.
-  * **aria-required**: Indicates that user input is required on the element before a form may be submitted.
+  * **aria-required**: Indicates that user input is required on the element before a form 
+    may be submitted.
   * **aria-selected (state)**: Indicates the current “selected” state of various widgets.
 
 <div align="right">
@@ -3075,29 +3113,29 @@ elements, but is most common in media elements, like &lt;audio&gt;, &lt;embed&gt
 
 |Attribute       |Value    |Description |
 |----------------|--------|--------------------------------------------------------------------------|
-| onabort    | script |    Script to be run on abort |
-| oncanplay    | script |    Script to be run when a file is ready to start playing (when it has buffered enough to begin) |
-| oncanplaythrough |  script |    Script to be run when a file can be played all the way to the end without pausing for buffering |
-| oncuechange    | script |    Script to be run when the cue changes in a <track> element |
-| ondurationchange |    script |    Script to be run when the length of the media changes |
-| onemptied   |  script  |   Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) |
-| onended    | script  |   Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") |
-| onerror    | script  |   Script to be run when an error occurs when the file is being loaded |
-| onloadeddata  |   script |    Script to be run when media data is loaded |
-| onloadedmetadata |    script |    Script to be run when meta data (like dimensions and duration) are loaded |
-| onloadstart    | script  |   Script to be run just as the file begins to load before anything is actually loaded |
-| onpause  |   script |    Script to be run when the media is paused either by the user or programmatically |
-| onplay   |  script  |   Script to be run when the media is ready to start playing |
-| onplaying  |   script |    Script to be run when the media actually has started playing |
-| onprogress   |  script  |   Script to be run when the browser is in the process of getting the media data |
-| onratechange   |  script |    Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) |
-| onseeked   |  script  |   Script to be run when the seeking attribute is set to false indicating that seeking has ended |
-| onseeking   |  script   |  Script to be run when the seeking attribute is set to true indicating that seeking is active |
-| onstalled  |   script |    Script to be run when the browser is unable to fetch the media data for whatever reason |
-| onsuspend |    script   |  Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason |
-| ontimeupdate |    script  |   Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) |
-| onvolumechange |    script |    Script to be run each time the volume is changed which (includes setting the volume to "mute") |
-| onwaiting   |  script  |   Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) |
+| onabort    | script | Script to be run on abort |
+| oncanplay    | script | Script to be run when a file is ready to start playing (when it has buffered enough to begin) |
+| oncanplaythrough | script | Script to be run when a file can be played all the way to the end without pausing for buffering |
+| oncuechange    | script | Script to be run when the cue changes in a <track> element |
+| ondurationchange | script | Script to be run when the length of the media changes |
+| onemptied   | script  | Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) |
+| onended    | script  | Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") |
+| onerror    | script  | Script to be run when an error occurs when the file is being loaded |
+| onloadeddata  | script | Script to be run when media data is loaded |
+| onloadedmetadata | script | Script to be run when meta data (like dimensions and duration) are loaded |
+| onloadstart    | script  | Script to be run just as the file begins to load before anything is actually loaded |
+| onpause  | script | Script to be run when the media is paused either by the user or programmatically |
+| onplay   | script  | Script to be run when the media is ready to start playing |
+| onplaying  | script | Script to be run when the media actually has started playing |
+| onprogress   | script  | Script to be run when the browser is in the process of getting the media data |
+| onratechange   | script | Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) |
+| onseeked   | script  | Script to be run when the seeking attribute is set to false indicating that seeking has ended |
+| onseeking   | script   | Script to be run when the seeking attribute is set to true indicating that seeking is active |
+| onstalled  | script | Script to be run when the browser is unable to fetch the media data for whatever reason |
+| onsuspend | script   | Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason |
+| ontimeupdate | script  | Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) |
+| onvolumechange | script | Script to be run each time the volume is changed which (includes setting the volume to "mute") |
+| onwaiting   | script  | Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) |
 
 <h4 id="misc-events">Misc Events</h4>
 
@@ -3108,7 +3146,6 @@ elements, but is most common in media elements, like &lt;audio&gt;, &lt;embed&gt
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="04-html-forms">04. HTML Form Elements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p>The HTML &lt;form&gt; comprises several elements, each serving a unique purpose. For 
 instance, the &lt;label&gt; element is used to define labels for other &lt;form&gt; elements. 
 The &lt;input&gt; element, on the other hand, is versatile and can be used to capture 
@@ -3116,8 +3153,8 @@ various types of input data such as text, password, email, and more, simply by
 altering its type attribute. Now, let’s all the list of HTML Form Elements one 
 by one:</p>
 
-Elements     | Descriptions |
-|------------|------------------------------------------------------------------------------------|
+| Elements     | Descriptions |
+|:----------:|:----------------------------------------------------------------------------------:|
 | &lt;label&gt;    | It defines labels for &lt;form&gt; elements. |
 | &lt;input&gt;    | It is used to get input data from the form in various types such as text, password, |
 |            | email, etc by changing its type. |
@@ -3198,126 +3235,120 @@ styling for input fields and submission button.</p>
 ```
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>HTML Form</title>
-        <style>
-            body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                margin: 0;
-                background-color: #f0f0f0;
-            }
+  <head>
+    <title>HTML Form</title>
+      <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          background-color: #f0f0f0;
+        }
 
-            form {
-                width: 400px;
-                background-color: #fff;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 0 10px
-                    rgba(0, 0, 0, 0.1);
-            }
+        form {
+          width: 400px;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px
+          rgba(0, 0, 0, 0.1);
+        }
 
-            fieldset {
-                border: 1px solid black;
-                padding: 10px;
-                margin: 0;
-            }
+        fieldset {
+          border: 1px solid black;
+          padding: 10px;
+          margin: 0;
+        }
 
-            legend {
-                font-weight: bold;
-                margin-bottom: 10px;
-            }
+        legend {
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
 
-            label {
-                display: block;
-                margin-bottom: 5px;
-            }
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
 
-            input[type="text"],
-            input[type="email"],
-            input[type="password"],
-            textarea,
-            input[type="date"] {
-                width: calc(100% - 20px);
-                padding: 8px;
-                margin-bottom: 10px;
-                box-sizing: border-box;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-            }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        input[type="date"] {
+          width: calc(100% - 20px);
+          padding: 8px;
+          margin-bottom: 10px;
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
 
-            input[type="radio"] {
-                margin-left: 20px;
-            }
+        input[type="radio"] {
+          margin-left: 20px;
+        }
 
-            input[type="submit"] {
-                padding: 10px 20px;
-
-                border-radius: 5px;
-                cursor: pointer;
-            }
-        </style>
-    </head>
+        input[type="submit"] {
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      </style>
+  </head>
     <body>
-        <form>
-            <fieldset>
-                <legend>
-                    User personal information
-                </legend>
-                <label
-                    >Enter your full name</label
-                >
-                <input type="text" name="name" />
-                <label>Enter your email</label>
-                <input
-                    type="email"
-                    name="email"
-                />
-                <label>Enter your password</label>
-                <input
-                    type="password"
-                    name="pass"
-                />
-                <label
-                    >Confirm your password</label
-                >
-                <input
-                    type="password"
-                    name="confirmPass"
-                />
-                <label>Enter your gender</label>
-                <input
-                    type="radio"
-                    name="gender"
-                    value="male"
-                />Male
-                <input
-                    type="radio"
-                    name="gender"
-                    value="female"
-                />Female
-                <input
-                    type="radio"
-                    name="gender"
-                    value="others"
-                />Others
-                <label
-                    >Enter your Date of
-                    Birth</label
-                >
-                <input type="date" name="dob" />
-                <label>Enter your Address:</label>
-                <textarea
-                    name="address"
-                ></textarea>
-                <input
-                    type="submit"
-                    value="submit"
-                />
-            </fieldset>
-        </form>
+      <form>
+        <fieldset>
+          <legend>
+            User personal information
+          </legend>
+          <label>
+		    Enter your full name
+		  </label>
+          <input type="text" name="name" />
+          <label>Enter your email</label>
+          <input
+            type="email"
+            name="email"
+          />
+          <label>Enter your password</label>
+          <input
+            type="password"
+            name="pass"
+          />
+          <label>Confirm your password</label>
+          <input
+            type="password"
+            name="confirmPass"
+          />
+          <label>Enter your gender</label>
+          <input
+            type="radio"
+            name="gender"
+            value="male"
+          />Male
+          <input
+            type="radio"
+            name="gender"
+            value="female"
+          />Female
+          <input
+            type="radio"
+            name="gender"
+            value="others"
+          />Others
+          <label>Enter your Date of Birth</label>
+          <input type="date" name="dob" />
+          <label>Enter your Address:</label>
+          <textarea
+            name="address">
+		  </textarea>
+          <input
+            type="submit"
+            value="submit"
+          />
+        </fieldset>
+      </form>
     </body>
 </html>
 ```
@@ -4486,22 +4517,34 @@ and definition list. We have explained all three list types with examples.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="08-html-url">08. HTML URL</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+A Uniform Resource Locator (URL) is simply the address of a website to access the website 
+content like www.geeksforgeeks.org. But certain characters are allowed to be used in the 
+URL like alphabets A-Z and a-z, numbers 0-9, and a few special characters. They can be 
+used as it is but the rest of the characters that are not in this list are used after 
+encoding them to a suitable form. URL Encoding is the process of converting the URL into 
+a valid format that is accepted by web browsers. 
 
-A Uniform Resource Locator (URL) is simply the address of a website to access the website content like www.geeksforgeeks.org. But certain characters are allowed to be used in the URL like alphabets A-Z and a-z, numbers 0-9, and a few special characters. They can be used as it is but the rest of the characters that are not in this list are used after encoding them to a suitable form. URL Encoding is the process of converting the URL into a valid format that is accepted by web browsers. 
-
-URL Encoding takes place by replacing all the characters that are not allowed by a % sign followed by two hexadecimal digits. These two hexadecimal values represent the numerical values of the character in the ASCII character set. For example, a space is not acceptable in a URL and is replaced by a ‘%20’ or a ‘+’ sign while encoding. Similarly, a $ sign is replaced by ‘%24’. 
+URL Encoding takes place by replacing all the characters that are not allowed by a % sign 
+followed by two hexadecimal digits. These two hexadecimal values represent the numerical 
+values of the character in the ASCII character set. For example, a space is not acceptable 
+in a URL and is replaced by a ‘%20’ or a ‘+’ sign while encoding. Similarly, a $ sign is 
+replaced by ‘%24’. 
 
 Syntax:
 A web address follows these syntax rules:
 
 scheme://prefix.domain:port/path/filename
 
-//Example
-https://www.geeksforgeeks.org/
-Scheme: It specifies the protocol used for communication, such as “https://” for secure communication or “http://” for unsecured communication.
+<!-- Example -->
+
+<a href="https://www.geeksforgeeks.org/">Example Geeks for Geeks</a>
+Scheme: It specifies the protocol used for communication, such as “https://” for secure 
+communication or “http://” for unsecured communication.
 Prefix: It is an optional subdomain or www indicating the location of the resource within the domain.
-Domain: Identifies the website’s primary address, like “example.com”, indicating its unique location on the Internet.
-Port: Optional and signifies a specific endpoint for communication. Common values are 80 for HTTP and 443 for HTTPS.
+Domain: Identifies the website’s primary address, like “example.com”, indicating its unique 
+location on the Internet.
+Port: Optional and signifies a specific endpoint for communication. Common values are 80 for 
+HTTP and 443 for HTTPS.
 Path:It specifies the location or directory on the server where the resource is located.
 Filename: It refers to the specific file or resource within the specified path.
 Table of Content
