@@ -2470,13 +2470,13 @@ The following lists all optional tags.
 
 |Tag            |Description  |
 |---------------|-------------|
-|`<area>`       | The <area> tag defines an area inside an image map. |
-|               | <area> elements are always nested inside a <map> tag. |
+|`<area>`       | The `<area>` tag defines an area inside an image map (an image map is an image with clickable areas).|
+|               | `<area>` elements are always nested inside a `<map>` tag. |
+|               | Note: The usemap attribute in `<img>` is associated with the `<map>` element's name attribute, and creates a relationship between the image and the map. |
 |               | See <a href="https://www.w3schools.com/tags/tag_area.asp">area tag</a> |
-|               | Note: The usemap attribute in <img> is associated with the <map> element's name attribute, and creates a relationship between the image and the map. |
-|`<base>`       | The <base> tag specifies the base URL and/or target for all relative URLs in a document. |
-|               | The <base> tag must have either an href or a target attribute present, or both. |
-|               | There can only be one single <base> element in a document, and it must be inside the <head> element. |
+|`<base>`       | The `<base>` tag specifies the base URL and/or target for all relative URLs in a document. |
+|               | The `<base>` tag must have either an href or a target attribute present, or both. |
+|               | There can only be one single `<base>` element in a document, and it must be inside the `<head>` element. |
 |               | See <a href="https://www.w3schools.com/tags/tag_base.asp">base tag</a> |
 |`<body>`       |             |
 |`<br>`         |             |
@@ -3247,7 +3247,7 @@ as username and password with the button to submit the form.</p>
 
 <h5>Output:</h5>
 
-<image2>
+<!-- image 2 -->
 
 <h4>2. HTML Forms Example:</h4>
 
@@ -3376,7 +3376,7 @@ styling for input fields and submission button.</p>
 </html>
 ```
 
-<form 3>
+<!-- form 3 -->
 
 <p>Here are some of the key attributes that can be used with the &lt;form&gt; element:</p>
 
@@ -3390,7 +3390,7 @@ styling for input fields and submission button.</p>
     the name of an iframe.</li>
   <li>enctype: This attribute is used when method=“post”. It specifies how the form-
     data should be encoded when submitting it to the server. The values can be 
-    “application/x-www-form-urlencoded”, “multipart/form-data”, or “text/plain”.</p>
+    “application/x-www-form-urlencoded”, “multipart/form-data”, or “text/plain”.</li>
   <li>autocomplete: This attribute specifies whether a form should have autocomplete 
     on or off. When autocomplete is on, the browser automatically completes values 
     based on values that the user has entered before.</li>
@@ -3435,7 +3435,6 @@ between different types of data. Tables are also used to create databases.</p>
 <!-- index.html -->
 <!DOCTYPE html>
 <html>
-
 <body>
     <table>
         <tr>
