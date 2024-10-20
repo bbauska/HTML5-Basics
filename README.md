@@ -2614,7 +2614,7 @@ The following lists all optional tags.
 |           |                | lazy            |                   |
 |           | longdesc       | URL             | Specifies a URL to a detailed description of an image. |
 |           | referrerpolicy | no-referrer     | Specifies which referrer information to use when fetching an image. |
-|           |                | no-referrer-when-downgrade | |
+|           |                | no-referrer-when-downgrade |            |
 |           |                | origin          |                       |
 |           |                | origin-when-cross-origin |              |
 |           |                | unsafe-url	|                          |
