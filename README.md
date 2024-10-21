@@ -136,15 +136,15 @@ HTML5 offers new semantic elements to define different parts of a web page:
 
 <h3>Q. What does a `&lt;DOCTYPE html&gt;` do?</h3>
 
-A DOCTYPE is always associated to a `DTD` ( <b>Document Type Definition</b> ). A DTD defines 
+<p>A DOCTYPE is always associated to a `DTD` ( <b>Document Type Definition</b> ). A DTD defines 
 how documents of a certain type should be structured (i.e. a `button` can contain a `span` 
 but not a `div`), whereas a DOCTYPE declares what DTD a document supposedly respects (i.e. 
 this document respects the HTML DTD). For webpages, the DOCTYPE declaration is required. 
-It is used to tell user agents what version of the HTML specifications your document respects. 
+It is used to tell user agents what version of the HTML specifications your document respects.</p>
 
-Once a user agent has recognized a correct DOCTYPE, it will trigger the `no-quirks mode` 
+<p>Once a user agent has recognized a correct DOCTYPE, it will trigger the `no-quirks mode` 
 matching this DOCTYPE forreading the document. If a user agent doesn't recognize a correct 
-DOCTYPE, it will trigger the `quirks mode`.
+DOCTYPE, it will trigger the `quirks mode`.</p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -152,9 +152,9 @@ DOCTYPE, it will trigger the `quirks mode`.
 
 <h3>Q. What happens when DOCTYPE is not given?</h3>
 
-The web page is rendered in quirks mode. The web browsers engines use quirks mode to 
-support older browsers which does not follow the <b>W3C specifications<b>. In quirks mode 
-CSS class and id names are case insensitive. In standards mode they are case sensitive.
+<p>The web page is rendered in quirks mode. The web browsers engines use quirks mode to 
+support older browsers which does not follow the <b>W3C specifications</b>. In quirks mode 
+CSS class and id names are case insensitive. In standards mode they are case sensitive.</p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -162,14 +162,14 @@ CSS class and id names are case insensitive. In standards mode they are case sen
 
 <h3>Q. What are the new form elements in HTML5?</h3>
 
-There are five new form elements in the HTML5 forms specification: `<datalist>`, `<output>`, 
-`<progress>`, and `<meter>`. 
+<p>There are five new form elements in the HTML5 forms specification: `<datalist>`, `<keygen>`, `<output>`, 
+`<progress>`, and `<meter>`.</p>
 
-<b>1. Datalist Tag<b>
+<h4>1. Datalist Tag</h4>
 
-Allows to attach a list of suggestions to a text input element. As soon as the user begins 
+<p>Allows to attach a list of suggestions to a text input element. As soon as the user begins 
 to type in the text field, the list of suggestions appears and the user can choose from 
-the suggestions with the mouse.
+the suggestions with the mouse.</p>
 
 ```html
 <p>Enter your favorite browser name:</p>
@@ -183,11 +183,11 @@ the suggestions with the mouse.
 </datalist>
 ```
 
-<b>2. Meter Tag<b>
+<h4>2. Meter Tag</h4>
 
-Indicates a numeric value that falls within a range. The tag supports a number of attributes:
+<p>Indicates a numeric value that falls within a range. The tag supports a number of attributes:
 value: If you don't specify a value, the first numeric value inside the `<meter></meter>` 
-pair becomes the value.
+pair becomes the value.</p>
 
 <ul>
   <li><b>max</b>: The maximum possible value of the item.</li>
@@ -203,9 +203,9 @@ pair becomes the value.
 <p>Pollution Level: <meter low="60" high="80" max="100" value="85">Very High</meter></p>
 ```
 
-<b>3. Output Tag</b>
+<h4>3. Output Tag</h4>
 
-It indicates a section of the page that can be modified by a script (usually JavaScript).
+<p>It indicates a section of the page that can be modified by a script (usually JavaScript).</p>
 
 ```html
 <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
@@ -215,13 +215,12 @@ It indicates a section of the page that can be modified by a script (usually Jav
 </form>
 ```
 
-<b>4. Progress Tag</b>
+<h4>4. Progress Tag</h4>
 
-Indicates how much of a task has been completed (often marked as a percentage). It is 
-expected to be modified through JavaScript code.
+<p>Indicates how much of a task has been completed (often marked as a percentage). It is 
+expected to be modified through JavaScript code.</p>
 
 ```html
- 
 <p>Progress: <progress id="bar" value="0" max="100"><span>0</span>%</progress></p>
 
 <script type="text/javascript">
@@ -266,7 +265,7 @@ expected to be modified through JavaScript code.
 | 13. |week         |Picking a specific week.|
 
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <input type="color" value="#b97a57">
@@ -412,8 +411,8 @@ expected to be modified through JavaScript code.
 
 <h3 id="diff-span-div">What is difference between `span` tag and `div` tag?</h3>
 
-The primary difference between div and span tag is their default behavior. By default, 
-a `<div>` is a <b>block-level-element</b> and a `<span>` is an <b>inline element</b>.
+<p>The primary difference between div and span tag is their default behavior. By default, 
+a `<div>` is a <b>block-level-element</b> and a `<span>` is an <b>inline element</b>.</p>
 
 <ul>
   <li>`&lt;div&gt;` is a block level element which means it will render it on 
@@ -433,8 +432,8 @@ a `<div>` is a <b>block-level-element</b> and a `<span>` is an <b>inline element
 
 <h3>Q. What are optional closing tags?</h3>
 
-`<p>, <li>, <td>, <tr>, <th>, <html>, <body>`, etc. don't have to provide an end 
-tag. Whenever a browser hits a new tag it automatically end the previous tag. 
+<p>`<p>`, `<li>`, `<td>`, `<tr>`, `<th>`, `<html>`, `<body>`, etc. don't have to provide an end 
+tag. Whenever a browser hits a new tag it automatically end the previous tag.</p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -442,11 +441,11 @@ tag. Whenever a browser hits a new tag it automatically end the previous tag.
 
 <h3>Q. What is a self closing tag?</h3>
 
-In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren't 
-required to have specific closing tags are called “self closing” tags.
+<p>In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren't 
+required to have specific closing tags are called “self closing” tags.</p>
 
-An example of a self closing tag is something like a line break (`<br />`) or the meta 
-tag (`<meta>`). This means that the following are both acceptable:
+<p>An example of a self closing tag is something like a line break (`<br />`) or the meta 
+tag (`<meta>`). This means that the following are both acceptable:</p>
 
 ```html
 <meta charset="UTF-8">
@@ -481,9 +480,9 @@ tag (`<meta>`). This means that the following are both acceptable:
 
 <h3>Q. What is the purpose of `main` element?</h3>
 
-The HTML `<main>` element represents the dominant content of the `<body>` of a document. 
+<p>The HTML `<main>` element represents the dominant content of the `<body>` of a document. 
 The main content area consists of content that is directly related to or expands upon the 
-central topic of a document, or the central functionality of an application.
+central topic of a document, or the central functionality of an application.</p>
 
 ```html
 <main role="main">
@@ -493,15 +492,15 @@ central topic of a document, or the central functionality of an application.
 </main>
 ```
 
-<i>Note: A document mustn't have more than one `<main>` element that doesn't have the hidden 
-attribute specified.</i>
+<p><i>Note: A document mustn't have more than one `<main>` element that doesn't have the hidden 
+attribute specified.</i></p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h4>Q. What are the semantic meanings for `<section>, <article>, <aside>, <nav>, <header>, 
-  `<footer>` and how should each be used in structuring html markup?</h4>
+`<footer>` and how should each be used in structuring html markup?</h4>
 
 <ul>
   <li>`<header>` is used to contain introductory and navigational information about a section 
@@ -544,10 +543,10 @@ attribute specified.</i>
 
 <h3>Q. Can a web page contain multiple `<header>` elements? What about `<footer>` elements?</h3>
 
-Yes, header elements can be used multiple times in documents. A `<header>` tag must be present 
-for all articles, sections, and pages, although a `<footer>` tag is not necessary.
+<p>Yes, header elements can be used multiple times in documents. A `<header>` tag must be present 
+for all articles, sections, and pages, although a `<footer>` tag is not necessary.</p>
 
-<b>From W3C standards</b>
+<h4>From W3C standards</h4>
 
 ```html
 A header element is intended to usually contain the section's heading (an h1–h6 element or an hgroup 
@@ -567,13 +566,13 @@ as who wrote it, links to related documents, copyright data, and the like.
 
 <h3>Q. What are the physical tags and logical tags in HTML?</h3>
 
-<b>1. Physical Tags:</b>
+<h4>1. Physical Tags:</h4>
 
-Physical tags are used to indicate how a particular character is to be formatted. Any 
+<p>Physical tags are used to indicate how a particular character is to be formatted. Any 
 physical style tag may contain any item allowed in text, including conventional text, 
-images, line breaks, etc.
+images, line breaks, etc.</p>
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 |Tags      | Description                                                      |
 |----------|------------------------------------------------------------------|
@@ -587,15 +586,15 @@ images, line breaks, etc.
 |`<tt>`    |Teletype text gives the default font-family which is monospace.|
 |`<strike>`|It is an editing markup that tells the reader to ignore the text passage.|
 
-<b>2. Logical Tags:</b>
+<h4>2. Logical Tags:</h4>
 
-Logical tags are used to tell the browser what kind of text is written inside the tags. 
+<p>Logical tags are used to tell the browser what kind of text is written inside the tags. 
 Logical tags are also known as Structural tags because they specify the structure of the 
 document. Logical tags are used to indicate to the visually impaired person that there 
 is something more important in the text or to emphasize the text ie, logical tags can be 
-used for styling purposes as well as to give special importance to text content.
+used for styling purposes as well as to give special importance to text content.</p>
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 |Tags       | Description                     |
 |-----------|---------------------------------|
@@ -621,9 +620,9 @@ used for styling purposes as well as to give special importance to text content.
 
 <h3>Q. What is Character Encoding?</h3>
 
-Character encoding is a method of converting bytes into characters. To validate or display 
+<p>Character encoding is a method of converting bytes into characters. To validate or display 
 an HTML document properly, a program must choose a proper character encoding. This is 
-specified in the tag:
+specified in the tag:</p>
 
 ```html
 <meta charset="utf-8"/>
@@ -640,8 +639,8 @@ specified in the tag:
 
 <h3>Q. What is the purpose of meta tags?</h3>
 
-The META elements can be used to include name/value pairs describing properties of the HTML 
-document, such as author, expiry date, a list of keywords, document author etc.
+<p>The META elements can be used to include name/value pairs describing properties of the HTML 
+document, such as author, expiry date, a list of keywords, document author etc.</p>
 
 ```html
 <!DOCTYPE html>
@@ -703,12 +702,12 @@ document, such as author, expiry date, a list of keywords, document author etc.
 
 <h3>Q. What does async and defer refer in script tag?</h3>
 
-<b>1. Async:</b>
+<h4>1. Async:</h4>
 
-Downloads the script file during HTML parsing and will pause the HTML parser to execute 
-it when it has finished downloading.
+<p>Downloads the script file during HTML parsing and will pause the HTML parser to execute 
+it when it has finished downloading.</p>
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <!-- 
@@ -719,12 +718,12 @@ it when it has finished downloading.
 <script async src="https://google-analytics.com/analytics.js"></script>
 ```
 
-<b>2. Defer:</b>
+<h4>2. Defer:</h4>
 
 Defer downloads the script file during HTML parsing and will only execute it after the 
 HTML parser has completed. Not all browsers support this.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <!-- 
@@ -734,15 +733,15 @@ HTML parser has completed. Not all browsers support this.
 <script defer src="myscript.js"></script>
 ```
 
-The async attribute is used to indicate to the browser that the script file can be executed 
+<p>The async attribute is used to indicate to the browser that the script file can be executed 
 asynchronously. The HTML parser does not need to pause at the point it reaches the script 
 tag to fetch and execute, the execution can happen whenever the script becomes ready after 
-being fetched in parallel with the document parsing.
+being fetched in parallel with the document parsing.</p>
 
-The defer attribute tells the browser to only execute the script file once the HTML document 
-has been fully parsed.
+<p>The defer attribute tells the browser to only execute the script file once the HTML document 
+has been fully parsed.</p>
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <!-- 
@@ -761,7 +760,7 @@ has been fully parsed.
 The <b>localStorage</b> read-only property of the window interface allows you to access a 
 Storage object for the Document's origin; the stored data is saved across browser sessions.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```js
 // Store
@@ -777,10 +776,10 @@ localStorage.getItem("name"); // Kanti Ahluwalia
 
 <h3>Q. What is session storage in html5?</h3>
 
-The <b>sessionStorage</b> object is equal to the localStorage object, except that it stores 
-the data for only one session. The data is deleted when the user closes the specific browser tab.
+<p>The <b>sessionStorage</b> object is equal to the localStorage object, except that it stores 
+the data for only one session. The data is deleted when the user closes the specific browser tab.</p>
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```js
 // Save data to sessionStorage
@@ -802,14 +801,14 @@ sessionStorage.clear();
 
 <h3>Q. What is cookies in html5?</h3>
 
-A cookie is an amount of information that persists between a server-side and a client-side. 
-A web browser stores this information at the time of browsing.
+<p>A cookie is an amount of information that persists between a server-side and a client-side. 
+A web browser stores this information at the time of browsing.</p>
 
-A cookie contains the information as a string generally in the form of a name-value pair 
+<p>A cookie contains the information as a string generally in the form of a name-value pair 
 separated by semi-colons. It maintains the state of a user and remembers the user's 
-information among all the web pages.
+information among all the web pages.</p>
 
-<b>Example 01:</b> Create a Cookies
+<h5>Example 01: Create a Cookies</h5>
 
 ```js
 // create a cookie
@@ -819,14 +818,14 @@ document.cookie = "username=Anjali Batta";
 document.cookie = "username=Anjali Batta; expires=Thu, 18 Dec 2022 12:00:00 UTC";
 ```
 
-<b>Example 02:</b> Cookie with expiry date
+<h5>Example 02: Cookie with expiry date</h5>
 
 ```js
 // cookie with expiry date
 document.cookie = "username=Anjali Batta; expires=Thu, 18 Dec 2022 12:00:00 UTC";
 ```
 
-<b>Example 03:</b> Read Cookie
+<h5>Example 03: Read Cookie</h5>
 
 ```js
 let myCookies = document.cookie;
@@ -834,13 +833,13 @@ let myCookies = document.cookie;
 console.log(myCookies);
 ```
 
-<b>Example 04:</b> Update Cookie
+<h5>Example 04: Update Cookie</h5>
 
 ```js
 document.cookie = "username=John Smith; expires=Thu, 18 Dec 2022 12:00:00 UTC; path=/";
 ```
 
-<b>Example 05:</b> Delete Cookie
+<h5>Example 05: Delete Cookie</h5>
 
 ```js
 document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
@@ -860,7 +859,10 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 | Capacity (per domain) | 4kb        | 5MB            | 5MB              |
 | Accessibility  | Any window        | Any window     | Same tab         |
 
-*Note: If the user decides to clear browsing data via whatever mechanism provided by the browser, this will clear out any `cookie`, `localStorage`, or `sessionStorage` stored. It's important to keep this in mind when designing for local persistance, especially when comparing to alternatives such as server side storing in a database or similar (which of course will persist despite user actions).*
+<p><i>Note: If the user decides to clear browsing data via whatever mechanism provided by the browser, 
+this will clear out any `cookie`, `localStorage`, or `sessionStorage` stored. It's important to 
+keep this in mind when designing for local persistance, especially when comparing to alternatives 
+such as server side storing in a database or similar (which of course will persist despite user actions).</i></p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -868,9 +870,9 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
 <h3>Q. Does localStorage throw error after reaches maximum limits?</h3>
 
-Yes
+<p>Yes</p>
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <!DOCTYPE HTML>
@@ -4963,6 +4965,3 @@ Table of Content
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
-
-
-
