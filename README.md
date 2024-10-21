@@ -82,7 +82,7 @@ HTML5 offers new semantic elements to define different parts of a web page:
 * `<summary>`
 * `<time>`
 
-<b>Syntax:<b>
+<h5>Syntax:</h5>
 
 ```html
 <!DOCTYPE html> 
@@ -1991,7 +1991,7 @@ Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap
 are supposed to use a script. Canvas has several strategies when it comes to drawing paths, 
 boxes, circles, text & adding images.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <!DOCTYPE html>
@@ -2042,7 +2042,7 @@ to a droppable element, and then releases the dragged element.
 |Drop            |Drop It fires at the end of the drag operation.|
 |Dragend        |It fires when user releases the mouse button to complete the drag operation.|
 
-Example
+<h5>Example:</h5>
 
 ```html
 <!DOCTYPE HTML>
@@ -2089,10 +2089,12 @@ the information on web pages and provide more
 relevant results to users.
 
 At a high level, microdata consists of a group of name-value pairs
-* <b>itemscope</b>:- To create an item
-* <b>itemprop</b>:- To add a property to an item
+<ul>
+  <li><b>itemscope</b>:- To create an item</li>
+  <li><b>itemprop</b>:- To add a property to an item</li>
+</ul>
 
-Example
+<h5>Example:</h5>
 
 ```html
 <div itemscope>
@@ -2110,7 +2112,7 @@ Example
 
 <h3>Q. What are the HTML tags which deprecated in HTML5?</h3>
 
-<b>1. Deprecated Tags:</b>
+<h4>1. Deprecated Tags:</h4>
 
 The following elements are not available in HTML5 anymore and their function is better handled by CSS.
 
@@ -2132,7 +2134,7 @@ The following elements are not available in HTML5 anymore and their function is 
 | 14. |`<tt>`            |Defines teletype text|
 | 15. |`<u>`            |Defines underlined text|
 
-<b>2. Deprecated Attributes:</b>  
+<h4>2. Deprecated Attributes:</h4>
 
 |Removed Attributes      |From the Elements     |
 |---------------------|----------------------|
@@ -2200,9 +2202,11 @@ browser supports. In detecting feature support, it allows developers to test for
 the new technologies and then provide fallbacks for browsers that do not support them. 
 This is called <b>feature detection</b> and is much more efficient than browser sniffing.
 
-<b>1. Using Modernizr with CSS:</b>
+<h4>1. Using Modernizr with CSS:</h4>
 
-By default, Modernizr sets classes for all of your tests on the root element (`<html>` for websites). This means adding the class for each feature when it is supported, and adding it with a no- prefix when it is not (e.g. `.feature` or `.no-feature`).
+By default, Modernizr sets classes for all of your tests on the root element (`<html>` for 
+websites). This means adding the class for each feature when it is supported, and adding 
+it with a no- prefix when it is not (e.g. `.feature` or `.no-feature`).
 
 ```css
 .no-cssgradients .header {
@@ -2214,7 +2218,7 @@ By default, Modernizr sets classes for all of your tests on the root element (`<
 }
 ```
 
-<b>2. Using Modernizr with JavaScript:</b>
+<h4>2. Using Modernizr with JavaScript:</h4>
 
 Modernizr keeps track of the results of all of it's feature detections via the `Modernizr` object.
 
@@ -2232,28 +2236,43 @@ Modernizr keeps track of the results of all of it's feature detections via the `
 
 <h3>Q. What is progressive rendering?</h3>
 
-Progressive Rendering is the technique of sequentially rendering portions of a webpage in the server and streaming it to the client in parts without waiting for the whole page to rendered.
+Progressive Rendering is the technique of sequentially rendering portions of a webpage in 
+the server and streaming it to the client in parts without waiting for the whole page to 
+rendered.
 
-It implies that once the important material is produced on the server, you may stream it to the client without having to wait for non-critical stuff to be displayed. It combines the advantages of both CSR (Client Side Rendering) and SSR (Server Side Rendering) (Server Side Rendering).
+It implies that once the important material is produced on the server, you may stream it 
+to the client without having to wait for non-critical stuff to be displayed. It combines 
+the advantages of both CSR (Client Side Rendering) and SSR (Server Side Rendering) (Server 
+Side Rendering).
 
-<b>1. Client Side Rendering:</b>
+<h4>1. Client Side Rendering:</h4>
 
-Client Side Rendering (CSR) is a technique in which content is rendered in the browser using JavaScript. Instead of getting all the content from the HTML file itself, the server sends HTML with an empty body and script tags that contain links to JavaScript bundles that the browser will use to render the content.
+<p>Client Side Rendering (CSR) is a technique in which content is rendered in the browser 
+using JavaScript. Instead of getting all the content from the HTML file itself, the 
+server sends HTML with an empty body and script tags that contain links to JavaScript 
+bundles that the browser will use to render the content.</p>
 
-Typical page load behaviour in CSR —
+<h5>Typical page load behaviour in CSR —</h5>
 
-* Browser requests the server for HTML
-* Server sends HTML with script tags in head and no content in body
-* Browser parses the HTML and makes http requests to load the scripts
-* Once the scripts are loaded, the browser parses them and makes API requests and loads all the content asynchronously
+<ul>
+  <li>Browser requests the server for HTML</li>
+  <li>Server sends HTML with script tags in head and no content in body</li>
+  <li>Browser parses the HTML and makes http requests to load the scripts</li>
+  <li>Once the scripts are loaded, the browser parses them and makes API requests and loads 
+    all the content asynchronously</li>
+</ul>
 
-Since the all the content starts loading only after loading the initial JavaScript, it takes a longer time to show any content on the page. If the user is on a slow network, the content is blocked for an even longer time due to lower bandwidth and higher latency.
+<p>Since the all the content starts loading only after loading the initial JavaScript, it 
+takes a longer time to show any content on the page. If the user is on a slow network, 
+the content is blocked for an even longer time due to lower bandwidth and higher latency.</p>
 
-<b>2. Server Side Rendering:</b>
+<h4>2. Server Side Rendering:</h4>
 
-When rendering on the server side, the HTML is rendered on the server and sent to the client. The content that we need to display on the screen becomes available immediately after the HTML is parsed; hence, primary rendering of content is faster than CSR.
+<p>When rendering on the server side, the HTML is rendered on the server and sent to the 
+client. The content that we need to display on the screen becomes available immediately 
+after the HTML is parsed; hence, primary rendering of content is faster than CSR.</p>
 
-Typical page load behaviour in SSR —
+<h5>Typical page load behaviour in SSR —</h5>
 
 <ul>
   <li>Browser requests the server for HTML.</li>
@@ -2285,7 +2304,10 @@ exploration of HTML iframes, their syntax, and how they can be used to enhance y
 web development projects.
 
 <h3>What are HTML Iframes?</h3>
-An iframe is an HTML document embedded inside another HTML document. The <iframe> tag specifies the URL of the embedded content, allowing for seamless integration of external resources. This section will guide you through the syntax and attributes of the <iframe> tag, providing a solid foundation for your iframe usage.
+An iframe is an HTML document embedded inside another HTML document. The `<iframe>` tag 
+specifies the URL of the embedded content, allowing for seamless integration of external 
+resources. This section will guide you through the syntax and attributes of the `<iframe>` 
+tag, providing a solid foundation for your iframe usage.
 
 Syntax:
 ```html
@@ -2306,7 +2328,7 @@ window, represented by the <b>Window</b> object.
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h4>Example</h4>
+<h5>Example:</h5>
 
 ```html
 <!DOCTYPE html>
@@ -2336,7 +2358,7 @@ window, represented by the <b>Window</b> object.
 </html>
 ```
 
-<b>The Iframe Tag Attributes:</b>
+<h4>The Iframe Tag Attributes:</h4>
 
 |Attribute       | Description                |
 |----------------|----------------------------|
@@ -2357,7 +2379,7 @@ in a page requires increased memory and other computing resources.</i>
 
 <h3>Q. Explain the use of rel="nofollow", rel="noreferrer", rel="noopener" attribute?</h3>
 
-<b>1. rel="nofollow"</b>
+<h4>1. rel="nofollow"</h4>
 
 When `rel="nofollow"` tag is used, it instruct the search engines not to pass any PageRank 
 from one page to the other. It does not allow it to pass the authority to the specific 
@@ -2366,19 +2388,19 @@ website. The main advantage of using this attribute is to control the spam attac
 There may be times, when you do not have control over what people publish on your websites, 
 for example some blog comments and some kind of forum posting.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <a href="https://www.website.com" rel="nofollow">Link to yoursite.com</a>
 ```
 
-<b>2. rel="noreferrer"</b>
+<h4>2. rel="noreferrer"</h4>
 
 Noreferrer is related to analytics and tracking. The referrer value shows the previous 
 page where a user came from. By using the noreferrer attribute on a link, you are 
 preventing other pages from seeing that traffic came from a click on your link.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <a href="https://www.website.com" rel="noreferrer">Link to yoursite.com</a>
@@ -2390,7 +2412,7 @@ It prevents the new page from being able to access the `window.opener` property 
 make it run in a separate process. noopener tag works as a security fix which prevents 
 malicious links to take control over an opened tab.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <a href="https://www.website.com" target="_blank" rel="noopener">Link to yoursite.com</a>
@@ -2406,7 +2428,7 @@ The `<mark>` HTML element represents text which is marked or highlighted for ref
 notation purposes, due to the marked passage's relevance or importance in the enclosing 
 context.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <!DOCTYPE html>
@@ -2461,7 +2483,7 @@ meta description tag looks like this:
 <meta name="description" content="Your description goes here">
 ```
 
-<b>3. Heading tags:<b>
+<b>3. Heading tags:</b>
 
 Headings (H1-H6) are used to split your page into sections or chapters. Each heading is 
 like a small title within the page. In HTML, a heading looks like this:
@@ -2474,7 +2496,7 @@ like a small title within the page. In HTML, a heading looks like this:
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<b>4. Image alt attribute:<b>
+<b>4. Image alt attribute:</b>
 
 The `alt` text attribute is a part of an image tag, and it provides a description for an 
 image. Alt text plays a major role in image optimization. It makes your images accessible 
@@ -2486,7 +2508,7 @@ screen readers convey images). In HTML it may look like this:
 <img src="url" alt="Your image description goes here">
 ```
 
-<b>5. Open Graph tags:<b>
+<b>5. Open Graph tags:</b>
 
 Open Graph (OG) tags are placed in the `<head>` section of a page and allow any webpage 
 to become a rich object in social networks. OG tags let you control how the information 
@@ -2498,7 +2520,7 @@ and increasing conversions. In HTML, it can look like this:
 <meta name="og:title" property="og:title" content="Your Open Graph Title Goes Here">
 ```
 
-<b>6. Robots tag:<b>
+<b>6. Robots tag:</b>
 
 A robots tag is an element in the HTML of a page that informs search engines which pages 
 on your site should be indexed and which should not. Its functions are similar to robots.txt, 
@@ -2509,7 +2531,7 @@ look like this:
 <meta name="robots" content="index, follow">
 ```
 
-<b>7. Canonical tag:<b>
+<b>7. Canonical tag:</b>
 
 A canonical tag is a way of telling search engines that a specific URL represents the 
 master copy of a page. Using the canonical tag prevents problems caused by identical 
@@ -2521,7 +2543,7 @@ In HTML, it may look like this:
 <link href="URL" rel="canonical">
 ```
 
-<b>8. HTML5 semantic tags:<b>
+<b>8. HTML5 semantic tags:</b>
 
 One of the most important features of HTML5 is its semantics tags. Semantic tags refers to 
 syntax that makes the HTML more comprehensible by better defining the different sections 
@@ -2541,17 +2563,17 @@ and search engines to better interpret content. For example, instead of using
 
 Attributes are defined by HTML. Properties are accessed from DOM (Document Object Model) nodes.
 
-<b>Example:<b>
+<h5>Example:</h5>
 
 ```html
 <input id="inputId" type="text" value="Hello World!" />
 ```
 
-The <b>value<b> property reflects the current text-content inside the input box, 
-whereas the <b>value<b> attribute contains the initial text-content of the <b>value<b> 
+The <b>value</b> property reflects the current text-content inside the input box, 
+whereas the <b>value</b> attribute contains the initial text-content of the <b>value</b> 
 attribute from the HTML source code
 
-<b>Difference between HTML attributes and DOM properties:<b>
+<b>Difference between HTML attributes and DOM properties:</b>
 
 |Attribute                               |Property                |
 |----------------------------------------|------------------------|
@@ -2565,7 +2587,7 @@ attribute from the HTML source code
 
 <h3>Q. How do you set IE compatibility mode?</h3>
 
-<b>X-UA-Compatible<b> is a document mode meta tag that allows to choose what version of 
+<b>X-UA-Compatible</b> is a document mode meta tag that allows to choose what version of 
 Internet Explorer the page should be rendered as. It is used by Internet Explorer 8 to 
 specify whether a page should be rendered as IE 7 (compatibility view) or IE 8 (standards view).
 
@@ -2586,7 +2608,7 @@ content. pages without a DOCTYPE will be rendered in quirks mode. Edge mode tell
 Internet Explorer to display content in the highest mode available, which actually breaks 
 the "lock-in" paradigm. With Internet Explorer 8, this is equivalent to IE8 mode.
 
-<b>Setting the Meta Element:<b>
+<b>Setting the Meta Element:</b>
 
 The meta element includes a content attribute that enables you to specify the mode that 
 content is rendered in for the webpage, as the following table shows.
@@ -2843,7 +2865,7 @@ Optional tags, cont'd
 
 <h3>Q. What is an HTML preprocessor? Have you used different HTML templating languages before?</h3>
 
-A <b>HTML preprocessor<b> is a program that takes one type of data and converts it to another 
+A <b>HTML preprocessor</b> is a program that takes one type of data and converts it to another 
 one. In case of HTML and CSS, some of the more popular preprocessor languages are Slim and 
 Sass. Slim is processed into HTML and Sass is processed into CSS.
 
@@ -2868,11 +2890,11 @@ languages such as Arabic, Hebrew, Pashto, Persian, Urdu, and Sindhi.
 We can set text direction in HTML in one of two ways:
 
 <ul>
-  <li>With the HTML <b>dir<b> attribute</li>
-  <li>With the CSS <b>direction<b> property</li>
+  <li>With the HTML <b>dir</b> attribute</li>
+  <li>With the CSS <b>direction</b> property</li>
 </ul>
 
-<b>Example:<b>
+<b>Example:</b>
 
 ```html
 <!-- Syntax -->
@@ -2882,7 +2904,7 @@ We can set text direction in HTML in one of two ways:
 <textarea dir="rtl"></textarea>
 ```
 
-<b>Attribute Values:<b>
+<b>Attribute Values:</b>
 
 |Value          |Description                |
 |---------------|---------------------------|
@@ -2900,7 +2922,7 @@ The `<small>` HTML element represents side-comments and small print, like copyri
 legal text, independent of its styled presentation. By default, it renders text within 
 it one font-size smaller, such as from `small` to `x-small`.
 
-<b>Example:<b>
+<b>Example:</b>
 
 ```html
 <!DOCTYPE html>
@@ -2927,9 +2949,9 @@ it one font-size smaller, such as from `small` to `x-small`.
 
 <h3>Q. How do you serve a page with content in multiple languages?</h3>
 
-The <b>lang<b> attribute specifies the language of the element's content.
+The <b>lang</b> attribute specifies the language of the element's content.
 
-<b>Example:<b>
+<b>Example:</b>
 
 ```html
 <!DOCTYPE html>
@@ -2960,13 +2982,13 @@ The <b>lang<b> attribute specifies the language of the element's content.
 The `<section>` tag creates independent sections within a webpage having logically connected 
 content. And the `<div>` tag is an empty container specifying a division or a section.
 
-<b>The `<section>` Element<b>
+<b>The `<section>` Element</b>
 
 According to the W3C specification, the `<section>` tag means that the content inside this 
 element is grouped. In other words, the content relates to a single theme. It must be an 
 entry in the outline of the page.
 
-<b>Example:<b>
+<b>Example:</b>
 
 ```html
 <!DOCTYPE html>
@@ -2994,14 +3016,14 @@ entry in the outline of the page.
 </html>
 ```
 
-<b>The `<div>` Element<b>
+<b>The `<div>` Element</b>
 
 The `<div>` element only represents its child elements and doesn't have a special meaning. 
 It can be used with the `lang`, `title`, and `class` attributes to add semantics that is 
 common to a group of consecutive elements. This element can also be used in a `<dl>` tag 
 and wrap groups of `<dt>` and `<dd>` elements.
 
-<b>Example:<b>
+<b>Example:</b>
 
 ```html
 <!DOCTYPE html>
@@ -3059,7 +3081,7 @@ The `srcset` attribute allows to define a list of different image resources alon
 information so that browser can pick the most appropriate image based on the actual device's 
 resolution.
 
-<b>Syntax:<b>
+<b>Syntax:</b>
 
 ```html
 <img 
@@ -3071,11 +3093,11 @@ resolution.
 />
 ```
 
-<b>1. Using display density descriptor:<b>
+<b>1. Using display density descriptor:</b>
 
 `srcset` provides a comma-separated list of image resources along with display density it should be used, for example1x, 2x etc.
 
-<b>Example:<b>
+<b>Example:</b>
 
 ```html
 <img src="image.jpg" 
@@ -3084,11 +3106,11 @@ resolution.
 />
 ```
 
-<b>2. Using width descriptor:<b>
+<b>2. Using width descriptor:</b>
 
 The syntax is similar to the display density descriptor, but instead of display density values, we provide the actual width of the image.
 
-<b>Example:<b>
+<b>Example:</b>
 
 ```html
 <img src="image.jpg" 
@@ -3104,7 +3126,7 @@ The syntax is similar to the display density descriptor, but instead of display 
 
 <h3>Q. What is accessibility & ARIA role means in a web application?</h3>
 
-The <b>Accessible Rich Internet Applications (ARIA)<b> Suite, defines a way to make Web 
+The <b>Accessible Rich Internet Applications (ARIA)</b> Suite, defines a way to make Web 
 content and Web applications more accessible to people with disabilities. It especially 
 helps with dynamic content and advanced user interface controls developed with HTML, 
 JavaScript, and related technologies.
@@ -3122,7 +3144,7 @@ can make advanced Web applications accessible and usable to people with disabili
 
 ARIA attributes are divided into two categories: roles, and states & properties.
 
-<b>ARIA Roles:<b>
+<b>ARIA Roles:</b>
 
 An ARIA role is added via a `role="<ROLE TYPE>"` attribute, and does not ever change for 
 an element once it is set. There are four categories of ARIA roles:
@@ -3134,12 +3156,12 @@ an element once it is set. There are four categories of ARIA roles:
   <li>abstract</li>
 </ul>
 
-<b>Landmark ARIA Roles:<b>
+<b>Landmark ARIA Roles:</b>
 
 Much like semantic HTML elements, landmark ARIA Roles are used to give users of assistive 
 technology a better way to navigate and identify the different parts of a web page.
 
-<b>Example:<b>
+<b>Example:</b>
 
 ```html
  <nav class='mobile-nav' role='navigation' aria-label='Mobile Menu'>List of Links</nav>
@@ -3152,19 +3174,19 @@ visually impaired users, without the `role="navigation"`.
 The different landmark roles you can use are as follows, copied from the W3C Wiki Page:
 
 <ul>
-  <li><b>banner<b>: A region that contains the prime heading or internal title of a page.</li>
-  <li><b>complementary<b>: Any section of the document that supports the main content, yet is 
+  <li><b>banner</b>: A region that contains the prime heading or internal title of a page.</li>
+  <li><b>complementary</b>: Any section of the document that supports the main content, yet is 
   separate and meaningful on its own.</li>
-  <li><b>contentinfo<b>: A region that contains information about the parent document such as 
+  <li><b>contentinfo</b>: A region that contains information about the parent document such as 
   copyrights and links to privacy statements.</li>
-  <li><b>form<b>: A region of the document that represents a collection of form-associated 
+  <li><b>form</b>: A region of the document that represents a collection of form-associated 
   elements, some of which can represent editable values that can be submitted to a server 
   for processing.</li>
-  <li><b>main<b>: Main content in a document. In almost all cases a page will have only one 'role="main"'.</li>
-  <li><b>navigation<b>: A collection of links suitable for use when navigating the document or 
+  <li><b>main</b>: Main content in a document. In almost all cases a page will have only one 'role="main"'.</li>
+  <li><b>navigation</b>: A collection of links suitable for use when navigating the document or 
   related documents.</li>
-  <li><b>search<b>: The search tool of a Web document.</li>
-  <li><b>application<b>: A region declared as a web application, as opposed to a web document.</li>
+  <li><b>search</b>: The search tool of a Web document.</li>
+  <li><b>application</b>: A region declared as a web application, as opposed to a web document.</li>
 </li>
 
 <b>Document ARIA Roles:<b>
@@ -3174,73 +3196,73 @@ of the whole page, which landmark roles describe. The roles in bold are the ones
 are the most common document aria roles, and the ones which are useful to think about 
 including in your HTML.
 
-  * <b>article<b>: A section of a page that consists of a composition that forms an independent 
+  * <b>article</b>: A section of a page that consists of a composition that forms an independent 
   part of a document, page, or site.
-  * <b>columnheader<b>
-  * <b>definition<b>: A definition of a term or concept.
-  * <b>directory<b>
-  * <b>document<b>
-  * <b>group<b>: A set of user interface objects which are not intended to be included in a 
+  * <b>columnheader</b>
+  * <b>definition</b>: A definition of a term or concept.
+  * <b>directory</b>
+  * <b>document</b>
+  * <b>group</b>: A set of user interface objects which are not intended to be included in a 
   page summary or table of contents by assistive technologies.
-  * <b>heading<b>: A heading for a section of the page.
-  * <b>img<b>
-  * <b>list<b>
-  * <b>listitem<b>
-  * <b>math<b>
-  * <b>note<b>
-  * <b>presentation<b>
-  * <b>region<b>
-  * <b>row<b>
-  * <b>rowgroup<b>
-  * <b>rowheader<b>
-  * <b>separator<b>
-  * <b>toolbar<b>
+  * <b>heading</b>: A heading for a section of the page.
+  * <b>img</b>
+  * <b>list</b>
+  * <b>listitem</b>
+  * <b>math</b>
+  * <b>note</b>
+  * <b>presentation</b>
+  * <b>region</b>
+  * <b>row</b>
+  * <b>rowgroup</b>
+  * <b>rowheader</b>
+  * <b>separator</b>
+  * <b>toolbar</b>
 
-<b>Widget ARIA Roles:<b>
+<b>Widget ARIA Roles:</b>
 
 Widget Roles are used to describe what are often javascript-based interfaces, or the more 
 complicated parts of your web page's interface. The roles that are starred are the ones 
 we think are the most common elements widget aria roles, and the ones which are useful 
 useful to think about including in your HTML.
 
-  * <b>alert<b>: A message with important, and usually time-sensitive, information. 
-  * <b>alertdialog<b>: A type of dialog that contains an alert message, where initial focus 
+  * <b>alert</b>: A message with important, and usually time-sensitive, information. 
+  * <b>alertdialog</b>: A type of dialog that contains an alert message, where initial focus 
   goes to an element within the dialog. 
-  * <b>button<b>: An input that allows for user-triggered actions when clicked or pressed.
-  * <b>checkbox<b>: A checkable input that has three possible values: true, false, or mixed.
-  * <b>dialog<b>: A dialog is an application window that is designed to interrupt the current 
+  * <b>button</b>: An input that allows for user-triggered actions when clicked or pressed.
+  * <b>checkbox</b>: A checkable input that has three possible values: true, false, or mixed.
+  * <b>dialog</b>: A dialog is an application window that is designed to interrupt the current 
   processing of an application in order to prompt the user to enter information or require 
   a response. 
-  * <b>gridcell<b>
-  * <b>link<b>
-  * <b>log<b>
-  * <b>marquee<b>
-  * <b>menuitem<b>
-  * <b>menuitemcheckbox<b>
-  * <b>menuitemradio<b>
-  * <b>option<b>
-  * <b>progressbar<b>
-  * <b>radio<b>: A checkable input in a group of radio roles, only one of which can be 
+  * <b>gridcell</b>
+  * <b>link</b>
+  * <b>log</b>
+  * <b>marquee</b>
+  * <b>menuitem</b>
+  * <b>menuitemcheckbox</b>
+  * <b>menuitemradio</b>
+  * <b>option</b>
+  * <b>progressbar</b>
+  * <b>radio</b>: A checkable input in a group of radio roles, only one of which can be 
     checked at a time.
-  * <b>scrollbar<b>
-  * <b>slider<b>
-  * <b>spinbutton<b>
-  * <b>status<b>
-  * <b>tab<b>: A grouping label providing a mechanism for selecting the tab content that is 
+  * <b>scrollbar</b>
+  * <b>slider</b>
+  * <b>spinbutton</b>
+  * <b>status</b>
+  * <b>tab</b>: A grouping label providing a mechanism for selecting the tab content that is 
   to be rendered to the user.
-  * <b>tabpanel<b>: A container for the resources associated with a tab, where each tab is 
+  * <b>tabpanel</b>: A container for the resources associated with a tab, where each tab is 
   contained in a tablist.
-  * <b>textbox<b>: Input that allows free-form text as its value.
-  * <b>timer<b>
-  * <b>tooltip<b>
-  * <b>treeitem<b>
+  * <b>textbox</b>: Input that allows free-form text as its value.
+  * <b>timer</b>
+  * <b>tooltip</b>
+  * <b>treeitem</b>
 
-<b>Abstract ARIA Roles:<b>
+<b>Abstract ARIA Roles:</b>
 
 Abstract aria roles are the basis of how the other ARIA roles are defined. These are not 
 to be used in HTML.
 
-<b>ARIA States & Properties:<b>
+<b>ARIA States & Properties:</b>
 
 ARIA states and properties are often used to support ARIA roles that exist on a page. 
 ARIA Properties often describe relationships with other elements, and for the most part, 
@@ -3254,34 +3276,34 @@ While there are 35 aria properties and states the W3C defines and which you can 
 about on the W3C site, here are the ones we believe to most commonly used and practical 
 for most web pages/applications.
 
-  * <b>aria-activedescendant<b>: Identifies the currently active descendant of a composite 
+  * <b>aria-activedescendant</b>: Identifies the currently active descendant of a composite 
     widget. Use with autofill search suggestions.
-  * <b>aria-autocomplete<b>: Indicates whether user input completion suggestions are provided. 
+  * <b>aria-autocomplete</b>: Indicates whether user input completion suggestions are provided. 
     Use with autofill search suggestions.
-  * <b>aria-checked (state)<b>: Indicates the current “checked” state of checkboxes, radio 
+  * <b>aria-checked (state)</b>: Indicates the current “checked” state of checkboxes, radio 
     buttons, and other widgets. You can set this to true, false, or mixed state. 
-  * <b>aria-controls<b>: Identifies the element (or elements) whose contents or presence are 
+  * <b>aria-controls</b>: Identifies the element (or elements) whose contents or presence are 
   controlled by the current element.
-  * <b>aria-describedby<b>: Identifies the element (or elements) that describes the object.
-  * <b>aria-disabled (state)<b>: Indicates that the element is perceivable but disabled, so 
+  * <b>aria-describedby</b>: Identifies the element (or elements) that describes the object.
+  * <b>aria-disabled (state)</b>: Indicates that the element is perceivable but disabled, so 
   it is not editable or otherwise operable.
-  * <b>aria-expanded (state)<b>: Indicates whether the element, or another grouping element 
+  * <b>aria-expanded (state)</b>: Indicates whether the element, or another grouping element 
     it controls, is currently expanded or collapsed.
-  * <b>aria-hidden (state)<b>: Indicates that the element and all of its descendants are 
+  * <b>aria-hidden (state)</b>: Indicates that the element and all of its descendants are 
     not visible or perceivable to any user as implemented by the author.
-  * <b>aria-invalid (state)<b>: Indicates the entered value does not conform to the format 
+  * <b>aria-invalid (state)</b>: Indicates the entered value does not conform to the format 
     expected by the application.
-  * <b>aria-label<b>: Defines a string value that labels the current element.
-  * <b>aria-labelledby<b>: Identifies the element (or elements) that labels the current element.
-  * <b>aria-live<b>: Indicates that an element is dynamic, changing, and will be updated, 
+  * <b>aria-label</b>: Defines a string value that labels the current element.
+  * <b>aria-labelledby</b>: Identifies the element (or elements) that labels the current element.
+  * <b>aria-live</b>: Indicates that an element is dynamic, changing, and will be updated, 
     and describes the types of updates the user can expect from the live region.
-  * <b>aria-owns<b>: Identifies an element (or elements) in order to define a visual, 
+  * <b>aria-owns</b>: Identifies an element (or elements) in order to define a visual, 
     functional, or contextual parent/child  relationship between DOM elements where the 
 	DOM hierarchy cannot be used to represent the relationship.
-  * <b>aria-pressed (state)<b>: Indicates the current “pressed” state of toggle buttons.
-  * <b>aria-required<b>: Indicates that user input is required on the element before a form 
+  * <b>aria-pressed (state)</b>: Indicates the current “pressed” state of toggle buttons.
+  * <b>aria-required</b>: Indicates that user input is required on the element before a form 
     may be submitted.
-  * <b>aria-selected (state)<b>: Indicates the current “selected” state of various widgets.
+  * <b>aria-selected (state)</b>: Indicates the current “selected” state of various widgets.
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
