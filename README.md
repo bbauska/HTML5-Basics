@@ -68,19 +68,20 @@ work for browsers and search engines, as well as developers.
 
 HTML5 offers new semantic elements to define different parts of a web page:
 
-* `<article>`
-* `<aside>`
-* `<details>`
-* `<figcaption>`
-* `<figure>`
-* `<footer>`
-* `<header>`
-* `<main>`
-* `<mark>`
-* `<nav>`
-* `<section>`
-* `<summary>`
-* `<time>`
+<ul>
+  <li>`&lt;article&gt;`</li>
+  <li>`&lt;aside&gt;`</li>
+  <li>`&lt;details&gt;`</li>
+  <li>`&lt;figcaption&gt;`
+  <li>`&lt;figure&gt;`
+  <li>`&lt;footer&gt;`
+  <li>`&lt;header&gt;`
+  <li>`&lt;main&gt;`
+  <li>`&lt;mark&gt;`
+  <li>`&lt;nav&gt;`
+  <li>`&lt;section&gt;`
+  <li>`&lt;summary&gt;`
+  <li>`&lt;time&gt;`
 
 <h5>Syntax:</h5>
 
@@ -162,8 +163,8 @@ CSS class and id names are case insensitive. In standards mode they are case sen
 
 <h3>Q. What are the new form elements in HTML5?</h3>
 
-<p>There are five new form elements in the HTML5 forms specification: `<datalist>`, `<keygen>`, `<output>`, 
-`<progress>`, and `<meter>`.</p>
+<p>There are five new form elements in the HTML5 forms specification: `&lt;datalist&gt;`, `&lt;keygen&gt;`, `&lt;output&gt;`, 
+`&lt;progress&gt;`, and `&lt;meter&gt;`.</p>
 
 <h4>1. Datalist Tag</h4>
 
@@ -469,10 +470,10 @@ tag (`&lt;meta&gt;`). This means that the following are both acceptable:</p>
 
 <ul>
   <li><b>Semantic elements</b>: clearly describes its meaning to both the browser and the developer.
-    For example: `<form>`, `<table>`,  `<article>`, `<aside>`, `<details>`, `<figcaption>`, 
-	`<figure>`, `<footer>`, `<header>`, `<main>`, `<mark>`, `<nav>`, `<section>`, `<summary>`, 
-	`<time>` clearly defines its content.</li>
-  <li><b>Non-semantic elements</b>: `<div>` and `<span>` tells nothing about its content.</li>
+    For example: `&lt;form&gt;`, `&lt;table&gt;`,  `&lt;article&gt;`, `&lt;aside&gt;`, `&lt;details&gt;`, `&lt;figcaption&gt;`, 
+	`&lt;figure&gt;`, `&lt;footer&gt;`, `&lt;header&gt;`, `&lt;main&gt;`, `&lt;mark&gt;`, `&lt;nav&gt;`, `&lt;section&gt;`, `&lt;summary&gt;`, 
+	`&lt;time&gt;` clearly defines its content.</li>
+  <li><b>Non-semantic elements</b>: `&lt;div&gt;` and `&lt;span&gt;` tells nothing about its content.</li>
 </ul>
 
 <div align="right">
@@ -500,19 +501,19 @@ attribute specified.</i></p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h4>Q. What are the semantic meanings for `<section>, <article>, <aside>, <nav>, <header>, 
+<h4>Q. What are the semantic meanings for `<section>, &lt;article&gt;, <aside>, <nav>, <header>, 
 `<footer>` and how should each be used in structuring html markup?</h4>
 
 <ul>
-  <li>`<header>` is used to contain introductory and navigational information about a section 
+  <li><b>`&lt;header&gt;`</b> is used to contain introductory and navigational information about a section 
     of the page. This can include the section heading, the author's name, time and date of 
 	publication, table of contents, or other navigational information.</li>
-  <li>`<article>` is meant to house a self-contained composition that can logically be 
+  <li><b>`&lt;article&gt;`</b> is meant to house a self-contained composition that can logically be 
     independently recreated outside of the page without losing it's meaining. Individual 
 	blog posts or news stories are good examples.</li>
-  <li>`<section>` is a flexible container for holding content that shares a common informational 
+  <li><b>`&lt;section&gt;`</b> is a flexible container for holding content that shares a common informational 
     theme or purpose.</li>
-  <li>`<footer>` is used to hold information that should appear at the end of a section of content 
+  <li><b>`&lt;footer&gt;`</b> is used to hold information that should appear at the end of a section of content 
     and contain additional information about the section. Author's name, copyright information, 
 	and related links are typical examples of such content.</li>
 </ul>
