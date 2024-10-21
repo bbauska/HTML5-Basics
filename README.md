@@ -4519,7 +4519,7 @@ potential of introducing errors.</p>
 
 <!-- end of html tables -->
 
-<h2 id="6-html-">06. HTML Lists</h2>
+<h2 id="06-html-lists">06. HTML Lists</h2>
 <p>An HTML list is a record of related information used to display the data or 
 any information on web pages in the ordered or unordered form.</p>
 
@@ -4775,7 +4775,17 @@ and definition list. We have explained all three list types with examples.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="07-html-iframes">07. HTML iFrames</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!DOCTYPE html>
+<html>
+<body>
 
+<h2>Remove the Iframe Border</h2>
+<p>To remove the default border of the iframe, use CSS:</p>
+
+<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+
+</body>
+</html>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="08-html-url">08. HTML URL</h2>
