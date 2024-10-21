@@ -30,11 +30,7 @@
   <li><a href="#16-misc">Miscellaneous</a></li>
 </ol>
 
-<br/>
-
 <h2 id="01-intro">01. Introduction</h2>
-
-<br/>
 
 <h3>Q. What is difference between HTML and XHTML?</h3>
 
@@ -48,16 +44,18 @@ end developers.
 
 <h3>Q. What are the building blocks of HTML5?</h3>
 
-* <b>Semantics<b>: allowing you to describe more precisely what your content is.
-* <b>Connectivity<b>: allowing you to communicate with the server in new and innovative ways.
-* <b>Offline and storage<b>: allowing webpages to store data on the client-side locally 
-  and operate offline more efficiently.
-* <b>Multimedia<b>: making video and audio first-class citizens in the Open Web.
-* <b>2D/3D graphics and effects<b>: allowing a much more diverse range of presentation options.
-* <b>Performance and integration<b>: providing greater speed optimization and better usage 
-  of computer hardware.
-* <b>Device access<b>: allowing for the usage of various input and output devices.
-* <b>Styling<b>: letting authors write more sophisticated themes.
+<ul>
+  <li><b>Semantics</b>: allowing you to describe more precisely what your content is.</li>
+  <li><b>Connectivity</b>: allowing you to communicate with the server in new and innovative ways.</li>
+  <li><b>Offline and storage</b>: allowing webpages to store data on the client-side locally 
+  and operate offline more efficiently.</li>
+  <li><b>Multimedia</b>: making video and audio first-class citizens in the Open Web.</li>
+  <li><b>2D/3D graphics and effects</b>: allowing a much more diverse range of presentation options.</li>
+  <li><b>Performance and integration</b>: providing greater speed optimization and better usage 
+  of computer hardware.</li>
+  <li><b>Device access</b>: allowing for the usage of various input and output devices.</li>
+  <li><b>Styling</b>: letting authors write more sophisticated themes.</li>
+</ul>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -136,7 +134,7 @@ HTML5 offers new semantic elements to define different parts of a web page:
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. What does a `<DOCTYPE html>` do?</h3>
+<h3>Q. What does a `&lt;DOCTYPE html&gt;` do?</h3>
 
 A DOCTYPE is always associated to a `DTD` ( <b>Document Type Definition<b> ). A DTD defines 
 how documents of a certain type should be structured (i.e. a `button` can contain a `span` 
@@ -201,9 +199,7 @@ pair becomes the value.
 
 ```html
 <p>Disk Usage: <meter value="0.2">20%</meter></p>
-
 <p>Total Score: <meter value="6" min="0" max="10">6 out of 10</meter></p>
-
 <p>Pollution Level: <meter low="60" high="80" max="100" value="85">Very High</meter></p>
 ```
 
@@ -461,8 +457,8 @@ tag (`<meta>`). This means that the following are both acceptable:
 <h3>Q. Explain the difference between block elements and inline elements?</h3>
 
 <ul>
-  <li>block elements `<h1>, <p>, <ul>, <ol>, <li>`</li>
-  <li>inline elements `<span>, <a>, <strong>, <i>, <img>`</li>
+  <li>block elements `<h1>`, `<p>`, `<ul>`, `<ol>`, `<li>`</li>
+  <li>inline elements `<span>`, `<a>`, `<strong>`, `<i>`, `<img>`</li>
 </ul>
 
 <div align="right">
