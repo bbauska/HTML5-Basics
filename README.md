@@ -60,7 +60,7 @@ end developers.
 * **Styling**: letting authors write more sophisticated themes.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What are the semantic tags available in html5?</h3>
@@ -112,7 +112,7 @@ HTML5 offers new semantic elements to define different parts of a web page:
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Why you would like to use semantic tag?</h3>
@@ -133,7 +133,7 @@ HTML5 offers new semantic elements to define different parts of a web page:
 </ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What does a `<DOCTYPE html>` do?</h3>
@@ -149,7 +149,7 @@ matching this DOCTYPE forreading the document. If a user agent doesn't recognize
 DOCTYPE, it will trigger the `quirks mode`.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What happens when DOCTYPE is not given?</h3>
@@ -159,7 +159,7 @@ support older browsers which does not follow the **W3C specifications**. In quir
 CSS class and id names are case insensitive. In standards mode they are case sensitive.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What are the new form elements in HTML5?</h3>
@@ -248,7 +248,7 @@ expected to be modified through JavaScript code.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3 id="new-form-elements">List New form elements introduced in html5</h3>
@@ -423,7 +423,7 @@ expected to be modified through JavaScript code.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3 id="diff-span-div">What is difference between `span` tag and `div` tag?</h3>
@@ -444,7 +444,7 @@ a `<div>` is a **block-level-element** and a `<span>` is an **inline element**.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What are optional closing tags?</h3>
@@ -453,7 +453,7 @@ a `<div>` is a **block-level-element** and a `<span>` is an **inline element**.
 tag. Whenever a browser hits a new tag it automatically end the previous tag. 
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is a self closing tag?</h3>
@@ -476,7 +476,7 @@ tag (`<meta>`). This means that the following are both acceptable:
   - inline elements `<span>, <a>, <strong>, <i>, <img>`
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What are semantic and non-semantic elements?</h3>
@@ -489,7 +489,7 @@ For example: `<form>`, `<table>`,  `<article>`, `<aside>`, `<details>`, `<figcap
   - **Non-semantic elements**: `<div>` and `<span>` tells nothing about its content.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is the purpose of `main` element?</h3>
@@ -510,7 +510,7 @@ central topic of a document, or the central functionality of an application.
 attribute specified.</i>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h4>Q. What are the semantic meanings for `<section>, <article>, <aside>, <nav>, <header>, 
@@ -532,7 +532,7 @@ attribute specified.</i>
   and related links are typical examples of such content.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. When should you use `section`, `div` or `article`?</h3>
@@ -553,7 +553,7 @@ attribute specified.</i>
   lang and title attributes.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Can a web page contain multiple `<header>` elements? What about `<footer>` elements?</h3>
@@ -576,7 +576,7 @@ as who wrote it, links to related documents, copyright data, and the like.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What are the physical tags and logical tags in HTML?</h3>
@@ -630,7 +630,7 @@ used for styling purposes as well as to give special importance to text content.
 |`<var>`    |Defines the variable in a mathematical equation or in the computer program.|
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is Character Encoding?</h3>
@@ -712,7 +712,7 @@ document, such as author, expiry date, a list of keywords, document author etc.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What does async and defer refer in script tag?</h3>
@@ -767,7 +767,7 @@ has been fully parsed.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is local storage in html5?</h3>
@@ -786,7 +786,7 @@ localStorage.getItem("name"); // Kanti Ahluwalia
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is session storage in html5?</h3>
@@ -811,7 +811,7 @@ sessionStorage.clear();
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is cookies in html5?</h3>
@@ -861,7 +861,7 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Describe the difference between a cookie, sessionStorage and localStorage?</h3>
@@ -877,7 +877,7 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 *Note: If the user decides to clear browsing data via whatever mechanism provided by the browser, this will clear out any `cookie`, `localStorage`, or `sessionStorage` stored. It's important to keep this in mind when designing for local persistance, especially when comparing to alternatives such as server side storing in a database or similar (which of course will persist despite user actions).*
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Does localStorage throw error after reaches maximum limits?</h3>
@@ -922,7 +922,7 @@ Exception: QuotaExceededError: Failed to execute 'setItem' on 'Storage':
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Why to use IndexedDB instead of WebSQL in HTML5?</h3>
@@ -1088,7 +1088,7 @@ serve a decorative purposes, in which case it should be left empty.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What does `enctype='multipart/form-data'` mean?</h3>
@@ -1133,7 +1133,7 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 | 03.  |text/plain                |Spaces are converted to "+" symbols, but no special characters are encoded|
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is difference between Select and Datalist?</h3>
@@ -1166,7 +1166,7 @@ For the select element, the user is required to select one of the options you've
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Explain some of the pros and cons for CSS animations versus JavaScript animations?</h3>
@@ -1421,7 +1421,7 @@ decide whether to handle it in quirks mode or standards mode.
     * JavaScript engine JavascriptCore i.e **Nitro**
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What does the lang attribute in html do?</h3>
@@ -1429,7 +1429,7 @@ decide whether to handle it in quirks mode or standards mode.
 * Helps in styling pages by using them in css `:lang()` pseudo class Spelling and grammar checkers Languade detection by search engines
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is desktop first and mobile first design approach?</h3>
@@ -1443,7 +1443,7 @@ decide whether to handle it in quirks mode or standards mode.
     In desktop first approach the media queries will be written with respect to max-width whereas in mobile first approach media queries will be written with respect to min-width
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What are `data-` attributes good for?</h3>
@@ -1451,7 +1451,7 @@ decide whether to handle it in quirks mode or standards mode.
 * The HTML5 data attribute lets you assign custom data to an element. When we want to store more information/data about the element when no suitable HTML5 element or attribute exists
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Explain the difference between layout, painting and compositing?</h3>
@@ -1495,7 +1495,7 @@ especially important for elements that overlap another, since a mistake could re
 one element appearing over the top of another incorrectly.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Explain about HTML Layout Engines used by browsers?</h3>
@@ -1509,7 +1509,7 @@ one element appearing over the top of another incorrectly.
 |Trident      |Discontinued      |Internet Explorer browser and Microsoft Outlook email client                   |
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. How to make page responsive?</h3>
@@ -1565,7 +1565,7 @@ Using media queries you can define completely different styles for different bro
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Does the following trigger http request at the time of page load?</h3>
@@ -1574,14 +1574,14 @@ Using media queries you can define completely different styles for different bro
 <img src="mypic.jpg" style="visibility: hidden" alt="My photo">
 
 <div style="display: none;">
-    <img src="mypic.jpg" alt="My photo">
+  <img src="mypic.jpg" alt="My photo">
 </div>
 ```
 
 * Yes
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. List the API available in HTML5?</h3>
@@ -1690,7 +1690,7 @@ function toggleFullScreen() {
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. How geolocation api works in html5?</h3>
@@ -1722,50 +1722,52 @@ if ("geolocation" in navigator) {
 </body>
 
 <script type="text/javascript">
-    /**
-        The Geolocation API allows the user to provide their location to web applications 
-        if they so desire. For privacy reasons, the user is asked for permission to report 
-        location information.
-    **/
-    function geoFindMe() {
-        var output = document.getElementById("out");
+  /**
+    The Geolocation API allows the user to provide their location to web applications 
+    if they so desire. For privacy reasons, the user is asked for permission to report 
+    location information.
+  **/
+  function geoFindMe() {
+    var output = document.getElementById("out");
 
-        if (!navigator.geolocation){
-            output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
-            return;
-        }
-
-        function success(position) {
-            var latitude  = position.coords.latitude;
-            var longitude = position.coords.longitude;
-
-            output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
-
-            var img = new Image();
-            img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
-
-            output.appendChild(img);
-        }
-
-        function error() {
-            output.innerHTML = "Unable to retrieve your location";
-        }
-
-        output.innerHTML = "<p>Locating…</p>";
-
-        navigator.geolocation.getCurrentPosition(success, error); //function to get the current position of the device
+    if (!navigator.geolocation){
+      output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
+      return;
     }
+
+    function success(position) {
+      var latitude  = position.coords.latitude;
+      var longitude = position.coords.longitude;
+
+      output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
+      var img = new Image();
+      img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
+
+      output.appendChild(img);
+    }
+
+    function error() {
+      output.innerHTML = "Unable to retrieve your location";
+    }
+
+    output.innerHTML = "<p>Locating…</p>";
+
+    navigator.geolocation.getCurrentPosition(success, error); //function to get the current position of the device
+  }
 </script>
 </html>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is the use of WebSocket API?</h3>
 
-The **WebSocket API** is an advanced technology that makes it possible to open a two-way interactive communication session between the user's browser and a server. With this API, you can send messages to a server and receive event-driven responses without having to poll the server for a reply.
+The **WebSocket API** is an advanced technology that makes it possible to open a two-way 
+interactive communication session between the user's browser and a server. With this API, 
+you can send messages to a server and receive event-driven responses without having to 
+poll the server for a reply.
 
 **Interfaces:**  
 
@@ -1778,27 +1780,28 @@ The **WebSocket API** is an advanced technology that makes it possible to open a
 Example
 
 ```javascript
- // Create WebSocket connection.
-const socket = new WebSocket('ws://localhost:8080/');
+  // Create WebSocket connection.
+  const socket = new WebSocket('ws://localhost:8080/');
 
-// Connection opened
-socket.addEventListener('open', function(event) {
+  // Connection opened
+  socket.addEventListener('open', function(event) {
     socket.send('Hello Server!');
-});
+  });
 
-// Listen for messages
-socket.addEventListener('message', function(event) {
+  // Listen for messages
+  socket.addEventListener('message', function(event) {
     console.log('Message from server ', event.data);
-});
+  });
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Explain about HTML Canvas?</h3>
 
-**canvas** is an HTML element which can be used to draw graphics via JavaScript. This can, for instance, be used to draw graphs, combine photos, or create animations.
+**canvas** is an HTML element which can be used to draw graphics via JavaScript. This can, 
+for instance, be used to draw graphs, combine photos, or create animations.
 
 **1. Colors, Styles, and Shadows:**
 
@@ -1822,36 +1825,36 @@ socket.addEventListener('message', function(event) {
 
 **3. Rectangles:**
   
-|Method            |Description                                          |
+|Method         |Description                                          |
 |---------------|-----------------------------------------------------|
-|rect()            |Creates a rectangle                                  |
-|fillRect()        |Draws a "filled" rectangle                           |
-|strokeRect()    |Draws a rectangle (no fill)                          |
+|rect()         |Creates a rectangle                                  |
+|fillRect()     |Draws a "filled" rectangle                           |
+|strokeRect()   |Draws a rectangle (no fill)                          |
 |clearRect()    |Clears the specified pixels within a given rectangle |
 
 **4. Paths:**
 
-| Method          |   Description                                                                                 |
-|-----------------|---------------------------------------------------------------------------------------------- |
-|fill()              |Fills the current drawing (path)                                                               |
-|stroke()          |Actually draws the path you have defined                                                       |
-|beginPath()      |Begins a path, or resets the current path                                                      |
-|moveTo()          |Moves the path to the specified point in the canvas, without creating a line                   |
-|closePath()      |Creates a path from the current point back to the starting point                               |
-|lineTo()          |Adds a new point and creates a line to that point from the last specified point in the canvas  |
-|clip()              |Clips a region of any shape and size from the original canvas                                  |
-|arc()              |Creates an arc/curve (used to create circles, or parts of circles)                             |
-|arcTo()          |Creates an arc/curve between two tangents                                                      |
+| Method          | Description                                                                             |
+|-----------------|-----------------------------------------------------------------------------------------|
+|fill()      |Fills the current drawing (path)                                                              |
+|stroke()    |Actually draws the path you have defined                                                      |
+|beginPath() |Begins a path, or resets the current path                                                     |
+|moveTo()    |Moves the path to the specified point in the canvas, without creating a line                  |
+|closePath() |Creates a path from the current point back to the starting point                              |
+|lineTo()    |Adds a new point and creates a line to that point from the last specified point in the canvas |
+|clip()      |Clips a region of any shape and size from the original canvas                                 |
+|arc()       |Creates an arc/curve (used to create circles, or parts of circles)                            |
+|arcTo()     |Creates an arc/curve between two tangents                                                     |
 
 **5. Transformations:**
 
-|Method            |Description                                                                |
-|---------------|-------------------------------------------------------------------------- |
-|scale()        |Scales the current drawing bigger or smaller                               |
-|rotate()        |Rotates the current drawing                                                |
-|translate()    |Remaps the (0,0) position on the canvas                                    |
-|transform()    |Replaces the current transformation matrix for the drawing                 |
-|setTransform()    |Resets the current transform to the identity matrix. Then runs transform() |
+| Method        | Description                                                                   |
+|---------------|-------------------------------------------------------------------------------|
+|scale()        | Scales the current drawing bigger or smaller                                  |
+|rotate()       | Rotates the current drawing                                                   |
+|translate()    | Remaps the (0,0) position on the canvas                                       |
+|transform()    | Replaces the current transformation matrix for the drawing                    |
+|setTransform() | Resets the current transform to the identity matrix. Then runs transform()    |
 
 **6. Text:**
 
@@ -1918,24 +1921,27 @@ socket.addEventListener('message', function(event) {
 <canvas id="circle">This browser does not support Canvas!</canvas>
 
 <script type="text/javascript">
-    // Circle
-    var canvas = document.getElementById("circle");
-    var context = canvas.getContext("2d");
-    context.beginPath();
-    context.arc(95, 50, 40, 0, 2 * Math.PI);
-    context.stroke();
+  // Circle
+  var canvas = document.getElementById("circle");
+  var context = canvas.getContext("2d");
+  context.beginPath();
+  context.arc(95, 50, 40, 0, 2 * Math.PI);
+  context.stroke();
 </script>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is difference between SVG and Canvas?</h3>
 
 **1. SVG:**
 
-The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define two-dimensional vector based graphics for the web. Unlike raster image (e.g. .jpg, .gif, .png, etc.), a vector image can be scaled up or down to any extent without losing the image quality.
+The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define 
+two-dimensional vector based graphics for the web. Unlike raster image (e.g. .jpg, .gif, 
+.png, etc.), a vector image can be scaled up or down to any extent without losing the 
+image quality.
 
 There are following advantages of using SVG over other image formats like JPEG, GIF, PNG, etc.
 
@@ -2011,7 +2017,7 @@ boxes, circles, text & adding images.
 |Better scalability. Can be printed with high quality at any resolution. Pixelation does not occur    |Poor scalability. Not suitable for printing on higher resolution. Pixelation may occur |
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Explain Drag and Drop in HTML5?</h3>
@@ -2061,7 +2067,7 @@ Example
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Explain Microdata in HTML5?</h3>
@@ -2084,16 +2090,16 @@ Example
 
 ```html
 <div itemscope>
-    <p>My name is <span itemprop="name">Elizabeth</span>.</p>
+  <p>My name is <span itemprop="name">Elizabeth</span>.</p>
 </div>
 
 <div itemscope>
-    <p>My name is <span itemprop="name">Daniel</span>.</p>
+  <p>My name is <span itemprop="name">Daniel</span>.</p>
 </div>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What are the HTML tags which deprecated in HTML5?</h3>
@@ -2178,7 +2184,7 @@ The following elements are not available in HTML5 anymore and their function is 
 |width                  |hr, table, td, th, col, colgroup and pre.|
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. How you can Use Modernizr in HTML5?</h3>
@@ -2207,15 +2213,15 @@ By default, Modernizr sets classes for all of your tests on the root element (`<
 Modernizr keeps track of the results of all of it's feature detections via the `Modernizr` object.
 
 ```javascript
-if (Modernizr.canvas) {
+  if (Modernizr.canvas) {
     alert("This browser supports HTML5 canvas!");
-} else {
+  } else {
     alert("no canvas :(");
-}
+  }
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is progressive rendering?</h3>
@@ -2258,11 +2264,11 @@ fast (faster than CSR) and the HTML is sent to the browser. Initial JavaScript l
 doesn't block content load as the HTML sent by the server already has the content.</p>
 
 <p align="center">
-    <img src="assets/images/progressive-rendering.png" alt="Progressive Rendering" width="500px" />
+  <img src="assets/images/progressive-rendering.png" alt="Progressive Rendering" width="500px" />
 </p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h2 id="07-html-iframe">07. HTML iframe</h2>
@@ -2291,7 +2297,7 @@ context. The topmost browsing context — the one with no parent — is usually 
 window, represented by the **Window** object.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h4>Example</h4>
@@ -2303,13 +2309,13 @@ window, represented by the **Window** object.
     <title>HTML5 iframe</title>
   </head>
   <style type="text/css">
-  iframe {
-    border: 1px solid #333;
-    width: 50%;
-  }
-  .output {
-    background: #eee;
-  }
+    iframe {
+      border: 1px solid #333;
+      width: 50%;
+    }
+    .output {
+      background: #eee;
+    }
   </style>
   <body>
     <p>The Inline iFrame Example</p>
@@ -2340,7 +2346,7 @@ window, represented by the **Window** object.
 in a page requires increased memory and other computing resources.</i>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Explain the use of rel="nofollow", rel="noreferrer", rel="noopener" attribute?</h3>
@@ -2385,7 +2391,7 @@ malicious links to take control over an opened tab.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. How can you highlight text in HTML?</h3>
@@ -2414,7 +2420,7 @@ context.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. How can I get indexed better by search engines?</h3>
@@ -2459,7 +2465,7 @@ like a small title within the page. In HTML, a heading looks like this:
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 **4. Image alt attribute:**
@@ -2548,7 +2554,7 @@ attribute from the HTML source code
 |These are used to initialize the DOM properties.| No such job defined.|
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. How do you set IE compatibility mode?</h3>
@@ -2879,7 +2885,7 @@ We can set text direction in HTML in one of two ways:
 |auto           |Let the browser figure out the text direction, based on the content|
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. When is it appropriate to use the small element?</h3>
@@ -2910,7 +2916,7 @@ it one font-size smaller, such as from `small` to `x-small`.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. How do you serve a page with content in multiple languages?</h3>
@@ -2940,7 +2946,7 @@ The **lang** attribute specifies the language of the element's content.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is the difference between `<section>` and `<div>`?</h3>
@@ -3014,7 +3020,7 @@ and wrap groups of `<dt>` and `<dd>` elements.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Discuss the differences between an HTML specification and a browser's implementation thereof.</h3>
@@ -3037,7 +3043,7 @@ impossible for the specification to handle all possibilities comprehensively. Th
 decisions about how to handle malformed documents are left up to the browser.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Why you would use a srcset attribute in an image tag? Explain the process the browser 
@@ -3087,7 +3093,7 @@ The syntax is similar to the display density descriptor, but instead of display 
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is accessibility & ARIA role means in a web application?</h3>
@@ -3272,7 +3278,7 @@ for most web pages/applications.
   * **aria-selected (state)**: Indicates the current “selected” state of various widgets.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Create a traffic signal light in html?</h3>
@@ -3355,7 +3361,7 @@ for most web pages/applications.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3516,7 +3522,7 @@ by one:</p>
 <h3>Commonly Used Input Types in HTML Forms</h3>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <p>In HTML forms, various input types are used to collect different types of 
@@ -3781,7 +3787,7 @@ between different types of data. Tables are also used to create databases.</p>
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h4>Output</h4>
@@ -4652,7 +4658,7 @@ any information on web pages in the ordered or unordered form.</p>
 
 <h4>Table of Content</h4>
 
-<ol>
+<ol type="1">
   <li>HTML Unordered List or Bulleted List</li>
   <li>HTML Ordered List</li>
   <li>HTML Description List</li>
@@ -4663,12 +4669,12 @@ any information on web pages in the ordered or unordered form.</p>
 
 | Tag | Description |
 |------|----------------------------------------|
-| <ul> | Defines an unordered list |
-| <ol> | Defines an ordered list |
-| <li> | Defines a list item |
-| <dl> | Defines a description list |
-| <dt> | Defines a term in a description list |
-| <dd> | Details the term in a description list |
+| `<ul>` | Defines an unordered list |
+| `<ol>` | Defines an ordered list |
+| `<li>` | Defines a list item |
+| `<dl>` | Defines a description list |
+| `<dt>` | Defines a term in a description list |
+| `<dd>` | Details the term in a description list |
 
 <h3>The HTML Unordered List or Bulleted List</h3>
 
