@@ -524,17 +524,17 @@ attribute specified.</i></p>
 <h3>Q. When should you use `section`, `div` or `article`?</h3>
 
 <ul>
-  <li>`<section>`, group of content inside is related to a single theme, and should appear 
+  <li>`&lt;section&gt;`, group of content inside is related to a single theme, and should appear 
     as an entry in an outline of the page. It's a chunk of related content, like a subsection 
 	of a long article, a major part of the page (eg the news section on the homepage), or a 
 	page in a webapp's tabbed interface. A section normally has a heading (title) and maybe 
 	a footer too.</li>
-  <li>`<article>`, represents a complete, or self-contained, composition in a document, page, 
+  <li>`&lt;article&gt;`, represents a complete, or self-contained, composition in a document, page, 
     application, or site and that is, in principle, independently distributable or reusable, 
 	e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog 
 	entry, a user-submitted comment, an interactive widget or gadget, or any other independent 
 	item of content.</li>
-  <li>`<div>`, on the other hand, does not convey any meaning, aside from any found in its class, 
+  <li>`&lt;div&gt;`, on the other hand, does not convey any meaning, aside from any found in its class, 
     lang and title attributes.</li>
 </ul>
 
@@ -3133,28 +3133,28 @@ values, we provide the actual width of the image.
 
 <h3>Q. What is accessibility & ARIA role means in a web application?</h3>
 
-The <b>Accessible Rich Internet Applications (ARIA)</b> Suite, defines a way to make Web 
+<p>The <b>Accessible Rich Internet Applications (ARIA)</b> Suite, defines a way to make Web 
 content and Web applications more accessible to people with disabilities. It especially 
 helps with dynamic content and advanced user interface controls developed with HTML, 
-JavaScript, and related technologies.
+JavaScript, and related technologies.</p>
 
-Screen readers work with regular HTML, but adding ARIA can provide screen reader users 
+<p>Screen readers work with regular HTML, but adding ARIA can provide screen reader users 
 with greater context and interactivity with the content on the page. ARIA has no effect 
 on how elements are displayed or behave in browsers. It does not add new functionality, 
-and is meant to act only as an extra descriptive layer for screen readers.
+and is meant to act only as an extra descriptive layer for screen readers.</p>
 
-Without WAI-ARIA certain functionality used in Web sites is not available to some users 
+<p>Without WAI-ARIA certain functionality used in Web sites is not available to some users 
 with disabilities, especially people who rely on screen readers and people who cannot 
 use a mouse. WAI-ARIA addresses these accessibility challenges, for example, by defining 
 ways for functionality to be provided to assistive technology. With WAI-ARIA, developers 
-can make advanced Web applications accessible and usable to people with disabilities.
+can make advanced Web applications accessible and usable to people with disabilities.</p>
 
-ARIA attributes are divided into two categories: roles, and states & properties.
+<p>ARIA attributes are divided into two categories: roles, and states & properties.</p>
 
 <h4>ARIA Roles:</h4>
 
-An ARIA role is added via a `role="<ROLE TYPE>"` attribute, and does not ever change for 
-an element once it is set. There are four categories of ARIA roles:
+<p>An ARIA role is added via a `role="<ROLE TYPE>"` attribute, and does not ever change for 
+an element once it is set. There are four categories of ARIA roles:</p>
 
 <ul>
   <li>landmark</li>
@@ -3195,123 +3195,129 @@ The different landmark roles you can use are as follows, copied from the W3C Wik
   related documents.</li>
   <li><b>search</b>: The search tool of a Web document.</li>
   <li><b>application</b>: A region declared as a web application, as opposed to a web document.</li>
-</li>
+</ul>
 
 <h4>Document ARIA Roles:</h4>
 
-Document roles describe the structure of the content on the page, as opposed to the structure 
+<p>Document roles describe the structure of the content on the page, as opposed to the structure 
 of the whole page, which landmark roles describe. The roles in bold are the ones we think 
 are the most common document aria roles, and the ones which are useful to think about 
-including in your HTML.
+including in your HTML.</p>
 
-  * <b>article</b>: A section of a page that consists of a composition that forms an independent 
-  part of a document, page, or site.
-  * <b>columnheader</b>
-  * <b>definition</b>: A definition of a term or concept.
-  * <b>directory</b>
-  * <b>document</b>
-  * <b>group</b>: A set of user interface objects which are not intended to be included in a 
-  page summary or table of contents by assistive technologies.
-  * <b>heading</b>: A heading for a section of the page.
-  * <b>img</b>
-  * <b>list</b>
-  * <b>listitem</b>
-  * <b>math</b>
-  * <b>note</b>
-  * <b>presentation</b>
-  * <b>region</b>
-  * <b>row</b>
-  * <b>rowgroup</b>
-  * <b>rowheader</b>
-  * <b>separator</b>
-  * <b>toolbar</b>
+<ul>
+  <li><b>article</b>: A section of a page that consists of a composition that forms an independent 
+  part of a document, page, or site.</li>
+  <li><b>columnheader</b></li>
+  <li><b>definition</b>: A definition of a term or concept.</li>
+  <li><b>directory</b></li>
+  <li><b>document</b></li>
+  <li><b>group</b>: A set of user interface objects which are not intended to be included in a 
+  page summary or table of contents by assistive technologies.</li>
+  <li><b>heading</b>: A heading for a section of the page.</li>
+  <li><b>img</b></li>
+  <li><b>list</b></li>
+  <li><b>listitem</b></li>
+  <li><b>math</b></li>
+  <li><b>note</b></li>
+  <li><b>presentation</b></li>
+  <li>* <b>region</b></li>
+  <li><b>row</b></li>
+  <li><b>rowgroup</b></li>
+  <li><b>rowheader</b></li>
+  <li><b>separator</b></li>
+  <li><b>toolbar</b></li>
+</ul>
 
 <h4>Widget ARIA Roles:</h4>
 
-Widget Roles are used to describe what are often javascript-based interfaces, or the more 
+<p>Widget Roles are used to describe what are often javascript-based interfaces, or the more 
 complicated parts of your web page's interface. The roles that are starred are the ones 
 we think are the most common elements widget aria roles, and the ones which are useful 
-useful to think about including in your HTML.
+useful to think about including in your HTML.</p>
 
-  * <b>alert</b>: A message with important, and usually time-sensitive, information. 
-  * <b>alertdialog</b>: A type of dialog that contains an alert message, where initial focus 
-  goes to an element within the dialog. 
-  * <b>button</b>: An input that allows for user-triggered actions when clicked or pressed.
-  * <b>checkbox</b>: A checkable input that has three possible values: true, false, or mixed.
-  * <b>dialog</b>: A dialog is an application window that is designed to interrupt the current 
-  processing of an application in order to prompt the user to enter information or require 
-  a response. 
-  * <b>gridcell</b>
-  * <b>link</b>
-  * <b>log</b>
-  * <b>marquee</b>
-  * <b>menuitem</b>
-  * <b>menuitemcheckbox</b>
-  * <b>menuitemradio</b>
-  * <b>option</b>
-  * <b>progressbar</b>
-  * <b>radio</b>: A checkable input in a group of radio roles, only one of which can be 
-    checked at a time.
-  * <b>scrollbar</b>
-  * <b>slider</b>
-  * <b>spinbutton</b>
-  * <b>status</b>
-  * <b>tab</b>: A grouping label providing a mechanism for selecting the tab content that is 
-  to be rendered to the user.
-  * <b>tabpanel</b>: A container for the resources associated with a tab, where each tab is 
-  contained in a tablist.
-  * <b>textbox</b>: Input that allows free-form text as its value.
-  * <b>timer</b>
-  * <b>tooltip</b>
-  * <b>treeitem</b>
+<ul>
+  <li><b>alert</b>: A message with important, and usually time-sensitive, information.</li>
+  <li><b>alertdialog</b>: A type of dialog that contains an alert message, where initial focus 
+    goes to an element within the dialog.</li>
+  <li><b>button</b>: An input that allows for user-triggered actions when clicked or pressed.</li>
+  <li><b>checkbox</b>: A checkable input that has three possible values: true, false, or mixed.</li>
+  <li><b>dialog</b>: A dialog is an application window that is designed to interrupt the current 
+    processing of an application in order to prompt the user to enter information or require 
+	a response.</li>
+  <li><b>gridcell</b></li>
+  <li><b>link</b></li>
+  <li>* <b>log</b></li>
+  <li><b>marquee</b></li>
+  <li><b>menuitem</b></li>
+  <li><b>menuitemcheckbox</b></li>
+  <li><b>menuitemradio</b></li>
+  <li><b>option</b></li>
+  <li><b>progressbar</b></li>
+  <li><b>radio</b>: A checkable input in a group of radio roles, only one of which can be 
+    checked at a time.</li>
+  <li><b>scrollbar</b></li>
+  <li><b>slider</b></li>
+  <li><b>spinbutton</b></li>
+  <li><b>status</b></li>
+  <li><b>tab</b>: A grouping label providing a mechanism for selecting the tab content that is 
+  to be rendered to the user.</li>
+  <li><b>tabpanel</b>: A container for the resources associated with a tab, where each tab is 
+  contained in a tablist.</li>
+  <li><b>textbox</b>: Input that allows free-form text as its value.</li>
+  <li><b>timer</b></li>
+  <li><b>tooltip</b></li>
+  <li><b>treeitem</b></li>
+</ul>
 
 <h4>Abstract ARIA Roles:</h4>
 
-Abstract aria roles are the basis of how the other ARIA roles are defined. These are not 
-to be used in HTML.
+<p>Abstract aria roles are the basis of how the other ARIA roles are defined. These are not 
+to be used in HTML.</p>
 
 <h4>ARIA States & Properties:</h4>
 
-ARIA states and properties are often used to support ARIA roles that exist on a page. 
+<p>ARIA states and properties are often used to support ARIA roles that exist on a page. 
 ARIA Properties often describe relationships with other elements, and for the most part, 
-do not change once they're set.
+do not change once they're set.</p>
 
-ARIA States are more dynamic and are typically updated with JavaScript as a user interacts 
+<p>ARIA States are more dynamic and are typically updated with JavaScript as a user interacts 
 with a page. Screen readers are notified when these states change, and can announce these 
-changes to users after an interaction takes place.
+changes to users after an interaction takes place.</p>
 
-While there are 35 aria properties and states the W3C defines and which you can read more 
+<p>While there are 35 aria properties and states the W3C defines and which you can read more 
 about on the W3C site, here are the ones we believe to most commonly used and practical 
-for most web pages/applications.
+for most web pages/applications.</p>
 
-  * <b>aria-activedescendant</b>: Identifies the currently active descendant of a composite 
-    widget. Use with autofill search suggestions.
-  * <b>aria-autocomplete</b>: Indicates whether user input completion suggestions are provided. 
-    Use with autofill search suggestions.
-  * <b>aria-checked (state)</b>: Indicates the current “checked” state of checkboxes, radio 
-    buttons, and other widgets. You can set this to true, false, or mixed state. 
-  * <b>aria-controls</b>: Identifies the element (or elements) whose contents or presence are 
-  controlled by the current element.
-  * <b>aria-describedby</b>: Identifies the element (or elements) that describes the object.
-  * <b>aria-disabled (state)</b>: Indicates that the element is perceivable but disabled, so 
-  it is not editable or otherwise operable.
-  * <b>aria-expanded (state)</b>: Indicates whether the element, or another grouping element 
-    it controls, is currently expanded or collapsed.
-  * <b>aria-hidden (state)</b>: Indicates that the element and all of its descendants are 
-    not visible or perceivable to any user as implemented by the author.
-  * <b>aria-invalid (state)</b>: Indicates the entered value does not conform to the format 
-    expected by the application.
-  * <b>aria-label</b>: Defines a string value that labels the current element.
-  * <b>aria-labelledby</b>: Identifies the element (or elements) that labels the current element.
-  * <b>aria-live</b>: Indicates that an element is dynamic, changing, and will be updated, 
-    and describes the types of updates the user can expect from the live region.
-  * <b>aria-owns</b>: Identifies an element (or elements) in order to define a visual, 
+<ul>
+  <li><b>aria-activedescendant</b>: Identifies the currently active descendant of a composite 
+    widget. Use with autofill search suggestions.</li>
+  <li><b>aria-autocomplete</b>: Indicates whether user input completion suggestions are provided. 
+    Use with autofill search suggestions.</li>
+  <li><b>aria-checked (state)</b>: Indicates the current “checked” state of checkboxes, radio 
+    buttons, and other widgets. You can set this to true, false, or mixed state.</li>
+  <li><b>aria-controls</b>: Identifies the element (or elements) whose contents or presence are 
+  controlled by the current element.</li>
+  <li><b>aria-describedby</b>: Identifies the element (or elements) that describes the object.</li>
+  <li><b>aria-disabled (state)</b>: Indicates that the element is perceivable but disabled, so 
+  it is not editable or otherwise operable.</li>
+  <li><b>aria-expanded (state)</b>: Indicates whether the element, or another grouping element 
+    it controls, is currently expanded or collapsed.</li>
+  <li><b>aria-hidden (state)</b>: Indicates that the element and all of its descendants are 
+    not visible or perceivable to any user as implemented by the author.</li>
+  <li><b>aria-invalid (state)</b>: Indicates the entered value does not conform to the format 
+    expected by the application.</li>
+  <li><b>aria-label</b>: Defines a string value that labels the current element.</li>
+  <li><b>aria-labelledby</b>: Identifies the element (or elements) that labels the current element.</li>
+  <li><b>aria-live</b>: Indicates that an element is dynamic, changing, and will be updated, 
+    and describes the types of updates the user can expect from the live region.</li>
+  <li><b>aria-owns</b>: Identifies an element (or elements) in order to define a visual, 
     functional, or contextual parent/child  relationship between DOM elements where the 
-	DOM hierarchy cannot be used to represent the relationship.
-  * <b>aria-pressed (state)</b>: Indicates the current “pressed” state of toggle buttons.
-  * <b>aria-required</b>: Indicates that user input is required on the element before a form 
-    may be submitted.
-  * <b>aria-selected (state)</b>: Indicates the current “selected” state of various widgets.
+	DOM hierarchy cannot be used to represent the relationship.</li>
+  <li><b>aria-pressed (state)</b>: Indicates the current “pressed” state of toggle buttons.</li>
+  <li><b>aria-required</b>: Indicates that user input is required on the element before a form 
+    may be submitted.</li>
+  <li><b>aria-selected (state)</b>: Indicates the current “selected” state of various widgets.</li>
+</ul>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -3412,7 +3418,7 @@ Media, &amp; Miscellaneous.</h4>
 HTML has the ability to let events trigger actions in a browser, like starting a JavaScript 
 when a user clicks on an element.
 
-Below are the global event attributes that can be added to HTML elements to define event actions.
+<p>Below are the global event attributes that can be added to HTML elements to define event actions.</p>
 
 <h4 id="window-events">Window Event Attributes</h4>
 <p>Events triggered for the window object (applies to the &lt;body&gt; tag):</p>
