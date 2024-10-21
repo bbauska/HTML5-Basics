@@ -1399,7 +1399,7 @@ decide whether to handle it in quirks mode or standards mode.
 * Avoid Empty Image src
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Comparison of browsers engines like Chrome, Firefox, Internet explorer, Safari?</h3>
@@ -4861,7 +4861,9 @@ and definition list. We have explained all three list types with examples.</p>
 <h2>Remove the Iframe Border</h2>
 <p>To remove the default border of the iframe, use CSS:</p>
 
+```
 <iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+```
 
 </body>
 </html>
@@ -4918,6 +4920,9 @@ Table of Content
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="16-misc">16. Miscellaneous</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div align="right">
+  <b><a href="#toc">↥ back to top</a></b>
+</div>
 
 
 
