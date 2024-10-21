@@ -144,7 +144,9 @@ but not a `div`), whereas a DOCTYPE declares what DTD a document supposedly resp
 this document respects the HTML DTD). For webpages, the DOCTYPE declaration is required. 
 It is used to tell user agents what version of the HTML specifications your document respects. 
 
-Once a user agent has recognized a correct DOCTYPE, it will trigger the `no-quirks mode` matching this DOCTYPE forreading the document. If a user agent doesn't recognize a correct DOCTYPE, it will trigger the `quirks mode`.
+Once a user agent has recognized a correct DOCTYPE, it will trigger the `no-quirks mode` 
+matching this DOCTYPE forreading the document. If a user agent doesn't recognize a correct 
+DOCTYPE, it will trigger the `quirks mode`.
 
 <div align="right">
     <b><a href="#toc">↥ back to top</a></b>
@@ -227,21 +229,21 @@ expected to be modified through JavaScript code.
 <p>Progress: <progress id="bar" value="0" max="100"><span>0</span>%</progress></p>
 
 <script type="text/javascript">
-    var i = 0;
-    var progressBar = document.getElementById("bar");
+  var i = 0;
+  var progressBar = document.getElementById("bar");
     
-    function countNumbers() {
-      if(i < 100) {
-        i = i + 1;
-        progressBar.value = i;
-        // For browsers that don't support progress tag
-        progressBar.getElementsByTagName("span")[0].textContent = i;
-      }
-
-      // Wait for sometime before running this script again
-      setTimeout("countNumbers()", 100);
+  function countNumbers() {
+    if(i < 100) {
+      i = i + 1;
+      progressBar.value = i;
+      // For browsers that don't support progress tag
+      progressBar.getElementsByTagName("span")[0].textContent = i;
     }
-    countNumbers();
+
+    // Wait for sometime before running this script again
+    setTimeout("countNumbers()", 100);
+  }
+  countNumbers();
 </script>
 ```
 
@@ -305,7 +307,7 @@ expected to be modified through JavaScript code.
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h4>Example to create a HTML form with below constraints</h4>
@@ -321,9 +323,9 @@ expected to be modified through JavaScript code.
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   body {font-family: Arial, Helvetica, sans-serif;}
   * {box-sizing: border-box;}
@@ -456,9 +458,11 @@ tag. Whenever a browser hits a new tag it automatically end the previous tag.
 
 <h3>Q. What is a self closing tag?</h3>
 
-In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren't required to have specific closing tags are called “self closing” tags.
+In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren't 
+required to have specific closing tags are called “self closing” tags.
 
-An example of a self closing tag is something like a line break (`<br />`) or the meta tag (`<meta>`). This means that the following are both acceptable:
+An example of a self closing tag is something like a line break (`<br />`) or the meta 
+tag (`<meta>`). This means that the following are both acceptable:
 
 ```html
 <meta charset="UTF-8">
@@ -639,10 +643,13 @@ specified in the tag:
 <meta charset="utf-8"/>
 ```
 
-* **UTF-8**: A Unicode Translation Format that comes in 8-bit units that is, it comes in bytes. A character in UTF8 can be from 1 to 4 bytes long, making UTF8 variable width.
+<ul>
+  <li>**UTF-8**: A Unicode Translation Format that comes in 8-bit units that is, it comes in 
+    bytes. A character in UTF8 can be from 1 to 4 bytes long, making UTF8 variable width.</li>
+</ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is the purpose of meta tags?</h3>
@@ -654,52 +661,52 @@ document, such as author, expiry date, a list of keywords, document author etc.
 <!DOCTYPE html>
 <html>
   <head>
-        <!--Recommended Meta Tags-->
-        <meta charset="utf-8">
-        <meta name="language" content="english"> 
-        <meta http-equiv="content-type" content="text/html">
-        <meta name="author" content="Author Name">
-        <meta name="designer" content="Designer Name">
-        <meta name="publisher" content="Publisher Name">
-        <meta name="no-email-collection" content="name@email.com">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!--Recommended Meta Tags-->
+    <meta charset="utf-8">
+    <meta name="language" content="english"> 
+    <meta http-equiv="content-type" content="text/html">
+    <meta name="author" content="Author Name">
+    <meta name="designer" content="Designer Name">
+    <meta name="publisher" content="Publisher Name">
+    <meta name="no-email-collection" content="name@email.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-        <!--Search Engine Optimization Meta Tags-->
-        <meta name="description" content="Project Description">
-        <meta name="keywords" content="Software Engineer,Product Manager,Project Manager,Data Scientist">
-        <meta name="robots" content="index,follow">
-        <meta name="revisit-after" content="7 days">
-        <meta name="distribution" content="web">
-        <meta name="robots" content="noodp">
+    <!--Search Engine Optimization Meta Tags-->
+    <meta name="description" content="Project Description">
+    <meta name="keywords" content="Software Engineer,Product Manager,Project Manager,Data Scientist">
+    <meta name="robots" content="index,follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="web">
+    <meta name="robots" content="noodp">
         
-        <!--Optional Meta Tags-->
-        <meta name="distribution" content="web">
-        <meta name="web_author" content="">
-        <meta name="rating" content="">
-        <meta name="subject" content="Personal">
-        <meta name="title" content=" - Official Website.">
-        <meta name="copyright" content="Copyright 2020">
-        <meta name="reply-to" content="">
-        <meta name="abstract" content="">
-        <meta name="city" content="Bangalore">
-        <meta name="country" content="INDIA">
-        <meta name="distribution" content="">
-        <meta name="classification" content="">
+    <!--Optional Meta Tags-->
+    <meta name="distribution" content="web">
+    <meta name="web_author" content="">
+    <meta name="rating" content="">
+    <meta name="subject" content="Personal">
+    <meta name="title" content=" - Official Website.">
+    <meta name="copyright" content="Copyright 2020">
+    <meta name="reply-to" content="">
+    <meta name="abstract" content="">
+    <meta name="city" content="Bangalore">
+    <meta name="country" content="INDIA">
+    <meta name="distribution" content="">
+    <meta name="classification" content="">
     
-        <!--Meta Tags for HTML pages on Mobile-->
-        <meta name="format-detection" content="telephone=yes"/>
-        <meta name="HandheldFriendly" content="true"/> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-        <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--Meta Tags for HTML pages on Mobile-->
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta name="HandheldFriendly" content="true"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <meta name="apple-mobile-web-app-capable" content="yes" />
         
-        <!--http-equiv Tags-->
-        <meta http-equiv="Content-Style-Type" content="text/css">
-        <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <!--http-equiv Tags-->
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
       
     <title>HTML5 Meta Tags</title>
   </head>
   <body>
-       ...
+    ...
   </body>
 </html>
 ```
@@ -719,8 +726,8 @@ it when it has finished downloading.
 
 ```html
 <!-- 
-    With async (asynchronous), browser will continue to load the HTML 
-    page and render it while the browser load and execute the script at the same time. 
+  With async (asynchronous), browser will continue to load the HTML 
+  page and render it while the browser load and execute the script at the same time. 
 -->
 <!-- Google Analytics is usually added like this -->
 <script async src="https://google-analytics.com/analytics.js"></script>
@@ -735,8 +742,8 @@ HTML parser has completed. Not all browsers support this.
 
 ```html
 <!-- 
-    With defer, browser will run your script when the page finished parsing. 
-    (not necessary finishing downloading all image files. This is good.) 
+  With defer, browser will run your script when the page finished parsing. 
+  (not necessary finishing downloading all image files. This is good.) 
 -->
 <script defer src="myscript.js"></script>
 ```
@@ -753,8 +760,8 @@ has been fully parsed.
 
 ```html
 <!-- 
-    Without async or defer, browser will run your script immediately, 
-    before rendering the elements. 
+  Without async or defer, browser will run your script immediately, 
+  before rendering the elements. 
 -->
 <script src="myscript.js"></script>
 ```
@@ -882,29 +889,28 @@ Yes
 ```html
 <!DOCTYPE HTML>
 <html>
-   <head>
-         <title>HTML5 localStorage</title>
-   </head>
-   <body>
-      <script type="text/javascript">
-        try{
-            if(window.localStorage){ // Check if the localStorage object exists
-            
-                var result = "";
-                var characters  = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-                var charactersLength = characters.length;
-                for(var i = 0; i < 10000; i++){
-                    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-                    localStorage.setItem("key"+i, result);
-                }  
-            } else {
-                alert("Sorry, your browser do not support localStorage.");
-            }
-        } catch(e) {
-            console.log('Exception: '+e);
+  <head>
+    <title>HTML5 localStorage</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      try {
+        if(window.localStorage){ // Check if the localStorage object exists
+          var result = "";
+          var characters  = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+          var charactersLength = characters.length;
+          for(var i = 0; i < 10000; i++){
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            localStorage.setItem("key"+i, result);
+          }  
+        } else {
+          alert("Sorry, your browser do not support localStorage.");
         }
-      </script>
-   </body>
+      } catch(e) {
+        console.log('Exception: '+e);
+      }
+    </script>
+  </body>
 </html>
 ```
 
@@ -960,7 +966,7 @@ It is the successor to both LocalStorage and WebSQL, designed to replace them as
 * Very complex API resulting in large amounts of nested callbacks.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Explain Application Cache in HTML5. OR What is a manifest file in HTML?</h3>
@@ -984,10 +990,14 @@ Syntax:
 </html>
 ```
 
-*Note: Using the application caching feature described here is at this point highly discouraged; it's in the process of being removed from the Web platform. Use **Service Workers** instead. In fact as of Firefox 44, when AppCache is used to provide offline support for a page a warning message is now displayed in the console advising developers to use Service workers instead (bug 1204581).*
+<i>Note: Using the application caching feature described here is at this point highly 
+discouraged; it's in the process of being removed from the Web platform. Use **Service Workers** 
+instead. In fact as of Firefox 44, when AppCache is used to provide offline support for a 
+page a warning message is now displayed in the console advising developers to use Service 
+workers instead (bug 1204581).</i>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is the purpose of cache busting and how can you achieve it?</h3>
@@ -1016,7 +1026,7 @@ string to the end of the file.
 The browser considers it a different file but prevents the need to change the file name.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What ARIA and screenreaders are, and how to make a website accessible?</h3>
@@ -1027,7 +1037,7 @@ applications. You can make your sites more accessible by following ARIA standard
 such as semantic HTML, alt attributes and using [role=button] in the expected ways.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. How to use data- attribute in html5?</h3>
@@ -1064,7 +1074,7 @@ article.dataset.parent; // "cars"
 **&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/html-data-attribute-llxlkn?file=/script.js)**
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is the purpose of the `alt` attribute on images?</h3>
@@ -1163,18 +1173,18 @@ For the select element, the user is required to select one of the options you've
 
 Regarding optimization and responsiveness the debate bounces back and forth but, the concept is:
 
-* CSS animations allows the browser to choose where the animation processing is done, CPU or the GPU. (Central or Graphics Processing Unit)
-
-* That said, adding many layers to a document will eventually have a performance hit.
-
-* JS animation means more code for the user to download and for the developer to maintain.
-
-* Applying multiple animation types on an element is harder with CSS since all transforming power is in one property transform
-
-* CSS animations being declarative are not programmable therefore limited in capability.
+<ul>
+  <li>CSS animations allows the browser to choose where the animation processing is done, 
+    CPU or the GPU. (Central or Graphics Processing Unit)</li>
+  <li>That said, adding many layers to a document will eventually have a performance hit.</li>
+  <li>JS animation means more code for the user to download and for the developer to maintain.</li>
+  <li>Applying multiple animation types on an element is harder with CSS since all transforming 
+    power is in one property transform.</li>
+  <li>CSS animations being declarative are not programmable therefore limited in capability.</li>
+</ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What does CORS stand for and what issue does it address?</h3>
@@ -1185,17 +1195,24 @@ to work with the same idioms as same-domain requests. CORS gives web servers cro
 access controls, which enable secure cross-domain data transfers.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Can you describe the difference between progressive enhancement and graceful degradation?</h3>
 
-* Graceful degradation is when you initially serve the best possible user experience, with all modern functionality, but use feature detection to “gracefully degrade” parts of your application with a fallback or polyfill.
-
-* Progressive enhancement ensures a page works at the lowest expected abilities of browsers. So if you have a JavaScript web application that enhances a persons ability to send information to a database with features like ajax – at the very least you need to provide the ability for a person to send that same information without JavaScript enabled. In this case a simple form with full-page refresh will do what you need.
+<ul>
+  <li>Graceful degradation is when you initially serve the best possible user experience, 
+    with all modern functionality, but use feature detection to “gracefully degrade” parts 
+	of your application with a fallback or polyfill.</li>
+  <li>Progressive enhancement ensures a page works at the lowest expected abilities of 
+    browsers. So if you have a JavaScript web application that enhances a persons ability 
+	to send information to a database with features like ajax – at the very least you need 
+	to provide the ability for a person to send that same information without JavaScript 
+	enabled. In this case a simple form with full-page refresh will do what you need.</li>
+</ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is the DOM? How does the DOM work?</h3>
@@ -1207,39 +1224,49 @@ are reflected live in the document. In a browser, this API is available to JavaS
 where DOM nodes can be manipulated to change their styles, contents, placement in the 
 document, or interacted with through event listeners.
 
-* The DOM was designed to be independent of any particular programming language, making the structural representation of the document available from a single, consistent API.
-
-* document.getElementById() and document.querySelector() are common functions for selecting DOM nodes.
-
-* Setting the innerHTML property to a new value runs the string through the HTML parser, offering an easy way to append dynamic HTML content to a node.
+<ul>
+  <li>The DOM was designed to be independent of any particular programming language, making 
+    the structural representation of the document available from a single, consistent API.</li>
+  <li>document.getElementById() and document.querySelector() are common functions for selecting 
+    DOM nodes.</li>
+  <li>Setting the innerHTML property to a new value runs the string through the HTML parser, 
+    offering an easy way to append dynamic HTML content to a node.</li>
+</ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. How does the browser rendering engine work?</h3>
 
 In order to render content the browser has to go through a series of steps:
 
-* Document Object Model(DOM)
-* CSS object model(CSSOM)
-* Render Tree
-* Layout
-* Paint
+<ul>
+  <li>Document Object Model(DOM)</li>
+  <li>CSS object model(CSSOM)</li>
+  <li>Render Tree</li>
+  <li>Layout</li>
+  <li>Paint</li>
+</ul>
 
 <p align="center">
-    <img src="assets/images/layers.png" alt="Browser Rendering Engine" />
+  <img src="assets/images/layers.png" alt="Browser Rendering Engine" />
 </p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is the difference between standards mode and quirks mode?</h3>
 
-In **Quirks mode**, layout emulates nonstandard behavior in Navigator 4 and Internet Explorer 5. This is essential in order to support websites that were built before the widespread adoption of web standards. In **Standards mode**, the behavior is described by the HTML and CSS specifications. 
+In **Quirks mode**, layout emulates nonstandard behavior in Navigator 4 and Internet 
+Explorer 5. This is essential in order to support websites that were built before the 
+widespread adoption of web standards. In **Standards mode**, the behavior is described 
+by the HTML and CSS specifications. 
 
-For HTML documents, browsers use a `<!DOCTYPE html>` in the beginning of the document to decide whether to handle it in quirks mode or standards mode. 
+For HTML documents, browsers use a `<!DOCTYPE html>` in the beginning of the document to 
+decide whether to handle it in quirks mode or standards mode. 
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -1253,34 +1280,48 @@ For HTML documents, browsers use a `<!DOCTYPE html>` in the beginning of the doc
 ```
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is Critical Rendering Path?</h3>
 
-* Constructing the DOM Tree
-* Constructing the CSSOM Tree
-* Running JavaScript - parser blocking resource
-* Creating the Render Tree
-* Generating the Layout
-* Painting
+<ul>
+  <li>Constructing the DOM Tree</li>
+  <li>Constructing the CSSOM Tree</li>
+  <li>Running JavaScript - parser blocking resource</li>
+  <li>Creating the Render Tree</li>
+  <li>Generating the Layout</li>
+  <li>Painting</li>
+</ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What are the Benefits of Server Side Rendering (SSR) Over Client Side Rendering (CSR)?</h3>
 
-* We are using server side rendering for two reasons:
-    * performance benefit for our customers
-    * Consistent SEO performance
+<ul>
+  <li>We are using server side rendering for two reasons:
+    <ul>
+	  <li>Performance benefit for our customers</li>
+	  <li>Consistent SEO performance</li>
+	</ul>
+  </li>
+</ul>
 
-* The main difference is that for SSR your server's response to the browser is the HTML of your page that is ready to be rendered, while for CSR the browser gets a pretty empty document with links to your javascript. That means for SSR your browser will start rendering the HTML from your server without having to wait for all the JavaScript to be downloaded and executed.
-    
-* for SSR, the user can start viewing the page while all of that is happening. For the CSR world, you need to wait for all of the above to happen and then have the virtual dom moved to the browser dom for the page to be viewable.
+<ul>
+  <li>The main difference is that for SSR your server's response to the browser is the HTML 
+    of your page that is ready to be rendered, while for CSR the browser gets a pretty empty 
+	document with links to your javascript. That means for SSR your browser will start rendering 
+	the HTML from your server without having to wait for all the JavaScript to be downloaded 
+	and executed.</li>
+  <li>for SSR, the user can start viewing the page while all of that is happening. For the 
+    CSR world, you need to wait for all of the above to happen and then have the virtual dom 
+	moved to the browser dom for the page to be viewable.</li>
+</ul>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Name 3 ways to decrease page load?</h3>
@@ -1291,7 +1332,7 @@ For HTML documents, browsers use a `<!DOCTYPE html>` in the beginning of the doc
 4?. Keep resources on a CDN
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. Ways to improve website performance</h3>
@@ -2389,7 +2430,9 @@ Here are all the HTML tags that still matter:
 
 **1. Title tag:**
 
-Title tags are used by search engines to determine the subject of a page and display it in SERP. As a rule of thumb, titles that are under 60 characters long will fit on most screens. In HTML, a title tag looks like this:
+Title tags are used by search engines to determine the subject of a page and display it 
+in SERP. As a rule of thumb, titles that are under 60 characters long will fit on most 
+screens. In HTML, a title tag looks like this:
 
 ```html
 <title>Your Title Goes Here</title>
@@ -2397,7 +2440,10 @@ Title tags are used by search engines to determine the subject of a page and dis
 
 **2. Meta description tag:**
 
-Meta description is a short paragraph of text used to describe your page in search results. The function of meta description is similar to the title. It provides a little more detail about your page and it helps users decide whether to visit your page or not. In HTML, a meta description tag looks like this:
+Meta description is a short paragraph of text used to describe your page in search results. 
+The function of meta description is similar to the title. It provides a little more detail 
+about your page and it helps users decide whether to visit your page or not. In HTML, a 
+meta description tag looks like this:
 
 ```html
 <meta name="description" content="Your description goes here">
@@ -2405,7 +2451,8 @@ Meta description is a short paragraph of text used to describe your page in sear
 
 **3. Heading tags:**
 
-Headings (H1-H6) are used to split your page into sections or chapters. Each heading is like a small title within the page. In HTML, a heading looks like this:
+Headings (H1-H6) are used to split your page into sections or chapters. Each heading is 
+like a small title within the page. In HTML, a heading looks like this:
 
 ```html
 <h1>Your heading goes here</h1>
@@ -2417,7 +2464,11 @@ Headings (H1-H6) are used to split your page into sections or chapters. Each hea
 
 **4. Image alt attribute:**
 
-The `alt` text attribute is a part of an image tag, and it provides a description for an image. Alt text plays a major role in image optimization. It makes your images accessible both to search engines (by telling them what a particular image means) and to people (by displaying an alternative text in case a particular image cannot be loaded or by helping screen readers convey images). In HTML it may look like this:
+The `alt` text attribute is a part of an image tag, and it provides a description for an 
+image. Alt text plays a major role in image optimization. It makes your images accessible 
+both to search engines (by telling them what a particular image means) and to people (by 
+displaying an alternative text in case a particular image cannot be loaded or by helping 
+screen readers convey images). In HTML it may look like this:
 
 ```html
 <img src="url" alt="Your image description goes here">
@@ -2425,7 +2476,11 @@ The `alt` text attribute is a part of an image tag, and it provides a descriptio
 
 **5. Open Graph tags:**
 
-Open Graph (OG) tags are placed in the `<head>` section of a page and allow any webpage to become a rich object in social networks. OG tags let you control how the information about your page is represented when shared via social channels. This possibility may help you enhance the performance of your links on social media, thus driving more click-throughs and increasing conversions. In HTML, it can look like this:
+Open Graph (OG) tags are placed in the `<head>` section of a page and allow any webpage 
+to become a rich object in social networks. OG tags let you control how the information 
+about your page is represented when shared via social channels. This possibility may help 
+you enhance the performance of your links on social media, thus driving more click-throughs 
+and increasing conversions. In HTML, it can look like this:
 
 ```html
 <meta name="og:title" property="og:title" content="Your Open Graph Title Goes Here">
@@ -2433,7 +2488,10 @@ Open Graph (OG) tags are placed in the `<head>` section of a page and allow any 
 
 **6. Robots tag:**
 
-A robots tag is an element in the HTML of a page that informs search engines which pages on your site should be indexed and which should not. Its functions are similar to robots.txt, but robots.txt gives suggestions. Whereas robots tags give instructions. In HTML, it can look like this:
+A robots tag is an element in the HTML of a page that informs search engines which pages 
+on your site should be indexed and which should not. Its functions are similar to robots.txt, 
+but robots.txt gives suggestions. Whereas robots tags give instructions. In HTML, it can 
+look like this:
 
 ```html
 <meta name="robots" content="index, follow">
@@ -2441,7 +2499,11 @@ A robots tag is an element in the HTML of a page that informs search engines whi
 
 **7. Canonical tag:**
 
-A canonical tag is a way of telling search engines that a specific URL represents the master copy of a page. Using the canonical tag prevents problems caused by identical or "duplicate" content appearing on multiple URLs. Practically speaking, the canonical tag tells search engines which version of a URL you want to appear in search results. In HTML, it may look like this:
+A canonical tag is a way of telling search engines that a specific URL represents the 
+master copy of a page. Using the canonical tag prevents problems caused by identical 
+or "duplicate" content appearing on multiple URLs. Practically speaking, the canonical 
+tag tells search engines which version of a URL you want to appear in search results. 
+In HTML, it may look like this:
 
 ```html
 <link href="URL" rel="canonical">
@@ -2449,14 +2511,18 @@ A canonical tag is a way of telling search engines that a specific URL represent
 
 **8. HTML5 semantic tags:**
 
-One of the most important features of HTML5 is its semantics tags. Semantic tags refers to syntax that makes the HTML more comprehensible by better defining the different sections and layout of web pages. It makes web pages more informative and adaptable, allowing browsers and search engines to better interpret content. For example, instead of using `<div id="header"></div>` you can use a `<header></hrader>` tag.
+One of the most important features of HTML5 is its semantics tags. Semantic tags refers to 
+syntax that makes the HTML more comprehensible by better defining the different sections 
+and layout of web pages. It makes web pages more informative and adaptable, allowing browsers 
+and search engines to better interpret content. For example, instead of using 
+`<div id="header"></div>` you can use a `<header></hrader>` tag.
 
 <p align="center">
-    <img src="assets/images/semantic-tags.png" alt="HTML5 semantic tags" width="300px" />
+  <img src="assets/images/semantic-tags.png" alt="HTML5 semantic tags" width="300px" />
 </p>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is the difference between an "attribute" and a "property" in HTML?</h3>
@@ -2493,21 +2559,25 @@ specify whether a page should be rendered as IE 7 (compatibility view) or IE 8 (
 
 ```html
 <html>
-   <head>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <title>My Web Page</title>
-   </head>
-   <body>
-      <p>Content goes here.</p>
-   </body>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My Web Page</title>
+  </head>
+  <body>
+    <p>Content goes here.</p>
+  </body>
 </html>
 ```
 
-Emulating the version tells the browser to use the DOCTYPE to determine how to render content. pages without a DOCTYPE will be rendered in quirks mode. Edge mode tells Windows Internet Explorer to display content in the highest mode available, which actually breaks the "lock-in" paradigm. With Internet Explorer 8, this is equivalent to IE8 mode.
+Emulating the version tells the browser to use the DOCTYPE to determine how to render 
+content. pages without a DOCTYPE will be rendered in quirks mode. Edge mode tells Windows 
+Internet Explorer to display content in the highest mode available, which actually breaks 
+the "lock-in" paradigm. With Internet Explorer 8, this is equivalent to IE8 mode.
 
 **Setting the Meta Element:**
 
-The meta element includes a content attribute that enables you to specify the mode that content is rendered in for the webpage, as the following table shows.
+The meta element includes a content attribute that enables you to specify the mode that 
+content is rendered in for the webpage, as the following table shows.
 
 |Value          |Rendering mode                                              |
 |---------------|------------------------------------------------------------|
@@ -2517,10 +2587,12 @@ The meta element includes a content attribute that enables you to specify the mo
 |IE=7           |Use the Windows Internet Explorer 7 standards rendering mode|
 |IE=5           |Use the Microsoft Internet Explorer 5 standards rendering mode|
 
-*Note: It is recommended that Web developers restrict their use of Edge mode to test pages and other non-production uses because of the possible unexpected results of rendering page content in future versions of Windows Internet Explorer.*
+<i>Note: It is recommended that Web developers restrict their use of Edge mode to test pages 
+and other non-production uses because of the possible unexpected results of rendering page 
+content in future versions of Windows Internet Explorer.</i>
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is an optional tag?</h3>
@@ -2754,7 +2826,7 @@ Optional tags, cont'd
 |               | See <a href="https://www.w3schools.com/tags/tag_wbr.asp">wbr tag</a> |
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. What is an HTML preprocessor? Have you used different HTML templating languages before?</h3>
@@ -2772,7 +2844,7 @@ when you have to add dynamic content to your website, so when you fetch somethin
 your database, you will have to replace some parts in your original template.
 
 <div align="right">
-    <b><a href="#toc">↥ back to top</a></b>
+  <b><a href="#toc">↥ back to top</a></b>
 </div>
 
 <h3>Q. How do you change the direction of html text?</h3>
@@ -2783,8 +2855,10 @@ languages such as Arabic, Hebrew, Pashto, Persian, Urdu, and Sindhi.
 
 We can set text direction in HTML in one of two ways:
 
-* With the HTML **dir** attribute
-* With the CSS **direction** property
+<ul>
+  <li>With the HTML **dir** attribute</li>
+  <li>With the CSS **direction** property</li>
+</ul>
 
 **Example:**
 
@@ -2853,14 +2927,14 @@ The **lang** attribute specifies the language of the element's content.
     <title>HTML5 Multilanguage Page</title>
   </head>
   <body>
-      <h2>English</h2>
-      <p lang="en">This is demo text</p>
+    <h2>English</h2>
+    <p lang="en">This is demo text</p>
      
-      <h2>French</h2>
-      <p lang="fr">Ceci est un texte de démonstration</p>
+    <h2>French</h2>
+    <p lang="fr">Ceci est un texte de démonstration</p>
      
-      <h2>Spanish</h2>
-      <p lang="es">Este es un texto de demostración</p>
+    <h2>Spanish</h2>
+    <p lang="es">Este es un texto de demostración</p>
   </body>
 </html>
 ```
@@ -2981,8 +3055,8 @@ resolution.
       url size, 
       url size, 
       url size " 
-    src="default url" 
->
+   src="default url" 
+/>
 ```
 
 **1. Using display density descriptor:**
@@ -2993,8 +3067,8 @@ resolution.
 
 ```html
 <img src="image.jpg" 
-     srcset="image.jpg,
-             image_2x.jpg 2x"
+  srcset="image.jpg,
+          image_2x.jpg 2x"
 />
 ```
 
@@ -3006,9 +3080,9 @@ The syntax is similar to the display density descriptor, but instead of display 
 
 ```html
 <img src="image.jpg" 
-     srcset="small.jpg 300w,
-             medium.jpg 600w,
-             large.jpg 900w"
+  srcset="small.jpg 300w,
+          medium.jpg 600w,
+          large.jpg 900w"
 />
 ```
 
@@ -3041,10 +3115,12 @@ ARIA attributes are divided into two categories: roles, and states & properties.
 An ARIA role is added via a `role="<ROLE TYPE>"` attribute, and does not ever change for 
 an element once it is set. There are four categories of ARIA roles:
 
-* landmark
-* document
-* widget
-* abstract
+<ul>
+  <li>landmark</li>
+  <li>document</li>
+  <li>widget</li>
+  <li>abstract</li>
+</ul>
 
 **Landmark ARIA Roles:**
 
@@ -3063,19 +3139,21 @@ visually impaired users, without the `role="navigation"`.
 
 The different landmark roles you can use are as follows, copied from the W3C Wiki Page:
 
-* **banner**: A region that contains the prime heading or internal title of a page.
-* **complementary**: Any section of the document that supports the main content, yet is 
-  separate and meaningful on its own.
-* **contentinfo**: A region that contains information about the parent document such as 
-  copyrights and links to privacy statements.
-* **form**: A region of the document that represents a collection of form-associated 
+<ul>
+  <li>**banner**: A region that contains the prime heading or internal title of a page.</li>
+  <li>**complementary**: Any section of the document that supports the main content, yet is 
+  separate and meaningful on its own.</li>
+  <li>**contentinfo**: A region that contains information about the parent document such as 
+  copyrights and links to privacy statements.</li>
+  <li>**form**: A region of the document that represents a collection of form-associated 
   elements, some of which can represent editable values that can be submitted to a server 
-  for processing.
-* **main**: Main content in a document. In almost all cases a page will have only one 'role="main"'.
-* **navigation**: A collection of links suitable for use when navigating the document or 
-  related documents.
-* **search**: The search tool of a Web document.
-* **application**: A region declared as a web application, as opposed to a web document.
+  for processing.</li>
+  <li>**main**: Main content in a document. In almost all cases a page will have only one 'role="main"'.</li>
+  <li>**navigation**: A collection of links suitable for use when navigating the document or 
+  related documents.</li>
+  <li>**search**: The search tool of a Web document.</li>
+  <li>**application**: A region declared as a web application, as opposed to a web document.</li>
+</li>
 
 **Document ARIA Roles:**
 
@@ -3207,44 +3285,44 @@ for most web pages/applications.
     <title>Traffic Signal
     </title>
     <style>
-      #green{
+      #green {
         background-color: green;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid #333;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid #333;
       }
       #yellow{
         background-color: yellow;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid #333;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid #333;
       }
       #red{
         background-color: red;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid #333;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid #333;
       }
     </style>
   </head>
   <body onload="timer;">
-      <div id="red"></div>
-      <div id="yellow"></div>
-      <div id="green"></div>
+    <div id="red"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
       
     <script>
       function startTrafficSignal() {
         
         const red = document.getElementById("red");
         const yellow = document.getElementById("yellow");
-    const green = document.getElementById("green");
+        const green = document.getElementById("green");
       
         green.style.opacity = 1;
       
-    // Red Signal
+        // Red Signal
         setTimeout(function () {
           green.style.opacity = 0.3;
           red.style.opacity = 1;
@@ -3258,7 +3336,7 @@ for most web pages/applications.
           yellow.style.opacity = 0.3;
         }, 5000);
         
-    // Green Signal
+        // Green Signal
         setTimeout(function () {
           green.style.opacity = 0.3;
           red.style.opacity = 0.3;
@@ -3501,119 +3579,119 @@ styling for input fields and submission button.</p>
 <html>
   <head>
     <title>HTML Form</title>
-      <style>
-        body {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          margin: 0;
-          background-color: #f0f0f0;
-        }
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
 
-        form {
-          width: 400px;
-          background-color: #fff;
-          padding: 20px;
-          border-radius: 8px;
-          box-shadow: 0 0 10px
-          rgba(0, 0, 0, 0.1);
-        }
+      form {
+        width: 400px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px
+        rgba(0, 0, 0, 0.1);
+      }
 
-        fieldset {
-          border: 1px solid black;
-          padding: 10px;
-          margin: 0;
-        }
+      fieldset {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 0;
+      }
 
-        legend {
-          font-weight: bold;
-          margin-bottom: 10px;
-        }
+      legend {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
 
-        label {
-          display: block;
-          margin-bottom: 5px;
-        }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
 
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        textarea,
-        input[type="date"] {
-          width: calc(100% - 20px);
-          padding: 8px;
-          margin-bottom: 10px;
-          box-sizing: border-box;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-        }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      textarea,
+      input[type="date"] {
+        width: calc(100% - 20px);
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
 
-        input[type="radio"] {
-          margin-left: 20px;
-        }
+      input[type="radio"] {
+        margin-left: 20px;
+      }
 
-        input[type="submit"] {
-          padding: 10px 20px;
-          border-radius: 5px;
-          cursor: pointer;
-        }
-      </style>
+      input[type="submit"] {
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
   </head>
-    <body>
-      <form>
-        <fieldset>
-          <legend>
-            User personal information
-          </legend>
-          <label>
-		    Enter your full name
-		  </label>
-          <input type="text" name="name" />
-          <label>Enter your email</label>
-          <input
-            type="email"
-            name="email"
-          />
-          <label>Enter your password</label>
-          <input
-            type="password"
-            name="pass"
-          />
-          <label>Confirm your password</label>
-          <input
-            type="password"
-            name="confirmPass"
-          />
-          <label>Enter your gender</label>
-          <input
-            type="radio"
-            name="gender"
-            value="male"
-          />Male
-          <input
-            type="radio"
-            name="gender"
-            value="female"
-          />Female
-          <input
-            type="radio"
-            name="gender"
-            value="others"
-          />Others
-          <label>Enter your Date of Birth</label>
-          <input type="date" name="dob" />
-          <label>Enter your Address:</label>
-          <textarea
-            name="address">
-		  </textarea>
-          <input
-            type="submit"
-            value="submit"
-          />
-        </fieldset>
-      </form>
-    </body>
+  <body>
+    <form>
+      <fieldset>
+        <legend>
+          User personal information
+        </legend>
+        <label>
+          Enter your full name
+        </label>
+        <input type="text" name="name" />
+        <label>Enter your email</label>
+        <input
+          type="email"
+          name="email"
+        />
+        <label>Enter your password</label>
+        <input
+          type="password"
+          name="pass"
+        />
+        <label>Confirm your password</label>
+        <input
+          type="password"
+          name="confirmPass"
+        />
+        <label>Enter your gender</label>
+        <input
+          type="radio"
+          name="gender"
+          value="male"
+        />Male
+        <input
+          type="radio"
+          name="gender"
+          value="female"
+        />Female
+        <input
+          type="radio"
+          name="gender"
+          value="others"
+        />Others
+        <label>Enter your Date of Birth</label>
+        <input type="date" name="dob" />
+        <label>Enter your Address:</label>
+        <textarea
+          name="address">
+        </textarea>
+        <input
+          type="submit"
+          value="submit"
+        />
+      </fieldset>
+    </form>
+  </body>
 </html>
 ```
 
@@ -3677,28 +3755,28 @@ between different types of data. Tables are also used to create databases.</p>
 <!DOCTYPE html>
 <html>
 <body>
-    <table>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 ```
 
@@ -3755,16 +3833,17 @@ denoted by &lt;tr&gt; and &lt;/tr&gt; tag as a start & end tags.</p>
 <h5>Syntax</h5>
 
 ```
-</tr> Content...</tr> 
+<tr>Content...</tr> 
 ```
 
 <h4>Table Headers</h4>
-The Headers are generally use to provide the Heading. The Table Headers can also be used to add the heading to the Table. This contains the <th> & </th> tags.
+The Headers are generally use to provide the Heading. The Table Headers can also be used 
+to add the heading to the Table. This contains the <th> & </th> tags.
 
 <h5>Syntax</h5>
 
 ```
-</th> Content...</th> 
+<th>Content...</th> 
 ```
 
 <p><b>Example 1:</b> Creating a simple table in HTML using a table tag.</p>
@@ -3775,28 +3854,28 @@ The Headers are generally use to provide the Heading. The Table Headers can also
 <html>
 
 <body>
-    <table>
-        <tr>
-            <th>Book Name</th>
-            <th>Author Name</th>
-            <th>Genre</th>
-        </tr>
-        <tr>
-            <td>The Book Thief</td>
-            <td>Markus Zusak</td>
-            <td>Historical Fiction</td>
-        </tr>
-        <tr>
-            <td>The Cruel Prince</td>
-            <td>Holly Black</td>
-            <td>Fantasy</td>
-        </tr>
-        <tr>
-            <td>The Silent Patient</td>
-            <td> Alex Michaelides</td>
-            <td>Psychological Fiction</td>
-        </tr>
-    </table>
+  <table>
+    <tr>
+      <th>Book Name</th>
+      <th>Author Name</th>
+      <th>Genre</th>
+    </tr>
+    <tr>
+      <td>The Book Thief</td>
+      <td>Markus Zusak</td>
+      <td>Historical Fiction</td>
+    </tr>
+    <tr>
+      <td>The Cruel Prince</td>
+      <td>Holly Black</td>
+      <td>Fantasy</td>
+    </tr>
+    <tr>
+      <td>The Silent Patient</td>
+      <td> Alex Michaelides</td>
+      <td>Psychological Fiction</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -3833,38 +3912,38 @@ table, th, td {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-    </style>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
 </head>
 
 <body>
-    <table style="width:100%">
-        <tr>
+  <table style="width:100%">
+    <tr>
             <th>Firstname</th>
             <th>Lastname</th>
             <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -3887,10 +3966,10 @@ table, th, td {
 <h5>Syntax</h5>
 
 ```
- table, th, td {
-       border: 1px solid black;
-       border-collapse: collapse;
-   }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
 ```
 
 <p><b>Example:</b> Addition of Collapsed Borders in HTML.</p>
@@ -3902,39 +3981,39 @@ table, th, td {
 <html>
 
 <head>
-    <style>
+  <style>
     table,
     th,
     td {
-        border: 1px solid black;
-        border-collapse: collapse;
+      border: 1px solid black;
+      border-collapse: collapse;
     }
-    </style>
+  </style>
 </head>
 
 <body>
-    <table style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -3959,7 +4038,7 @@ we do not specify a padding, the table cells will be displayed without padding.<
 
 ```
 th, td {
-        padding: 20px;
+  padding: 20px;
 }
 ```
 
@@ -3971,44 +4050,44 @@ th, td {
 <html>
 
 <head>
-    <style>
+  <style>
     table,
     th,
     td {
-        border: 1px solid black;
-        border-collapse: collapse;
+      border: 1px solid black;
+      border-collapse: collapse;
     }
     
     th,
     td {
-        padding: 20px;
+      padding: 20px;
     }
-    </style>
+  </style>
 </head>
 
 <body>
-    <table style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4033,7 +4112,7 @@ headings, we must use the CSS text-align property.</p>
 
 ```
 th {
-      text-align: left;
+  text-align: left;
 }
 ```
 
@@ -4045,48 +4124,48 @@ th {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
 
-        th,
-        td {
-            padding: 20px;
-        }
+    th,
+    td {
+      padding: 20px;
+    }
 
-        th {
-            text-align: left;
-        }
-    </style>
+    th {
+      text-align: left;
+    }
+  </style>
 </head>
 
 <body>
-    <table style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4112,7 +4191,7 @@ for a table, we must use the CSS border-spacing property.</p>
 
 ```
 table {
-      border-spacing: 5px;
+  border-spacing: 5px;
 }
 ```
 
@@ -4124,42 +4203,42 @@ table {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
 
-        table {
-            border-spacing: 5px;
-        }
-    </style>
+    table {
+      border-spacing: 5px;
+    }
+  </style>
 </head>
 
 <body>
-    <table style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4187,35 +4266,35 @@ table {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
 
-        th,
-        td {
-            padding: 5px;
-            text-align: left;
-        }
-    </style>
+    th,
+    td {
+      padding: 5px;
+      text-align: left;
+    }
+  </style>
 </head>
 
 <body>
-    <h2>Cell that spans two columns:</h2>
-    <table style="width:100%">
-        <tr>
-            <th>Name</th>
-            <th colspan="2">Telephone</th>
-        </tr>
-        <tr>
-            <td>Vikas Rawat</td>
-            <td>9125577854</td>
-            <td>8565557785</td>
-        </tr>
-    </table>
+  <h2>Cell that spans two columns:</h2>
+  <table style="width:100%">
+    <tr>
+      <th>Name</th>
+      <th colspan="2">Telephone</th>
+    </tr>
+    <tr>
+      <td>Vikas Rawat</td>
+      <td>9125577854</td>
+      <td>8565557785</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4243,37 +4322,37 @@ table {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
 
-        th,
-        td {
-            padding: 5px;
-            text-align: left;
-        }
-    </style>
+    th,
+    td {
+      padding: 5px;
+      text-align: left;
+    }
+  </style>
 </head>
 
 <body>
-    <h2>Cell that spans two rows:</h2>
-    <table style="width:100%">
-        <tr>
-            <th>Name:</th>
-            <td>Vikas Rawat</td>
-        </tr>
-        <tr>
-            <th rowspan="2">Telephone:</th>
-            <td>9125577854</td>
-        </tr>
-        <tr>
-            <td>8565557785</td>
-        </tr>
-    </table>
+  <h2>Cell that spans two rows:</h2>
+  <table style="width:100%">
+    <tr>
+      <th>Name:</th>
+      <td>Vikas Rawat</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Telephone:</th>
+      <td>9125577854</td>
+    </tr>
+    <tr>
+      <td>8565557785</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4309,49 +4388,49 @@ table {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
 
-        th,
-        td {
-            padding: 20px;
-        }
+    th,
+    td {
+      padding: 20px;
+    }
 
-        th {
-            text-align: left;
-        }
-    </style>
+    th {
+      text-align: left;
+    }
+  </style>
 </head>
 
 <body>
-    <table style="width:100%">
-        <caption>DETAILS</caption>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table style="width:100%">
+    <caption>DETAILS</caption>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4376,9 +4455,9 @@ color" option.</p>
 
 ```
 table#t01 {
-            width: 100%;
-            background-color: #f2f2d1;
- }
+  width: 100%;
+  background-color: #f2f2d1;
+}
 ```
 
 <p><b>Example:</b> Addition of the Table background color in HTML.</p>
@@ -4389,74 +4468,74 @@ table#t01 {
 <html>
 
 <head>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
 
-        th,
-        td {
-            padding: 5px;
-            text-align: left;
-        }
+    th,
+    td {
+      padding: 5px;
+      text-align: left;
+    }
 
-        table#t01 {
-            width: 100%;
-            background-color: #f2f2d1;
-        }
-    </style>
+    table#t01 {
+      width: 100%;
+      background-color: #f2f2d1;
+    }
+  </style>
 </head>
 
 <body>
-    <table style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
-    <br />
-    <br />
-    <table id="t01">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Priya</td>
-            <td>Sharma</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>Arun</td>
-            <td>Singh</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Sam</td>
-            <td>Watson</td>
-            <td>41</td>
-        </tr>
-    </table>
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
+  <br />
+  <br />
+  <table id="t01">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Priya</td>
+      <td>Sharma</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Singh</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Sam</td>
+      <td>Watson</td>
+      <td>41</td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4486,21 +4565,21 @@ potential of introducing errors.</p>
 <html>
 
 <body>
-    <table border=5 bordercolor=black>
-        <tr>
-            <td> First Column of Outer Table </td>
-            <td>
-                <table border=5 bordercolor=grey>
-                    <tr>
-                        <td> First row of Inner Table </td>
-                    </tr>
-                    <tr>
-                        <td> Second row of Inner Table </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+  <table border=5 bordercolor=black>
+    <tr>
+      <td>First Column of Outer Table</td>
+      <td>
+        <table border=5 bordercolor=grey>
+          <tr>
+            <td>First row of Inner Table</td>
+          </tr>
+          <tr>
+            <td>Second row of Inner Table</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 
 </html>
@@ -4532,27 +4611,27 @@ any information on web pages in the ordered or unordered form.</p>
 <html>
 
 <head>
-    <title>GeeksforGeeks</title>
+  <title>GeeksforGeeks</title>
 </head>
 
 <body>
-    <h2>Welcome To GeeksforGeeks Learning</h2>
-    <h5>List of available courses</h5>
-    <ul>
-        <li>Data Structures & Algorithm</li>
-        <li>Web Technology</li>
-        <li>Aptitude & Logical Reasoning</li>
-        <li>Programming Languages</li>
-    </ul>
-    <h5>Data Structures topics</h5>
-    <ol>
-        <li>Array</li>
-        <li>Linked List</li>
-        <li>Stacks</li>
-        <li>Queues</li>
-        <li>Trees</li>
-        <li>Graphs</li>
-    </ol>
+  <h2>Welcome To GeeksforGeeks Learning</h2>
+  <h5>List of available courses</h5>
+  <ul>
+    <li>Data Structures & Algorithm</li>
+    <li>Web Technology</li>
+    <li>Aptitude & Logical Reasoning</li>
+    <li>Programming Languages</li>
+  </ul>
+  <h5>Data Structures topics</h5>
+  <ol>
+    <li>Array</li>
+    <li>Linked List</li>
+    <li>Stacks</li>
+    <li>Queues</li>
+    <li>Trees</li>
+    <li>Graphs</li>
+  </ol>
 </body>
 
 </html>
@@ -4600,7 +4679,7 @@ lists. An unordered list starts with the &lt;ul&gt; tag. Each list item starts w
 <h5>Syntax:</h5>
 
 ```
-<ul> list of items </ul>
+<ul>list of items</ul>
 ```
 
 <p><b>Attribute:</b> This tag contains two attributes which are listed below:</p>
@@ -4617,13 +4696,13 @@ lists. An unordered list starts with the &lt;ul&gt; tag. Each list item starts w
 <html>
 
 <body>
-    <h2>Grocery list</h2>
-    <ul>
-        <li>Bread</li>
-        <li>Eggs</li>
-        <li>Milk</li>
-        <li>Coffee</li>
-    </ul>
+  <h2>Grocery list</h2>
+  <ul>
+    <li>Bread</li>
+    <li>Eggs</li>
+    <li>Milk</li>
+    <li>Coffee</li>
+  </ul>
 </body>
 
 </html>
@@ -4675,36 +4754,36 @@ control list counting & type attribute.</p>
 <html>
 
 <head>
-    <title>HTML ol tag</title>
+  <title>HTML ol tag</title>
 </head>
 
 <body>
-    <h1 style="color: green">GeeksforGeeks</h1>
-    <h3>HTML ol tag</h3>
+  <h1 style="color: green">GeeksforGeeks</h1>
+  <h3>HTML ol tag</h3>
     
 <p>reversed attribute</p>
 
-    <ol reversed>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-    </ol>
+  <ol reversed>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+  </ol>
     
 <p>start attribute</p>
 
-    <ol start="5">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-    </ol>
+  <ol start="5">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+  </ol>
     
 <p>type attribute</p>
 
-    <ol type="i">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JS</li>
-    </ol>
+  <ol type="i">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+  </ol>
 </body>
 
 </html>
@@ -4730,7 +4809,7 @@ and the &lt;dd&gt; tag describes each term.</p>
 <h5>Syntax:</h5>
 
 ```
-<dl> Contents... </dl>
+<dl>Contents...</dl>
 ```
 
 <p>Please refer to the <i>How to add description list of an element using HTML? 
@@ -4743,13 +4822,13 @@ article</i> for further details.</p>
 <html>
 
 <body>
-    <h2>A Description List</h2>
-    <dl> 
-        <dt>Coffee</dt>
-        <dd>- 500 gms</dd>
-        <dt>Milk</dt>
-        <dd>- 1 ltr Tetra Pack</dd>
-    </dl>
+  <h2>A Description List</h2>
+  <dl> 
+    <dt>Coffee</dt>
+    <dd>- 500 gms</dd>
+    <dt>Milk</dt>
+    <dd>- 1 ltr Tetra Pack</dd>
+  </dl>
 </body>
 
 </html>
