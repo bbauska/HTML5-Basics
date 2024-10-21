@@ -136,7 +136,7 @@ HTML5 offers new semantic elements to define different parts of a web page:
 
 <h3>Q. What does a `&lt;DOCTYPE html&gt;` do?</h3>
 
-A DOCTYPE is always associated to a `DTD` ( <b>Document Type Definition<b> ). A DTD defines 
+A DOCTYPE is always associated to a `DTD` ( <b>Document Type Definition</b> ). A DTD defines 
 how documents of a certain type should be structured (i.e. a `button` can contain a `span` 
 but not a `div`), whereas a DOCTYPE declares what DTD a document supposedly respects (i.e. 
 this document respects the HTML DTD). For webpages, the DOCTYPE declaration is required. 
@@ -1144,7 +1144,9 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 
 <h3>Q. What is difference between Select and Datalist?</h3>
 
-For the select element, the user is required to select one of the options you've given. For the datalist element, it is suggested that the user select one of the options you've given, but he can actually enter anything he wants in the input.
+For the select element, the user is required to select one of the options you've given. 
+For the datalist element, it is suggested that the user select one of the options you've 
+given, but he can actually enter anything he wants in the input.
 
 <b>1. Select:</b>
 
@@ -2406,7 +2408,7 @@ preventing other pages from seeing that traffic came from a click on your link.
 <a href="https://www.website.com" rel="noreferrer">Link to yoursite.com</a>
 ```
 
-<b>3. rel="noopener"</b>
+<h4>3. rel="noopener"</h4>
 
 It prevents the new page from being able to access the `window.opener` property and will 
 make it run in a separate process. noopener tag works as a security fix which prevents 
@@ -2462,7 +2464,7 @@ Here are all the HTML tags that still matter:
 
 <h2 id="02-html-tags">02. HTML Tags</h2>
 
-<b>1. Title tag:</b>
+<h3>1. Title tag:</h3>
 
 Title tags are used by search engines to determine the subject of a page and display it 
 in SERP. As a rule of thumb, titles that are under 60 characters long will fit on most 
@@ -2472,7 +2474,7 @@ screens. In HTML, a title tag looks like this:
 <title>Your Title Goes Here</title>
 ```
 
-<b>2. Meta description tag:</b>
+<h3>2. Meta description tag:</h3>
 
 Meta description is a short paragraph of text used to describe your page in search results. 
 The function of meta description is similar to the title. It provides a little more detail 
@@ -2483,7 +2485,7 @@ meta description tag looks like this:
 <meta name="description" content="Your description goes here">
 ```
 
-<b>3. Heading tags:</b>
+<h3>3. Heading tags:</h3>
 
 Headings (H1-H6) are used to split your page into sections or chapters. Each heading is 
 like a small title within the page. In HTML, a heading looks like this:
@@ -2496,7 +2498,7 @@ like a small title within the page. In HTML, a heading looks like this:
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<b>4. Image alt attribute:</b>
+<h3>4. Image alt attribute:</h3>
 
 The `alt` text attribute is a part of an image tag, and it provides a description for an 
 image. Alt text plays a major role in image optimization. It makes your images accessible 
@@ -2508,7 +2510,7 @@ screen readers convey images). In HTML it may look like this:
 <img src="url" alt="Your image description goes here">
 ```
 
-<b>5. Open Graph tags:</b>
+<h3>5. Open Graph tags:</h3>
 
 Open Graph (OG) tags are placed in the `<head>` section of a page and allow any webpage 
 to become a rich object in social networks. OG tags let you control how the information 
@@ -2520,7 +2522,7 @@ and increasing conversions. In HTML, it can look like this:
 <meta name="og:title" property="og:title" content="Your Open Graph Title Goes Here">
 ```
 
-<b>6. Robots tag:</b>
+<h3>6. Robots tag:</h3>
 
 A robots tag is an element in the HTML of a page that informs search engines which pages 
 on your site should be indexed and which should not. Its functions are similar to robots.txt, 
@@ -2531,7 +2533,7 @@ look like this:
 <meta name="robots" content="index, follow">
 ```
 
-<b>7. Canonical tag:</b>
+<h3>7. Canonical tag:</h3>
 
 A canonical tag is a way of telling search engines that a specific URL represents the 
 master copy of a page. Using the canonical tag prevents problems caused by identical 
@@ -2543,7 +2545,7 @@ In HTML, it may look like this:
 <link href="URL" rel="canonical">
 ```
 
-<b>8. HTML5 semantic tags:</b>
+<h3>8. HTML5 semantic tags:</h3>
 
 One of the most important features of HTML5 is its semantics tags. Semantic tags refers to 
 syntax that makes the HTML more comprehensible by better defining the different sections 
@@ -2573,7 +2575,7 @@ The <b>value</b> property reflects the current text-content inside the input box
 whereas the <b>value</b> attribute contains the initial text-content of the <b>value</b> 
 attribute from the HTML source code
 
-<b>Difference between HTML attributes and DOM properties:</b>
+<h4>Difference between HTML attributes and DOM properties:</h4>
 
 |Attribute                               |Property                |
 |----------------------------------------|------------------------|
@@ -2608,7 +2610,7 @@ content. pages without a DOCTYPE will be rendered in quirks mode. Edge mode tell
 Internet Explorer to display content in the highest mode available, which actually breaks 
 the "lock-in" paradigm. With Internet Explorer 8, this is equivalent to IE8 mode.
 
-<b>Setting the Meta Element:</b>
+<h4>Setting the Meta Element:</h4>
 
 The meta element includes a content attribute that enables you to specify the mode that 
 content is rendered in for the webpage, as the following table shows.
@@ -2887,14 +2889,14 @@ The default text direction in HTML is left-to-right. However, when developing we
 and applications, we may need to set it to right-to-left, for instance, to cater for 
 languages such as Arabic, Hebrew, Pashto, Persian, Urdu, and Sindhi.
 
-We can set text direction in HTML in one of two ways:
+<h4>We can set text direction in HTML in one of two ways:</h4>
 
 <ul>
   <li>With the HTML <b>dir</b> attribute</li>
   <li>With the CSS <b>direction</b> property</li>
 </ul>
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <!-- Syntax -->
@@ -2904,7 +2906,7 @@ We can set text direction in HTML in one of two ways:
 <textarea dir="rtl"></textarea>
 ```
 
-<b>Attribute Values:</b>
+<h4>Attribute Values:</h4>
 
 |Value          |Description                |
 |---------------|---------------------------|
@@ -2922,7 +2924,7 @@ The `<small>` HTML element represents side-comments and small print, like copyri
 legal text, independent of its styled presentation. By default, it renders text within 
 it one font-size smaller, such as from `small` to `x-small`.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <!DOCTYPE html>
@@ -2951,7 +2953,7 @@ it one font-size smaller, such as from `small` to `x-small`.
 
 The <b>lang</b> attribute specifies the language of the element's content.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <!DOCTYPE html>
@@ -2982,13 +2984,13 @@ The <b>lang</b> attribute specifies the language of the element's content.
 The `<section>` tag creates independent sections within a webpage having logically connected 
 content. And the `<div>` tag is an empty container specifying a division or a section.
 
-<b>The `<section>` Element</b>
+<h4>The `<section>` Element</h4>
 
 According to the W3C specification, the `<section>` tag means that the content inside this 
 element is grouped. In other words, the content relates to a single theme. It must be an 
 entry in the outline of the page.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <!DOCTYPE html>
@@ -3016,14 +3018,14 @@ entry in the outline of the page.
 </html>
 ```
 
-<b>The `<div>` Element</b>
+<h4>The `<div>` Element</h4>
 
 The `<div>` element only represents its child elements and doesn't have a special meaning. 
 It can be used with the `lang`, `title`, and `class` attributes to add semantics that is 
 common to a group of consecutive elements. This element can also be used in a `<dl>` tag 
 and wrap groups of `<dt>` and `<dd>` elements.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <!DOCTYPE html>
@@ -3093,11 +3095,12 @@ resolution.
 />
 ```
 
-<b>1. Using display density descriptor:</b>
+<h4>1. Using display density descriptor:</h4>
 
-`srcset` provides a comma-separated list of image resources along with display density it should be used, for example1x, 2x etc.
+`srcset` provides a comma-separated list of image resources along with display density it 
+should be used, for example1x, 2x etc.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <img src="image.jpg" 
@@ -3106,11 +3109,12 @@ resolution.
 />
 ```
 
-<b>2. Using width descriptor:</b>
+<h4>2. Using width descriptor:</h4>
 
-The syntax is similar to the display density descriptor, but instead of display density values, we provide the actual width of the image.
+The syntax is similar to the display density descriptor, but instead of display density 
+values, we provide the actual width of the image.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
 <img src="image.jpg" 
@@ -3144,7 +3148,7 @@ can make advanced Web applications accessible and usable to people with disabili
 
 ARIA attributes are divided into two categories: roles, and states & properties.
 
-<b>ARIA Roles:</b>
+<h4>ARIA Roles:</h4>
 
 An ARIA role is added via a `role="<ROLE TYPE>"` attribute, and does not ever change for 
 an element once it is set. There are four categories of ARIA roles:
@@ -3156,12 +3160,12 @@ an element once it is set. There are four categories of ARIA roles:
   <li>abstract</li>
 </ul>
 
-<b>Landmark ARIA Roles:</b>
+<h4>Landmark ARIA Roles:</h4>
 
 Much like semantic HTML elements, landmark ARIA Roles are used to give users of assistive 
 technology a better way to navigate and identify the different parts of a web page.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
 ```html
  <nav class='mobile-nav' role='navigation' aria-label='Mobile Menu'>List of Links</nav>
@@ -3182,14 +3186,15 @@ The different landmark roles you can use are as follows, copied from the W3C Wik
   <li><b>form</b>: A region of the document that represents a collection of form-associated 
   elements, some of which can represent editable values that can be submitted to a server 
   for processing.</li>
-  <li><b>main</b>: Main content in a document. In almost all cases a page will have only one 'role="main"'.</li>
+  <li><b>main</b>: Main content in a document. In almost all cases a page will have only one 
+  'role="main"'.</li>
   <li><b>navigation</b>: A collection of links suitable for use when navigating the document or 
   related documents.</li>
   <li><b>search</b>: The search tool of a Web document.</li>
   <li><b>application</b>: A region declared as a web application, as opposed to a web document.</li>
 </li>
 
-<b>Document ARIA Roles:<b>
+<h4>Document ARIA Roles:</h4>
 
 Document roles describe the structure of the content on the page, as opposed to the structure 
 of the whole page, which landmark roles describe. The roles in bold are the ones we think 
@@ -3218,7 +3223,7 @@ including in your HTML.
   * <b>separator</b>
   * <b>toolbar</b>
 
-<b>Widget ARIA Roles:</b>
+<h4>Widget ARIA Roles:</h4>
 
 Widget Roles are used to describe what are often javascript-based interfaces, or the more 
 complicated parts of your web page's interface. The roles that are starred are the ones 
@@ -3257,12 +3262,12 @@ useful to think about including in your HTML.
   * <b>tooltip</b>
   * <b>treeitem</b>
 
-<b>Abstract ARIA Roles:</b>
+<h4>Abstract ARIA Roles:</h4>
 
 Abstract aria roles are the basis of how the other ARIA roles are defined. These are not 
 to be used in HTML.
 
-<b>ARIA States & Properties:</b>
+<h4>ARIA States & Properties:</h4>
 
 ARIA states and properties are often used to support ARIA roles that exist on a page. 
 ARIA Properties often describe relationships with other elements, and for the most part, 
@@ -3401,7 +3406,8 @@ for most web pages/applications.
 Media, &amp; Miscellaneous.</h4>
 
 <h4 id="global-events">Global Event Attributes</h4>
-HTML has the ability to let events trigger actions in a browser, like starting a JavaScript when a user clicks on an element.
+HTML has the ability to let events trigger actions in a browser, like starting a JavaScript 
+when a user clicks on an element.
 
 Below are the global event attributes that can be added to HTML elements to define event actions.
 
@@ -3958,9 +3964,9 @@ table, th, td {
 <body>
   <table style="width:100%">
     <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
     </tr>
     <tr>
       <td>Priya</td>
