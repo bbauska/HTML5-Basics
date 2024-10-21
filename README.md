@@ -409,10 +409,10 @@ expected to be modified through JavaScript code.</p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3 id="diff-span-div">What is difference between `span` tag and `div` tag?</h3>
+<h3 id="diff-span-div">What is the difference between `span` tag and `div` tag?</h3>
 
 <p>The primary difference between div and span tag is their default behavior. By default, 
-a `<div>` is a <b>block-level-element</b> and a `<span>` is an <b>inline element</b>.</p>
+a `&lt;div&gt;` is a <b>block-level-element</b> and a `&lt;span&gt;` is an <b>inline element</b>.</p>
 
 <ul>
   <li>`&lt;div&gt;` is a block level element which means it will render it on 
@@ -432,8 +432,9 @@ a `<div>` is a <b>block-level-element</b> and a `<span>` is an <b>inline element
 
 <h3>Q. What are optional closing tags?</h3>
 
-<p>`<p>`, `<li>`, `<td>`, `<tr>`, `<th>`, `<html>`, `<body>`, etc. don't have to provide an end 
-tag. Whenever a browser hits a new tag it automatically end the previous tag.</p>
+<p>`&lt;p&gt;`, `&lt;li&gt;`, `&lt;td&gt;`, `&lt;tr&gt;`, `&lt;th&gt;`, `&lt;html&gt;`, 
+`&lt;body&gt;`, etc. don't have to provide an end tag. Whenever a browser hits a new tag 
+it automatically ends the previous tag.</p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -444,8 +445,8 @@ tag. Whenever a browser hits a new tag it automatically end the previous tag.</p
 <p>In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren't 
 required to have specific closing tags are called “self closing” tags.</p>
 
-<p>An example of a self closing tag is something like a line break (`<br />`) or the meta 
-tag (`<meta>`). This means that the following are both acceptable:</p>
+<p>An example of a self closing tag is something like a line break (`&lt;br /&gt;`) or the meta 
+tag (`&lt;meta&gt;`). This means that the following are both acceptable:</p>
 
 ```html
 <meta charset="UTF-8">
@@ -456,8 +457,8 @@ tag (`<meta>`). This means that the following are both acceptable:</p>
 <h3>Q. Explain the difference between block elements and inline elements?</h3>
 
 <ul>
-  <li>block elements `<h1>`, `<p>`, `<ul>`, `<ol>`, `<li>`</li>
-  <li>inline elements `<span>`, `<a>`, `<strong>`, `<i>`, `<img>`</li>
+  <li>block elements: `&lt;h1&gt;`, `&lt;p&gt;`, `&lt;ul&gt;`, `&lt;ol&gt;`, `&lt;li&gt;`</li>
+  <li>inline elements: `&lt;span&gt;`, `&lt;a&gt;`, `&lt;strong&gt;`, `&lt;i&gt;`, `&lt;img&gt;`</li>
 </ul>
 
 <div align="right">
@@ -4965,3 +4966,6 @@ Table of Content
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
+
+
+
