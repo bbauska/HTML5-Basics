@@ -2982,12 +2982,12 @@ The <b>lang</b> attribute specifies the language of the element's content.
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. What is the difference between `<section>` and `<div>`?</h3>
+<h3>Q. What is the difference between `&lt;section&gt;` and `&lt;div&gt;`?</h3>
 
 The `<section>` tag creates independent sections within a webpage having logically connected 
 content. And the `<div>` tag is an empty container specifying a division or a section.
 
-<h4>The `<section>` Element</h4>
+<h4>The `&lt;section&gt;` Element</h4>
 
 According to the W3C specification, the `<section>` tag means that the content inside this 
 element is grouped. In other words, the content relates to a single theme. It must be an 
@@ -3021,7 +3021,7 @@ entry in the outline of the page.
 </html>
 ```
 
-<h4>The `<div>` Element</h4>
+<h4>The `&lt;div&gt;` Element</h4>
 
 The `<div>` element only represents its child elements and doesn't have a special meaning. 
 It can be used with the `lang`, `title`, and `class` attributes to add semantics that is 
@@ -3086,7 +3086,7 @@ The `srcset` attribute allows to define a list of different image resources alon
 information so that browser can pick the most appropriate image based on the actual device's 
 resolution.
 
-<b>Syntax:</b>
+<h5>Syntax:</h5>
 
 ```html
 <img 
@@ -3153,7 +3153,7 @@ can make advanced Web applications accessible and usable to people with disabili
 
 <h4>ARIA Roles:</h4>
 
-<p>An ARIA role is added via a `role="<ROLE TYPE>"` attribute, and does not ever change for 
+<p>An ARIA role is added via a `role="&lt;ROLE TYPE&gt;"` attribute, and does not ever change for 
 an element once it is set. There are four categories of ARIA roles:</p>
 
 <ul>
@@ -3220,7 +3220,7 @@ including in your HTML.</p>
   <li><b>math</b></li>
   <li><b>note</b></li>
   <li><b>presentation</b></li>
-  <li>* <b>region</b></li>
+  <li><b>region</b></li>
   <li><b>row</b></li>
   <li><b>rowgroup</b></li>
   <li><b>rowheader</b></li>
@@ -3246,7 +3246,7 @@ useful to think about including in your HTML.</p>
 	a response.</li>
   <li><b>gridcell</b></li>
   <li><b>link</b></li>
-  <li>* <b>log</b></li>
+  <li><b>log</b></li>
   <li><b>marquee</b></li>
   <li><b>menuitem</b></li>
   <li><b>menuitemcheckbox</b></li>
