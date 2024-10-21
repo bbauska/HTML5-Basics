@@ -48,16 +48,16 @@ end developers.
 
 <h3>Q. What are the building blocks of HTML5?</h3>
 
-* **Semantics**: allowing you to describe more precisely what your content is.
-* **Connectivity**: allowing you to communicate with the server in new and innovative ways.
-* **Offline and storage**: allowing webpages to store data on the client-side locally 
+* <b>Semantics<b>: allowing you to describe more precisely what your content is.
+* <b>Connectivity<b>: allowing you to communicate with the server in new and innovative ways.
+* <b>Offline and storage<b>: allowing webpages to store data on the client-side locally 
   and operate offline more efficiently.
-* **Multimedia**: making video and audio first-class citizens in the Open Web.
-* **2D/3D graphics and effects**: allowing a much more diverse range of presentation options.
-* **Performance and integration**: providing greater speed optimization and better usage 
+* <b>Multimedia<b>: making video and audio first-class citizens in the Open Web.
+* <b>2D/3D graphics and effects<b>: allowing a much more diverse range of presentation options.
+* <b>Performance and integration<b>: providing greater speed optimization and better usage 
   of computer hardware.
-* **Device access**: allowing for the usage of various input and output devices.
-* **Styling**: letting authors write more sophisticated themes.
+* <b>Device access<b>: allowing for the usage of various input and output devices.
+* <b>Styling<b>: letting authors write more sophisticated themes.
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -84,7 +84,7 @@ HTML5 offers new semantic elements to define different parts of a web page:
 * `<summary>`
 * `<time>`
 
-**Syntax:**
+<b>Syntax:<b>
 
 ```html
 <!DOCTYPE html> 
@@ -138,7 +138,7 @@ HTML5 offers new semantic elements to define different parts of a web page:
 
 <h3>Q. What does a `<DOCTYPE html>` do?</h3>
 
-A DOCTYPE is always associated to a `DTD` ( **Document Type Definition** ). A DTD defines 
+A DOCTYPE is always associated to a `DTD` ( <b>Document Type Definition<b> ). A DTD defines 
 how documents of a certain type should be structured (i.e. a `button` can contain a `span` 
 but not a `div`), whereas a DOCTYPE declares what DTD a document supposedly respects (i.e. 
 this document respects the HTML DTD). For webpages, the DOCTYPE declaration is required. 
@@ -155,7 +155,7 @@ DOCTYPE, it will trigger the `quirks mode`.
 <h3>Q. What happens when DOCTYPE is not given?</h3>
 
 The web page is rendered in quirks mode. The web browsers engines use quirks mode to 
-support older browsers which does not follow the **W3C specifications**. In quirks mode 
+support older browsers which does not follow the <b>W3C specifications<b>. In quirks mode 
 CSS class and id names are case insensitive. In standards mode they are case sensitive.
 
 <div align="right">
@@ -167,7 +167,7 @@ CSS class and id names are case insensitive. In standards mode they are case sen
 There are five new form elements in the HTML5 forms specification: `<datalist>`, `<output>`, 
 `<progress>`, and `<meter>`. 
 
-**1. Datalist Tag**
+<b>1. Datalist Tag<b>
 
 Allows to attach a list of suggestions to a text input element. As soon as the user begins 
 to type in the text field, the list of suggestions appears and the user can choose from 
@@ -177,26 +177,26 @@ the suggestions with the mouse.
 <p>Enter your favorite browser name:</p>
 <input type="text" list="browsers" name="favorite_browser">
 <datalist id="browsers">
-    <option value="Firefox">
-    <option value="Chrome">    
-    <option value="Internet Explorer">
-    <option value="Opera">
-    <option value="Safari">
+  <option value="Firefox">
+  <option value="Chrome">    
+  <option value="Internet Explorer">
+  <option value="Opera">
+  <option value="Safari">
 </datalist>
 ```
 
-**2. Meter Tag**
+<b>2. Meter Tag<b>
 
 Indicates a numeric value that falls within a range. The tag supports a number of attributes:
 value: If you don't specify a value, the first numeric value inside the `<meter></meter>` 
 pair becomes the value.
 
 <ul>
-  <li>**max**: The maximum possible value of the item.</li>
-  <li>**min**: The minimum possible value of the item.</li>
-  <li>**high**: If the value can be defined as a range, this is the high end of the range.</li>
-  <li>**low**: If the value can defined as a range, this is the low end of that range.</li>
-  <li>**optimum**: The optimal value of the element.</li>
+  <li><b>max</b>: The maximum possible value of the item.</li>
+  <li><b>min</b>: The minimum possible value of the item.</li>
+  <li><b>high</b>: If the value can be defined as a range, this is the high end of the range.</li>
+  <li><b>low</b>: If the value can defined as a range, this is the low end of that range.</li>
+  <li><b>optimum</b>: The optimal value of the element.</li>
 </ul>
 
 ```html
@@ -207,7 +207,7 @@ pair becomes the value.
 <p>Pollution Level: <meter low="60" high="80" max="100" value="85">Very High</meter></p>
 ```
 
-**3. Output Tag**
+<b>3. Output Tag</b>
 
 It indicates a section of the page that can be modified by a script (usually JavaScript).
 
@@ -219,7 +219,7 @@ It indicates a section of the page that can be modified by a script (usually Jav
 </form>
 ```
 
-**4. Progress Tag**
+<b>4. Progress Tag</b>
 
 Indicates how much of a task has been completed (often marked as a percentage). It is 
 expected to be modified through JavaScript code.
@@ -270,39 +270,27 @@ expected to be modified through JavaScript code.
 | 13. |week         |Picking a specific week.|
 
 
-**Example:**
+<b>Example:</b>
 
 ```html
 <input type="color" value="#b97a57">
-
 <input type="date" value="2020-06-08">
-
 <input type="datetime" value="2020-06-09T20:35:34.32">
-
 <input type="datetime-local" value="2020-06-09T22:41">
-
 <input type="email" value="robert@robertnyman.com">
-
 <input type="month" value="2020-06">
-
 <input type="number" value="4">
-
 <input type="range" value="15">
 
 <!-- Note: If not set, default attribute values are min="0", max="100", step="1". -->
-
 <input type="search" value="[Any search text]">
-
 <input type="tel" value="[Any numeric value]">
 
 <!-- Note: Most web browsers seem to let through any value at this time. -->
-
 <input type="time" value="22:38">
-
 <input type="url" value="https://www.google.com/">
 
 <!-- Note: requires a protocol like http://, ftp:// etc in the beginning. -->
-
 <input type="week" value="2020-W24">
 ```
 
@@ -429,7 +417,7 @@ expected to be modified through JavaScript code.
 <h3 id="diff-span-div">What is difference between `span` tag and `div` tag?</h3>
 
 The primary difference between div and span tag is their default behavior. By default, 
-a `<div>` is a **block-level-element** and a `<span>` is an **inline element**.
+a `<div>` is a <b>block-level-element</b> and a `<span>` is an <b>inline element</b>.
 
 <ul>
   <li>`&lt;div&gt;` is a block level element which means it will render it on 
@@ -472,8 +460,10 @@ tag (`<meta>`). This means that the following are both acceptable:
 
 <h3>Q. Explain the difference between block elements and inline elements?</h3>
 
-  - block elements `<h1>, <p>, <ul>, <ol>, <li>`
-  - inline elements `<span>, <a>, <strong>, <i>, <img>`
+<ul>
+  <li>block elements `<h1>, <p>, <ul>, <ol>, <li>`</li>
+  <li>inline elements `<span>, <a>, <strong>, <i>, <img>`</li>
+</ul>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -481,12 +471,13 @@ tag (`<meta>`). This means that the following are both acceptable:
 
 <h3>Q. What are semantic and non-semantic elements?</h3>
 
-  - **Semantic elements**: clearly describes its meaning to both the browser and the developer.
-For example: `<form>`, `<table>`,  `<article>`, `<aside>`, `<details>`, `<figcaption>`, 
-`<figure>`, `<footer>`, `<header>`, `<main>`, `<mark>`, `<nav>`, `<section>`, `<summary>`, 
-`<time>` clearly defines its content.
-  
-  - **Non-semantic elements**: `<div>` and `<span>` tells nothing about its content.
+<ul>
+  <li><b>Semantic elements</b>: clearly describes its meaning to both the browser and the developer.
+    For example: `<form>`, `<table>`,  `<article>`, `<aside>`, `<details>`, `<figcaption>`, 
+	`<figure>`, `<footer>`, `<header>`, `<main>`, `<mark>`, `<nav>`, `<section>`, `<summary>`, 
+	`<time>` clearly defines its content.</li>
+  <li><b>Non-semantic elements</b>: `<div>` and `<span>` tells nothing about its content.</li>
+</ul>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -500,9 +491,9 @@ central topic of a document, or the central functionality of an application.
 
 ```html
 <main role="main">
-    <p>Geckos are a group of usually small, usually nocturnal lizards. 
-       They are found on every continent except Australia.</p>
-    <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
+  <p>Geckos are a group of usually small, usually nocturnal lizards. 
+  They are found on every continent except Australia.</p>
+  <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
 </main>
 ```
 
@@ -514,22 +505,21 @@ attribute specified.</i>
 </div>
 
 <h4>Q. What are the semantic meanings for `<section>, <article>, <aside>, <nav>, <header>, 
-  <footer>` and how should each be used in structuring html markup?</h4>
+  `<footer>` and how should each be used in structuring html markup?</h4>
 
-  - `<header>` is used to contain introductory and navigational information about a section 
-  of the page. This can include the section heading, the author's name, time and date of 
-  publication, table of contents, or other navigational information.
-
-  - `<article>` is meant to house a self-contained composition that can logically be independently 
-  recreated outside of the page without losing it's meaining. Individual blog posts or news 
-  stories are good examples.
-
-  - `<section>` is a flexible container for holding content that shares a common informational 
-  theme or purpose.
-
-  - `<footer>` is used to hold information that should appear at the end of a section of content 
-  and contain additional information about the section. Author's name, copyright information, 
-  and related links are typical examples of such content.
+<ul>
+  <li>`<header>` is used to contain introductory and navigational information about a section 
+    of the page. This can include the section heading, the author's name, time and date of 
+	publication, table of contents, or other navigational information.</li>
+  <li>`<article>` is meant to house a self-contained composition that can logically be 
+    independently recreated outside of the page without losing it's meaining. Individual 
+	blog posts or news stories are good examples.</li>
+  <li>`<section>` is a flexible container for holding content that shares a common informational 
+    theme or purpose.</li>
+  <li>`<footer>` is used to hold information that should appear at the end of a section of content 
+    and contain additional information about the section. Author's name, copyright information, 
+	and related links are typical examples of such content.</li>
+</ul>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -537,20 +527,20 @@ attribute specified.</i>
 
 <h3>Q. When should you use `section`, `div` or `article`?</h3>
 
-  - `<section>`, group of content inside is related to a single theme, and should appear as 
-  an entry in an outline of the page. It's a chunk of related content, like a subsection 
-  of a long article, a major part of the page (eg the news section on the homepage), or a 
-  page in a webapp's tabbed interface. A section normally has a heading (title) and maybe 
-  a footer too.
-
-  - `<article>`, represents a complete, or self-contained, composition in a document, page, 
-  application, or site and that is, in principle, independently distributable or reusable, 
-  e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog 
-  entry, a user-submitted comment, an interactive widget or gadget, or any other independent 
-  item of content.
-
-  - `<div>`, on the other hand, does not convey any meaning, aside from any found in its class, 
-  lang and title attributes.
+<ul>
+  <li>`<section>`, group of content inside is related to a single theme, and should appear 
+    as an entry in an outline of the page. It's a chunk of related content, like a subsection 
+	of a long article, a major part of the page (eg the news section on the homepage), or a 
+	page in a webapp's tabbed interface. A section normally has a heading (title) and maybe 
+	a footer too.</li>
+  <li>`<article>`, represents a complete, or self-contained, composition in a document, page, 
+    application, or site and that is, in principle, independently distributable or reusable, 
+	e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog 
+	entry, a user-submitted comment, an interactive widget or gadget, or any other independent 
+	item of content.</li>
+  <li>`<div>`, on the other hand, does not convey any meaning, aside from any found in its class, 
+    lang and title attributes.</li>
+</ul>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -561,7 +551,7 @@ attribute specified.</i>
 Yes, header elements can be used multiple times in documents. A `<header>` tag must be present 
 for all articles, sections, and pages, although a `<footer>` tag is not necessary.
 
-**From W3C standards**
+<b>From W3C standards</b>
 
 ```html
 A header element is intended to usually contain the section's heading (an h1–h6 element or an hgroup 
@@ -581,13 +571,13 @@ as who wrote it, links to related documents, copyright data, and the like.
 
 <h3>Q. What are the physical tags and logical tags in HTML?</h3>
 
-**1. Physical Tags:**
+<b>1. Physical Tags:</b>
 
 Physical tags are used to indicate how a particular character is to be formatted. Any 
 physical style tag may contain any item allowed in text, including conventional text, 
 images, line breaks, etc.
 
-**Example:**
+<b>Example:</b>
 
 |Tags      | Description                                                      |
 |----------|------------------------------------------------------------------|
@@ -601,7 +591,7 @@ images, line breaks, etc.
 |`<tt>`    |Teletype text gives the default font-family which is monospace.|
 |`<strike>`|It is an editing markup that tells the reader to ignore the text passage.|
 
-**2. Logical Tags:**
+<b>2. Logical Tags:</b>
 
 Logical tags are used to tell the browser what kind of text is written inside the tags. 
 Logical tags are also known as Structural tags because they specify the structure of the 
@@ -609,7 +599,7 @@ document. Logical tags are used to indicate to the visually impaired person that
 is something more important in the text or to emphasize the text ie, logical tags can be 
 used for styling purposes as well as to give special importance to text content.
 
-**Example:**
+<b>Example:</b>
 
 |Tags       | Description                     |
 |-----------|---------------------------------|
@@ -644,7 +634,7 @@ specified in the tag:
 ```
 
 <ul>
-  <li>**UTF-8**: A Unicode Translation Format that comes in 8-bit units that is, it comes in 
+  <li><b>UTF-8</b>: A Unicode Translation Format that comes in 8-bit units that is, it comes in 
     bytes. A character in UTF8 can be from 1 to 4 bytes long, making UTF8 variable width.</li>
 </ul>
 
@@ -717,12 +707,12 @@ document, such as author, expiry date, a list of keywords, document author etc.
 
 <h3>Q. What does async and defer refer in script tag?</h3>
 
-**1. Async:**
+<b>1. Async:</b>
 
 Downloads the script file during HTML parsing and will pause the HTML parser to execute 
 it when it has finished downloading.
 
-**Example:**
+<b>Example:</b>
 
 ```html
 <!-- 
@@ -733,12 +723,12 @@ it when it has finished downloading.
 <script async src="https://google-analytics.com/analytics.js"></script>
 ```
 
-**2. Defer:**
+<b>2. Defer:</b>
 
 Defer downloads the script file during HTML parsing and will only execute it after the 
 HTML parser has completed. Not all browsers support this.
 
-**Example:**
+<b>Example:</b>
 
 ```html
 <!-- 
@@ -756,7 +746,7 @@ being fetched in parallel with the document parsing.
 The defer attribute tells the browser to only execute the script file once the HTML document 
 has been fully parsed.
 
-**Example:**
+<b>Example:</b>
 
 ```html
 <!-- 
@@ -772,10 +762,10 @@ has been fully parsed.
 
 <h3>Q. What is local storage in html5?</h3>
 
-The **localStorage** read-only property of the window interface allows you to access a 
+The <b>localStorage</b> read-only property of the window interface allows you to access a 
 Storage object for the Document's origin; the stored data is saved across browser sessions.
 
-**Example:**
+<b>Example:</b>
 
 ```js
 // Store
@@ -791,10 +781,10 @@ localStorage.getItem("name"); // Kanti Ahluwalia
 
 <h3>Q. What is session storage in html5?</h3>
 
-The **sessionStorage** object is equal to the localStorage object, except that it stores 
+The <b>sessionStorage</b> object is equal to the localStorage object, except that it stores 
 the data for only one session. The data is deleted when the user closes the specific browser tab.
 
-**Example:**
+<b>Example:</b>
 
 ```js
 // Save data to sessionStorage
@@ -823,7 +813,7 @@ A cookie contains the information as a string generally in the form of a name-va
 separated by semi-colons. It maintains the state of a user and remembers the user's 
 information among all the web pages.
 
-**Example 01:** Create a Cookies
+<b>Example 01:</b> Create a Cookies
 
 ```js
 // create a cookie
@@ -833,14 +823,14 @@ document.cookie = "username=Anjali Batta";
 document.cookie = "username=Anjali Batta; expires=Thu, 18 Dec 2022 12:00:00 UTC";
 ```
 
-**Example 02:** Cookie with expiry date
+<b>Example 02:</b> Cookie with expiry date
 
 ```js
 // cookie with expiry date
 document.cookie = "username=Anjali Batta; expires=Thu, 18 Dec 2022 12:00:00 UTC";
 ```
 
-**Example 03:** Read Cookie
+<b>Example 03:</b> Read Cookie
 
 ```js
 let myCookies = document.cookie;
@@ -848,13 +838,13 @@ let myCookies = document.cookie;
 console.log(myCookies);
 ```
 
-**Example 04:** Update Cookie
+<b>Example 04:</b> Update Cookie
 
 ```js
 document.cookie = "username=John Smith; expires=Thu, 18 Dec 2022 12:00:00 UTC; path=/";
 ```
 
-**Example 05:** Delete Cookie
+<b>Example 05:</b> Delete Cookie
 
 ```js
 document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
@@ -884,7 +874,7 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
 Yes
 
-**Example:**
+<b>Example:</b>
 
 ```html
 <!DOCTYPE HTML>
@@ -914,7 +904,7 @@ Yes
 </html>
 ```
 
-Output
+<h5>Output</h5>
 
 ```js
 Exception: QuotaExceededError: Failed to execute 'setItem' on 'Storage': 
@@ -927,43 +917,60 @@ Exception: QuotaExceededError: Failed to execute 'setItem' on 'Storage':
 
 <h3>Q. Why to use IndexedDB instead of WebSQL in HTML5?</h3>
 
-**1. WebSQL**
+<h4>1. WebSQL</h4>
 
 It is an API that is only supported in Chrome and Safari (and Android and iOS by extension). 
 It provides an asynchronous, transactional interface to SQLite. Since 2010, it has been 
 deprecated in favor of IndexedDB.
 
-**Advantages**
+<h5>Advantages</h5>
 
-* Supported on major mobile browsers (Android Browser, Mobile Safari, Opera Mobile) as well as several desktop browsers (Chrome, Safari, Opera).
-* Good performance generally, being an asynchronous API. Database interaction won't lock up the user interface. (Synchronous API is also available for WebWorkers.)
-* Good search performance, since data can be indexed according to search keys.
-* Robust, since it supports a transactional database model.
-* Easier to maintain integrity of data, due to rigid data structure.
+<ul>
+  <li>Supported on major mobile browsers (Android Browser, Mobile Safari, Opera Mobile) 
+    as well as several desktop browsers (Chrome, Safari, Opera).</li>
+  <li>Good performance generally, being an asynchronous API. Database interaction won't 
+    lock up the user interface. (Synchronous API is also available for WebWorkers.)</li>
+  <li>Good search performance, since data can be indexed according to search keys.</li>
+  <li>Robust, since it supports a transactional database model.</li>
+  <li>Easier to maintain integrity of data, due to rigid data structure.</li>
+</ul>
 
-**Disadvantages**
+<h5>Disadvantages</h5>
 
-* Deprecated. Will not be supported on IE or Firefox, and will probably be phased out from the other browsers at some stage.
-* Steep learning curve, requiring knowledge of relational databases and SQL.
-* Suffers from object-relational impedance mismatch.
-* Diminishes agility, as database schema must be defined upfront, with all records in a table matching the same structure.
+<ul>
+  <li>Deprecated. Will not be supported on IE or Firefox, and will probably be phased out 
+    from the other browsers at some stage.</li>
+  <li>Steep learning curve, requiring knowledge of relational databases and SQL.</li>
+  <li>Suffers from object-relational impedance mismatch.
+  <li>Diminishes agility, as database schema must be defined upfront, with all records in a 
+    table matching the same structure.</li>
+</ul>
 
-**2. IndexedDB**
+<h4>2. IndexedDB</h4>
 
-It is the successor to both LocalStorage and WebSQL, designed to replace them as the “one true” browser database. It exposes an asynchronous API that supposedly avoids blocking the DOM, but as we'll see below, it doesn't necessarily live up to the hype. Browser support is extremely spotty, with only Chrome and Firefox having fully usable implementations.
+It is the successor to both LocalStorage and WebSQL, designed to replace them as the 
+“one true” browser database. It exposes an asynchronous API that supposedly avoids 
+blocking the DOM, but as we'll see below, it doesn't necessarily live up to the hype. 
+Browser support is extremely spotty, with only Chrome and Firefox having fully usable 
+implementations.
 
-**Advantages**
+<h5>Advantages</h5>
 
-* Good performance generally, being an asynchronous API. Database interaction won't lock up the user interface. (Synchronous API is also available for WebWorkers.)
-* Good search performance, since data can be indexed according to search keys.
-* Supports versioning.
-* Robust, since it supports a transactional database model.
-* Fairly easy learning curve, due to a simple data model.
-* Decent browser support: Chrome, Firefox, mobile FF, IE10.
+<ul>
+  <li>Good performance generally, being an asynchronous API. Database interaction won't 
+    lock up the user interface. (Synchronous API is also available for WebWorkers.)</li>
+  <li>Good search performance, since data can be indexed according to search keys.</li>
+  <li>Supports versioning.</li>
+  <li>Robust, since it supports a transactional database model.</li>
+  <li>Fairly easy learning curve, due to a simple data model.</li>
+  <li>Decent browser support: Chrome, Firefox, mobile FF, IE10.</li>
+</ul>
 
-**Disadvantages**
+<h5>Disadvantages</h5>
 
-* Very complex API resulting in large amounts of nested callbacks.
+<ul>
+  <li>Very complex API resulting in large amounts of nested callbacks.</li>
+</ul>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -978,11 +985,13 @@ and work correctly even if users click the refresh button when they are offline.
 
 Using an application cache gives an application the following benefits:
 
-* **Offline browsing**: users can navigate a site even when they are offline.
-* **Speed**: cached resources are local, and therefore load faster.
-* **Reduced server load**: the browser only downloads resources that have changed from the server.
+<ul>
+  <li><b>Offline browsing</b>: users can navigate a site even when they are offline.</li>
+  <li><b>Speed</b>: cached resources are local, and therefore load faster.</li>
+  <li><b>Reduced server load</b>: the browser only downloads resources that have changed from the server.</li>
+</ul>
 
-Syntax:
+<h5>Syntax:</h5>
 
 ```html
 <html manifest="example.appcache">
@@ -991,7 +1000,7 @@ Syntax:
 ```
 
 <i>Note: Using the application caching feature described here is at this point highly 
-discouraged; it's in the process of being removed from the Web platform. Use **Service Workers** 
+discouraged; it's in the process of being removed from the Web platform. Use <b>Service Workers</b> 
 instead. In fact as of Firefox 44, when AppCache is used to provide offline support for a 
 page a warning message is now displayed in the console advising developers to use Service 
 workers instead (bug 1204581).</i>
@@ -1012,7 +1021,7 @@ the user's cache still references old files. This can either leave them with old
 functionality or break a website if the cached CSS and JavaScript files are referencing 
 elements that no longer exist, have moved or have been renamed.
 
-**Cache busting** is the process of forcing the browser to download the new files. This 
+<b>Cache busting</b> is the process of forcing the browser to download the new files. This 
 is done by naming the file something different to the old file.
 
 A common technique to force the browser to re-download the file is to append a query 
@@ -1042,12 +1051,12 @@ such as semantic HTML, alt attributes and using [role=button] in the expected wa
 
 <h3>Q. How to use data- attribute in html5?</h3>
 
-Any attribute on any element whose attribute name starts with **data-** is a data attribute. 
+Any attribute on any element whose attribute name starts with <b>data-</b> is a data attribute. 
 The data-&ast; attributes gives us the ability to embed custom data attributes on all HTML 
 elements. The stored (custom) data can then be used in the page's JavaScript to create 
 a more engaging user experience.
 
-**Example:**
+<b>Example:</b>
 
 ```html
 <article
@@ -1061,7 +1070,7 @@ a more engaging user experience.
 ```
 
 ```js
-/**
+/<b>
  * Access data attribute
  */
 const article = document.getElementById("electric-cars");
@@ -1071,7 +1080,8 @@ article.dataset.indexNumber; // "100"
 article.dataset.parent; // "cars"
 ```
 
-**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/html-data-attribute-llxlkn?file=/script.js)**
+<b>&#9885; <a href="https://codesandbox.io/s/html-data-attribute-llxlkn?file=/script.js">
+Try this example on CodeSandbox</a></b>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -1095,28 +1105,28 @@ serve a decorative purposes, in which case it should be left empty.
 
 The enctype attribute specifies how the form-data should be encoded when submitting it to the server.
 
-**Example:** 01
+<b>Example: 01</b>
 
 ```html
 <form action="fileupload.php" method="post" enctype="multipart/form-data"> 
-    <p>Please select the file you would like to upload.</p> 
-    <input type="file" name="upload"> 
-    <br> 
-    <input type="submit" value="Upload File">
+  <p>Please select the file you would like to upload.</p> 
+  <input type="file" name="upload"> 
+  <br> 
+  <input type="submit" value="Upload File">
 </form>
 ```
 
-**Example:** 02
+<b>Example: 02</b>
 
 ```html
 <form action="/urlencoded?token=A87412B" method="POST" enctype="application/x-www-form-urlencoded">
-    <input type="text" name="username" value=""/>
-    <input type="text" name="password" value=""/>
-    <input type="submit" value="Submit" />
+  <input type="text" name="username" value=""/>
+  <input type="text" name="password" value=""/>
+  <input type="submit" value="Submit" />
 </form>
 ```
 
-**Example:** 03
+<b>Example: 03</b>
 
 ```html
 <form action="action.do" method="get" enctype="text/plain">
@@ -1140,7 +1150,7 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 
 For the select element, the user is required to select one of the options you've given. For the datalist element, it is suggested that the user select one of the options you've given, but he can actually enter anything he wants in the input.
 
-**1. Select:**
+<b>1. Select:</b>
 
 ```html
 <select name="browser">
@@ -1152,7 +1162,7 @@ For the select element, the user is required to select one of the options you've
 </select>
 ```
 
-**2. Datalist:**
+<b>2. Datalist:</b>
 
 ```html
 <input type="text" list="browsers">
@@ -1259,9 +1269,9 @@ In order to render content the browser has to go through a series of steps:
 
 <h3>Q. What is the difference between standards mode and quirks mode?</h3>
 
-In **Quirks mode**, layout emulates nonstandard behavior in Navigator 4 and Internet 
+In <b>Quirks mode</b>, layout emulates nonstandard behavior in Navigator 4 and Internet 
 Explorer 5. This is essential in order to support websites that were built before the 
-widespread adoption of web standards. In **Standards mode**, the behavior is described 
+widespread adoption of web standards. In <b>Standards mode</b>, the behavior is described 
 by the HTML and CSS specifications. 
 
 For HTML documents, browsers use a `<!DOCTYPE html>` in the beginning of the document to 
@@ -1405,20 +1415,20 @@ decide whether to handle it in quirks mode or standards mode.
 <h3>Q. Comparison of browsers engines like Chrome, Firefox, Internet explorer, Safari?</h3>
 
 * Chrome: 
-    * Layout rendering engine **Webkit**. 
-    * JavaScript engine **V8**
+    * Layout rendering engine <b>Webkit</b>. 
+    * JavaScript engine <b>V8</b>
 
 * Firefox: 
-    * Layout rendering engine **Gecko**. 
-    * JavaScript engine **Spider monkey**
+    * Layout rendering engine <b>Gecko</b>. 
+    * JavaScript engine <b>Spider monkey</b>
         
 * Internet explorer: 
-    * Layout rendering engine **Trident**. 
-    * JavaScript  engine **Chakra**
+    * Layout rendering engine <b>Trident</b>. 
+    * JavaScript  engine <b>Chakra</b>
         
 * Safari:
-    * Layout rendering engine **Webkit**. 
-    * JavaScript engine JavascriptCore i.e **Nitro**
+    * Layout rendering engine <b>Webkit</b>. 
+    * JavaScript engine JavascriptCore i.e <b>Nitro</b>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -1460,20 +1470,20 @@ decide whether to handle it in quirks mode or standards mode.
 <img src="assets/lib/img/frame-full.jpg" alt="Browser Engine" />
 ```
 
-**1. JavaScript:**
+<b>1. JavaScript:</b>
 
 Typically JavaScript is used to handle work that will result in visual changes, whether 
 it's jQuery's animate function, sorting a data set, or adding DOM elements to the page. 
 It doesn't have to be JavaScript that triggers a visual change, though: CSS Animations, 
 Transitions, and the Web Animations API are also commonly used.
 
-**2. Style:**
+<b>2. Style:</b>
 
 This is the process of figuring out which CSS rules apply to which elements based on 
 matching selectors, for example, .headline or .nav > .nav__item. From there, once 
 rules are known, they are applied and the final styles for each element are calculated.
 
-**3. Layout:**
+<b>3. Layout:</b>
 
 Once the browser knows which rules apply to an element it can begin to calculate how much 
 space it takes up and where it is on screen. The web's layout model means that one element 
@@ -1481,13 +1491,13 @@ can affect others, for example the width of the `<body>` element typically affec
 children's widths and so on all the way up and down the tree, so the process can be quite 
 involved for the browser.
 
-**4. Paint:**
+<b>4. Paint:</b>
 
 Painting is the process of filling in pixels. It involves drawing out text, colors, images, 
 borders, and shadows, essentially every visual part of the elements. The drawing is typically 
 done onto multiple surfaces, often called layers.
 
-**5. Compositing:**
+<b>5. Compositing:</b>
 
 Since the parts of the page were drawn into potentially multiple layers they need to be 
 drawn to the screen in the correct order so that the page renders correctly. This is 
@@ -1516,13 +1526,13 @@ one element appearing over the top of another incorrectly.
 
 Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones).
 
-**1. Setting the viewport:**
+<b>1. Setting the viewport:</b>
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
-**2. Responsive Images:**
+<b>2. Responsive Images:</b>
 
 If the CSS width property is set to 100%, the image will be responsive and scale up and down
 
@@ -1530,7 +1540,7 @@ If the CSS width property is set to 100%, the image will be responsive and scale
 <img src="img.png" style="width:100%;">
 ```
 
-**3. Show different Images depending on Browser Width:**
+<b>3. Show different Images depending on Browser Width:</b>
 
 The HTML `<picture>` element allows you to define different images for different browser window sizes.
 
@@ -1543,7 +1553,7 @@ The HTML `<picture>` element allows you to define different images for different
 </picture>
 ```
 
-**4. Responsive Text Size:**
+<b>4. Responsive Text Size:</b>
 
 The text size can be set with a "vw" unit, which means the "viewport width". That way the text size will follow the size of the browser window.
 
@@ -1551,7 +1561,7 @@ The text size can be set with a "vw" unit, which means the "viewport width". Tha
 <h1 style="font-size:10vw">Hello World</h1>
 ```
 
-**5. Media Queries:**
+<b>5. Media Queries:</b>
 
 Using media queries you can define completely different styles for different browser sizes.
 
@@ -1586,7 +1596,7 @@ Using media queries you can define completely different styles for different bro
 
 <h3>Q. List the API available in HTML5?</h3>
 
-**1. High Resolution Time API**
+<b>1. High Resolution Time API</b>
 
 The High Resolution Time API provides the current time in sub-millisecond resolution and 
 such that it is not subject to system clock skew or adjustments.
@@ -1600,7 +1610,7 @@ for accurate tests of the performance of our code.
 var time = performance.now();
 ```
 
-**2. User Timing API**
+<b>2. User Timing API</b>
 
 It allows us to accurately measure and report the performance of a section of JavaScript 
 code. It deals with two main concepts: mark and measure. The former represents an instant 
@@ -1615,7 +1625,7 @@ performance.mark("endFoo");
 performance.measure("durationFoo", "startFoo", "endFoo");
 ```
 
-**3. Network Information API**
+<b>3. Network Information API</b>
 
 This API belongs to the connection property of the `window.navigator` object. It exposes 
 two read-only properties: `bandwidth` and `metered`. The former is a number representing 
@@ -1631,7 +1641,7 @@ if the user's connection is subject to limitation and bandwidth usage, and false
 | 05. |navigator.connection.effectiveType|Effective connection type  |
 | 06. |navigator.connection.saveData   |True if the user has requested a reduced data usage mode from the user agent ( saveData )|
 
-**4.) Vibration API**
+<b>4.) Vibration API</b>
 
 It exposes only one method, `vibrate()`, that belongs to the `window.navigator` object. This method accepts one parameter specifying the duration of the vibration in milliseconds. The parameter can be either an integer or an array of integers. In the second case, it's interpreted as alternating vibration times and pauses.
 
@@ -1640,7 +1650,7 @@ It exposes only one method, `vibrate()`, that belongs to the `window.navigator` 
 navigator.vibrate(2000);
 ```
 
-**5.) Battery Status API**
+<b>5.) Battery Status API</b>
 
 The Battery Status API exposes four properties (`charging`, `chargingTime`, `discharingTime`, 
 and `level`) and four events. The properties specify if the battery is in charge, the 
@@ -1653,7 +1663,7 @@ belongs to the `battery` property of the `window.navigator` object.
 var percentageLevel = navigator.battery.level * 100;
 ```
 
-**6.) Page Visibility API**
+<b>6.) Page Visibility API</b>
 
 The Page Visibility API enables us to determine the current visibility state of the page. 
 The Page Visibility API is especially useful for saving resources and improving performance 
@@ -1664,7 +1674,7 @@ by letting a page avoid performing unnecessary tasks when the document isn't vis
 console.log('Page Visibility: '+document.hidden); 
 ```
 
-**7.) Fullscreen API**
+<b>7.) Fullscreen API</b>
 
 The Fullscreen API provides a way to request fullscreen display from the user, and exit 
 this mode when desired. This API exposes two methods, `requestFullscreen()` and 
@@ -1708,7 +1718,7 @@ if ("geolocation" in navigator) {
 }
 ```
 
-**Example**
+<b>Example</b>
 
 ```html
 <!DOCTYPE html>
@@ -1722,11 +1732,11 @@ if ("geolocation" in navigator) {
 </body>
 
 <script type="text/javascript">
-  /**
+  /<b>
     The Geolocation API allows the user to provide their location to web applications 
     if they so desire. For privacy reasons, the user is asked for permission to report 
     location information.
-  **/
+  <b>/
   function geoFindMe() {
     var output = document.getElementById("out");
 
@@ -1764,12 +1774,12 @@ if ("geolocation" in navigator) {
 
 <h3>Q. What is the use of WebSocket API?</h3>
 
-The **WebSocket API** is an advanced technology that makes it possible to open a two-way 
+The <b>WebSocket API</b> is an advanced technology that makes it possible to open a two-way 
 interactive communication session between the user's browser and a server. With this API, 
 you can send messages to a server and receive event-driven responses without having to 
 poll the server for a reply.
 
-**Interfaces:**  
+<b>Interfaces:</b>  
 
 |Sl.No|   API      | Description    |
 |-----|------------|----------------|
@@ -1800,10 +1810,10 @@ Example
 
 <h3>Q. Explain about HTML Canvas?</h3>
 
-**canvas** is an HTML element which can be used to draw graphics via JavaScript. This can, 
+<b>canvas</b> is an HTML element which can be used to draw graphics via JavaScript. This can, 
 for instance, be used to draw graphs, combine photos, or create animations.
 
-**1. Colors, Styles, and Shadows:**
+<b>1. Colors, Styles, and Shadows:</b>
 
 |  Property    |    Description                                                                 |
 |--------------|--------------------------------------------------------------------------------|
@@ -1814,7 +1824,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 |shadowOffsetX | Sets or returns the horizontal distance of the shadow from the shape           |
 |shadowOffsetY | Sets or returns the vertical distance of the shadow from the shape             |
 
-**2. Line Styles:**
+<b>2. Line Styles:</b>
 
 |Property     |  Description                                                   |
 |------------|----------------------------------------------------------------|
@@ -1823,7 +1833,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 |lineWidth     |Sets or returns the current line width                          |
 |miterLimit     |Sets or returns the maximum miter length                        |
 
-**3. Rectangles:**
+<b>3. Rectangles:</b>
   
 |Method         |Description                                          |
 |---------------|-----------------------------------------------------|
@@ -1832,7 +1842,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 |strokeRect()   |Draws a rectangle (no fill)                          |
 |clearRect()    |Clears the specified pixels within a given rectangle |
 
-**4. Paths:**
+<b>4. Paths:</b>
 
 | Method          | Description                                                                             |
 |-----------------|-----------------------------------------------------------------------------------------|
@@ -1846,7 +1856,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 |arc()       |Creates an arc/curve (used to create circles, or parts of circles)                            |
 |arcTo()     |Creates an arc/curve between two tangents                                                     |
 
-**5. Transformations:**
+<b>5. Transformations:</b>
 
 | Method        | Description                                                                   |
 |---------------|-------------------------------------------------------------------------------|
@@ -1856,7 +1866,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 |transform()    | Replaces the current transformation matrix for the drawing                    |
 |setTransform() | Resets the current transform to the identity matrix. Then runs transform()    |
 
-**6. Text:**
+<b>6. Text:</b>
 
 |Property        |Description                                                       |
 |---------------|----------------------------------------------------------------- |
@@ -1867,7 +1877,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 |strokeText()    |Draws text on the canvas (no fill)                                |
 |measureText()    |Returns an object that contains the width of the specified text   |
 
-**Example 01:** HTML5 Canvas for Text
+<b>Example 01:</b> HTML5 Canvas for Text
 
 ```html
 <div>Text</div>
@@ -1883,7 +1893,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 </script>
 ```
 
-**Example 02:** HTML5 Canvas for Straight Line
+<b>Example 02:</b> HTML5 Canvas for Straight Line
 
 ```html
 <div>Straight Line</div>
@@ -1899,7 +1909,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 </script>
 ```
 
-**Example 03:** HTML5 Canvas for Rectangle
+<b>Example 03:</b> HTML5 Canvas for Rectangle
 
 ```html
 <div>Rectangle with Style</div>
@@ -1914,7 +1924,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 </script>
 ```
 
-**Example 04:** HTML5 Canvas for Circle
+<b>Example 04:</b> HTML5 Canvas for Circle
 
 ```html
 <div>Circle</div>
@@ -1936,7 +1946,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 
 <h3>Q. What is difference between SVG and Canvas?</h3>
 
-**1. SVG:**
+<b>1. SVG:</b>
 
 The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define 
 two-dimensional vector based graphics for the web. Unlike raster image (e.g. .jpg, .gif, 
@@ -1951,7 +1961,7 @@ There are following advantages of using SVG over other image formats like JPEG, 
 * SVG content can be animated using the built-in animation elements.
 * SVG images can contain hyperlinks to other documents.
 
-**Example:**
+<b>Example:</b>
 
 ```html
 <!DOCTYPE html>
@@ -1977,7 +1987,7 @@ There are following advantages of using SVG over other image formats like JPEG, 
 </html>
 ```
 
-**2. Canvas:**
+<b>2. Canvas:</b>
 
 Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap with an 
 “immediate mode” graphics application programming interface (API) for drawing on it. The 
@@ -1985,7 +1995,7 @@ Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap
 are supposed to use a script. Canvas has several strategies when it comes to drawing paths, 
 boxes, circles, text & adding images.
 
-**Example:**
+<b>Example:</b>
 
 ```html
 <!DOCTYPE html>
@@ -2005,7 +2015,7 @@ boxes, circles, text & adding images.
 </html>
 ```
 
-**Differences:**
+<b>Differences:</b>
 
 |SVG                    |Canvas                                         |
 |-----------------------|-----------------------------------------------|
@@ -2076,15 +2086,15 @@ Microdata is a standardized way to provide additional semantics in web pages. Mi
 lets you define your own customized elements and start embedding custom properties in 
 your web pages. At a high level, microdata consists of a group of name-value pairs.
 
-The groups are called **items**, and each name-value pair is a **property**. Items and 
+The groups are called <b>items</b>, and each name-value pair is a <b>property</b>. Items and 
 properties are represented by regular elements. Search engines benefit greatly from 
 direct access to this structured data because it allows search engines to understand 
 the information on web pages and provide more 
 relevant results to users.
 
 At a high level, microdata consists of a group of name-value pairs
-* **itemscope**:- To create an item
-* **itemprop**:- To add a property to an item
+* <b>itemscope</b>:- To create an item
+* <b>itemprop</b>:- To add a property to an item
 
 Example
 
@@ -2104,7 +2114,7 @@ Example
 
 <h3>Q. What are the HTML tags which deprecated in HTML5?</h3>
 
-**1. Deprecated Tags:**
+<b>1. Deprecated Tags:</b>
 
 The following elements are not available in HTML5 anymore and their function is better handled by CSS.
 
@@ -2126,7 +2136,7 @@ The following elements are not available in HTML5 anymore and their function is 
 | 14. |`<tt>`            |Defines teletype text|
 | 15. |`<u>`            |Defines underlined text|
 
-**2. Deprecated Attributes:**  
+<b>2. Deprecated Attributes:</b>  
 
 |Removed Attributes      |From the Elements     |
 |---------------------|----------------------|
@@ -2192,9 +2202,9 @@ The following elements are not available in HTML5 anymore and their function is 
 Modernizr is a JavaScript library that detects which HTML5 and CSS3 features visitor's 
 browser supports. In detecting feature support, it allows developers to test for some of 
 the new technologies and then provide fallbacks for browsers that do not support them. 
-This is called **feature detection** and is much more efficient than browser sniffing.
+This is called <b>feature detection</b> and is much more efficient than browser sniffing.
 
-**1. Using Modernizr with CSS:**
+<b>1. Using Modernizr with CSS:</b>
 
 By default, Modernizr sets classes for all of your tests on the root element (`<html>` for websites). This means adding the class for each feature when it is supported, and adding it with a no- prefix when it is not (e.g. `.feature` or `.no-feature`).
 
@@ -2208,7 +2218,7 @@ By default, Modernizr sets classes for all of your tests on the root element (`<
 }
 ```
 
-**2. Using Modernizr with JavaScript:**
+<b>2. Using Modernizr with JavaScript:</b>
 
 Modernizr keeps track of the results of all of it's feature detections via the `Modernizr` object.
 
@@ -2230,7 +2240,7 @@ Progressive Rendering is the technique of sequentially rendering portions of a w
 
 It implies that once the important material is produced on the server, you may stream it to the client without having to wait for non-critical stuff to be displayed. It combines the advantages of both CSR (Client Side Rendering) and SSR (Server Side Rendering) (Server Side Rendering).
 
-**1. Client Side Rendering:**
+<b>1. Client Side Rendering:</b>
 
 Client Side Rendering (CSR) is a technique in which content is rendered in the browser using JavaScript. Instead of getting all the content from the HTML file itself, the server sends HTML with an empty body and script tags that contain links to JavaScript bundles that the browser will use to render the content.
 
@@ -2243,7 +2253,7 @@ Typical page load behaviour in CSR —
 
 Since the all the content starts loading only after loading the initial JavaScript, it takes a longer time to show any content on the page. If the user is on a slow network, the content is blocked for an even longer time due to lower bandwidth and higher latency.
 
-**2. Server Side Rendering:**
+<b>2. Server Side Rendering:</b>
 
 When rendering on the server side, the HTML is rendered on the server and sent to the client. The content that we need to display on the screen becomes available immediately after the HTML is parsed; hence, primary rendering of content is faster than CSR.
 
@@ -2291,10 +2301,10 @@ Iframes can include videos, maps, or entire web pages from other sources.
 <h3>Q. What is an iframe and how does it work?</h3>
 
 The `<iframe>` HTML element represents a nested browsing context, embedding another HTML 
-page into the current one. Each embedded browsing context has its own **session history** 
-and **document**. The browsing context that embeds the others is called the parent browsing 
+page into the current one. Each embedded browsing context has its own <b>session history</b> 
+and <b>document</b>. The browsing context that embeds the others is called the parent browsing 
 context. The topmost browsing context — the one with no parent — is usually the browser 
-window, represented by the **Window** object.
+window, represented by the <b>Window</b> object.
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -2330,7 +2340,7 @@ window, represented by the **Window** object.
 </html>
 ```
 
-**The Iframe Tag Attributes:**
+<b>The Iframe Tag Attributes:</b>
 
 |Attribute       | Description                |
 |----------------|----------------------------|
@@ -2351,7 +2361,7 @@ in a page requires increased memory and other computing resources.</i>
 
 <h3>Q. Explain the use of rel="nofollow", rel="noreferrer", rel="noopener" attribute?</h3>
 
-**1. rel="nofollow"**
+<b>1. rel="nofollow"</b>
 
 When `rel="nofollow"` tag is used, it instruct the search engines not to pass any PageRank 
 from one page to the other. It does not allow it to pass the authority to the specific 
@@ -2360,31 +2370,31 @@ website. The main advantage of using this attribute is to control the spam attac
 There may be times, when you do not have control over what people publish on your websites, 
 for example some blog comments and some kind of forum posting.
 
-**Example:**
+<b>Example:</b>
 
 ```html
 <a href="https://www.website.com" rel="nofollow">Link to yoursite.com</a>
 ```
 
-**2. rel="noreferrer"**
+<b>2. rel="noreferrer"</b>
 
 Noreferrer is related to analytics and tracking. The referrer value shows the previous 
 page where a user came from. By using the noreferrer attribute on a link, you are 
 preventing other pages from seeing that traffic came from a click on your link.
 
-**Example:**
+<b>Example:</b>
 
 ```html
 <a href="https://www.website.com" rel="noreferrer">Link to yoursite.com</a>
 ```
 
-**3. rel="noopener"**
+<b>3. rel="noopener"</b>
 
 It prevents the new page from being able to access the `window.opener` property and will 
 make it run in a separate process. noopener tag works as a security fix which prevents 
 malicious links to take control over an opened tab.
 
-**Example:**
+<b>Example:</b>
 
 ```html
 <a href="https://www.website.com" target="_blank" rel="noopener">Link to yoursite.com</a>
@@ -2400,7 +2410,7 @@ The `<mark>` HTML element represents text which is marked or highlighted for ref
 notation purposes, due to the marked passage's relevance or importance in the enclosing 
 context.
 
-**Example:**
+<b>Example:</b>
 
 ```html
 <!DOCTYPE html>
@@ -2428,13 +2438,13 @@ context.
 HTML tags are used to influence the way our pages appear in search results. With the help 
 of certain tags, we can turn regular search snippets into rich snippets, and maybe even 
 into featured snippets. And, as our search snippets get more advanced, they are able to 
-secure better **Search Engine Results Pages (SERP)** positions and attract more traffic.
+secure better <b>Search Engine Results Pages (SERP)</b> positions and attract more traffic.
 
 Here are all the HTML tags that still matter:
 
 <h2 id="02-html-tags">02. HTML Tags</h2>
 
-**1. Title tag:**
+<b>1. Title tag:</b>
 
 Title tags are used by search engines to determine the subject of a page and display it 
 in SERP. As a rule of thumb, titles that are under 60 characters long will fit on most 
@@ -2444,7 +2454,7 @@ screens. In HTML, a title tag looks like this:
 <title>Your Title Goes Here</title>
 ```
 
-**2. Meta description tag:**
+<b>2. Meta description tag:</b>
 
 Meta description is a short paragraph of text used to describe your page in search results. 
 The function of meta description is similar to the title. It provides a little more detail 
@@ -2455,7 +2465,7 @@ meta description tag looks like this:
 <meta name="description" content="Your description goes here">
 ```
 
-**3. Heading tags:**
+<b>3. Heading tags:<b>
 
 Headings (H1-H6) are used to split your page into sections or chapters. Each heading is 
 like a small title within the page. In HTML, a heading looks like this:
@@ -2468,7 +2478,7 @@ like a small title within the page. In HTML, a heading looks like this:
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-**4. Image alt attribute:**
+<b>4. Image alt attribute:<b>
 
 The `alt` text attribute is a part of an image tag, and it provides a description for an 
 image. Alt text plays a major role in image optimization. It makes your images accessible 
@@ -2480,7 +2490,7 @@ screen readers convey images). In HTML it may look like this:
 <img src="url" alt="Your image description goes here">
 ```
 
-**5. Open Graph tags:**
+<b>5. Open Graph tags:<b>
 
 Open Graph (OG) tags are placed in the `<head>` section of a page and allow any webpage 
 to become a rich object in social networks. OG tags let you control how the information 
@@ -2492,7 +2502,7 @@ and increasing conversions. In HTML, it can look like this:
 <meta name="og:title" property="og:title" content="Your Open Graph Title Goes Here">
 ```
 
-**6. Robots tag:**
+<b>6. Robots tag:<b>
 
 A robots tag is an element in the HTML of a page that informs search engines which pages 
 on your site should be indexed and which should not. Its functions are similar to robots.txt, 
@@ -2503,7 +2513,7 @@ look like this:
 <meta name="robots" content="index, follow">
 ```
 
-**7. Canonical tag:**
+<b>7. Canonical tag:<b>
 
 A canonical tag is a way of telling search engines that a specific URL represents the 
 master copy of a page. Using the canonical tag prevents problems caused by identical 
@@ -2515,7 +2525,7 @@ In HTML, it may look like this:
 <link href="URL" rel="canonical">
 ```
 
-**8. HTML5 semantic tags:**
+<b>8. HTML5 semantic tags:<b>
 
 One of the most important features of HTML5 is its semantics tags. Semantic tags refers to 
 syntax that makes the HTML more comprehensible by better defining the different sections 
@@ -2535,17 +2545,17 @@ and search engines to better interpret content. For example, instead of using
 
 Attributes are defined by HTML. Properties are accessed from DOM (Document Object Model) nodes.
 
-**Example:**
+<b>Example:<b>
 
 ```html
 <input id="inputId" type="text" value="Hello World!" />
 ```
 
-The **value** property reflects the current text-content inside the input box, 
-whereas the **value** attribute contains the initial text-content of the **value** 
+The <b>value<b> property reflects the current text-content inside the input box, 
+whereas the <b>value<b> attribute contains the initial text-content of the <b>value<b> 
 attribute from the HTML source code
 
-**Difference between HTML attributes and DOM properties:**
+<b>Difference between HTML attributes and DOM properties:<b>
 
 |Attribute                               |Property                |
 |----------------------------------------|------------------------|
@@ -2559,7 +2569,7 @@ attribute from the HTML source code
 
 <h3>Q. How do you set IE compatibility mode?</h3>
 
-**X-UA-Compatible** is a document mode meta tag that allows to choose what version of 
+<b>X-UA-Compatible<b> is a document mode meta tag that allows to choose what version of 
 Internet Explorer the page should be rendered as. It is used by Internet Explorer 8 to 
 specify whether a page should be rendered as IE 7 (compatibility view) or IE 8 (standards view).
 
@@ -2580,7 +2590,7 @@ content. pages without a DOCTYPE will be rendered in quirks mode. Edge mode tell
 Internet Explorer to display content in the highest mode available, which actually breaks 
 the "lock-in" paradigm. With Internet Explorer 8, this is equivalent to IE8 mode.
 
-**Setting the Meta Element:**
+<b>Setting the Meta Element:<b>
 
 The meta element includes a content attribute that enables you to specify the mode that 
 content is rendered in for the webpage, as the following table shows.
@@ -2837,7 +2847,7 @@ Optional tags, cont'd
 
 <h3>Q. What is an HTML preprocessor? Have you used different HTML templating languages before?</h3>
 
-A **HTML preprocessor** is a program that takes one type of data and converts it to another 
+A <b>HTML preprocessor<b> is a program that takes one type of data and converts it to another 
 one. In case of HTML and CSS, some of the more popular preprocessor languages are Slim and 
 Sass. Slim is processed into HTML and Sass is processed into CSS.
 
@@ -2862,11 +2872,11 @@ languages such as Arabic, Hebrew, Pashto, Persian, Urdu, and Sindhi.
 We can set text direction in HTML in one of two ways:
 
 <ul>
-  <li>With the HTML **dir** attribute</li>
-  <li>With the CSS **direction** property</li>
+  <li>With the HTML <b>dir<b> attribute</li>
+  <li>With the CSS <b>direction<b> property</li>
 </ul>
 
-**Example:**
+<b>Example:<b>
 
 ```html
 <!-- Syntax -->
@@ -2876,7 +2886,7 @@ We can set text direction in HTML in one of two ways:
 <textarea dir="rtl"></textarea>
 ```
 
-**Attribute Values:**
+<b>Attribute Values:<b>
 
 |Value          |Description                |
 |---------------|---------------------------|
@@ -2894,7 +2904,7 @@ The `<small>` HTML element represents side-comments and small print, like copyri
 legal text, independent of its styled presentation. By default, it renders text within 
 it one font-size smaller, such as from `small` to `x-small`.
 
-**Example:**
+<b>Example:<b>
 
 ```html
 <!DOCTYPE html>
@@ -2921,9 +2931,9 @@ it one font-size smaller, such as from `small` to `x-small`.
 
 <h3>Q. How do you serve a page with content in multiple languages?</h3>
 
-The **lang** attribute specifies the language of the element's content.
+The <b>lang<b> attribute specifies the language of the element's content.
 
-**Example:**
+<b>Example:<b>
 
 ```html
 <!DOCTYPE html>
@@ -2954,13 +2964,13 @@ The **lang** attribute specifies the language of the element's content.
 The `<section>` tag creates independent sections within a webpage having logically connected 
 content. And the `<div>` tag is an empty container specifying a division or a section.
 
-**The `<section>` Element**
+<b>The `<section>` Element<b>
 
 According to the W3C specification, the `<section>` tag means that the content inside this 
 element is grouped. In other words, the content relates to a single theme. It must be an 
 entry in the outline of the page.
 
-**Example:**
+<b>Example:<b>
 
 ```html
 <!DOCTYPE html>
@@ -2988,14 +2998,14 @@ entry in the outline of the page.
 </html>
 ```
 
-**The `<div>` Element**
+<b>The `<div>` Element<b>
 
 The `<div>` element only represents its child elements and doesn't have a special meaning. 
 It can be used with the `lang`, `title`, and `class` attributes to add semantics that is 
 common to a group of consecutive elements. This element can also be used in a `<dl>` tag 
 and wrap groups of `<dt>` and `<dd>` elements.
 
-**Example:**
+<b>Example:<b>
 
 ```html
 <!DOCTYPE html>
@@ -3053,7 +3063,7 @@ The `srcset` attribute allows to define a list of different image resources alon
 information so that browser can pick the most appropriate image based on the actual device's 
 resolution.
 
-**Syntax:**
+<b>Syntax:<b>
 
 ```html
 <img 
@@ -3065,11 +3075,11 @@ resolution.
 />
 ```
 
-**1. Using display density descriptor:**
+<b>1. Using display density descriptor:<b>
 
 `srcset` provides a comma-separated list of image resources along with display density it should be used, for example1x, 2x etc.
 
-**Example:**
+<b>Example:<b>
 
 ```html
 <img src="image.jpg" 
@@ -3078,11 +3088,11 @@ resolution.
 />
 ```
 
-**2. Using width descriptor:**
+<b>2. Using width descriptor:<b>
 
 The syntax is similar to the display density descriptor, but instead of display density values, we provide the actual width of the image.
 
-**Example:**
+<b>Example:<b>
 
 ```html
 <img src="image.jpg" 
@@ -3098,7 +3108,7 @@ The syntax is similar to the display density descriptor, but instead of display 
 
 <h3>Q. What is accessibility & ARIA role means in a web application?</h3>
 
-The **Accessible Rich Internet Applications (ARIA)** Suite, defines a way to make Web 
+The <b>Accessible Rich Internet Applications (ARIA)<b> Suite, defines a way to make Web 
 content and Web applications more accessible to people with disabilities. It especially 
 helps with dynamic content and advanced user interface controls developed with HTML, 
 JavaScript, and related technologies.
@@ -3116,7 +3126,7 @@ can make advanced Web applications accessible and usable to people with disabili
 
 ARIA attributes are divided into two categories: roles, and states & properties.
 
-**ARIA Roles:**
+<b>ARIA Roles:<b>
 
 An ARIA role is added via a `role="<ROLE TYPE>"` attribute, and does not ever change for 
 an element once it is set. There are four categories of ARIA roles:
@@ -3128,12 +3138,12 @@ an element once it is set. There are four categories of ARIA roles:
   <li>abstract</li>
 </ul>
 
-**Landmark ARIA Roles:**
+<b>Landmark ARIA Roles:<b>
 
 Much like semantic HTML elements, landmark ARIA Roles are used to give users of assistive 
 technology a better way to navigate and identify the different parts of a web page.
 
-**Example:**
+<b>Example:<b>
 
 ```html
  <nav class='mobile-nav' role='navigation' aria-label='Mobile Menu'>List of Links</nav>
@@ -3146,95 +3156,95 @@ visually impaired users, without the `role="navigation"`.
 The different landmark roles you can use are as follows, copied from the W3C Wiki Page:
 
 <ul>
-  <li>**banner**: A region that contains the prime heading or internal title of a page.</li>
-  <li>**complementary**: Any section of the document that supports the main content, yet is 
+  <li><b>banner<b>: A region that contains the prime heading or internal title of a page.</li>
+  <li><b>complementary<b>: Any section of the document that supports the main content, yet is 
   separate and meaningful on its own.</li>
-  <li>**contentinfo**: A region that contains information about the parent document such as 
+  <li><b>contentinfo<b>: A region that contains information about the parent document such as 
   copyrights and links to privacy statements.</li>
-  <li>**form**: A region of the document that represents a collection of form-associated 
+  <li><b>form<b>: A region of the document that represents a collection of form-associated 
   elements, some of which can represent editable values that can be submitted to a server 
   for processing.</li>
-  <li>**main**: Main content in a document. In almost all cases a page will have only one 'role="main"'.</li>
-  <li>**navigation**: A collection of links suitable for use when navigating the document or 
+  <li><b>main<b>: Main content in a document. In almost all cases a page will have only one 'role="main"'.</li>
+  <li><b>navigation<b>: A collection of links suitable for use when navigating the document or 
   related documents.</li>
-  <li>**search**: The search tool of a Web document.</li>
-  <li>**application**: A region declared as a web application, as opposed to a web document.</li>
+  <li><b>search<b>: The search tool of a Web document.</li>
+  <li><b>application<b>: A region declared as a web application, as opposed to a web document.</li>
 </li>
 
-**Document ARIA Roles:**
+<b>Document ARIA Roles:<b>
 
 Document roles describe the structure of the content on the page, as opposed to the structure 
 of the whole page, which landmark roles describe. The roles in bold are the ones we think 
 are the most common document aria roles, and the ones which are useful to think about 
 including in your HTML.
 
-  * **article**: A section of a page that consists of a composition that forms an independent 
+  * <b>article<b>: A section of a page that consists of a composition that forms an independent 
   part of a document, page, or site.
-  * **columnheader**
-  * **definition**: A definition of a term or concept.
-  * **directory**
-  * **document**
-  * **group**: A set of user interface objects which are not intended to be included in a 
+  * <b>columnheader<b>
+  * <b>definition<b>: A definition of a term or concept.
+  * <b>directory<b>
+  * <b>document<b>
+  * <b>group<b>: A set of user interface objects which are not intended to be included in a 
   page summary or table of contents by assistive technologies.
-  * **heading**: A heading for a section of the page.
-  * **img**
-  * **list**
-  * **listitem**
-  * **math**
-  * **note**
-  * **presentation**
-  * **region**
-  * **row**
-  * **rowgroup**
-  * **rowheader**
-  * **separator**
-  * **toolbar**
+  * <b>heading<b>: A heading for a section of the page.
+  * <b>img<b>
+  * <b>list<b>
+  * <b>listitem<b>
+  * <b>math<b>
+  * <b>note<b>
+  * <b>presentation<b>
+  * <b>region<b>
+  * <b>row<b>
+  * <b>rowgroup<b>
+  * <b>rowheader<b>
+  * <b>separator<b>
+  * <b>toolbar<b>
 
-**Widget ARIA Roles:**
+<b>Widget ARIA Roles:<b>
 
 Widget Roles are used to describe what are often javascript-based interfaces, or the more 
 complicated parts of your web page's interface. The roles that are starred are the ones 
 we think are the most common elements widget aria roles, and the ones which are useful 
 useful to think about including in your HTML.
 
-  * **alert**: A message with important, and usually time-sensitive, information. 
-  * **alertdialog**: A type of dialog that contains an alert message, where initial focus 
+  * <b>alert<b>: A message with important, and usually time-sensitive, information. 
+  * <b>alertdialog<b>: A type of dialog that contains an alert message, where initial focus 
   goes to an element within the dialog. 
-  * **button**: An input that allows for user-triggered actions when clicked or pressed.
-  * **checkbox**: A checkable input that has three possible values: true, false, or mixed.
-  * **dialog**: A dialog is an application window that is designed to interrupt the current 
+  * <b>button<b>: An input that allows for user-triggered actions when clicked or pressed.
+  * <b>checkbox<b>: A checkable input that has three possible values: true, false, or mixed.
+  * <b>dialog<b>: A dialog is an application window that is designed to interrupt the current 
   processing of an application in order to prompt the user to enter information or require 
   a response. 
-  * **gridcell**
-  * **link**
-  * **log**
-  * **marquee**
-  * **menuitem**
-  * **menuitemcheckbox**
-  * **menuitemradio**
-  * **option**
-  * **progressbar**
-  * **radio**: A checkable input in a group of radio roles, only one of which can be 
+  * <b>gridcell<b>
+  * <b>link<b>
+  * <b>log<b>
+  * <b>marquee<b>
+  * <b>menuitem<b>
+  * <b>menuitemcheckbox<b>
+  * <b>menuitemradio<b>
+  * <b>option<b>
+  * <b>progressbar<b>
+  * <b>radio<b>: A checkable input in a group of radio roles, only one of which can be 
     checked at a time.
-  * **scrollbar**
-  * **slider**
-  * **spinbutton**
-  * **status**
-  * **tab**: A grouping label providing a mechanism for selecting the tab content that is 
+  * <b>scrollbar<b>
+  * <b>slider<b>
+  * <b>spinbutton<b>
+  * <b>status<b>
+  * <b>tab<b>: A grouping label providing a mechanism for selecting the tab content that is 
   to be rendered to the user.
-  * **tabpanel**: A container for the resources associated with a tab, where each tab is 
+  * <b>tabpanel<b>: A container for the resources associated with a tab, where each tab is 
   contained in a tablist.
-  * **textbox**: Input that allows free-form text as its value.
-  * **timer**
-  * **tooltip**
-  * **treeitem**
+  * <b>textbox<b>: Input that allows free-form text as its value.
+  * <b>timer<b>
+  * <b>tooltip<b>
+  * <b>treeitem<b>
 
-**Abstract ARIA Roles:**
+<b>Abstract ARIA Roles:<b>
 
 Abstract aria roles are the basis of how the other ARIA roles are defined. These are not 
 to be used in HTML.
 
-**ARIA States & Properties:**
+<b>ARIA States & Properties:<b>
 
 ARIA states and properties are often used to support ARIA roles that exist on a page. 
 ARIA Properties often describe relationships with other elements, and for the most part, 
@@ -3248,34 +3258,34 @@ While there are 35 aria properties and states the W3C defines and which you can 
 about on the W3C site, here are the ones we believe to most commonly used and practical 
 for most web pages/applications.
 
-  * **aria-activedescendant**: Identifies the currently active descendant of a composite 
+  * <b>aria-activedescendant<b>: Identifies the currently active descendant of a composite 
     widget. Use with autofill search suggestions.
-  * **aria-autocomplete**: Indicates whether user input completion suggestions are provided. 
+  * <b>aria-autocomplete<b>: Indicates whether user input completion suggestions are provided. 
     Use with autofill search suggestions.
-  * **aria-checked (state)**: Indicates the current “checked” state of checkboxes, radio 
+  * <b>aria-checked (state)<b>: Indicates the current “checked” state of checkboxes, radio 
     buttons, and other widgets. You can set this to true, false, or mixed state. 
-  * **aria-controls**: Identifies the element (or elements) whose contents or presence are 
+  * <b>aria-controls<b>: Identifies the element (or elements) whose contents or presence are 
   controlled by the current element.
-  * **aria-describedby**: Identifies the element (or elements) that describes the object.
-  * **aria-disabled (state)**: Indicates that the element is perceivable but disabled, so 
+  * <b>aria-describedby<b>: Identifies the element (or elements) that describes the object.
+  * <b>aria-disabled (state)<b>: Indicates that the element is perceivable but disabled, so 
   it is not editable or otherwise operable.
-  * **aria-expanded (state)**: Indicates whether the element, or another grouping element 
+  * <b>aria-expanded (state)<b>: Indicates whether the element, or another grouping element 
     it controls, is currently expanded or collapsed.
-  * **aria-hidden (state)**: Indicates that the element and all of its descendants are 
+  * <b>aria-hidden (state)<b>: Indicates that the element and all of its descendants are 
     not visible or perceivable to any user as implemented by the author.
-  * **aria-invalid (state)**: Indicates the entered value does not conform to the format 
+  * <b>aria-invalid (state)<b>: Indicates the entered value does not conform to the format 
     expected by the application.
-  * **aria-label**: Defines a string value that labels the current element.
-  * **aria-labelledby**: Identifies the element (or elements) that labels the current element.
-  * **aria-live**: Indicates that an element is dynamic, changing, and will be updated, 
+  * <b>aria-label<b>: Defines a string value that labels the current element.
+  * <b>aria-labelledby<b>: Identifies the element (or elements) that labels the current element.
+  * <b>aria-live<b>: Indicates that an element is dynamic, changing, and will be updated, 
     and describes the types of updates the user can expect from the live region.
-  * **aria-owns**: Identifies an element (or elements) in order to define a visual, 
+  * <b>aria-owns<b>: Identifies an element (or elements) in order to define a visual, 
     functional, or contextual parent/child  relationship between DOM elements where the 
 	DOM hierarchy cannot be used to represent the relationship.
-  * **aria-pressed (state)**: Indicates the current “pressed” state of toggle buttons.
-  * **aria-required**: Indicates that user input is required on the element before a form 
+  * <b>aria-pressed (state)<b>: Indicates the current “pressed” state of toggle buttons.
+  * <b>aria-required<b>: Indicates that user input is required on the element before a form 
     may be submitted.
-  * **aria-selected (state)**: Indicates the current “selected” state of various widgets.
+  * <b>aria-selected (state)<b>: Indicates the current “selected” state of various widgets.
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
