@@ -28,6 +28,7 @@
   <li><a href="#14-html-webworker">HTML Web Worker</a></li>
   <li><a href="#15-html-misc">HTML Miscellaneous</a></li>
   <li><a href="#16-misc">Miscellaneous</a></li>
+  <li id="#improve-perf">Ways to improve website performance</h3>
 </ol>
 
 <h2 id="01-intro">01. Introduction</h2>
@@ -120,7 +121,7 @@ HTML5 offers new semantic elements to define different parts of a web page:
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. Why you would like to use semantic tag?</h3>
+<h3>Q. Why you would like to use semantic tags?</h3>
 
 <ul>
   <li>Search Engine Optimization, accessibility, repurposing, light code.</li>
@@ -483,6 +484,11 @@ tag (`&lt;meta&gt;`). This means that the following are both acceptable:</p>
 
 <h3>Q. Explain the difference between block elements and inline elements?</h3>
 
+<p>Inline elements are typically used to define small pieces of content such as text or 
+images that are integrated into a larger block of text. Block elements are typically 
+used to define larger blocks of content such as paragraphs, headings, and lists. Take 
+up only as much width as necessary to display their content.</p>
+
 <ul>
   <li>block elements: `&lt;h1&gt;`, `&lt;p&gt;`, `&lt;ul&gt;`, `&lt;ol&gt;`, `&lt;li&gt;`</li>
   <li>inline elements: `&lt;span&gt;`, `&lt;a&gt;`, `&lt;strong&gt;`, `&lt;i&gt;`, `&lt;img&gt;`</li>
@@ -508,27 +514,29 @@ tag (`&lt;meta&gt;`). This means that the following are both acceptable:</p>
 
 <h3>Q. What is the purpose of `main` element?</h3>
 
-<p>The HTML `<main>` element represents the dominant content of the `<body>` of a document. 
-The main content area consists of content that is directly related to or expands upon the 
-central topic of a document, or the central functionality of an application.</p>
+<p>The HTML `&lt;main&gt;` element represents the dominant content of the `&lt;body&gt;` 
+of a document. The main content area consists of content that is directly related to or 
+expands upon the central topic of a document, or the central functionality of an 
+application.</p>
 
 ```html
 <main role="main">
   <p>Geckos are a group of usually small, usually nocturnal lizards. 
   They are found on every continent except Australia.</p>
-  <p>Many species of gecko have adhesive toe pads which enable them to climb walls and even windows.</p>
+  <p>Many species of gecko have adhesive toe pads which enable them to climb walls 
+    and even windows.</p>
 </main>
 ```
 
-<p><i>Note: A document mustn't have more than one `<main>` element that doesn't have the hidden 
-attribute specified.</i></p>
+<p><i>Note: A document mustn't have more than one `&lt;main&gt;` element that doesn't 
+have the hidden attribute specified.</i></p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h4>Q. What are the semantic meanings for `<section>, &lt;article&gt;, <aside>, <nav>, <header>, 
-`<footer>` and how should each be used in structuring html markup?</h4>
+<h3>Q. What are the semantic meanings for &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, 
+&lt;nav&gt;, &lt;header&gt;, &lt;footer&gt; and how should each be used in structuring html markup?</h3>
 
 <ul>
   <li><b>`&lt;header&gt;`</b> is used to contain introductory and navigational information about a section 
@@ -569,10 +577,10 @@ attribute specified.</i></p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. Can a web page contain multiple `<header>` elements? What about `<footer>` elements?</h3>
+<h3>Q. Can a web page contain multiple `&lt;header&gt;` elements? What about `&lt;footer&gt;` elements?</h3>
 
-<p>Yes, header elements can be used multiple times in documents. A `<header>` tag must be present 
-for all articles, sections, and pages, although a `<footer>` tag is not necessary.</p>
+<p>Yes, header elements can be used multiple times in documents. A `&lt;header&gt;` tag must be present 
+for all articles, sections, and pages, although a `&lt;footer&gt;` tag is not necessary.</p>
 
 <h4>From W3C standards</h4>
 
@@ -667,8 +675,13 @@ specified in the tag:</p>
 
 <h3>Q. What is the purpose of meta tags?</h3>
 
-<p>The META elements can be used to include name/value pairs describing properties of the HTML 
-document, such as author, expiry date, a list of keywords, document author etc.</p>
+<p>Meta tags are pieces of information you use to tell the search engines and those 
+viewing your site more about your page and the information it contains. Meta tags include: 
+Title tags: the title of your page, which should be unique for every page you publish. 
+Meta description: a description of the content on the page.</p>
+
+<p>The META elements can be used to include name/value pairs describing properties of the 
+HTML document, such as author, expiry date, a list of keywords, document author etc.</p>
 
 <details>
   <summary>html</summary>
@@ -734,6 +747,11 @@ document, such as author, expiry date, a list of keywords, document author etc.<
 </div>
 
 <h3>Q. What does async and defer refer in script tag?</h3>
+
+<p>Scripts with an <mark>async</mark> attribute will execute as soon as the download is 
+complete. This blocks the page and does not guarantee any specific execution order. 
+Scripts with a <mark>defer</mark> attribute will load in the order they are in and 
+will only execute once everything has finished loading.</p>
 
 <h4>1. Async:</h4>
 
@@ -884,24 +902,26 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
 <h3>Q. Describe the difference between a cookie, sessionStorage and localStorage?</h3>
 
-|      | `cookie`  | `localStorage` | `sessionStorage` |
-|------|-----------|----------------|------------------|
-| Initiator        | Client or server. Server can use `Set-Cookie` header     | Client         | Client           |
-| Expiry           | Manually set                                             | Forever        | On tab close     |
-| Persistent across browser sessions | Depends on whether expiration is set | Yes            | No   | | Sent to server with every HTTP request | Cookies are automatically being sent via `Cookie` header | No    | No               |
-| Capacity (per domain) | 4kb        | 5MB            | 5MB              |
-| Accessibility  | Any window        | Any window     | Same tab         |
+|                                        | `cookie`                                                 | `localStorage` | `sessionStorage` |
+|----------------------------------------|----------------------------------------------------------|------------|------------------|
+| Initiator                              | Client or server. Server can use `Set-Cookie` header     | Client     | Client           |
+| Expiry                                 | Manually set                                             | Forever    | On tab close     |
+| Persistent across browser sessions     | Depends on whether expiration is set                     | Yes        | No               |
+| Sent to server with every HTTP request | Cookies are automatically being sent via `Cookie` header | No         | No               |
+| Capacity (per domain)                  | 4kb                                                      | 5MB        | 5MB              |
+| Accessibility                          | Any window                                               | Any window | Same tab         |
 
-<p><i>Note: If the user decides to clear browsing data via whatever mechanism provided by the browser, 
-this will clear out any `cookie`, `localStorage`, or `sessionStorage` stored. It's important to 
-keep this in mind when designing for local persistance, especially when comparing to alternatives 
-such as server side storing in a database or similar (which of course will persist despite user actions).</i></p>
+<p><i>Note: If the user decides to clear browsing data via whatever mechanism provided by 
+the browser, this will clear out any `cookie`, `localStorage`, or `sessionStorage` stored. 
+It's important to keep this in mind when designing for local persistance, especially when 
+comparing to alternatives such as server side storing in a database or similar (which of 
+course will persist despite user actions).</i></p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. Does localStorage throw error after reaches maximum limits?</h3>
+<h3>Q. Does localStorage throw error after reaching maximum limits?</h3>
 
 <p>Yes</p>
 
@@ -951,13 +971,13 @@ Exception: QuotaExceededError: Failed to execute 'setItem' on 'Storage':
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. Why to use IndexedDB instead of WebSQL in HTML5?</h3>
+<h3>Q. Why use IndexedDB instead of WebSQL in HTML5?</h3>
 
 <h4>1. WebSQL</h4>
 
-It is an API that is only supported in Chrome and Safari (and Android and iOS by extension). 
+<p>It is an API that is only supported in Chrome and Safari (and Android and iOS by extension). 
 It provides an asynchronous, transactional interface to SQLite. Since 2010, it has been 
-deprecated in favor of IndexedDB.
+deprecated in favor of IndexedDB.</p>
 
 <h5>Advantages</h5>
 
@@ -1014,17 +1034,18 @@ implementations.
 
 <h3>Q. Explain Application Cache in HTML5. OR What is a manifest file in HTML?</h3>
 
-HTML5 provides an application caching mechanism that lets web-based applications run offline. 
+<p>HTML5 provides an application caching mechanism that lets web-based applications run offline. 
 Developers can use the Application Cache (AppCache) interface to specify resources that the 
 browser should cache and make available to offline users. Applications that are cached load 
-and work correctly even if users click the refresh button when they are offline.
+and work correctly even if users click the refresh button when they are offline.</p>
 
-Using an application cache gives an application the following benefits:
+<h4>Using an application cache gives an application the following benefits:</h4>
 
 <ul>
   <li><b>Offline browsing</b>: users can navigate a site even when they are offline.</li>
   <li><b>Speed</b>: cached resources are local, and therefore load faster.</li>
-  <li><b>Reduced server load</b>: the browser only downloads resources that have changed from the server.</li>
+  <li><b>Reduced server load</b>: the browser only downloads resources that have changed 
+    from the server.</li>
 </ul>
 
 <h5>Syntax:</h5>
@@ -1035,11 +1056,11 @@ Using an application cache gives an application the following benefits:
 </html>
 ```
 
-<i>Note: Using the application caching feature described here is at this point highly 
-discouraged; it's in the process of being removed from the Web platform. Use <b>Service Workers</b> 
-instead. In fact as of Firefox 44, when AppCache is used to provide offline support for a 
-page a warning message is now displayed in the console advising developers to use Service 
-workers instead (bug 1204581).</i>
+<p><i>Note: Using the application caching feature described here is at this point highly 
+discouraged; it's in the process of being removed from the Web platform. Use <b>Service 
+Workers</b> instead. In fact as of Firefox 44, when AppCache is used to provide offline 
+support for a page a warning message is now displayed in the console advising developers 
+to use Service workers instead (bug 1204581).</i></p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -1047,28 +1068,28 @@ workers instead (bug 1204581).</i>
 
 <h3>Q. What is the purpose of cache busting and how can you achieve it?</h3>
 
-Browsers have a cache to temporarily store files on websites so they don't need to be 
+<p>Browsers have a cache to temporarily store files on websites so they don't need to be 
 re-downloaded again when switching between pages or reloading the same page. The server 
 is set up to send headers that tell the browser to store the file for a given amount of 
-time. This greatly increases website speed and preserves bandwidth.
+time. This greatly increases website speed and preserves bandwidth.</p>
 
-However, it can cause problems when the website has been changed by developers because 
+<p>However, it can cause problems when the website has been changed by developers because 
 the user's cache still references old files. This can either leave them with old 
 functionality or break a website if the cached CSS and JavaScript files are referencing 
-elements that no longer exist, have moved or have been renamed.
+elements that no longer exist, have moved or have been renamed.</p>
 
-<b>Cache busting</b> is the process of forcing the browser to download the new files. This 
-is done by naming the file something different to the old file.
+<p><b>Cache busting</b> is the process of forcing the browser to download the new files. This 
+is done by naming the file something different from the old file.</p>
 
-A common technique to force the browser to re-download the file is to append a query 
-string to the end of the file.
+<p>A common technique to force the browser to re-download the file is to append a query 
+string to the end of the file.</p>
 
 ```html
 <!-- src="js/script.js" => src="js/script.js?v=2" -->
 <script src="js/script.js?v=2"></script>
 ```
 
-The browser considers it a different file but prevents the need to change the file name.
+<p>The browser considers it a different file but prevents the need to change the file name.</p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -1106,9 +1127,9 @@ a more engaging user experience.
 ```
 
 ```js
-/<b>
+/**
  * Access data attribute
- */
+**/
 const article = document.getElementById("electric-cars");
 
 article.dataset.columns; // "10"
@@ -1116,22 +1137,23 @@ article.dataset.indexNumber; // "100"
 article.dataset.parent; // "cars"
 ```
 
-<b>&#9885; <a href="https://codesandbox.io/s/html-data-attribute-llxlkn?file=/script.js">
-Try this example on CodeSandbox</a></b>
+<p><b>&#9885; <a href="https://codesandbox.io/s/html-data-attribute-llxlkn?file=/script.js">
+Try this example on CodeSandbox</a></b></p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. What is the purpose of the `alt` attribute on images?</h3>
+<h3>Q. What is the purpose of the <mark>alt</mark> attribute on images?</h3>
 
-The `alt` attribute provides alternative information for an image if a user cannot view 
-it. The `alt` attribute should be used to describe any images except those which only 
-serve a decorative purposes, in which case it should be left empty.
+<p>The <mark>alt</marK attribute provides alternative information for an image if a user 
+cannot view it. The <mark>alt</mark> attribute should be used to describe any images 
+except those which only serve a decorative purposes, in which case it should be left 
+empty.</p>
 
-```html
-<img src="pancakes.png" alt="Stack of blueberry pancakes with powdered sugar">
-```
+<pre>
+&lt;img src="pancakes.png" alt="Stack of blueberry pancakes with powdered sugar"&gt;
+</pre>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -1172,35 +1194,35 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 </form>
 ```
 
-|Sl.No|Value                    |Description                        |
-|-----|-------------------------|-----------------------------------|
-| 01. |application/x-www-form-urlencoded  |    Default. All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values)|
+|Sl.No|Value                              |Description                        |
+|-----|-----------------------------------|-----------------------------------|
+| 01. |application/x-www-form-urlencoded  |Default. All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values)|
 | 02. |multipart/form-data        |No characters are encoded. This value is required when you are using forms that have a file upload control |
-| 03.  |text/plain                |Spaces are converted to "+" symbols, but no special characters are encoded|
+| 03. |text/plain                |Spaces are converted to "+" symbols, but no special characters are encoded|
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. What is difference between Select and Datalist?</h3>
+<h3>Q. What is the difference between Select and Datalist?</h3>
 
-For the select element, the user is required to select one of the options you've given. 
+<p>For the select element, the user is required to select one of the options you've given. 
 For the datalist element, it is suggested that the user select one of the options you've 
-given, but he can actually enter anything he wants in the input.
+given, but he can actually enter anything he wants in the input.</p>
 
-<b>1. Select:</b>
+<h4><b>1. Select:</b></h4>
 
-```html
-<select name="browser">
-  <option value="firefox">Firefox</option>
-  <option value="ie">IE</option>
-  <option value="chrome">Chrome</option>
-  <option value="opera">Opera</option>
-  <option value="safari">Safari</option>
-</select>
-```
+<pre>
+&lt;select name="browser"&gt;
+  &lt;option value="firefox"&gt;Firefox&lt;/option&gt;
+  &lt;option value="ie"&gt;IE&lt;/option&gt;
+  &lt;option value="chrome"&gt;Chrome&lt;/option&gt;
+  &lt;option value="opera"&gt;Opera&lt;/option&gt;
+  &lt;option value="safari"&gt;Safari&lt;/option&gt;
+&lt;/select&gt;
+</pre>
 
-<b>2. Datalist:</b>
+<h4><b>2. Datalist:</b></h4>
 
 ```html
 <input type="text" list="browsers">
@@ -1219,7 +1241,7 @@ given, but he can actually enter anything he wants in the input.
 
 <h3>Q. Explain some of the pros and cons for CSS animations versus JavaScript animations?</h3>
 
-Regarding optimization and responsiveness the debate bounces back and forth but, the concept is:
+<p>Regarding optimization and responsiveness the debate bounces back and forth but, the concept is:</p>
 
 <ul>
   <li>CSS animations allows the browser to choose where the animation processing is done, 
@@ -1237,10 +1259,10 @@ Regarding optimization and responsiveness the debate bounces back and forth but,
 
 <h3>Q. What does CORS stand for and what issue does it address?</h3>
 
-Cross-Origin Resource Sharing (CORS) is a W3C spec that allows cross-domain communication 
+<p>Cross-Origin Resource Sharing (CORS) is a W3C spec that allows cross-domain communication 
 from the browser. By building on top of the XMLHttpRequest object, CORS allows developers 
 to work with the same idioms as same-domain requests. CORS gives web servers cross-domain 
-access controls, which enable secure cross-domain data transfers.
+access controls, which enable secure cross-domain data transfers.</p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -1265,12 +1287,12 @@ access controls, which enable secure cross-domain data transfers.
 
 <h3>Q. What is the DOM? How does the DOM work?</h3>
 
-The DOM (Document Object Model) is a cross-platform API that treats HTML documents as a 
+<p>The DOM (Document Object Model) is a cross-platform API that treats HTML documents as a 
 tree structure consisting of nodes. These nodes (such as elements and text nodes) are 
 objects that can be programmatically manipulated and any visible changes made to them 
 are reflected live in the document. In a browser, this API is available to JavaScript 
 where DOM nodes can be manipulated to change their styles, contents, placement in the 
-document, or interacted with through event listeners.
+document, or interacted with through event listeners.</p>
 
 <ul>
   <li>The DOM was designed to be independent of any particular programming language, making 
@@ -1287,7 +1309,7 @@ document, or interacted with through event listeners.
 
 <h3>Q. How does the browser rendering engine work?</h3>
 
-In order to render content the browser has to go through a series of steps:
+<p>In order to render content the browser has to go through a series of steps:</p>
 
 <ul>
   <li>Document Object Model(DOM)</li>
@@ -1374,77 +1396,135 @@ decide whether to handle it in quirks mode or standards mode.
 
 <h3>Q. Name 3 ways to decrease page load?</h3>
 
-1. LocalStorage 
-2. Caching resources 
-3. DNS-prefetch (sample below) 
-4?. Keep resources on a CDN
+<ol start="1">
+  <li>Optimize images</li>
+  <li>Enable browser caching</li>
+  <li>Reduce Redirects</li>
+  <li>Asynchronous loading</li>
+  <li>Enable compression</li>
+  <li>Implement lazy loading</li>
+  <li>Make JavaScript files minified</li>
+  <li>Try <a href="https://www.webpagetest.org/">Webpage Test</a></li>
+  <li>Try <a href="https://tools.pingdom.com/">Pingdom</a></li>
+</ol>
+
+<h4>Others</h4>
+
+<ol start="10">
+  <li>LocalStorage</li>
+  <li>Caching resources</li>
+  <li>DNS-prefetch (sample below)</li>
+</ol>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. Ways to improve website performance</h3>
+<h3 id="improve-perf">Q. Ways to improve website performance</h3>
 
-* Minimize HTTP Requests
-  * Sites are mainly slow because of too many (or too large) HTTP requests. We can eliminate unnecessary request;
-    * combined files: js to a file, css to a file
-    * CSS sprites: CSS Sprites are the preferred method for reducing the number of image requests. Combine your background images into a single image and use the CSS background-image and background-position properties to display the desired image segment.
-
-* Use a Content Delivery Network CDN
-  * A CDN is essentially many optimized servers around the world that deliver web content to users based on their geographic location. This means big performance improvements for site users. Because, say, if a person accessing your site in India, they will be retrieving web content from a server nearby
-
-* Optimize Images:
-  * image sizes make a huge difference to site speed. The larger content/images, the slower the site. we could:
-    * Changing the resolution: reducing the “quality” of the image (and thereby the file size)
-        * Compressing the picture: increasing the efficiency of image data storage
-        * Cropping the picture: when cropping, you are cutting out unneeded areas and thus making the image smaller in size
-
-* Put Scripts at the Bottom:
-    * Javascript files can load after the rest of your page. The simplest solution is to place your external Javascript files at the bottom of your page, just before the close of your body tag. Now more of your site can load before your scripts. Another method that allows even more control is to use the defer or async attributes when placing external .js files on your site.
-        * Async tags load the scripts while the rest of the page loads, but this means scripts can be loaded out of order. Basically, lighter files load first. This might be fine for some scripts, but can be disastrous for others.
-        * The defer attribute loads your scripts after your content has finished loading. It also runs the scripts in order. Just make sure your scripts run so late without breaking your site.
-
-* Add an Expires or a Cache-Control Header
-    * Web page designs are getting richer and richer, which means more scripts, stylesheets, images, and Flash in the page. A first-time visitor to your page may have to make several HTTP requests, but by using the Expires header you make those components cacheable. This avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often used with images, but they should be used on all components including scripts, stylesheets, and Flash components.
-
-* Gzip Components
-    * Compression reduces response times by reducing the size of the HTTP response. Gzipping generally reduces the response size by about 70%.
-
-* Put Stylesheets at the Top:
-    * This is because putting stylesheets in the HEAD allows the page to render progressively.
-
-* Avoid CSS Expressions
-
-* Use GET for AJAX Requests:
-    * Ajax is that it provides instantaneous feedback to the user because it requests information asynchronously from the backend web server
-
-* Make JavaScript and CSS External:
-    *  Using external files in the real world generally produces faster pages because the JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined in HTML documents get downloaded every time the HTML document is requested. This reduces the number of HTTP requests that are needed, but increases the size of the HTML document. On the other hand, if the JavaScript and CSS are in external files cached by the browser, the size of the HTML document is reduced without increasing the number of HTTP requests.
-
-* Use get to ajax request:
-    *  POST is implemented in the browsers as a two-step process: sending the headers first, then sending data. So it's best to use GET, which only takes one TCP packet to send (unless you have a lot of cookies).
-
-* No 404s:
-    * HTTP requests are expensive so making an HTTP request and getting a useless response (i.e. 404 Not Found) is totally unnecessary and will slow down the user experience without any benefit.
-
-* Reduce Cookie Size:
-    * HTTP cookies are used for a variety of reasons such as authentication and personalization. Information about cookies is exchanged in the HTTP headers between web servers and browsers. It's important to keep the size of cookies as low as possible to minimize the impact on the user's response time.
-
-* Reduce DNS Lookups
-* Minify JavaScript and CSS
-* Avoid Redirects
-* Remove Duplicate Scripts
-* Configure Etags
-* Make Ajax Cacheable
-* Post-load Components
-* Preload Components
-* Reduce the Number of DOM Elements
-* Minimize the Number of iframes
-* Minimize DOM Access
-* Optimize CSS Sprites
-* Don't Scale Images in HTML
-* Make favicon.ico Small and Cacheable
-* Avoid Empty Image src
+<ul>
+  <li>Minimize HTTP Requests
+    <ul>
+	  <li>Sites are mainly slow because of too many (or too large) HTTP requests. We can 
+	    eliminate unnecessary request;
+      <li>combined files: js to a file, css to a file</li>
+      <li>CSS sprites: CSS Sprites are the preferred method for reducing the number of 
+	    image requests. Combine your background images into a single image and use the 
+		CSS background-image and background-position properties to display the desired 
+		image segment.</li>
+	  </li>
+	</ul>
+  </li>
+  <li>Use a Content Delivery Network CDN
+    <ul>
+	  <li>A CDN is essentially many optimized servers around the world that deliver web 
+	    content to users based on their geographic location. This means big performance 
+		improvements for site users. Because, say, if a person accessing your site in 
+		India, they will be retrieving web content from a server nearby</li>
+	</ul>
+  </li>
+  <li>Optimize Images:
+    <ul>
+	  <li>image sizes make a huge difference to site speed. The larger content/images, the 
+	    slower the site. we could:
+	    <ul>
+		  <li>Changing the resolution: reducing the “quality” of the image (and thereby 
+		    the file size)
+		    <ul>
+              <li>Compressing the picture: increasing the efficiency of image data storage</li>
+			  <li>Cropping the picture: when cropping, you are cutting out unneeded areas and 
+			    thus making the image smaller in size</li>
+			</ul>
+		  </li>
+		</ul>
+	  </li>
+    </ul>
+  </li>
+  <li>Put Scripts at the Bottom:
+    <ul>
+	  <li>Javascript files can load after the rest of your page. The simplest solution is to place your external Javascript files at the bottom of your page, just before the close of your body tag. Now more of your site can load before your scripts. Another method that allows even more control is to use the defer or async attributes when placing external .js files on your site.
+	    <ul>
+          <li>Async tags load the scripts while the rest of the page loads, but this means scripts can be loaded out of order. Basically, lighter files load first. This might be fine for some scripts, but can be disastrous for others.</li>
+		  <li>The defer attribute loads your scripts after your content has finished loading. It also runs the scripts in order. Just make sure your scripts run so late without breaking your site.</li>
+		</ul>
+      </li>
+    </ul>
+  </li>
+  <li>Add an Expires or a Cache-Control Header
+    <ul>
+	  <li>Web page designs are getting richer and richer, which means more scripts, stylesheets, images, and Flash in the page. A first-time visitor to your page may have to make several HTTP requests, but by using the Expires header you make those components cacheable. This avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often used with images, but they should be used on all components including scripts, stylesheets, and Flash components.</li>
+	</ul>
+  </li>
+  <li>Gzip Components
+    <ul>
+	  <li>Compression reduces response times by reducing the size of the HTTP response. Gzipping generally reduces the response size by about 70%.</li>
+  <li>Put Stylesheets at the Top:
+    <ul>
+	  <li>This is because putting stylesheets in the HEAD allows the page to render progressively.</li>
+	</ul>
+  </li>
+  <li>Avoid CSS Expressions</li>
+  <li>Use GET for AJAX Requests:
+    <ul>
+	  <li>Ajax is that it provides instantaneous feedback to the user because it requests information asynchronously from the backend web server.</li>
+    </ul>
+  </li>
+  <li>Make JavaScript and CSS External:
+    <ul>
+      <li>Using external files in the real world generally produces faster pages because the JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined in HTML documents get downloaded every time the HTML document is requested. This reduces the number of HTTP requests that are needed, but increases the size of the HTML document. On the other hand, if the JavaScript and CSS are in external files cached by the browser, the size of the HTML document is reduced without increasing the number of HTTP requests.</li>
+	</ul>
+  </li>
+  <li>Use get to ajax request:
+    <ul>
+      <li>POST is implemented in the browsers as a two-step process: sending the headers first, then sending data. So it's best to use GET, which only takes one TCP packet to send (unless you have a lot of cookies).</li>
+    </ul>
+  </li>
+  <li>No 404s:
+    <ul>
+	  <li>HTTP requests are expensive so making an HTTP request and getting a useless response (i.e. 404 Not Found) is totally unnecessary and will slow down the user experience without any benefit.</li>
+	</ul>
+  </li>
+  <li>Reduce Cookie Size:
+    <ul>
+	  <li>HTTP cookies are used for a variety of reasons such as authentication and personalization. Information about cookies is exchanged in the HTTP headers between web servers and browsers. It's important to keep the size of cookies as low as possible to minimize the impact on the user's response time.</li>
+	</ul>
+  </li>
+  <li>Reduce DNS Lookups</li>
+  <li>Minify JavaScript and CSS</li>
+  <li>Avoid Redirects</li>
+  <li>Remove Duplicate Scripts</li>
+  <li>Configure Etags</li>
+  <li>Make Ajax Cacheable</li>
+  <li>Post-load Components</li>
+  <li>Preload Components</li>
+  <li>Reduce the Number of DOM Elements</li>
+  <li>Minimize the Number of iframes</li>
+  <li>Minimize DOM Access</li>
+  <li>Optimize CSS Sprites</li>
+  <li>Don't Scale Images in HTML</li>
+  <li>Make favicon.ico Small and Cacheable</li>
+  <li>Avoid Empty Image src</li>
+</ul>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
