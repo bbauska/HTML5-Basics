@@ -85,6 +85,9 @@ HTML5 offers new semantic elements to define different parts of a web page:
 
 <h5>Syntax:</h5>
 
+<details>
+  <summary>html</summary>
+
 ```html
 <!DOCTYPE html> 
 
@@ -109,6 +112,8 @@ HTML5 offers new semantic elements to define different parts of a web page:
    </body> 
 </html> 
 ```
+
+</details>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -172,6 +177,9 @@ CSS class and id names are case insensitive. In standards mode they are case sen
 to type in the text field, the list of suggestions appears and the user can choose from 
 the suggestions with the mouse.</p>
 
+<details>
+  <summary>html</summary>
+
 ```html
 <p>Enter your favorite browser name:</p>
 <input type="text" list="browsers" name="favorite_browser">
@@ -183,6 +191,8 @@ the suggestions with the mouse.</p>
   <option value="Safari">
 </datalist>
 ```
+
+</details>
 
 <h4>2. Meter Tag</h4>
 
@@ -221,6 +231,9 @@ pair becomes the value.</p>
 <p>Indicates how much of a task has been completed (often marked as a percentage). It is 
 expected to be modified through JavaScript code.</p>
 
+<details>
+  <summary>html</summary>
+
 ```html
 <p>Progress: <progress id="bar" value="0" max="100"><span>0</span>%</progress></p>
 
@@ -242,6 +255,8 @@ expected to be modified through JavaScript code.</p>
   countNumbers();
 </script>
 ```
+
+</details>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -268,6 +283,9 @@ expected to be modified through JavaScript code.</p>
 
 <h5>Example:</h5>
 
+<details>
+  <summary>html</summary>
+
 ```html
 <input type="color" value="#b97a57">
 <input type="date" value="2020-06-08">
@@ -290,6 +308,8 @@ expected to be modified through JavaScript code.</p>
 <input type="week" value="2020-W24">
 ```
 
+</details>
+
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
@@ -302,6 +322,9 @@ expected to be modified through JavaScript code.</p>
   <li>Store data into local Storage,</li>
   <li>Fetch user data and display on right side of the page.</li>
 </ul>
+
+<details>
+  <summary>html</summary>
 
 ```html
 <!DOCTYPE html>
@@ -405,6 +428,8 @@ expected to be modified through JavaScript code.</p>
 </body>
 </html>
 ```
+
+</details>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -644,6 +669,9 @@ specified in the tag:</p>
 <p>The META elements can be used to include name/value pairs describing properties of the HTML 
 document, such as author, expiry date, a list of keywords, document author etc.</p>
 
+<details>
+  <summary>html</summary>
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -697,6 +725,8 @@ document, such as author, expiry date, a list of keywords, document author etc.<
   </body>
 </html>
 ```
+
+</details>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -876,6 +906,9 @@ such as server side storing in a database or similar (which of course will persi
 
 <h5>Example:</h5>
 
+<details>
+  <summary>html</summary>
+
 ```html
 <!DOCTYPE HTML>
 <html>
@@ -903,6 +936,8 @@ such as server side storing in a database or similar (which of course will persi
   </body>
 </html>
 ```
+
+</details>
 
 <h5>Output</h5>
 
@@ -1712,6 +1747,9 @@ so desire. For privacy reasons, the user is asked for permission to report locat
 
 The Geolocation API is published through the `navigator.geolocation` object.
 
+<details>
+  <summary>html</summary>
+
 ```javascript
 if ("geolocation" in navigator) {
   /* geolocation is available */
@@ -1720,7 +1758,11 @@ if ("geolocation" in navigator) {
 }
 ```
 
-<b>Example</b>
+</details>
+
+<h5>Example</h5>
+<details>
+  <summary>html</summary>
 
 ```html
 <!DOCTYPE html>
@@ -1769,6 +1811,8 @@ if ("geolocation" in navigator) {
 </script>
 </html>
 ```
+
+</details>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -1879,7 +1923,9 @@ for instance, be used to draw graphs, combine photos, or create animations.
 |strokeText()    |Draws text on the canvas (no fill)                                |
 |measureText()    |Returns an object that contains the width of the specified text   |
 
-<b>Example 01:</b> HTML5 Canvas for Text
+<h5><b>Example 01:</b> HTML5 Canvas for Text</h5>
+<details>
+  <summary>html</summary>
 
 ```html
 <div>Text</div>
@@ -1895,7 +1941,12 @@ for instance, be used to draw graphs, combine photos, or create animations.
 </script>
 ```
 
-<b>Example 02:</b> HTML5 Canvas for Straight Line
+</details>
+
+<h5><b>Example 02:</b> HTML5 Canvas for Straight Line</h5>
+
+<details>
+  <summary>html</summary>
 
 ```html
 <div>Straight Line</div>
@@ -1911,7 +1962,12 @@ for instance, be used to draw graphs, combine photos, or create animations.
 </script>
 ```
 
+</details>
+
 <b>Example 03:</b> HTML5 Canvas for Rectangle
+
+<details>
+  <summary>html</summary>
 
 ```html
 <div>Rectangle with Style</div>
@@ -1926,7 +1982,12 @@ for instance, be used to draw graphs, combine photos, or create animations.
 </script>
 ```
 
+</details>
+
 <b>Example 04:</b> HTML5 Canvas for Circle
+
+<details>
+  <summary>html</summary>
 
 ```html
 <div>Circle</div>
@@ -1941,6 +2002,8 @@ for instance, be used to draw graphs, combine photos, or create animations.
   context.stroke();
 </script>
 ```
+
+</details>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -1963,8 +2026,11 @@ There are following advantages of using SVG over other image formats like JPEG, 
 * SVG content can be animated using the built-in animation elements.
 * SVG images can contain hyperlinks to other documents.
 
-<b>Example:</b>
+<h5>Example:</h5>
 
+<details>
+  <summary>html</summary>
+  
 ```html
 <!DOCTYPE html>
 <html>
@@ -1989,6 +2055,8 @@ There are following advantages of using SVG over other image formats like JPEG, 
 </html>
 ```
 
+</details>
+
 <b>2. Canvas:</b>
 
 Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap with an 
@@ -1998,6 +2066,9 @@ are supposed to use a script. Canvas has several strategies when it comes to dra
 boxes, circles, text & adding images.
 
 <h5>Example:</h5>
+
+<details>
+  <summary>html</summary>
 
 ```html
 <!DOCTYPE html>
@@ -2016,6 +2087,8 @@ boxes, circles, text & adding images.
    </body>
 </html>
 ```
+
+</details>
 
 <b>Differences:</b>
 
@@ -2050,6 +2123,9 @@ to a droppable element, and then releases the dragged element.
 
 <h5>Example:</h5>
 
+<details>
+  <summary>html</summary>
+
 ```html
 <!DOCTYPE HTML>
 <html>
@@ -2077,6 +2153,8 @@ to a droppable element, and then releases the dragged element.
 </body>
 </html>
 ```
+
+</details>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -2315,10 +2393,12 @@ specifies the URL of the embedded content, allowing for seamless integration of 
 resources. This section will guide you through the syntax and attributes of the `<iframe>` 
 tag, providing a solid foundation for your iframe usage.
 
-Syntax:
+<h5>Syntax:</h5>
+
 ```html
 <iframe src="URL" title="description"></iframe>
 ```
+
 The src attribute specifies the URL of the document you want to embed.
 Iframes can include videos, maps, or entire web pages from other sources.
 
@@ -2335,6 +2415,9 @@ window, represented by the <b>Window</b> object.
 </div>
 
 <h5>Example:</h5>
+
+<details>
+  <summary>html</summary>
 
 ```html
 <!DOCTYPE html>
@@ -2363,6 +2446,8 @@ window, represented by the <b>Window</b> object.
   </body>
 </html>
 ```
+
+</details>
 
 <h4>The Iframe Tag Attributes:</h4>
 
@@ -2436,6 +2521,9 @@ context.
 
 <h5>Example:</h5>
 
+<details>
+  <summary>html</summary>
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -2452,6 +2540,8 @@ context.
   </body>
 </html>
 ```
+
+</details>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -2597,6 +2687,9 @@ attribute from the HTML source code
 Internet Explorer the page should be rendered as. It is used by Internet Explorer 8 to 
 specify whether a page should be rendered as IE 7 (compatibility view) or IE 8 (standards view).
 
+<details>
+  <summary>html</summary>
+
 ```html
 <html>
   <head>
@@ -2608,6 +2701,8 @@ specify whether a page should be rendered as IE 7 (compatibility view) or IE 8 (
   </body>
 </html>
 ```
+
+</details>
 
 Emulating the version tells the browser to use the DOCTYPE to determine how to render 
 content. pages without a DOCTYPE will be rendered in quirks mode. Edge mode tells Windows 
@@ -2930,6 +3025,9 @@ it one font-size smaller, such as from `small` to `x-small`.
 
 <h5>Example:</h5>
 
+<details>
+  <summary>html</summary>
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -2949,6 +3047,8 @@ it one font-size smaller, such as from `small` to `x-small`.
 </html>
 ```
 
+</details>
+
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
@@ -2958,6 +3058,9 @@ it one font-size smaller, such as from `small` to `x-small`.
 The <b>lang</b> attribute specifies the language of the element's content.
 
 <h5>Example:</h5>
+
+<details>
+  <summary>html</summary>
 
 ```html
 <!DOCTYPE html>
@@ -2979,6 +3082,8 @@ The <b>lang</b> attribute specifies the language of the element's content.
 </html>
 ```
 
+</details>
+
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
@@ -2995,6 +3100,9 @@ element is grouped. In other words, the content relates to a single theme. It mu
 entry in the outline of the page.
 
 <h5>Example:</h5>
+
+<details>
+  <summary>html</summary>
 
 ```html
 <!DOCTYPE html>
@@ -3022,6 +3130,8 @@ entry in the outline of the page.
 </html>
 ```
 
+</details>
+
 <h4>The `&lt;div&gt;` Element</h4>
 
 The `<div>` element only represents its child elements and doesn't have a special meaning. 
@@ -3030,6 +3140,9 @@ common to a group of consecutive elements. This element can also be used in a `<
 and wrap groups of `<dt>` and `<dd>` elements.
 
 <h5>Example:</h5>
+
+<details>
+  <summary>html</summary>
 
 ```html
 <!DOCTYPE html>
@@ -3052,6 +3165,8 @@ and wrap groups of `<dt>` and `<dd>` elements.
   </body>
 </html>
 ```
+
+</details>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -3133,6 +3248,10 @@ values, we provide the actual width of the image.
 </div>
 
 <h3>Q. What is accessibility & ARIA role means in a web application?</h3>
+<p>ARIA is shorthand for Accessible Rich Internet Applications. ARIA is a set of attributes 
+you can add to HTML elements that define ways to make web content and applications 
+accessible to users with disabilities who use assistive technologies (AT). When accessibility 
+issues cannot be managed with native HTML, ARIA can help bridge those gaps.</p>
 
 <p>The <b>Accessible Rich Internet Applications (ARIA)</b> Suite, defines a way to make Web 
 content and Web applications more accessible to people with disabilities. It especially 
@@ -3183,7 +3302,7 @@ The different landmark roles you can use are as follows, copied from the W3C Wik
 
 <ul>
   <li><b>banner</b>: A region that contains the prime heading or internal title of a page.</li>
-  <li><b>complementary</b>: Any section of the document that supports the main content, yet is 
+  <li>complementary: Any section of the document that supports the main content, yet is 
   separate and meaningful on its own.</li>
   <li><b>contentinfo</b>: A region that contains information about the parent document such as 
   copyrights and links to privacy statements.</li>
@@ -3195,10 +3314,12 @@ The different landmark roles you can use are as follows, copied from the W3C Wik
   <li><b>navigation</b>: A collection of links suitable for use when navigating the document or 
   related documents.</li>
   <li><b>search</b>: The search tool of a Web document.</li>
-  <li><b>application</b>: A region declared as a web application, as opposed to a web document.</li>
+  <li>application: A region declared as a web application, as opposed to a web document.</li>
 </ul>
 
 <h4>Document ARIA Roles:</h4>
+
+<p><a href="https://www.digitala11y.com/wai-aria-1-1-cheat-sheet/">Cheat Sheet of ARIA Roles</a>.</p>
 
 <p>Document roles describe the structure of the content on the page, as opposed to the structure 
 of the whole page, which landmark roles describe. The roles in bold are the ones we think 
@@ -3206,27 +3327,28 @@ are the most common document aria roles, and the ones which are useful to think 
 including in your HTML.</p>
 
 <ul>
-  <li><b>article</b>: A section of a page that consists of a composition that forms an independent 
+  <li>article: A section of a page that consists of a composition that forms an independent 
   part of a document, page, or site.</li>
-  <li><b>columnheader</b></li>
-  <li><b>definition</b>: A definition of a term or concept.</li>
-  <li><b>directory</b></li>
-  <li><b>document</b></li>
-  <li><b>group</b>: A set of user interface objects which are not intended to be included in a 
+  <li>columnheader: Title or header information for the column.</li>
+  <li>definition: A definition of a term or concept.</li>
+  <li>directory: deprecated in ARIA 1.2. List of references to members of a group, such as a static table of contents.</li>
+  <li><b>document</b>: The document role is for focusable content within complex composite widgets or applications for which assistive technologies can swith reading context back to a reading mode.</li>
+  <li>group: A set of user interface objects which are not intended to be included in a 
   page summary or table of contents by assistive technologies.</li>
   <li><b>heading</b>: A heading for a section of the page.</li>
-  <li><b>img</b></li>
-  <li><b>list</b></li>
-  <li><b>listitem</b></li>
-  <li><b>math</b></li>
-  <li><b>note</b></li>
-  <li><b>presentation</b></li>
-  <li><b>region</b></li>
-  <li><b>row</b></li>
-  <li><b>rowgroup</b></li>
-  <li><b>rowheader</b></li>
-  <li><b>separator</b></li>
-  <li><b>toolbar</b></li>
+  <li><b>img</b>: Can be used to identify multiple elements inside page content that should be considered as a single image.
+   These elements could be images, code snippets, text, emojis, or other content that can be combined to deliver information in a visual manner.</li>
+  <li><b>list</b>: The ARIA list role can be used to identify a list of items. It is normally used in conjunction with the listitem role, which is used to identify a list item contained inside the list.</li>
+  <li><b>listitem</b>: The ARIA listitem role can be used to identify an item inside a list of items. It is normally used in conjunction with the list role, which is used to identify a list container.</li>
+  <li>math: The math role indicates that the content represents a mathematical expression.</li>
+  <li>note: A note role suggests a section whose content is parenthetic or ancillary to the main content.</li>
+  <li>presentation: The presentation role and its synonym none remove an element's implicit ARIA semantics from being exposed to the accessibility tree.</li>
+  <li>region: The region role is used to identify document areas the author deems significant. It is a generic landmark available to aid in navigation when none of the other landmark roles are appropriate.</li>
+  <li>row: An element with role="row" is a row of cells within a tabular structure. A row contains one or more cells, grid cells or column headers, and possibly a row header, within a grid, table or treegrid, and optionally within a rowgroup.</li>
+  <li>rowgroup: An element with role="rowgroup" is a group of rows within a tabular structure. A rowgroup contains one or more rows of cells, grid cells, column headers, or row headers within a grid, table or treegrid.</li>
+  <li>rowheader: An element with role="rowheader" is a cell containing header information for a row within a tabular structure of a grid, table or treegrid.</li>
+  <li>separator: The separator role indicates the element is a divider that separates and distinguishes sections of content or groups of menuitems. The implicit ARIA role the native thematic break <hr> element is separator.</li>
+  <li><b>toolbar</b>: The toolbar role defines the containing element as a collection of commonly used function buttons or controls represented in a compact visual form.</li>
 </ul>
 
 <h4>Widget ARIA Roles:</h4>
@@ -3238,36 +3360,36 @@ useful to think about including in your HTML.</p>
 
 <ul>
   <li><b>alert</b>: A message with important, and usually time-sensitive, information.</li>
-  <li><b>alertdialog</b>: A type of dialog that contains an alert message, where initial focus 
+  <li>alertdialog: A type of dialog that contains an alert message, where initial focus 
     goes to an element within the dialog.</li>
   <li><b>button</b>: An input that allows for user-triggered actions when clicked or pressed.</li>
   <li><b>checkbox</b>: A checkable input that has three possible values: true, false, or mixed.</li>
-  <li><b>dialog</b>: A dialog is an application window that is designed to interrupt the current 
+  <li>dialog: A dialog is an application window that is designed to interrupt the current 
     processing of an application in order to prompt the user to enter information or require 
 	a response.</li>
-  <li><b>gridcell</b></li>
+  <li>gridcell</li>
   <li><b>link</b></li>
-  <li><b>log</b></li>
-  <li><b>marquee</b></li>
+  <li>log</li>
+  <li>marquee</li>
   <li><b>menuitem</b></li>
-  <li><b>menuitemcheckbox</b></li>
-  <li><b>menuitemradio</b></li>
-  <li><b>option</b></li>
-  <li><b>progressbar</b></li>
-  <li><b>radio</b>: A checkable input in a group of radio roles, only one of which can be 
+  <li>menuitemcheckbox</li>
+  <li>menuitemradio</li>
+  <li>option</li>
+  <li>progressbar</li>
+  <li>radio: A checkable input in a group of radio roles, only one of which can be 
     checked at a time.</li>
-  <li><b>scrollbar</b></li>
-  <li><b>slider</b></li>
-  <li><b>spinbutton</b></li>
-  <li><b>status</b></li>
+  <li>scrollbar</li>
+  <li>slider</li>
+  <li>spinbutton</li>
+  <li>status</li>
   <li><b>tab</b>: A grouping label providing a mechanism for selecting the tab content that is 
   to be rendered to the user.</li>
   <li><b>tabpanel</b>: A container for the resources associated with a tab, where each tab is 
   contained in a tablist.</li>
-  <li><b>textbox</b>: Input that allows free-form text as its value.</li>
-  <li><b>timer</b></li>
-  <li><b>tooltip</b></li>
-  <li><b>treeitem</b></li>
+  <li>textbox: Input that allows free-form text as its value.</li>
+  <li>timer</li>
+  <li>tooltip</li>
+  <li>treeitem</li>
 </ul>
 
 <h4>Abstract ARIA Roles:</h4>
@@ -3290,32 +3412,33 @@ about on the W3C site, here are the ones we believe to most commonly used and pr
 for most web pages/applications.</p>
 
 <ul>
-  <li><b>aria-activedescendant</b>: Identifies the currently active descendant of a composite 
+  <li>aria-activedescendant: Identifies the currently active descendant of a composite 
     widget. Use with autofill search suggestions.</li>
-  <li><b>aria-autocomplete</b>: Indicates whether user input completion suggestions are provided. 
+  <li>aria-autocomplete: Indicates whether user input completion suggestions are provided. 
     Use with autofill search suggestions.</li>
-  <li><b>aria-checked (state)</b>: Indicates the current “checked” state of checkboxes, radio 
+  <li>aria-checked (state): Indicates the current “checked” state of checkboxes, radio 
     buttons, and other widgets. You can set this to true, false, or mixed state.</li>
-  <li><b>aria-controls</b>: Identifies the element (or elements) whose contents or presence are 
+  <li>aria-controls: Identifies the element (or elements) whose contents or presence are 
   controlled by the current element.</li>
   <li><b>aria-describedby</b>: Identifies the element (or elements) that describes the object.</li>
-  <li><b>aria-disabled (state)</b>: Indicates that the element is perceivable but disabled, so 
+  <li>aria-disabled (state): Indicates that the element is perceivable but disabled, so 
   it is not editable or otherwise operable.</li>
-  <li><b>aria-expanded (state)</b>: Indicates whether the element, or another grouping element 
+  <li>aria-expanded (state): Indicates whether the element, or another grouping element 
     it controls, is currently expanded or collapsed.</li>
+  <li><b>aria-haspopup</b>: </li>
   <li><b>aria-hidden (state)</b>: Indicates that the element and all of its descendants are 
     not visible or perceivable to any user as implemented by the author.</li>
-  <li><b>aria-invalid (state)</b>: Indicates the entered value does not conform to the format 
+  <li>aria-invalid (state): Indicates the entered value does not conform to the format 
     expected by the application.</li>
   <li><b>aria-label</b>: Defines a string value that labels the current element.</li>
   <li><b>aria-labelledby</b>: Identifies the element (or elements) that labels the current element.</li>
-  <li><b>aria-live</b>: Indicates that an element is dynamic, changing, and will be updated, 
+  <li>aria-live: Indicates that an element is dynamic, changing, and will be updated, 
     and describes the types of updates the user can expect from the live region.</li>
-  <li><b>aria-owns</b>: Identifies an element (or elements) in order to define a visual, 
+  <li>aria-owns: Identifies an element (or elements) in order to define a visual, 
     functional, or contextual parent/child  relationship between DOM elements where the 
 	DOM hierarchy cannot be used to represent the relationship.</li>
-  <li><b>aria-pressed (state)</b>: Indicates the current “pressed” state of toggle buttons.</li>
-  <li><b>aria-required</b>: Indicates that user input is required on the element before a form 
+  <li>aria-pressed (state): Indicates the current “pressed” state of toggle buttons.</li>
+  <li>aria-required: Indicates that user input is required on the element before a form 
     may be submitted.</li>
   <li><b>aria-selected (state)</b>: Indicates the current “selected” state of various widgets.</li>
 </ul>
@@ -3325,6 +3448,9 @@ for most web pages/applications.</p>
 </div>
 
 <h3>Q. Create a traffic signal light in html?</h3>
+
+<details>
+  <summary>html</summary>
 
 ```html
 <!DOCTYPE html>
@@ -3402,6 +3528,8 @@ for most web pages/applications.</p>
   </body>
 </html>
 ```
+
+</details>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
