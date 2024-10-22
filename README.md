@@ -11,6 +11,7 @@
 
 <h2><a id="toc">Table of Contents</h2>
 
+<h2>
 <ol>
   <li><a href="#01-intro">Introduction</a></li>
   <li><a href="#02-html-tags">HTML Tags</a></li>
@@ -30,6 +31,7 @@
   <li><a href="#16-misc">Miscellaneous</a></li>
   <li id="#improve-perf">Ways to improve website performance</h3>
 </ol>
+</h2>
 
 <h2 id="01-intro">01. Introduction</h2>
 
