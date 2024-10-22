@@ -29,7 +29,7 @@
   <li><a href="#14-html-webworker">HTML Web Worker</a></li>
   <li><a href="#15-html-misc">HTML Miscellaneous</a></li>
   <li><a href="#16-misc">Miscellaneous</a></li>
-  <li id="#improve-perf">Ways to improve website performance</h3>
+  <li><a href="#17-improve-perf">Ways to improve website performance</h3>
 </ol>
 </h2>
 
@@ -1422,7 +1422,7 @@ decide whether to handle it in quirks mode or standards mode.
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3 id="improve-perf">Q. Ways to improve website performance</h3>
+<h3 id="17-improve-perf">Q. Ways to improve website performance</h3>
 
 <ul>
   <li>Minimize HTTP Requests
