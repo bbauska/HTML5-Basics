@@ -396,34 +396,34 @@ expected to be modified through JavaScript code.</p>
   </form>
 </div>
 <script>
-    function validateForm() {
-      let name = document.forms["contactForm"]["user_name"].value;
-      let email = document.forms["contactForm"]["email"].value;
-      let country = document.forms["contactForm"]["country"].value;
-      let subject = document.forms["contactForm"]["subject"].value;
+  function validateForm() {
+    let name = document.forms["contactForm"]["user_name"].value;
+    let email = document.forms["contactForm"]["email"].value;
+    let country = document.forms["contactForm"]["country"].value;
+    let subject = document.forms["contactForm"]["subject"].value;
 
-      if (name === "" || email === "" || country === "") {
-        alert("All the fields are mandatory");
-        return false;
-      } else { 
-        // Create a JSON Object
-        const userData = {
-          name: name,
-          email: email,
-          country: country,
-          subject: subject
-        };
+    if (name === "" || email === "" || country === "") {
+      alert("All the fields are mandatory");
+      return false;
+    } else { 
+      // Create a JSON Object
+      const userData = {
+        name: name,
+        email: email,
+        country: country,
+        subject: subject
+      };
 
-        // Store the object into storage
-        localStorage.setItem("userData", JSON.stringify(userData));
+      // Store the object into storage
+      localStorage.setItem("userData", JSON.stringify(userData));
 
-        // Retrieve the object from the storage
-        const data = localStorage.getItem("userData");
-        console.log("data: ", JSON.parse(data));
+      // Retrieve the object from the storage
+      const data = localStorage.getItem("userData");
+      console.log("data: ", JSON.parse(data));
         
-        return false;
-      }
+      return false;
     }
+  }
 </script>
 </body>
 </html>
@@ -1856,21 +1856,21 @@ Example
 
 <h3>Q. Explain about HTML Canvas?</h3>
 
-<b>canvas</b> is an HTML element which can be used to draw graphics via JavaScript. This can, 
-for instance, be used to draw graphs, combine photos, or create animations.
+<p><b>canvas</b> is an HTML element which can be used to draw graphics via JavaScript. This can, 
+for instance, be used to draw graphs, combine photos, or create animations.</p>
 
-<b>1. Colors, Styles, and Shadows:</b>
+<h4><b>1. Colors, Styles, and Shadows:</b></h4>
 
-|  Property    |    Description                                                                 |
-|--------------|--------------------------------------------------------------------------------|
-|fillStyle       | Sets or returns the color, gradient, or pattern used to fill the drawing       |
-|strokeStyle   | Sets or returns the color, gradient, or pattern used for strokes               |
-|shadowColor   | Sets or returns the color to use for shadows                                   |
-|shadowBlur       | Sets or returns the blur level for shadows                                     |
-|shadowOffsetX | Sets or returns the horizontal distance of the shadow from the shape           |
-|shadowOffsetY | Sets or returns the vertical distance of the shadow from the shape             |
+|  Property    |    Description                                                           |
+|--------------|--------------------------------------------------------------------------|
+|fillStyle     | Sets or returns the color, gradient, or pattern used to fill the drawing |
+|strokeStyle   | Sets or returns the color, gradient, or pattern used for strokes         |
+|shadowColor   | Sets or returns the color to use for shadows                             |
+|shadowBlur    | Sets or returns the blur level for shadows                               |
+|shadowOffsetX | Sets or returns the horizontal distance of the shadow from the shape     |
+|shadowOffsetY | Sets or returns the vertical distance of the shadow from the shape       |
 
-<b>2. Line Styles:</b>
+<h4><b>2. Line Styles:</b></h4>
 
 |Property     |  Description                                                   |
 |------------|----------------------------------------------------------------|
@@ -1879,7 +1879,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 |lineWidth     |Sets or returns the current line width                          |
 |miterLimit     |Sets or returns the maximum miter length                        |
 
-<b>3. Rectangles:</b>
+<h4><b>3. Rectangles:</b></h4>
   
 |Method         |Description                                          |
 |---------------|-----------------------------------------------------|
@@ -1888,7 +1888,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 |strokeRect()   |Draws a rectangle (no fill)                          |
 |clearRect()    |Clears the specified pixels within a given rectangle |
 
-<b>4. Paths:</b>
+<h4><b>4. Paths:</b></h4>
 
 | Method          | Description                                                                             |
 |-----------------|-----------------------------------------------------------------------------------------|
@@ -1902,7 +1902,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 |arc()       |Creates an arc/curve (used to create circles, or parts of circles)                            |
 |arcTo()     |Creates an arc/curve between two tangents                                                     |
 
-<b>5. Transformations:</b>
+<h4><b>5. Transformations:</b></h4>
 
 | Method        | Description                                                                   |
 |---------------|-------------------------------------------------------------------------------|
@@ -1912,7 +1912,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 |transform()    | Replaces the current transformation matrix for the drawing                    |
 |setTransform() | Resets the current transform to the identity matrix. Then runs transform()    |
 
-<b>6. Text:</b>
+<h4><b>6. Text:</b></h4>
 
 |Property        |Description                                                       |
 |---------------|----------------------------------------------------------------- |
@@ -1964,7 +1964,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 
 </details>
 
-<b>Example 03:</b> HTML5 Canvas for Rectangle
+<h5><b>Example 03:</b> HTML5 Canvas for Rectangle</h5>
 
 <details>
   <summary>html</summary>
@@ -1984,7 +1984,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 
 </details>
 
-<b>Example 04:</b> HTML5 Canvas for Circle
+<h5><b>Example 04:</b> HTML5 Canvas for Circle</h5>
 
 <details>
   <summary>html</summary>
@@ -2011,7 +2011,7 @@ for instance, be used to draw graphs, combine photos, or create animations.
 
 <h3>Q. What is difference between SVG and Canvas?</h3>
 
-<b>1. SVG:</b>
+<h4><b>1. SVG:</b></h4>
 
 The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define 
 two-dimensional vector based graphics for the web. Unlike raster image (e.g. .jpg, .gif, 
@@ -2020,11 +2020,13 @@ image quality.
 
 There are following advantages of using SVG over other image formats like JPEG, GIF, PNG, etc.
 
-* SVG images can be searched, indexed, scripted, and compressed.
-* SVG images can be created and modified using JavaScript in real time.
-* SVG images can be printed with high quality at any resolution.
-* SVG content can be animated using the built-in animation elements.
-* SVG images can contain hyperlinks to other documents.
+<ul>
+  <li>SVG images can be searched, indexed, scripted, and compressed.</li>
+  <li>SVG images can be created and modified using JavaScript in real time.</li>
+  <li>SVG images can be printed with high quality at any resolution.</li>
+  <li>SVG content can be animated using the built-in animation elements.</li>
+  <li>SVG images can contain hyperlinks to other documents.</li>
+</ul>
 
 <h5>Example:</h5>
 
@@ -2057,7 +2059,7 @@ There are following advantages of using SVG over other image formats like JPEG, 
 
 </details>
 
-<b>2. Canvas:</b>
+<h4><b>2. Canvas:</b></h4>
 
 Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap with an 
 “immediate mode” graphics application programming interface (API) for drawing on it. The 
@@ -2090,16 +2092,16 @@ boxes, circles, text & adding images.
 
 </details>
 
-<b>Differences:</b>
+<h4>Differences:</h4>
 
 |SVG                    |Canvas                                         |
 |-----------------------|-----------------------------------------------|
-|Vector based (composed of shapes)    |Raster based (composed of pixel)
-|Multiple graphical elements, which become the part of the page's DOM tree|    Single element similar to <img> in behavior. Canvas diagram can be saved to PNG or JPG format|
-|Modified through script and CSS    |Modified through script only
-|Good text rendering capabilities    |Poor text rendering capabilities
-|Give better performance with smaller number of objects or larger surface, or both    |Give better performance with larger number of objects or smaller surface, or both|
-|Better scalability. Can be printed with high quality at any resolution. Pixelation does not occur    |Poor scalability. Not suitable for printing on higher resolution. Pixelation may occur |
+|Vector based (composed of shapes)    |Raster based (composed of pixel) |
+|Multiple graphical elements, which become the part of the page's DOM tree|Single element similar to <img> in behavior. Canvas diagram can be saved to PNG or JPG format|
+|Modified through script and CSS    |Modified through script only |
+|Good text rendering capabilities    |Poor text rendering capabilities |
+|Give better performance with smaller number of objects or larger surface, or both |Give better performance with larger number of objects or smaller surface, or both|
+|Better scalability. Can be printed with high quality at any resolution. Pixelation does not occur | Poor scalability. Not suitable for printing on higher resolution. Pixelation may occur |
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -2111,15 +2113,15 @@ HTML5 drag-and-drop uses the `DOM event model` and `drag events` inherited from 
 A typical drag operation begins when a user selects a draggable element, drags the element 
 to a droppable element, and then releases the dragged element.
 
-|Event            |Description                                                            |
-|---------------|-----------------------------------------------------------------------|
-|Drag            |It fires every time when the mouse is moved while the object is being dragged.|
-|Dragstart        |It is a very initial stage. It fires when the user starts dragging object.|
-|Dragenter        |It fires when the user moves his/her mouse cursur over the target element.|
-|Dragover        |This event is fired when the mouse moves over an element.|
-|Dragleave        |This event is fired when the mouse leaves an element.|
-|Drop            |Drop It fires at the end of the drag operation.|
-|Dragend        |It fires when user releases the mouse button to complete the drag operation.|
+|Event     |Description                                                                   |
+|----------|------------------------------------------------------------------------------|
+|Drag      |It fires every time when the mouse is moved while the object is being dragged.|
+|Dragstart |It is a very initial stage. It fires when the user starts dragging object.    |
+|Dragenter |It fires when the user moves his/her mouse cursur over the target element.    |
+|Dragover  |This event is fired when the mouse moves over an element.                     |
+|Dragleave |This event is fired when the mouse leaves an element.                         |
+|Drop      |Drop It fires at the end of the drag operation.                               |
+|Dragend   |It fires when user releases the mouse button to complete the drag operation.  |
 
 <h5>Example:</h5>
 
@@ -2202,20 +2204,20 @@ The following elements are not available in HTML5 anymore and their function is 
 
 |Sl.No|Tags (Elements)  |    Description        |
 |-----|-----------------|----------------------|
-| 01. |`<acronym>`        |Defines an acronym|
-| 02. |`<applet>`        |Defines an applet|
-| 03. |`<basefont>`        |Defines an base font for the page.|
-| 04. |`<big>`            |Defines big text|
-| 05. |`<center>`        |Defines centered text|
-| 06. |`<dir>`            |Defines a directory list|
-| 07. |`<font>`            |Defines text font, size, and color|
+| 01. |`<acronym>`      |Defines an acronym|
+| 02. |`<applet>`       |Defines an applet|
+| 03. |`<basefont>`     |Defines an base font for the page|
+| 04. |`<big>`          |Defines big text|
+| 05. |`<center>`       |Defines centered text|
+| 06. |`<dir>`          |Defines a directory list|
+| 07. |`<font>`         |Defines text font, size, and color|
 | 08. |`<frame>`        |Defines a frame|
-| 08. |`<frameset>`        |Defines a set of frames|
-| 10. |`<isindex>`        |Defines a single-line input field|
-| 11. |`<noframes>`        |Defines a noframe section|
+| 08. |`<frameset>`     |Defines a set of frames|
+| 10. |`<isindex>`      |Defines a single-line input field|
+| 11. |`<noframes>`     |Defines a noframe section|
 | 12. |`<s>`            |Defines strikethrough text|
-| 13. |`<strike>`        |Defines strikethrough text|
-| 14. |`<tt>`            |Defines teletype text|
+| 13. |`<strike>`       |Defines strikethrough text|
+| 14. |`<tt>`           |Defines teletype text|
 | 15. |`<u>`            |Defines underlined text|
 
 <h4>2. Deprecated Attributes:</h4>
@@ -2264,16 +2266,16 @@ The following elements are not available in HTML5 anymore and their function is 
 |frameborder          |iframe|
 |hspace                  |img and object.|
 |vspace                  |img and object.|
-|marginheight          |iframe|
-|marginwidth          |iframe|
-|noshade              |hr|
-|nowrap                  |td and th|
-|rules                  |table|
-|scrolling              |iframe|
-|size                  |hr|
-|type                  |li, ol and ul.|
-|valign                  |col, colgroup, tbody, td, tfoot, th, thead and tr|
-|width                  |hr, table, td, th, col, colgroup and pre.|
+|marginheight  |iframe|
+|marginwidth   |iframe|
+|noshade       |hr|
+|nowrap        |td and th|
+|rules         |table|
+|scrolling     |iframe|
+|size          |hr|
+|type          |li, ol and ul.|
+|valign        |col, colgroup, tbody, td, tfoot, th, thead and tr|
+|width         |hr, table, td, th, col, colgroup and pre.|
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
