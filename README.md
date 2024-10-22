@@ -82,6 +82,7 @@ HTML5 offers new semantic elements to define different parts of a web page:
   <li>`&lt;section&gt;`</li>
   <li>`&lt;summary&gt;`</li>
   <li>`&lt;time&gt;`</li>
+</ul>
 
 <h5>Syntax:</h5>
 
@@ -264,21 +265,21 @@ expected to be modified through JavaScript code.</p>
 
 <h3 id="new-form-elements">List New form elements introduced in html5</h3>
 
-|Sl.No| Element     | Description   |
-|-----|-------------|---------------------------|
-| 01. |color        |Gives the end user a native color picker to choose a color.|
-| 02. |date         |Offers a datepicker.|
-| 03. |datetime     |An element to choose both date and time.|
+|Sl.No| Element       | Description   |
+|-----|---------------|---------------------------|
+| 01. |color          |Gives the end user a native color picker to choose a color.|
+| 02. |date           |Offers a datepicker.|
+| 03. |datetime       |An element to choose both date and time.|
 | 04. |datetime-local |An element to choose both date and time, with local settings support.|
-| 05. |email        |A field for entering e-mail address(es).|
-| 06. |month       |Choose a full month.|
-| 07. |number       |Picking a number.|
-| 08. |range        |Offers a slider to set to a certain value/position.|
-| 09. |search       |A field for search queries.|
-| 10. |tel          |Choosing a telephone number.|
-| 11. |time         |Input a certain time.|
-| 12. |url          |Entering a URL.|
-| 13. |week         |Picking a specific week.|
+| 05. |email          |A field for entering e-mail address(es).|
+| 06. |month          |Choose a full month.|
+| 07. |number         |Picking a number.|
+| 08. |range          |Offers a slider to set to a certain value/position.|
+| 09. |search         |A field for search queries.|
+| 10. |tel            |Choosing a telephone number.|
+| 11. |time           |Input a certain time.|
+| 12. |url            |Entering a URL.|
+| 13. |week           |Picking a specific week.|
 
 
 <h5>Example:</h5>
