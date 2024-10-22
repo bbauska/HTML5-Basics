@@ -3,8 +3,8 @@
 
 <h2 id="topics">Related Topics</h2>
 <ul>
-  <li><i><a href="https://github.com/learning-zone/css-basics">CSS Basics</a></i></li>
-  <li><i><a href="https://github.com/learning-zone/javascript-basics">JavaScript Basics</a></i></li>
+  <li><i><a href="https://github.com/bbauska/css-basics">CSS Basics</a></i></li>
+  <li><i><a href="https://github.com/bbauska/javascript-basics">JavaScript Basics</a></i></li>
 </ul>
 
 <br/>
