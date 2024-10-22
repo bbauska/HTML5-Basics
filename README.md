@@ -72,16 +72,16 @@ HTML5 offers new semantic elements to define different parts of a web page:
   <li>`&lt;article&gt;`</li>
   <li>`&lt;aside&gt;`</li>
   <li>`&lt;details&gt;`</li>
-  <li>`&lt;figcaption&gt;`
-  <li>`&lt;figure&gt;`
-  <li>`&lt;footer&gt;`
-  <li>`&lt;header&gt;`
-  <li>`&lt;main&gt;`
-  <li>`&lt;mark&gt;`
-  <li>`&lt;nav&gt;`
-  <li>`&lt;section&gt;`
-  <li>`&lt;summary&gt;`
-  <li>`&lt;time&gt;`
+  <li>`&lt;figcaption&gt;`</li>
+  <li>`&lt;figure&gt;`</li>
+  <li>`&lt;footer&gt;`</li>
+  <li>`&lt;header&gt;`</li>
+  <li>`&lt;main&gt;`</li>
+  <li>`&lt;mark&gt;`</li>
+  <li>`&lt;nav&gt;`</li>
+  <li>`&lt;section&gt;`</li>
+  <li>`&lt;summary&gt;`</li>
+  <li>`&lt;time&gt;`</li>
 
 <h5>Syntax:</h5>
 
