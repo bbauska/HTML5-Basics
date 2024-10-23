@@ -1,3 +1,15 @@
+---
+title: |
+  HTML-Basics
+  by Brian Bauska, Systems Analyst (retired)
+author: "bbauska"
+date created: "07/01/24 11+pm"
+date last editted: "10/22/24 Tue 9+pm"
+output: 
+  markdown:
+    with some style
+---
+
 <!-- HTML Basics -->
 <h1 id="html-basics">HTML Basics</h1>
 
@@ -72,8 +84,8 @@ work for browsers and search engines, as well as developers.
 HTML5 offers new semantic elements to define different parts of a web page:
 
 <ul>
-  <li>`&lt;article&gt;`</li>
-  <li>`&lt;aside&gt;`</li>
+  <li><mark>&lt;article&gt;</mark></li>
+  <li><mark>&lt;aside&gt;</mark></li>
   <li>`&lt;details&gt;`</li>
   <li>`&lt;figcaption&gt;`</li>
   <li>`&lt;figure&gt;`</li>
