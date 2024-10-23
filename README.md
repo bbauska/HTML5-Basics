@@ -86,17 +86,17 @@ HTML5 offers new semantic elements to define different parts of a web page:
 <ul>
   <li><mark>&lt;article&gt;</mark></li>
   <li><mark>&lt;aside&gt;</mark></li>
-  <li>`&lt;details&gt;`</li>
-  <li>`&lt;figcaption&gt;`</li>
-  <li>`&lt;figure&gt;`</li>
-  <li>`&lt;footer&gt;`</li>
-  <li>`&lt;header&gt;`</li>
-  <li>`&lt;main&gt;`</li>
-  <li>`&lt;mark&gt;`</li>
-  <li>`&lt;nav&gt;`</li>
-  <li>`&lt;section&gt;`</li>
-  <li>`&lt;summary&gt;`</li>
-  <li>`&lt;time&gt;`</li>
+  <li><mark>&lt;details&gt;</mark></li>
+  <li><mark>&lt;figcaption&gt;</mark></li>
+  <li><mark>&lt;figure&gt;</mark></li>
+  <li><mark>&lt;footer&gt;</mark></li>
+  <li><mark>&lt;header&gt;</mark></li>
+  <li><mark>&lt;main&gt;</mark></li>
+  <li><mark>&lt;mark&gt;</mark></li>
+  <li><mark>&lt;nav&gt;</mark></li>
+  <li><mark>&lt;section&gt;</mark></li>
+  <li><mark>&lt;summary&gt;</mark></li>
+  <li><mark>&lt;time&gt;</mark></li>
 </ul>
 
 <h5>Syntax:</h5>
@@ -570,7 +570,7 @@ have the hidden attribute specified.</i></p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. When should you use `section`, `div` or `article`?</h3>
+<h3>Q. When should you use <mark>section</mark>, <mark>div</mark> or <mark>article</mark>?</h3>
 
 <ul>
   <li>`&lt;section&gt;`, group of content inside is related to a single theme, and should appear 
@@ -1208,12 +1208,40 @@ The enctype attribute specifies how the form-data should be encoded when submitt
 </form>
 ```
 
-|Sl.No|Value                              |Description                        |
-|-----|-----------------------------------|-----------------------------------|
-| 01. |application/x-www-form-urlencoded  |Default. All characters are encoded before sent (spaces are converted to "+" symbols, and special characters are converted to ASCII HEX values)|
-| 02. |multipart/form-data        |No characters are encoded. This value is required when you are using forms that have a file upload control |
-| 03. |text/plain                |Spaces are converted to "+" symbols, but no special characters are encoded|
-
+<table>
+  <colgroup>
+    <col style="width: 7%" />
+    <col style="width: 33%" />
+    <col style="width: 60%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><b>Sl.No</b></th>
+      <th><b>Value</b></th>
+      <th><b>Description</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>01.</td>
+      <td>application/x-www-form-urlencoded</td>
+      <td>Default. All characters are encoded before sent (spaces are converted to "+" 
+	    symbols, and special characters are converted to ASCII HEX values)</td>
+    </tr>
+    <tr class="even">
+      <td>02.</td>
+      <td>multipart/form-data</td>
+      <td>No characters are encoded. This value is required when you are using forms 
+	    that have a file upload control</td>
+    </tr>
+    <tr class="even">
+      <td>03.</td>
+      <td>text/plain</td>
+      <td>Spaces are converted to "+" symbols, but no special characters are encoded</td>
+    </tr>
+  </tbody>
+</table>
+  
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
@@ -1255,7 +1283,8 @@ given, but he can actually enter anything he wants in the input.</p>
 
 <h3>Q. Explain some of the pros and cons for CSS animations versus JavaScript animations?</h3>
 
-<p>Regarding optimization and responsiveness the debate bounces back and forth but, the concept is:</p>
+<p>Regarding optimization and responsiveness the debate bounces back and forth but, the 
+concept is:</p>
 
 <ul>
   <li>CSS animations allows the browser to choose where the animation processing is done, 
@@ -1408,7 +1437,7 @@ decide whether to handle it in quirks mode or standards mode.
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. Name 3 ways to decrease page load?</h3>
+<h3>Q. Name some ways to decrease page load?</h3>
 
 <ol start="1">
   <li>Optimize images</li>
@@ -1476,22 +1505,36 @@ decide whether to handle it in quirks mode or standards mode.
   </li>
   <li>Put Scripts at the Bottom:
     <ul>
-	  <li>Javascript files can load after the rest of your page. The simplest solution is to place your external Javascript files at the bottom of your page, just before the close of your body tag. Now more of your site can load before your scripts. Another method that allows even more control is to use the defer or async attributes when placing external .js files on your site.
+	  <li>Javascript files can load after the rest of your page. The simplest solution is 
+	    to place your external Javascript files at the bottom of your page, just before 
+		the close of your body tag. Now more of your site can load before your scripts. 
+		Another method that allows even more control is to use the defer or async attributes 
+		when placing external .js files on your site.
 	    <ul>
-          <li>Async tags load the scripts while the rest of the page loads, but this means scripts can be loaded out of order. Basically, lighter files load first. This might be fine for some scripts, but can be disastrous for others.</li>
-		  <li>The defer attribute loads your scripts after your content has finished loading. It also runs the scripts in order. Just make sure your scripts run so late without breaking your site.</li>
+          <li>Async tags load the scripts while the rest of the page loads, but this means 
+		    scripts can be loaded out of order. Basically, lighter files load first. This 
+			might be fine for some scripts, but can be disastrous for others.</li>
+		  <li>The defer attribute loads your scripts after your content has finished loading. 
+		  It also runs the scripts in order. Just make sure your scripts run so late without 
+		  breaking your site.</li>
 		</ul>
       </li>
     </ul>
   </li>
   <li>Add an Expires or a Cache-Control Header
     <ul>
-	  <li>Web page designs are getting richer and richer, which means more scripts, stylesheets, images, and Flash in the page. A first-time visitor to your page may have to make several HTTP requests, but by using the Expires header you make those components cacheable. This avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often used with images, but they should be used on all components including scripts, stylesheets, and Flash components.</li>
+	  <li>Web page designs are getting richer and richer, which means more scripts, stylesheets, 
+	  images, and Flash in the page. A first-time visitor to your page may have to make several 
+	  HTTP requests, but by using the Expires header you make those components cacheable. This 
+	  avoids unnecessary HTTP requests on subsequent page views. Expires headers are most often 
+	  used with images, but they should be used on all components including scripts, stylesheets, 
+	  and Flash components.</li>
 	</ul>
   </li>
   <li>Gzip Components
     <ul>
-	  <li>Compression reduces response times by reducing the size of the HTTP response. Gzipping generally reduces the response size by about 70%.</li>
+	  <li>Compression reduces response times by reducing the size of the HTTP response. Gzipping 
+	    generally reduces the response size by about 70%.</li>
   <li>Put Stylesheets at the Top:
     <ul>
 	  <li>This is because putting stylesheets in the HEAD allows the page to render progressively.</li>
@@ -1500,44 +1543,81 @@ decide whether to handle it in quirks mode or standards mode.
   <li>Avoid CSS Expressions</li>
   <li>Use GET for AJAX Requests:
     <ul>
-	  <li>Ajax is that it provides instantaneous feedback to the user because it requests information asynchronously from the backend web server.</li>
+	  <li>Ajax is that it provides instantaneous feedback to the user because it requests 
+	    information asynchronously from the backend web server.</li>
     </ul>
   </li>
   <li>Make JavaScript and CSS External:
     <ul>
-      <li>Using external files in the real world generally produces faster pages because the JavaScript and CSS files are cached by the browser. JavaScript and CSS that are inlined in HTML documents get downloaded every time the HTML document is requested. This reduces the number of HTTP requests that are needed, but increases the size of the HTML document. On the other hand, if the JavaScript and CSS are in external files cached by the browser, the size of the HTML document is reduced without increasing the number of HTTP requests.</li>
+      <li>Using external files in the real world generally produces faster pages because 
+	    the JavaScript and CSS files are cached by the browser. JavaScript and CSS that 
+		are inlined in HTML documents get downloaded every time the HTML document is 
+		requested. This reduces the number of HTTP requests that are needed, but increases 
+		the size of the HTML document. On the other hand, if the JavaScript and CSS are in 
+		external files cached by the browser, the size of the HTML document is reduced 
+		without increasing the number of HTTP requests.</li>
 	</ul>
   </li>
   <li>Use get to ajax request:
     <ul>
-      <li>POST is implemented in the browsers as a two-step process: sending the headers first, then sending data. So it's best to use GET, which only takes one TCP packet to send (unless you have a lot of cookies).</li>
+      <li>POST is implemented in the browsers as a two-step process: sending the headers 
+	    first, then sending data. So it's best to use GET, which only takes one TCP packet 
+		to send (unless you have a lot of cookies).</li>
     </ul>
   </li>
   <li>No 404s:
     <ul>
-	  <li>HTTP requests are expensive so making an HTTP request and getting a useless response (i.e. 404 Not Found) is totally unnecessary and will slow down the user experience without any benefit.</li>
+	  <li>HTTP requests are expensive so making an HTTP request and getting a useless 
+	    response (i.e. 404 Not Found) is totally unnecessary and will slow down the 
+		user experience without any benefit.</li>
 	</ul>
   </li>
   <li>Reduce Cookie Size:
     <ul>
-	  <li>HTTP cookies are used for a variety of reasons such as authentication and personalization. Information about cookies is exchanged in the HTTP headers between web servers and browsers. It's important to keep the size of cookies as low as possible to minimize the impact on the user's response time.</li>
+	  <li>HTTP cookies are used for a variety of reasons such as authentication and 
+	    personalization. Information about cookies is exchanged in the HTTP headers 
+		between web servers and browsers. It's important to keep the size of cookies as 
+		low as possible to minimize the impact on the user's response time.</li>
 	</ul>
   </li>
-  <li>Reduce DNS Lookups</li>
-  <li>Minify JavaScript and CSS</li>
-  <li>Avoid Redirects</li>
-  <li>Remove Duplicate Scripts</li>
-  <li>Configure Etags</li>
-  <li>Make Ajax Cacheable</li>
-  <li>Post-load Components</li>
-  <li>Preload Components</li>
-  <li>Reduce the Number of DOM Elements</li>
-  <li>Minimize the Number of iframes</li>
-  <li>Minimize DOM Access</li>
-  <li>Optimize CSS Sprites</li>
-  <li>Don't Scale Images in HTML</li>
-  <li>Make favicon.ico Small and Cacheable</li>
-  <li>Avoid Empty Image src</li>
+  <li>Reduce DNS Lookups: 
+    <ul>
+	  <li>Use a faster DNS provider: Some DNS providers are slower than others, or experience more traffic.</li>
+	  <li>Use DNS caching: DNS caching stores the hostname for a set amount of time, so the browser doesn't need to request a lookup each time it needs an element on a website.</li>
+      <li>Use DNS prefetching: DNS prefetching allows the browser to perform DNS lookups in the background while a user is browsing. This reduces latency when a user clicks on a link.</li>
+      <li>Use a content delivery network (CDN): Storing resources on a CDN delivers content to users from the closest edge server, which improves loading times.</li>
+      <li>Defer loading JavaScript: Deferring the loading of JavaScript prevents things from loading until after the document has fully loaded. This speeds up the user experience without reducing the number of DNS lookups.</li>
+      <li>Minimize the number of hostnames: Reducing the number of hostnames can help reduce DNS lookups.</li>
+      <li>Host third-party resources locally: Hosting third-party resources locally can help reduce DNS lookups.</li>
+      <li>Minimize the TTL of DNS records: Setting TTL values that are too long can delay updates to DNS records.</li>
+      <li>Consider self-managed DNS: If you have the technical skills, you can deploy and manage your own DNS servers.</li>
+	 </ul>
+  </li>
+  <li>Minify JavaScript and CSS: </li>
+  <li>Avoid Redirects: 
+    <ul>
+      <li><b>Use a redirect blocker</b><br>
+	  You can use a redirect blocker extension like the one available in the Chrome Web Store.</li>
+      <li><b>Enable phishing and malware protection in Chrome</b><br>
+	  This will cause Google to warn you if your browser tries to redirect you to another website.</li>
+      <li><b>Clear your browser's cache and cookies</b><br>
+      This can help resolve any cached redirects that might be causing a loop.</li>
+      <li><b>Check URL configurations</b><br>
+      Make sure URLs are formatted correctly and avoid conflicting or circular redirect paths.</li>
+	</ul>
+  </li>
+  <li>Remove Duplicate Scripts: </li>
+  <li>Configure Etags: </li>
+  <li>Make Ajax Cacheable: </li>
+  <li>Post-load Components: </li>
+  <li>Preload Components: </li>
+  <li>Reduce the Number of DOM Elements:</li>
+  <li>Minimize the Number of iframes:</li>
+  <li>Minimize DOM Access:</li>
+  <li>Optimize CSS Sprites:</li>
+  <li>Don't Scale Images in HTML:</li>
+  <li>Make favicon.ico Small and Cacheable:</li>
+  <li>Avoid Empty Image src:</li>
 </ul>
 
 <div align="right">
@@ -1568,7 +1648,10 @@ decide whether to handle it in quirks mode or standards mode.
 
 <h3>Q. What does the lang attribute in html do?</h3>
 
-* Helps in styling pages by using them in css `:lang()` pseudo class Spelling and grammar checkers Languade detection by search engines
+<ul>
+  <li>Helps in styling pages by using them in css `:lang()` pseudo class Spelling and 
+    grammar checkers Languade detection by search engines</li>
+</ul>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -1576,13 +1659,15 @@ decide whether to handle it in quirks mode or standards mode.
 
 <h3>Q. What is desktop first and mobile first design approach?</h3>
 
-* Desktop first : 
-        General selectors and styles designed to make the site look good on DESKTOP screens defined globally. But they affect all devices, and must be overridden by max-width media queries targeting minimum screen size
+<ul>
+  <li>Desktop first : <br>
+  General selectors and styles designed to make the site look good on DESKTOP screens defined globally. But they affect all devices, and must be overridden by max-width media queries targeting minimum screen size</li>
+  <li>Mobile First : <br>
+  General selectors and styles designed to make the site look good on small MOBILE screens go here. But they affect all devices, and must be overridden by min-width media queries targeting maximum scrren size</li>
+</ul>
 
-* Mobile First : 
-        General selectors and styles designed to make the site look good on small MOBILE screens go here. But they affect all devices, and must be overridden by min-width media queries targeting maximum scrren size
-    
-    In desktop first approach the media queries will be written with respect to max-width whereas in mobile first approach media queries will be written with respect to min-width
+<p>In desktop first approach the media queries will be written with respect to max-width 
+whereas in mobile first approach media queries will be written with respect to min-width</p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -1590,7 +1675,11 @@ decide whether to handle it in quirks mode or standards mode.
 
 <h3>Q. What are `data-` attributes good for?</h3>
 
-* The HTML5 data attribute lets you assign custom data to an element. When we want to store more information/data about the element when no suitable HTML5 element or attribute exists
+<ul>
+  <li>The HTML5 data attribute lets you assign custom data to an element. When we want to 
+    store more information/data about the element when no suitable HTML5 element or 
+	attribute exists</li>
+</ul>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -2499,7 +2588,7 @@ tag, providing a solid foundation for your iframe usage.
 The src attribute specifies the URL of the document you want to embed.
 Iframes can include videos, maps, or entire web pages from other sources.
 
-<h3>Q. What is an iframe and how does it work?</h3>
+<h3>Q. What is an iFrame and how does it work?</h3>
 
 The `<iframe>` HTML element represents a nested browsing context, embedding another HTML 
 page into the current one. Each embedded browsing context has its own <b>session history</b> 
@@ -2548,15 +2637,15 @@ window, represented by the <b>Window</b> object.
 
 <h4>The Iframe Tag Attributes:</h4>
 
-|Attribute       | Description                |
-|----------------|----------------------------|
-|allow           |indicates what features the iframe is allowed to use (e.g. fullscreen, camera, autoplay)|
-|allowfullscreen |grants or denies permission for the iframe to appear in full-screen mode|
-|height           |sets the height of the iframe (if not specified, the default height is 150 pixels)|
-|loading         |sets lazy loading or eager loading for the iframe|
-|referrerpolicy  |sets what referrer information should be sent in the request for the iframe|
-|src             |the address of the resource included in the iframe|
-|width           |sets the width of the iframe (if not specified, the default width is 300 pixels)|
+|Attribute        | Description                |
+|-----------------|----------------------------|
+|allow            |Indicates what features the iframe is allowed to use (e.g. fullscreen, camera, autoplay)|
+|allowfullscreen  |Grants or denies permission for the iframe to appear in full-screen mode|
+|height           |Sets the height of the iframe (if not specified, the default height is 150 pixels)|
+|loading          |Sets lazy loading or eager loading for the iframe|
+|referrerpolicy   |Sets what referrer information should be sent in the request for the iframe|
+|src              |The address of the resource included in the iframe|
+|width            |Sets the width of the iframe (if not specified, the default width is 300 pixels)|
 
 <i>Note: Because each browsing context is a complete document environment, every `<iframe>` 
 in a page requires increased memory and other computing resources.</i>
@@ -2567,7 +2656,7 @@ in a page requires increased memory and other computing resources.</i>
 
 <h3>Q. Explain the use of rel="nofollow", rel="noreferrer", rel="noopener" attribute?</h3>
 
-<h4>1. rel="nofollow"</h4>
+<h4>1. <mark>rel="nofollow"</mark></h4>
 
 When `rel="nofollow"` tag is used, it instruct the search engines not to pass any PageRank 
 from one page to the other. It does not allow it to pass the authority to the specific 
@@ -2582,7 +2671,7 @@ for example some blog comments and some kind of forum posting.
 <a href="https://www.website.com" rel="nofollow">Link to yoursite.com</a>
 ```
 
-<h4>2. rel="noreferrer"</h4>
+<h4>2. <mark>rel="noreferrer"</mark></h4>
 
 Noreferrer is related to analytics and tracking. The referrer value shows the previous 
 page where a user came from. By using the noreferrer attribute on a link, you are 
@@ -2590,21 +2679,17 @@ preventing other pages from seeing that traffic came from a click on your link.
 
 <h5>Example:</h5>
 
-```html
-<a href="https://www.website.com" rel="noreferrer">Link to yoursite.com</a>
-```
+<pre>&lt;a href="https://www.website.com" rel="noreferrer"&gt;Link to yoursite.com&lt;/a&gt;</pre>
 
-<h4>3. rel="noopener"</h4>
+<h4>3. <mark>rel="noopener"</mark></h4>
 
-It prevents the new page from being able to access the `window.opener` property and will 
+<p>It prevents the new page from being able to access the <mark>window.opener</mark> property and will 
 make it run in a separate process. noopener tag works as a security fix which prevents 
-malicious links to take control over an opened tab.
+malicious links to take control over an opened tab.</p>
 
 <h5>Example:</h5>
 
-```html
-<a href="https://www.website.com" target="_blank" rel="noopener">Link to yoursite.com</a>
-```
+<pre>&lt;a href="https://www.website.com" target="_blank" rel="noopener"&gt;Link to yoursite.com&lt;/a&gt;</pre>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -5136,9 +5221,7 @@ and definition list. We have explained all three list types with examples.</p>
 <h2>Remove the Iframe Border</h2>
 <p>To remove the default border of the iframe, use CSS:</p>
 
-```
-<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
-```
+<pre>&lt;iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"&gt;&lt;/iframe&gt;</pre>
 
 </body>
 </html>
