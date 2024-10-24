@@ -5214,6 +5214,7 @@ and definition list. We have explained all three list types with examples.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="07-html-iframes">07. HTML iFrames</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+```
 <!DOCTYPE html>
 <html>
 <body>
@@ -5221,11 +5222,13 @@ and definition list. We have explained all three list types with examples.</p>
 <h2>Remove the Iframe Border</h2>
 <p>To remove the default border of the iframe, use CSS:</p>
 
-<pre>&lt;iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"&gt;&lt;/iframe&gt;</pre>
+<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe></pre>
 
 </body>
 </html>
+```
 
+<pre>&lt;iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"&gt;&lt;/iframe&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="08-html-url">08. HTML URL</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5263,6 +5266,21 @@ Table of Content
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="09-html-svg">09. HTML SVG</h2>
+<h3>What is SVG?</h3>
+<h4>
+<ul>
+  <li>SVG stands for Scalable Vector Graphics</li>
+  <li>SVG is used to define vector-based graphics for the Web</li>
+  <li>SVG defines graphics in XML format</li>
+  <li>Each element and attribute in SVG files can be animated</li>
+  <li>SVG is a W3C recommendation</li>
+  <li>SVG integrates with other standards, such as CSS, DOM, XSL and JavaScript</li>
+</ul>
+</h4>
+<h4>The &lt;svg&gt; Element</h4>
+<h4>The HTML &lt;svg&gt; element is a container for SVG graphics.</h4>
+
+SVG has several methods for drawing paths, rectangles, circles, polygons, text, and much more.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="10-html-canvas">10. HTML Canvas</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
