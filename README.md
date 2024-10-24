@@ -5266,6 +5266,7 @@ Table of Content
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="09-html-svg">09. HTML SVG</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What is SVG?</h3>
 <h4>
 <ul>
@@ -5279,22 +5280,129 @@ Table of Content
 </h4>
 <h4>The &lt;svg&gt; Element</h4>
 <h4>The HTML &lt;svg&gt; element is a container for SVG graphics.</h4>
-
-SVG has several methods for drawing paths, rectangles, circles, polygons, text, and much more.
+<p>SVG has several methods for drawing paths, rectangles, circles, polygons, text, and much more.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="10-html-canvas">10. HTML Canvas</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript.
+
+The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics.
+
+Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
+
+Canvas is supported by all major browsers.
+Canvas Examples
+A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content.
+
+The markup looks like this:
+
+<canvas id="myCanvas" width="200" height="100"></canvas>
+Note: Always specify an id attribute (to be referred to in a script), and a width and height attribute to define the size of the canvas. To add a border, use the style attribute.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="11-html-storage">11. HTML Storage</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+With web storage, web applications can store data locally within the user's browser.
+
+Before HTML5, application data had to be stored in cookies, included in every server request. Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+
+Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.
+
+Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data.
+
+What is HTML Web Storage? With web storage, web applications can store data locally within the user's browser. Before HTML5, application data had to be stored in cookies, included in every server request. Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+HTML web storage provides two objects for storing data on the client:
+
+window.localStorage - stores data with no expiration date
+window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)
+Before using web storage, check browser support for localStorage and sessionStorage:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="12-html-apis">12. HTML APIs</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+API stands for Application Programming Interface.
+
+A Web API is an application programming interface for the Web.
+
+A Browser API can extend the functionality of a web browser.
+
+A Server API can extend the functionality of a web server.
+
+All browsers have a set of built-in Web APIs to support complex operations, and to help accessing data.
+
+For example, the Geolocation API can return the coordinates of where the browser is located.
+const myElement = document.getElementById("demo");
+
+```
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    myElement.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  myElement.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+```
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="13-html-dragndrop">13. HTML Drag 'n Drop</h2>
+Drag and Drop is a very interactive and user-friendly concept that makes it easier to move an object to a different location by grabbing it. This allows the user to click and hold the mouse button over an element, drag it to another location, and release the mouse button to drop the element there.
+
+With HTML5, implementing drag-and-drop functionality has become easier and more streamlined, as it supports built-in drag-and-drop events. These events can be applied to any element with minimal coding.
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="14-html-webworker">14. HTML Web Worker</h2>
+Web Workers are a simple means for web content to run scripts in background threads. The worker thread can perform tasks without interfering with the user interface. In addition, they can make network requests using the fetch() or XMLHttpRequest APIs. Once created, a worker can send messages to the JavaScript code that created it by posting messages to an event handler specified by that code (and vice versa).
+
+This article provides a detailed introduction to using web workers.
+A worker is an object created using a constructor (e.g. Worker()) that runs a named JavaScript file — this file contains the code that will run in the worker thread; workers run in another global context that is different from the current window. Thus, using the window shortcut to get the current global scope (instead of self) within a Worker will return an error.
+
+The worker context is represented by a DedicatedWorkerGlobalScope object in the case of dedicated workers (standard workers that are utilized by a single script; shared workers use SharedWorkerGlobalScope). A dedicated worker is only accessible from the script that first spawned it, whereas shared workers can be accessed from multiple scripts.
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="15-html-access">15. HTML Accessibility</h2>
+Always write HTML code with accessibility in mind!
+
+Provide the user a good way to navigate and interact with your site. Make your HTML code as semantic as possible.
+Web accessibility is about building digital spaces that are inclusive and navigable for everyone, regardless of their abilities. It’s like constructing a building with ramps and elevators alongside stairs – it ensures that everyone, regardless of how they move, can access every floor.
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="16-misc">16. Miscellaneous</h2>
+The Miscellaneous Tags field allows you to add metadata, scripts, or additional CSS styles to a page's Head section. Information in this field must conform to HTML standards. Miscellaneous Tags can help with search by telling SEO engines what the exact content of the pages is. Keywords help group together types of articles by important phrases.   
+Important Note 
+Page tags are entered in HTML format, whereas keywords is simple text content
+Examples of useful/common tags include:
+<meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+<meta name="description" content="Free Web tutorials on HTML and CSS">
+<meta name="author" content="John Doe">
+Using miscellaneous tags in HTML documents
+Use these tags for advanced Web functions.
+
+ 
+
+Comment <!-- --> (not displayed by the browser)
+
+Prologue <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+Searchable <ISINDEX> (indicates a searchable index)
+
+Prompt <ISINDEX PROMPT=""> (text to prompt input)
+
+Send Search <A HREF="URL?"></a> (use a real question mark)
+
+URL of This File <BASE HREF="URL"> (must be in header)
+
+N2.0 Base Window Name <BASE TARGET="">(must be in header)
+
+Relationship <LINK REV="" REL="" HREF="URL"> (in header)
+
+Meta Information <META> (must be in header)
+
+Style Sheets <STYLE></STYLE>
+
+Scripts <SCRIPT></SCRIPT>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
