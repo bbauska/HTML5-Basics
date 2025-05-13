@@ -5,24 +5,28 @@ title: |
 author: "bbauska"
 date created: "07/01/24 11+pm"
 date last editted: "10/22/24 Tue 9+pm"
+date last editted: "5/13/25 Tue 3+am"
 output: 
   markdown:
     with some style
 ---
 
-<!-- HTML Basics -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- readme.md of HTML Basics -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1 id="html-basics">HTML Basics</h1>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="topics">Related Topics</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><i><a href="https://github.com/bbauska/css-basics">CSS Basics</a></i></li>
   <li><i><a href="https://github.com/bbauska/js-basics-javascript">JavaScript Basics</a></i></li>
 </ul>
 
 <br/>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2><a id="toc">Table of Contents</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>
 <ol>
   <li><a href="#01-intro">Introduction</a></li>
@@ -44,21 +48,22 @@ output:
   <li><a href="#17-improve-perf">Ways to improve website performance</h3>
 </ol>
 </h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="01-intro">01. Introduction</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Q. What is difference between HTML and XHTML?</h3>
 
-The Extensible Hypertext Markup Language, or XHTML, has two important notes for front 
-end developers.
-
-1) It needs to be well formed, meaning all elements need to be closed and nested correctly 
-  or you will return errors.
-2) Since it is more strict than HTML is requires less pre-processing by the browser, which 
-  may improve your sites performance.
-
+<p>The Extensible Hypertext Markup Language, or XHTML, has two important notes for front 
+end developers.</p>
+<ol>
+  <li>1) It needs to be well formed, meaning all elements need to be closed and nested correctly 
+    or you will return errors.</li>
+  <li>2) Since it is more strict than HTML is requires less pre-processing by the browser, which 
+    may improve your sites performance.</li>
+</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Q. What are the building blocks of HTML5?</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><b>Semantics</b>: allowing you to describe more precisely what your content is.</li>
   <li><b>Connectivity</b>: allowing you to communicate with the server in new and innovative ways.</li>
@@ -75,13 +80,13 @@ end developers.
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Q. What are the semantic tags available in html5?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>HTML5 semantic tags define the function and the category of your text, simplifying the work for 
+browsers and search engines, as well as developers.</p>
 
-HTML5 semantic tags define the function and the category of your text, simplifying the 
-work for browsers and search engines, as well as developers.
-
-HTML5 offers new semantic elements to define different parts of a web page:
+<p>HTML5 offers new semantic elements to define different parts of a web page:</p>
 
 <ul>
   <li><mark>&lt;article&gt;</mark></li>
@@ -98,9 +103,9 @@ HTML5 offers new semantic elements to define different parts of a web page:
   <li><mark>&lt;summary&gt;</mark></li>
   <li><mark>&lt;time&gt;</mark></li>
 </ul>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>html</summary>
 
@@ -134,9 +139,9 @@ HTML5 offers new semantic elements to define different parts of a web page:
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Q. Why you would like to use semantic tags?</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>Search Engine Optimization, accessibility, repurposing, light code.</li>
   <li>Many visually impaired person rely on browser speech and semantic tag helps to 
@@ -156,24 +161,24 @@ HTML5 offers new semantic elements to define different parts of a web page:
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. What does a `&lt;DOCTYPE html&gt;` do?</h3>
+<h3>Q. What does a <b><mark>&lt;DOCTYPE html&gt;</mark></b> do?</h3>
 
-<p>A DOCTYPE is always associated to a `DTD` ( <b>Document Type Definition</b> ). A DTD defines 
-how documents of a certain type should be structured (i.e. a `button` can contain a `span` 
-but not a `div`), whereas a DOCTYPE declares what DTD a document supposedly respects (i.e. 
+<p>A DOCTYPE is always associated to a <b><mark>DTD</mark></b> ( <b>Document Type Definition</b> ). A DTD defines 
+how documents of a certain type should be structured (i.e. a <b><mark>button</mark></b> can contain a <b><mark>span</mark></b> 
+but not a <b><mark>div</mark></b>), whereas a DOCTYPE declares what DTD a document supposedly respects (i.e. 
 this document respects the HTML DTD). For webpages, the DOCTYPE declaration is required. 
 It is used to tell user agents what version of the HTML specifications your document respects.</p>
 
-<p>Once a user agent has recognized a correct DOCTYPE, it will trigger the `no-quirks mode` 
+<p>Once a user agent has recognized a correct DOCTYPE, it will trigger the <b><mark>no-quirks mode</mark></b> 
 matching this DOCTYPE forreading the document. If a user agent doesn't recognize a correct 
-DOCTYPE, it will trigger the `quirks mode`.</p>
+DOCTYPE, it will trigger the <b><mark>quirks mode</mark></b>.</p>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Q. What happens when DOCTYPE is not given?</h3>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The web page is rendered in quirks mode. The web browsers engines use quirks mode to 
 support older browsers which does not follow the <b>W3C specifications</b>. In quirks mode 
 CSS class and id names are case insensitive. In standards mode they are case sensitive.</p>
@@ -181,13 +186,15 @@ CSS class and id names are case insensitive. In standards mode they are case sen
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Q. What are the new form elements in HTML5?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>There are five new form elements in the HTML5 forms specification: <b><mark>&lt;datalist&gt;</mark></b>, <b><mark>&lt;keygen&gt;</mark></b>, <b><mark>&lt;output&gt;</mark></b>, 
+<b><mark>&lt;progress&gt;</mark></b>, and <b><mark>&lt;meter&gt;</mark></b>.</p>
 
-<p>There are five new form elements in the HTML5 forms specification: `&lt;datalist&gt;`, `&lt;keygen&gt;`, `&lt;output&gt;`, 
-`&lt;progress&gt;`, and `&lt;meter&gt;`.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>1. Datalist Tag</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p>Allows to attach a list of suggestions to a text input element. As soon as the user begins 
 to type in the text field, the list of suggestions appears and the user can choose from 
@@ -213,7 +220,7 @@ the suggestions with the mouse.</p>
 <h4>2. Meter Tag</h4>
 
 <p>Indicates a numeric value that falls within a range. The tag supports a number of attributes:
-value: If you don't specify a value, the first numeric value inside the `<meter></meter>` 
+value: If you don't specify a value, the first numeric value inside the <b><mark><meter></meter></mark></b> 
 pair becomes the value.</p>
 
 <ul>
@@ -451,15 +458,15 @@ expected to be modified through JavaScript code.</p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3 id="diff-span-div">What is the difference between `span` tag and `div` tag?</h3>
+<h3 id="diff-span-div">What is the difference between <b><mark>span</mark></b> tag and <b><mark>div</mark></b> tag?</h3>
 
 <p>The primary difference between div and span tag is their default behavior. By default, 
-a `&lt;div&gt;` is a <b>block-level-element</b> and a `&lt;span&gt;` is an <b>inline element</b>.</p>
+a <b><mark>&lt;div&gt;</mark></b> is a <b>block-level-element</b> and a <b><mark>&lt;span&gt;</mark></b> is an <b>inline element</b>.</p>
 
 <ul>
-  <li>`&lt;div&gt;` is a block level element which means it will render it on 
+  <li><b><mark>&lt;div&gt;</mark></b> is a block level element which means it will render it on 
     it&apos;s own line with a width of a 100% of the parent element.</li>
-  <li>`&lt;span&gt;` is an inline element which means it will render on the same 
+  <li><b><mark>&lt;span&gt;</mark></b> is an inline element which means it will render on the same 
     line as the previous element, if it is also an inline element, and it's width 
     will be determined by it's content.</li>
 </ul>
@@ -474,8 +481,8 @@ a `&lt;div&gt;` is a <b>block-level-element</b> and a `&lt;span&gt;` is an <b>in
 
 <h3>Q. What are optional closing tags?</h3>
 
-<p>`&lt;p&gt;`, `&lt;li&gt;`, `&lt;td&gt;`, `&lt;tr&gt;`, `&lt;th&gt;`, `&lt;html&gt;`, 
-`&lt;body&gt;`, etc. don't have to provide an end tag. Whenever a browser hits a new tag 
+<p><b><mark>&lt;p&gt;</mark></b>, <b><mark>&lt;li&gt;</mark></b>, <b><mark>&lt;td&gt;</mark></b>, <b><mark>&lt;tr&gt;</mark></b>, <b><mark>&lt;th&gt;</mark></b>, <b><mark>&lt;html&gt;</mark></b>, 
+<b><mark>&lt;body&gt;</mark></b>, etc. don't have to provide an end tag. Whenever a browser hits a new tag 
 it automatically ends the previous tag.</p>
 
 <div align="right">
@@ -487,8 +494,8 @@ it automatically ends the previous tag.</p>
 <p>In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren't 
 required to have specific closing tags are called “self closing” tags.</p>
 
-<p>An example of a self closing tag is something like a line break (`&lt;br /&gt;`) or the meta 
-tag (`&lt;meta&gt;`). This means that the following are both acceptable:</p>
+<p>An example of a self closing tag is something like a line break (<b><mark>&lt;br /&gt;</mark></b>) or the meta 
+tag (<b><mark>&lt;meta&gt;</mark></b>). This means that the following are both acceptable:</p>
 
 ```html
 <meta charset="UTF-8">
@@ -504,8 +511,8 @@ used to define larger blocks of content such as paragraphs, headings, and lists.
 up only as much width as necessary to display their content.</p>
 
 <ul>
-  <li>block elements: `&lt;h1&gt;`, `&lt;p&gt;`, `&lt;ul&gt;`, `&lt;ol&gt;`, `&lt;li&gt;`</li>
-  <li>inline elements: `&lt;span&gt;`, `&lt;a&gt;`, `&lt;strong&gt;`, `&lt;i&gt;`, `&lt;img&gt;`</li>
+  <li>block elements: <b><mark>&lt;h1&gt;</mark></b>, <b><mark>&lt;p&gt;</mark></b>, <b><mark>&lt;ul&gt;</mark></b>, <b><mark>&lt;ol&gt;</mark></b>, <b><mark>&lt;li&gt;</mark></b></li>
+  <li>inline elements: <b><mark>&lt;span&gt;</mark></b>, <b><mark>&lt;a&gt;</mark></b>, <b><mark>&lt;strong&gt;</mark></b>, <b><mark>&lt;i&gt;</mark></b>, <b><mark>&lt;img&gt;</mark></b></li>
 </ul>
 
 <div align="right">
@@ -516,19 +523,19 @@ up only as much width as necessary to display their content.</p>
 
 <ul>
   <li><b>Semantic elements</b>: clearly describes its meaning to both the browser and the developer.
-    For example: `&lt;form&gt;`, `&lt;table&gt;`,  `&lt;article&gt;`, `&lt;aside&gt;`, `&lt;details&gt;`, `&lt;figcaption&gt;`, 
-	`&lt;figure&gt;`, `&lt;footer&gt;`, `&lt;header&gt;`, `&lt;main&gt;`, `&lt;mark&gt;`, `&lt;nav&gt;`, `&lt;section&gt;`, `&lt;summary&gt;`, 
-	`&lt;time&gt;` clearly defines its content.</li>
-  <li><b>Non-semantic elements</b>: `&lt;div&gt;` and `&lt;span&gt;` tells nothing about its content.</li>
+    For example: <b><mark>&lt;form&gt;</mark></b>, <b><mark>&lt;table&gt;</mark></b>,  <b><mark>&lt;article&gt;</mark></b>, <b><mark>&lt;aside&gt;</mark></b>, <b><mark>&lt;details&gt;</mark></b>, <b><mark>&lt;figcaption&gt;</mark></b>, 
+	<b><mark>&lt;figure&gt;</mark></b>, <b><mark>&lt;footer&gt;</mark></b>, <b><mark>&lt;header&gt;</mark></b>, <b><mark>&lt;main&gt;</mark></b>, <b><mark>&lt;mark&gt;</mark></b>, <b><mark>&lt;nav&gt;</mark></b>, <b><mark>&lt;section&gt;</mark></b>, <b><mark>&lt;summary&gt;</mark></b>, 
+	<b><mark>&lt;time&gt;</mark></b> clearly defines its content.</li>
+  <li><b>Non-semantic elements</b>: <b><mark>&lt;div&gt;</mark></b> and <b><mark>&lt;span&gt;</mark></b> tells nothing about its content.</li>
 </ul>
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. What is the purpose of `main` element?</h3>
+<h3>Q. What is the purpose of <b><mark>main</mark></b> element?</h3>
 
-<p>The HTML `&lt;main&gt;` element represents the dominant content of the `&lt;body&gt;` 
+<p>The HTML <b><mark>&lt;main&gt;</mark></b> element represents the dominant content of the <b><mark>&lt;body&gt;</mark></b> 
 of a document. The main content area consists of content that is directly related to or 
 expands upon the central topic of a document, or the central functionality of an 
 application.</p>
@@ -542,7 +549,7 @@ application.</p>
 </main>
 ```
 
-<p><i>Note: A document mustn't have more than one `&lt;main&gt;` element that doesn't 
+<p><i>Note: A document mustn't have more than one <b><mark>&lt;main&gt;</mark></b> element that doesn't 
 have the hidden attribute specified.</i></p>
 
 <div align="right">
@@ -553,15 +560,15 @@ have the hidden attribute specified.</i></p>
 &lt;nav&gt;, &lt;header&gt;, &lt;footer&gt; and how should each be used in structuring html markup?</h3>
 
 <ul>
-  <li><b>`&lt;header&gt;`</b> is used to contain introductory and navigational information about a section 
+  <li><b><mark>&lt;header&gt;</mark></b> is used to contain introductory and navigational information about a section 
     of the page. This can include the section heading, the author's name, time and date of 
 	publication, table of contents, or other navigational information.</li>
-  <li><b>`&lt;article&gt;`</b> is meant to house a self-contained composition that can logically be 
+  <li><b><mark>&lt;article&gt;</mark></b> is meant to house a self-contained composition that can logically be 
     independently recreated outside of the page without losing it's meaining. Individual 
 	blog posts or news stories are good examples.</li>
-  <li><b>`&lt;section&gt;`</b> is a flexible container for holding content that shares a common informational 
+  <li><b><mark>&lt;section&gt;</mark></b> is a flexible container for holding content that shares a common informational 
     theme or purpose.</li>
-  <li><b>`&lt;footer&gt;`</b> is used to hold information that should appear at the end of a section of content 
+  <li><b><mark>&lt;footer&gt;</mark></b> is used to hold information that should appear at the end of a section of content 
     and contain additional information about the section. Author's name, copyright information, 
 	and related links are typical examples of such content.</li>
 </ul>
@@ -573,17 +580,17 @@ have the hidden attribute specified.</i></p>
 <h3>Q. When should you use <mark>section</mark>, <mark>div</mark> or <mark>article</mark>?</h3>
 
 <ul>
-  <li>`&lt;section&gt;`, group of content inside is related to a single theme, and should appear 
+  <li><b><mark>&lt;section&gt;</mark></b>, group of content inside is related to a single theme, and should appear 
     as an entry in an outline of the page. It's a chunk of related content, like a subsection 
 	of a long article, a major part of the page (eg the news section on the homepage), or a 
 	page in a webapp's tabbed interface. A section normally has a heading (title) and maybe 
 	a footer too.</li>
-  <li>`&lt;article&gt;`, represents a complete, or self-contained, composition in a document, page, 
+  <li><b><mark>&lt;article&gt;</mark></b>, represents a complete, or self-contained, composition in a document, page, 
     application, or site and that is, in principle, independently distributable or reusable, 
 	e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog 
 	entry, a user-submitted comment, an interactive widget or gadget, or any other independent 
 	item of content.</li>
-  <li>`&lt;div&gt;`, on the other hand, does not convey any meaning, aside from any found in its class, 
+  <li><b><mark>&lt;div&gt;</mark></b>, on the other hand, does not convey any meaning, aside from any found in its class, 
     lang and title attributes.</li>
 </ul>
 
@@ -591,10 +598,10 @@ have the hidden attribute specified.</i></p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. Can a web page contain multiple `&lt;header&gt;` elements? What about `&lt;footer&gt;` elements?</h3>
+<h3>Q. Can a web page contain multiple <b><mark>&lt;header&gt;</mark></b> elements? What about <b><mark>&lt;footer&gt;</mark></b> elements?</h3>
 
-<p>Yes, header elements can be used multiple times in documents. A `&lt;header&gt;` tag must be present 
-for all articles, sections, and pages, although a `&lt;footer&gt;` tag is not necessary.</p>
+<p>Yes, header elements can be used multiple times in documents. A <b><mark>&lt;header&gt;</mark></b> tag must be present 
+for all articles, sections, and pages, although a <b><mark>&lt;footer&gt;</mark></b> tag is not necessary.</p>
 
 <h4>From W3C standards</h4>
 
@@ -626,15 +633,15 @@ images, line breaks, etc.</p>
 
 |Tags      | Description                                                      |
 |----------|------------------------------------------------------------------|
-|`<sup>`   |Superscript is usually used for showing elements above base-line |
-|`<sub>`   |The subscript is used for alternate baseline.|
-|`<i>`     |An Italic tag is used to define a text with a special meaning. |
-|`<big>`   |Big tag increase the font size by 1 (Note: You can not use the big tag in HTML 5)|
-|`<small>` |A small tag defines the small text, and it is used while writing copyright.|
-|`<b>`     |Bold increases the importance of the text because bold tag covert the text into bold size.|
-|`<u>`     |It is used to underline the text.|
-|`<tt>`    |Teletype text gives the default font-family which is monospace.|
-|`<strike>`|It is an editing markup that tells the reader to ignore the text passage.|
+|<b><mark>&lt;sup&gt;</mark></b>   |Superscript is usually used for showing elements above base-line |
+|<b><mark>&lt;sub&gt;</mark></b>   |The subscript is used for alternate baseline.|
+|<b><mark>&lt;i&gt;</mark></b>     |An Italic tag is used to define a text with a special meaning. |
+|<b><mark>&lt;big&gt;</mark></b>   |Big tag increase the font size by 1 (Note: You can not use the big tag in HTML 5)|
+|<b><mark>&lt;small&gt;</mark></b> |A small tag defines the small text, and it is used while writing copyright.|
+|<b><mark>&lt;b&gt;</mark></b>     |Bold increases the importance of the text because bold tag covert the text into bold size.|
+|<b><mark>&lt;u&gt;</mark></b>     |It is used to underline the text.|
+|<b><mark>&lt;tt&gt;</mark></b>    |Teletype text gives the default font-family which is monospace.|
+|<b><mark>&lt;strike&gt;</mark></b>|It is an editing markup that tells the reader to ignore the text passage.|
 
 <h4>2. Logical Tags:</h4>
 
@@ -648,21 +655,21 @@ used for styling purposes as well as to give special importance to text content.
 
 |Tags       | Description                     |
 |-----------|---------------------------------|
-|`<abbr>`   |Defines the abbreviation of text.|
-|`<acronym>`|Defines the acronym.|
-|`<address>`|Contact information of a person or an organization.|
-|`<cite>`   |Defines citation. It displays the text in italic format.|
-|`<code>`   |Defines the piece of computer code.|
-|`<blockquote>`|Defines a long quotation.|
-|`<del>`    |Defines the deleted text and is used to mark a portion of text which has been deleted from the document.|
-|`<dfn>`    |Defines the definition element and is used to representing a defining instance in HTML.|
-|`<ins>`    |Defines inserted text.|
-|`<kbd>`    |Defines keyboard input text.|
-|`<pre>`    |Defines the block of preformatted text which preserves the text spaces, line breaks, tabs, and other formatting characters which are ignored by web browsers.|
-|`<q>`      |Defines the short quotation.|
-|`<samp>`   |Defines the sample output text from a computer program.|
-|`<strong>` |Defines strong text i.e. show the importance of the text.|
-|`<var>`    |Defines the variable in a mathematical equation or in the computer program.|
+|<b><mark>&lt;abbr&gt;</mark></b>   |Defines the abbreviation of text.|
+|<b><mark>&lt;acronym&gt;</mark></b>|Defines the acronym.|
+|<b><mark>&lt;address&gt;</mark></b>|Contact information of a person or an organization.|
+|<b><mark>&lt;cite&gt;</mark></b>   |Defines citation. It displays the text in italic format.|
+|<b><mark>&lt;code&gt;</mark></b>   |Defines the piece of computer code.|
+|<b><mark>&lt;blockquote&gt;</mark></b>|Defines a long quotation.|
+|<b><mark>&lt;del&gt;</mark></b>    |Defines the deleted text and is used to mark a portion of text which has been deleted from the document.|
+|<b><mark>&lt;dfn&gt;</mark></b>    |Defines the definition element and is used to representing a defining instance in HTML.|
+|<b><mark>&lt;ins&gt;</mark></b>    |Defines inserted text.|
+|<b><mark>&lt;kbd&gt;</mark></b>    |Defines keyboard input text.|
+|<b><mark>&lt;pre&gt;</mark></b>    |Defines the block of preformatted text which preserves the text spaces, line breaks, tabs, and other formatting characters which are ignored by web browsers.|
+|<b><mark>&lt;q&gt;</mark></b>      |Defines the short quotation.|
+|<b><mark>&lt;samp&gt;</mark></b>   |Defines the sample output text from a computer program.|
+|<b><mark>&lt;strong&gt;</mark></b> |Defines strong text i.e. show the importance of the text.|
+|<b><mark>&lt;var&gt;</mark></b>    |Defines the variable in a mathematical equation or in the computer program.|
 
 <div align="right">
   <b><a href="#toc">↥ back to top</a></b>
@@ -916,17 +923,17 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
 <h3>Q. Describe the difference between a cookie, sessionStorage and localStorage?</h3>
 
-|                                        | `cookie`                                                 | `localStorage` | `sessionStorage` |
+|                                        | <b><mark>cookie</mark></b>                                                 | <b><mark>localStorage</mark></b> | <b><mark>sessionStorage</mark></b> |
 |----------------------------------------|----------------------------------------------------------|------------|------------------|
-| Initiator                              | Client or server. Server can use `Set-Cookie` header     | Client     | Client           |
+| Initiator                              | Client or server. Server can use <b><mark>Set-Cookie</mark></b> header     | Client     | Client           |
 | Expiry                                 | Manually set                                             | Forever    | On tab close     |
 | Persistent across browser sessions     | Depends on whether expiration is set                     | Yes        | No               |
-| Sent to server with every HTTP request | Cookies are automatically being sent via `Cookie` header | No         | No               |
+| Sent to server with every HTTP request | Cookies are automatically being sent via <b><mark>Cookie</mark></b> header | No         | No               |
 | Capacity (per domain)                  | 4kb                                                      | 5MB        | 5MB              |
 | Accessibility                          | Any window                                               | Any window | Same tab         |
 
 <p><i>Note: If the user decides to clear browsing data via whatever mechanism provided by 
-the browser, this will clear out any `cookie`, `localStorage`, or `sessionStorage` stored. 
+the browser, this will clear out any <b><mark>cookie</mark></b>, <b><mark>localStorage</mark></b>, or <b><mark>sessionStorage</mark></b> stored. 
 It's important to keep this in mind when designing for local persistance, especially when 
 comparing to alternatives such as server side storing in a database or similar (which of 
 course will persist despite user actions).</i></p>
@@ -1173,7 +1180,7 @@ empty.</p>
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. What does `enctype='multipart/form-data'` mean?</h3>
+<h3>Q. What does <b><mark>enctype='multipart/form-data'</mark</b> mean?</h3>
 
 The enctype attribute specifies how the form-data should be encoded when submitting it to the server.
 
@@ -1377,7 +1384,7 @@ Explorer 5. This is essential in order to support websites that were built befor
 widespread adoption of web standards. In <b>Standards mode</b>, the behavior is described 
 by the HTML and CSS specifications. 
 
-For HTML documents, browsers use a `<!DOCTYPE html>` in the beginning of the document to 
+For HTML documents, browsers use a <b><mark>&lt;!DOCTYPE html&gt;</mark</b> in the beginning of the document to 
 decide whether to handle it in quirks mode or standards mode. 
 
 ```html
@@ -1649,7 +1656,7 @@ decide whether to handle it in quirks mode or standards mode.
 <h3>Q. What does the lang attribute in html do?</h3>
 
 <ul>
-  <li>Helps in styling pages by using them in css `:lang()` pseudo class Spelling and 
+  <li>Helps in styling pages by using them in css <b><mark>:lang()` pseudo class Spelling and 
     grammar checkers Languade detection by search engines</li>
 </ul>
 
@@ -1673,7 +1680,7 @@ whereas in mobile first approach media queries will be written with respect to m
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
-<h3>Q. What are `data-` attributes good for?</h3>
+<h3>Q. What are <b><mark>data-` attributes good for?</h3>
 
 <ul>
   <li>The HTML5 data attribute lets you assign custom data to an element. When we want to 
@@ -1708,7 +1715,7 @@ rules are known, they are applied and the final styles for each element are calc
 
 Once the browser knows which rules apply to an element it can begin to calculate how much 
 space it takes up and where it is on screen. The web's layout model means that one element 
-can affect others, for example the width of the `<body>` element typically affects its 
+can affect others, for example the width of the <b><mark><body>` element typically affects its 
 children's widths and so on all the way up and down the tree, so the process can be quite 
 involved for the browser.
 
@@ -1763,7 +1770,7 @@ If the CSS width property is set to 100%, the image will be responsive and scale
 
 <b>3. Show different Images depending on Browser Width:</b>
 
-The HTML `<picture>` element allows you to define different images for different browser window sizes.
+The HTML <b><mark><picture>` element allows you to define different images for different browser window sizes.
 
 ```html
 <picture>
@@ -1822,8 +1829,8 @@ Using media queries you can define completely different styles for different bro
 The High Resolution Time API provides the current time in sub-millisecond resolution and 
 such that it is not subject to system clock skew or adjustments.
 
-It exposes only one method, that belongs to the `window.performance` object, called 
-`now()`. It returns a `DOMHighResTimeStamp` representing the current time in milliseconds. 
+It exposes only one method, that belongs to the <b><mark>window.performance` object, called 
+<b><mark>now()`. It returns a <b><mark>DOMHighResTimeStamp` representing the current time in milliseconds. 
 The timestamp is very accurate, with precision to a thousandth of a millisecond, allowing 
 for accurate tests of the performance of our code.
 
@@ -1848,8 +1855,8 @@ performance.measure("durationFoo", "startFoo", "endFoo");
 
 <b>3. Network Information API</b>
 
-This API belongs to the connection property of the `window.navigator` object. It exposes 
-two read-only properties: `bandwidth` and `metered`. The former is a number representing 
+This API belongs to the connection property of the <b><mark>window.navigator` object. It exposes 
+two read-only properties: <b><mark>bandwidth` and <b><mark>metered`. The former is a number representing 
 an estimation of the current bandwidth, while the latter is a Boolean whose value is true 
 if the user's connection is subject to limitation and bandwidth usage, and false otherwise.
 
@@ -1864,7 +1871,7 @@ if the user's connection is subject to limitation and bandwidth usage, and false
 
 <b>4.) Vibration API</b>
 
-It exposes only one method, `vibrate()`, that belongs to the `window.navigator` object. This method accepts one parameter specifying the duration of the vibration in milliseconds. The parameter can be either an integer or an array of integers. In the second case, it's interpreted as alternating vibration times and pauses.
+It exposes only one method, <b><mark>vibrate()`, that belongs to the <b><mark>window.navigator` object. This method accepts one parameter specifying the duration of the vibration in milliseconds. The parameter can be either an integer or an array of integers. In the second case, it's interpreted as alternating vibration times and pauses.
 
 ```javascript
 // Vibrate once for 2 seconds
@@ -1873,11 +1880,11 @@ navigator.vibrate(2000);
 
 <b>5.) Battery Status API</b>
 
-The Battery Status API exposes four properties (`charging`, `chargingTime`, `discharingTime`, 
-and `level`) and four events. The properties specify if the battery is in charge, the 
+The Battery Status API exposes four properties (<b><mark>charging`, <b><mark>chargingTime`, <b><mark>discharingTime`, 
+and <b><mark>level`) and four events. The properties specify if the battery is in charge, the 
 seconds remaining until the battery is fully charged, the seconds remaining until the 
 battery is fully discharged, and the current level of the battery. These properties 
-belongs to the `battery` property of the `window.navigator` object.
+belongs to the <b><mark>battery` property of the <b><mark>window.navigator` object.
 
 ```javascript
 // Retrieves the percentage of the current level of the device's battery
@@ -1898,8 +1905,8 @@ console.log('Page Visibility: '+document.hidden);
 <b>7.) Fullscreen API</b>
 
 The Fullscreen API provides a way to request fullscreen display from the user, and exit 
-this mode when desired. This API exposes two methods, `requestFullscreen()` and 
-`exitFullscreen()`, allowing us to request an element to become fullscreen and to exit 
+this mode when desired. This API exposes two methods, <b><mark>requestFullscreen()` and 
+<b><mark>exitFullscreen()`, allowing us to request an element to become fullscreen and to exit 
 fullscreen.
 
 ```javascript
@@ -1929,7 +1936,7 @@ function toggleFullScreen() {
 The Geolocation API allows the user to provide their location to web applications if they 
 so desire. For privacy reasons, the user is asked for permission to report location information.
 
-The Geolocation API is published through the `navigator.geolocation` object.
+The Geolocation API is published through the <b><mark>navigator.geolocation` object.
 
 <details>
   <summary>html</summary>
@@ -2247,7 +2254,7 @@ There are following advantages of using SVG over other image formats like JPEG, 
 
 Canvas is a HTML element is used to draw graphics on a web page. It is a  bitmap with an 
 “immediate mode” graphics application programming interface (API) for drawing on it. The 
-`<canvas>` element is only a container for graphics. In order to draw the graphics, you 
+<b><mark><canvas>` element is only a container for graphics. In order to draw the graphics, you 
 are supposed to use a script. Canvas has several strategies when it comes to drawing paths, 
 boxes, circles, text & adding images.
 
@@ -2293,7 +2300,7 @@ boxes, circles, text & adding images.
 
 <h3>Q. Explain Drag and Drop in HTML5?</h3>
 
-HTML5 drag-and-drop uses the `DOM event model` and `drag events` inherited from `mouse events`. 
+HTML5 drag-and-drop uses the <b><mark>DOM event model` and <b><mark>drag events` inherited from <b><mark>mouse events`. 
 A typical drag operation begins when a user selects a draggable element, drags the element 
 to a droppable element, and then releases the dragged element.
 
@@ -2388,21 +2395,21 @@ The following elements are not available in HTML5 anymore and their function is 
 
 |Sl.No|Tags (Elements)  |    Description        |
 |-----|-----------------|----------------------|
-| 01. |`<acronym>`      |Defines an acronym|
-| 02. |`<applet>`       |Defines an applet|
-| 03. |`<basefont>`     |Defines an base font for the page|
-| 04. |`<big>`          |Defines big text|
-| 05. |`<center>`       |Defines centered text|
-| 06. |`<dir>`          |Defines a directory list|
-| 07. |`<font>`         |Defines text font, size, and color|
-| 08. |`<frame>`        |Defines a frame|
-| 08. |`<frameset>`     |Defines a set of frames|
-| 10. |`<isindex>`      |Defines a single-line input field|
-| 11. |`<noframes>`     |Defines a noframe section|
-| 12. |`<s>`            |Defines strikethrough text|
-| 13. |`<strike>`       |Defines strikethrough text|
-| 14. |`<tt>`           |Defines teletype text|
-| 15. |`<u>`            |Defines underlined text|
+| 01. |<b><mark><acronym>`      |Defines an acronym|
+| 02. |<b><mark><applet>`       |Defines an applet|
+| 03. |<b><mark><basefont>`     |Defines an base font for the page|
+| 04. |<b><mark><big>`          |Defines big text|
+| 05. |<b><mark><center>`       |Defines centered text|
+| 06. |<b><mark><dir>`          |Defines a directory list|
+| 07. |<b><mark><font>`         |Defines text font, size, and color|
+| 08. |<b><mark><frame>`        |Defines a frame|
+| 08. |<b><mark><frameset>`     |Defines a set of frames|
+| 10. |<b><mark><isindex>`      |Defines a single-line input field|
+| 11. |<b><mark><noframes>`     |Defines a noframe section|
+| 12. |<b><mark><s>`            |Defines strikethrough text|
+| 13. |<b><mark><strike>`       |Defines strikethrough text|
+| 14. |<b><mark><tt>`           |Defines teletype text|
+| 15. |<b><mark><u>`            |Defines underlined text|
 
 <h4>2. Deprecated Attributes:</h4>
 
@@ -2474,9 +2481,9 @@ This is called <b>feature detection</b> and is much more efficient than browser 
 
 <h4>1. Using Modernizr with CSS:</h4>
 
-By default, Modernizr sets classes for all of your tests on the root element (`<html>` for 
+By default, Modernizr sets classes for all of your tests on the root element (<b><mark><html>` for 
 websites). This means adding the class for each feature when it is supported, and adding 
-it with a no- prefix when it is not (e.g. `.feature` or `.no-feature`).
+it with a no- prefix when it is not (e.g. <b><mark>.feature` or <b><mark>.no-feature`).
 
 ```css
 .no-cssgradients .header {
@@ -2490,7 +2497,7 @@ it with a no- prefix when it is not (e.g. `.feature` or `.no-feature`).
 
 <h4>2. Using Modernizr with JavaScript:</h4>
 
-Modernizr keeps track of the results of all of it's feature detections via the `Modernizr` object.
+Modernizr keeps track of the results of all of it's feature detections via the <b><mark>Modernizr` object.
 
 ```javascript
   if (Modernizr.canvas) {
@@ -2566,7 +2573,9 @@ doesn't block content load as the HTML sent by the server already has the conten
   <b><a href="#toc">↥ back to top</a></b>
 </div>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="07-html-iframe">07. HTML iframe</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 HTML iframes offer a powerful way to embed external content, such as videos, maps, or 
 other webpages, directly into your own webpage. This article provides an in-depth 
@@ -2574,9 +2583,9 @@ exploration of HTML iframes, their syntax, and how they can be used to enhance y
 web development projects.
 
 <h3>What are HTML Iframes?</h3>
-An iframe is an HTML document embedded inside another HTML document. The `<iframe>` tag 
+An iframe is an HTML document embedded inside another HTML document. The <b><mark><iframe>` tag 
 specifies the URL of the embedded content, allowing for seamless integration of external 
-resources. This section will guide you through the syntax and attributes of the `<iframe>` 
+resources. This section will guide you through the syntax and attributes of the <b><mark><iframe>` 
 tag, providing a solid foundation for your iframe usage.
 
 <h5>Syntax:</h5>
@@ -2590,7 +2599,7 @@ Iframes can include videos, maps, or entire web pages from other sources.
 
 <h3>Q. What is an iFrame and how does it work?</h3>
 
-The `<iframe>` HTML element represents a nested browsing context, embedding another HTML 
+The <b><mark><iframe>` HTML element represents a nested browsing context, embedding another HTML 
 page into the current one. Each embedded browsing context has its own <b>session history</b> 
 and <b>document</b>. The browsing context that embeds the others is called the parent browsing 
 context. The topmost browsing context — the one with no parent — is usually the browser 
@@ -2647,7 +2656,7 @@ window, represented by the <b>Window</b> object.
 |src              |The address of the resource included in the iframe|
 |width            |Sets the width of the iframe (if not specified, the default width is 300 pixels)|
 
-<i>Note: Because each browsing context is a complete document environment, every `<iframe>` 
+<i>Note: Because each browsing context is a complete document environment, every <b><mark><iframe>` 
 in a page requires increased memory and other computing resources.</i>
 
 <div align="right">
@@ -2658,7 +2667,7 @@ in a page requires increased memory and other computing resources.</i>
 
 <h4>1. <mark>rel="nofollow"</mark></h4>
 
-When `rel="nofollow"` tag is used, it instruct the search engines not to pass any PageRank 
+When <b><mark>rel="nofollow"` tag is used, it instruct the search engines not to pass any PageRank 
 from one page to the other. It does not allow it to pass the authority to the specific 
 website. The main advantage of using this attribute is to control the spam attack.
 
@@ -2697,7 +2706,7 @@ malicious links to take control over an opened tab.</p>
 
 <h3>Q. How can you highlight text in HTML?</h3>
 
-The `<mark>` HTML element represents text which is marked or highlighted for reference or 
+The <b><mark><mark>` HTML element represents text which is marked or highlighted for reference or 
 notation purposes, due to the marked passage's relevance or importance in the enclosing 
 context.
 
@@ -2738,8 +2747,9 @@ secure better <b>Search Engine Results Pages (SERP)</b> positions and attract mo
 
 Here are all the HTML tags that still matter:
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="02-html-tags">02. HTML Tags</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>1. Title tag:</h3>
 
 Title tags are used by search engines to determine the subject of a page and display it 
@@ -2776,7 +2786,7 @@ like a small title within the page. In HTML, a heading looks like this:
 
 <h3>4. Image alt attribute:</h3>
 
-The `alt` text attribute is a part of an image tag, and it provides a description for an 
+The <b><mark>alt` text attribute is a part of an image tag, and it provides a description for an 
 image. Alt text plays a major role in image optimization. It makes your images accessible 
 both to search engines (by telling them what a particular image means) and to people (by 
 displaying an alternative text in case a particular image cannot be loaded or by helping 
@@ -2788,7 +2798,7 @@ screen readers convey images). In HTML it may look like this:
 
 <h3>5. Open Graph tags:</h3>
 
-Open Graph (OG) tags are placed in the `<head>` section of a page and allow any webpage 
+Open Graph (OG) tags are placed in the <b><mark><head>` section of a page and allow any webpage 
 to become a rich object in social networks. OG tags let you control how the information 
 about your page is represented when shared via social channels. This possibility may help 
 you enhance the performance of your links on social media, thus driving more click-throughs 
@@ -2827,7 +2837,7 @@ One of the most important features of HTML5 is its semantics tags. Semantic tags
 syntax that makes the HTML more comprehensible by better defining the different sections 
 and layout of web pages. It makes web pages more informative and adaptable, allowing browsers 
 and search engines to better interpret content. For example, instead of using 
-`<div id="header"></div>` you can use a `<header></hrader>` tag.
+<b><mark><div id="header"></div>` you can use a <b><mark><header></hrader>` tag.
 
 <p align="center">
   <img src="assets/images/semantic-tags.png" alt="HTML5 semantic tags" width="300px" />
@@ -2918,83 +2928,83 @@ The following lists all optional tags.
 
 |Tag            |Description  |
 |---------------|-------------|
-|`<area>`       | The `<area>` tag defines an area inside an image map (an image map is an image with clickable areas).|
-|               | `<area>` elements are always nested inside a `<map>` tag. |
-|               | Note: The usemap attribute in `<img>` is associated with the `<map>` element's name attribute, and creates a relationship between the image and the map. |
+|&lt;b><mark><area>`       | The <b><mark>&lt;area>` tag defines an area inside an image map (an image map is an image with clickable areas).|
+|               | <b><mark>&lt;area>` elements are always nested inside a <b><mark>&lt;map>` tag. |
+|               | Note: The usemap attribute in <b><mark>&lt;img>` is associated with the <b><mark>&lt;map>` element's name attribute, and creates a relationship between the image and the map. |
 |               | See <a href="https://www.w3schools.com/tags/tag_area.asp">area tag</a> |
-|`<base>`       | The `<base>` tag specifies the base URL and/or target for all relative URLs in a document. |
-|               | The `<base>` tag must have either an href or a target attribute present, or both. |
-|               | There can only be one single `<base>` element in a document, and it must be inside the `<head>` element. |
+|<b><mark>&lt;base>`       | The <b><mark>&lt;base>` tag specifies the base URL and/or target for all relative URLs in a document. |
+|               | The <b><mark>&lt;base>` tag must have either an href or a target attribute present, or both. |
+|               | There can only be one single <b><mark>&lt;base>` element in a document, and it must be inside the <b><mark>&lt;head>` element. |
 |               | See <a href="https://www.w3schools.com/tags/tag_base.asp">base tag</a> |
-|`<body>`       | The `<body>` tag defines the document's body. |
-|               | The `<body>` element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. |
-|               | Note: There can only be one `<body>` element in an HTML document.            |
+|<b><mark>&lt;body>`       | The <b><mark>&lt;body>` tag defines the document's body. |
+|               | The <b><mark>&lt;body>` element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. |
+|               | Note: There can only be one <b><mark>&lt;body>` element in an HTML document.            |
 |               | See <a href="https://www.w3schools.com/tags/tag_body.asp">body tag</a> |
-|`<br>`         | The `<br>` tag inserts a single line break. |
-|               | The `<br>` tag is useful for writing addresses or poems. |
-|               | The `<br>` tag is an empty tag which means that it has no end tag. |
+|<b><mark>&lt;br>`         | The <b><mark>&lt;br>` tag inserts a single line break. |
+|               | The <b><mark>&lt;br>` tag is useful for writing addresses or poems. |
+|               | The <b><mark>&lt;br>` tag is an empty tag which means that it has no end tag. |
 |               | See <a href="https://www.w3schools.com/tags/tag_br.asp">br tag</a> |
-|`<caption>`    | The `<caption>` tag defines a table caption. |
-|               | The `<caption>` tag must be inserted immediately after the `<table>` tag. |
+|<b><mark>&lt;caption>`    | The <b><mark>&lt;caption>` tag defines a table caption. |
+|               | The <b><mark>&lt;caption>` tag must be inserted immediately after the <b><mark>&lt;table>` tag. |
 |               | Tip: By default, a table caption will be center-aligned above a table. However, the CSS properties text-align and caption-side can be used to align and place the caption. |
 |               | See <a href="https://www.w3schools.com/tags/tag_caption.asp">caption tag</a> |
-|`<col>`        | The `<col>` tag specifies column properties for each column within a `<colgroup>` element. |
-|               | The `<col>` tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row. |
+|<b><mark>&lt;col>`        | The <b><mark>&lt;col>` tag specifies column properties for each column within a <b><mark>&lt;colgroup>` element. |
+|               | The <b><mark>&lt;col>` tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row. |
 |               | See <a href="https://www.w3schools.com/tags/tag_col.asp">col tag</a> |
-|`<colgroup>`   | The `<colgroup>` tag specifies a group of one or more columns in a table for formatting. |
-|               | The `<colgroup>` tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row. |
-|               | Note: The `<colgroup>` tag must be a child of a `<table>` element, after any `<caption>` elements and before any `<thead>`, `<tbody>`, `<tfoot>`, and `<tr>` elements. |
-|               | Tip: To define different properties to a column within a `<colgroup>`, use the `<col>` tag within the `<colgroup>` tag. |
+|<b><mark>&lt;colgroup>`   | The <b><mark>&lt;colgroup>` tag specifies a group of one or more columns in a table for formatting. |
+|               | The <b><mark>&lt;colgroup>` tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row. |
+|               | Note: The <b><mark>&lt;colgroup>` tag must be a child of a <b><mark>&lt;table>` element, after any <b><mark>&lt;caption>` elements and before any <b><mark>&lt;thead></mark</b>, <b><mark>&lt;tbody></mark</b>, <b><mark>&lt;tfoot></mark</b>, and <b><mark>&lt;tr></mark</b> elements. |
+|               | Tip: To define different properties to a column within a <b><mark>&lt;colgroup></mark</b>, use the <b><mark>&lt;col></mark</b> tag within the <b><mark>&lt;colgroup></mark</b> tag. |
 |               | See <a href="https://www.w3schools.com/tags/tag_colgroup.asp">colgroup tag</a> |
-|`<dd>`         | The `<dd>` tag is used to describe a term/name in a description list. |
-|               | The `<dd>` tag is used in conjunction with `<dl>` (defines a description list) and `<dt>` (defines terms/names). |
-|               | Inside a `<dd>` tag you can put paragraphs, line breaks, images, links, lists, etc. |
+|<b><mark>&lt;dd&gt;</mark</b>         | The <b><mark>&lt;dd&gt;</mark</b> tag is used to describe a term/name in a description list. |
+|               | The <b><mark>&lt;dd></mark</b> tag is used in conjunction with <b><mark>&lt;dl></mark</b> (defines a description list) and `<dt></mark</b> (defines terms/names). |
+|               | Inside a `&lt;dd&gt;</mark></b> tag you can put paragraphs, line breaks, images, links, lists, etc. |
 |               | See <a href="https://www.w3schools.com/tags/tag_dd.asp">dd tag</a> |
-|`<dt>`         | The `<dt>` tag defines a term/name in a description list. |
-|               | The `<dt>` tag is used in conjunction with `<dl>` (defines a description list) and `<dd>` (describes each term/name). |
+|<b><mark>&lt;dt&gt;</mark></b>         | The <b><mark>&lt;dt&gt;</mark></b> tag defines a term/name in a description list. |
+|               | The <b><mark>&lt;dt&gt;</mark></b> tag is used in conjunction with <b><mark>&lt;dl&gt;</mark></b> (defines a description list) and <b><mark>&lt;dd&gt;</mark</b> (describes each term/name). |
 |               | See <a href="https://www.w3schools.com/tags/tag_dt.asp">dt tag</a> |
-|`<embed>`      | The `<embed>` tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application. |
+|<b><mark>&lt;embed&gt;</mark</b>      | The <b><mark>&lt;embed&gt;</mark</b> tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application. |
 |               | See <a href="https://www.w3schools.com/tags/tag_embed.asp">embed tag</a> |
-|`<head>`       | The `<head>` element is a container for metadata (data about data) and is placed between the `<html>` tag and the `<body>` tag. |
+|<b><mark>&lt;head&gt;</mark</b>       | The <b><mark>&lt;head&gt;</mark</b> element is a container for metadata (data about data) and is placed between the `&lt;html&gt;</mark</b> tag and the <b><mark>&lt;body&gt;</mark</b> tag. |
 |               | Metadata is data about the HTML document. Metadata is not displayed. |
 |               | Metadata typically define the document title, character set, styles, scripts, and other meta information. |
-|               | The following elements can go inside the `<head>` element: |
-|               | - `<title>` (required in every HTML document) |
-|               | - `<style>` |
-|               | - `<base>`  |
-|               | - `<link>`  |
-|               | - `<meta>`  |
-|               | - `<script>` |
-|               | - `<noscript>` |
+|               | The following elements can go inside the <b><mark>&lt;head&gt;</mark</b> element: |
+|               | - <b><mark>&lt;title&gt;</mark</b> (required in every HTML document) |
+|               | - <b><mark>&lt;style&gt;</mark</b> |
+|               | - <b><mark>&lt;base&gt;</mark</b>  |
+|               | - <b><mark>&lt;link&gt;</mark</b>  |
+|               | - <b><mark>&lt;meta&gt;</mark</b>  |
+|               | - <b><mark>&lt;script&gt;</mark</b> |
+|               | - <b><mark>&lt;noscript&gt;</mark</b> |
 |               | See <a href="https://www.w3schools.com/tags/tag_head.asp">head tag</a> |
-|`<hr>`         | The `<hr>` tag defines a thematic break in an HTML page (e.g. a shift of topic). |
-|               | The `<hr>` element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page. |
+|<b><mark>&lt;hr&gt;</mark</b>         | The <b><mark>&lt;hr&gt;</mark</b> tag defines a thematic break in an HTML page (e.g. a shift of topic). |
+|               | The <b><mark>&lt;hr&gt;</mark</b> element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page. |
 |               | See <a href="https://www.w3schools.com/tags/tag_hr.asp">hr tag</a> |
-|`<html>`       | The `<html>` tag represents the root of an HTML document. |
-|               | The `<html>` tag is the container for all other HTML elements (except for the `<!DOCTYPE>` tag). |
-|               | Note: You should always include the lang attribute inside the `<html>` tag, to declare the language of the Web page. This is meant to assist search engines and browsers. |
-|               | `<!DOCTYPE html>` |
-|               | `<html lang="en">` |
-|               | `<head>`
-|               |   `<title>`Title of the document`</title>` |
-|               | `</head>` |
-|               | `<body>` |
-|               |   `<h1>`This is a heading`</h1>` |
-|               |   `<p>`This is a paragraph.`</p>` |
-|               | `</body>` |
-|               | `</html>` |
+|<b><mark>&lt;html&gt;</mark</b>       | The <b><mark>&lt;html&gt;</mark</b> tag represents the root of an HTML document. |
+|               | The <b><mark>&lt;html&gt;</mark</b> tag is the container for all other HTML elements (except for the <b><mark>&lt;!DOCTYPE&gt;</mark</b> tag). |
+|               | Note: You should always include the lang attribute inside the <b><mark>&lt;html&gt;</mark</b> tag, to declare the language of the Web page. This is meant to assist search engines and browsers. |
+|               | <b><mark>&lt;!DOCTYPE html&gt;</mark</b> |
+|               | <b><mark>&lt;html lang="en"&gt;</mark</b> |
+|               | <b><mark>&lt;head&gt;</mark</b>
+|               |   <b><mark>&lt;title&gt;</mark</b>Title of the document<b><mark>&lt;/title&gt;</mark</b> |
+|               | <b><mark>&lt;/head&gt;</mark</b> |
+|               | <b><mark>&lt;body&gt;</mark</b> |
+|               |   <b><mark>&lt;h1&gt;</mark</b>This is a heading<b><mark>&lt;/h1&gt;</mark</b> |
+|               |   <b><mark>&lt;p&gt;</mark</b>This is a paragraph.<b><mark>&lt;/p&gt;</mark</b> |
+|               | <b><mark>&lt;/body&gt;</mark</b> |
+|               | <b><mark>&lt;/html&gt;</mark</b> |
 |               | See <a href="https://www.w3schools.com/tags/tag_html.asp">html tag</a> |
-|`<img>`        | The `<img>` tag is used to embed an image in an HTML page. |
-|               | Images are not technically inserted into a web page; images are linked to web pages. The `<img>` tag creates a holding space for the referenced image. |
-|               | The `<img>` tag has two required attributes: |
+|<b><mark>&lt;img&gt;</mark</b>        | The <b><mark>&lt;img&gt;</mark</b> tag is used to embed an image in an HTML page. |
+|               | Images are not technically inserted into a web page; images are linked to web pages. The <b><mark>&lt;img&gt;</mark</b> tag creates a holding space for the referenced image. |
+|               | The <b><mark>&lt;img&gt;</mark</b> tag has two required attributes: |
 |               |   - src - Specifies the path to the image |
 |               |   - alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed |
 |               | Note: Also, always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads. |
-|               | Tip: To link an image to another document, simply nest the `<img>` tag inside an `<a>` tag (see example below). |
+|               | Tip: To link an image to another document, simply nest the <b><mark>&lt;img&gt;</mark</b> tag inside an <b><mark>&lt;a&gt;</mark</b> tag (see example below). |
 
 | Image tag | Attribute     | Value           | Description                        |
 |-----------|---------------|-----------------|-----------------------------------|
-| `<img>`   | alt            | text            | Specifies an alternate text for an image.  |
+| <b><mark>&lt;img&gt;</mark</b>   | alt            | text            | Specifies an alternate text for an image.  |
 |           | crossorigin    | anonymous       | Allow images from third-party sites that allow cross-origin access to be used with canvas. |
 |           |                | use-credentials |                          |
 |           | height         | pixels	       | Specifies the height of an image. |
@@ -3018,64 +3028,64 @@ Optional tags, cont'd
 
 |Tag            |Description  |
 |---------------|-------------|
-|`<input>`      | The `<input>` tag specifies an input field where the user can enter data. |
-|               | The `<input>` element is the most important form element. |
-|               | The `<input>` element can be displayed in several ways, depending on the type attribute. |
+|<b><mark>&lt;input&gt;</mark</b>      | The <b><mark>&lt;input&gt;</mark</b> tag specifies an input field where the user can enter data. |
+|               | The <b><mark>&lt;input&gt;</mark</b> element is the most important form element. |
+|               | The <b><mark>&lt;input&gt;</mark</b> element can be displayed in several ways, depending on the type attribute. |
 |               | The different input types are as follows: |
-|               | - `<input type="button">` |
-|               | - `<input type="checkbox">` |
-|               | - `<input type="color">` |
-|               | - `<input type="date">` |
-|               | - `<input type="datetime-local">` |
-|               | - `<input type="email">` |
-|               | - `<input type="file">` |
-|               | - `<input type="hidden">` |
-|               | - `<input type="image">` |
-|               | - `<input type="month">` |
-|               | - `<input type="number">` |
-|               | - `<input type="password">` |
-|               | - `<input type="radio">` |
-|               | - `<input type="range">` |
-|               | - `<input type="reset">` |
-|               | - `<input type="search">` |
-|               | - `<input type="submit">` |
-|               | - `<input type="tel">` |
-|               | - `<input type="text"> (default value)` |
-|               | - `<input type="time">` |
-|               | - `<input type="url">` |
-|               | - `<input type="week">` |
+|               | - <b><mark>&lt;input type="button"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="checkbox"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="color"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="date"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="datetime-local"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="email"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="file"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="hidden"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="image"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="month"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="number"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="password"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="radio"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="range"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="reset"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="search"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="submit"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="tel"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="text"&gt; (default value)</mark</b> |
+|               | - <b><mark>&lt;input type="time"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="url"&gt;</mark</b> |
+|               | - <b><mark>&lt;input type="week"&gt;</mark</b> |
 |               | Look at the <a href="https://www.w3schools.com/tags/att_input_type.asp">type</a> attribute to see examples for each input type! |
-|               | Tip: Always use the <label> tag to define labels for `<input type="text">`, `<input type="checkbox">`, `<input type="radio">`, `<input type="file">`, and `<input type="password">`. |
+|               | Tip: Always use the &lt;label&gt; tag to define labels for <b><mark>&lt;input type="text"&gt;</mark</b>, <b><mark>&lt;input type="checkbox"&gt;</mark</b>, <b><mark>&lt;input type="radio"&gt;</mark</b>, <b><mark>&lt;input type="file"&gt;</mark</b>, and <b><mark>&lt;input type="password"&gt;</mark</b>. |
 |               | See <a href="https://www.w3schools.com/tags/tag_input.asp">input tag</a> |
-|`<li>`         | The `<li>` tag defines a list item. |
-|               | The `<li>` tag is used inside ordered lists(`<ol>`), unordered lists (`<ul>`), and in menu lists (`<menu>`). |
-|               | In `<ul>` and `<menu>`, the list items will usually be displayed with bullet points. |
-|               | In `<ol>`, the list items will usually be displayed with numbers or letters. |
+|<b><mark>&lt;li&gt;</mark</b>         | The <b><mark>&lt;li&gt;</mark</b> tag defines a list item. |
+|               | The <b><mark>&lt;li&gt;</mark</b> tag is used inside ordered lists(<b><mark>&lt;ol&gt;</mark</b>), unordered lists (<b><mark>&lt;ul&gt;</mark</b>), and in menu lists (<b><mark>&lt;menu&gt;</mark</b>). |
+|               | In <b><mark>&lt;ul&gt;</mark</b> and <b><mark>&lt;menu&gt;</mark</b>, the list items will usually be displayed with bullet points. |
+|               | In <b><mark>&lt;ol&gt;</mark</b>, the list items will usually be displayed with numbers or letters. |
 |               | Tip: Use CSS to style lists. |
 |               | See <a href="https://www.w3schools.com/tags/tag_li.asp">li tag</a> |
-|`<link>`       | The `<link>` tag defines the relationship between the current document and an external resource. |
-|               | The `<link>` tag is most often used to link to external style sheets or to add a favicon to your website. |
-|               | The `<link>` element is an empty element, it contains attributes only.            |
+|<b><mark>&lt;link&gt;</mark</b>       | The <b><mark>&lt;link&gt;</mark</b> tag defines the relationship between the current document and an external resource. |
+|               | The <b><mark>&lt;link&gt;</mark</b> tag is most often used to link to external style sheets or to add a favicon to your website. |
+|               | The <b><mark>&lt;link&gt;</mark</b> element is an empty element, it contains attributes only.            |
 |               | See <a href="https://www.w3schools.com/tags/tag_link.asp">link tag</a> |
-|`<meta>`       | The `<meta>` tag defines metadata about an HTML document. Metadata is data (information) about data. |
-|               | `<meta>` tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. |
+|<b><mark>&lt;meta&gt;</mark</b>       | The <b><mark>&lt;meta&gt;</mark</b> tag defines metadata about an HTML document. Metadata is data (information) about data. |
+|               | <b><mark>&lt;meta&gt;</mark</b> tags always go inside the &lt;head&gt; element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. |
 |               | Metadata will not be displayed on the page, but is machine parsable. |
 |               | Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services. |
-|               | There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag (See "Setting The Viewport" example below). |
+|               | There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the &lt;meta&gt; tag (See "Setting The Viewport" example below). |
 |               | See <a href="https://www.w3schools.com/tags/tag_meta.asp">meta tag</a> |
-|`<optgroup>`   | The `<optgroup>` tag is used to group related options in a `<select>` element (drop-down list). |
+|<b><mark>&lt;optgroup&gt;</mark</b>   | The <b><mark>&lt;optgroup&gt;</mark</b> tag is used to group related options in a <b><mark>&lt;select&gt;</mark</b> element (drop-down list). |
 |               | If you have a long list of options, groups of related options are easier to handle for a user. |
 |               | See <a href="https://www.w3schools.com/tags/tag_optgroup.asp">optgroup tag</a> |
-|`<option>`     | The `<option>` tag defines an option in a select list. |
-|               | `<option>` elements go inside a `<select>`, `<optgroup>`, or `<datalist>` element. |
-|               | Note: The `<option>` tag can be used without any attributes, but you usually need the value attribute, which indicates what is sent to the server on form submission. |
-|               | Tip: If you have a long list of options, you can group related options within the `<optgroup>` tag. |
+|<b><mark>&lt;option&gt;</mark</b>     | The <b><mark>&lt;option&gt;</mark</b> tag defines an option in a select list. |
+|               | <b><mark>&lt;option&gt;</mark</b> elements go inside a <b><mark>&lt;select&gt;</mark</b>, <b><mark>&lt;optgroup&gt;</mark</b>, or <b><mark>&lt;datalist&gt;</mark</b> element. |
+|               | Note: The <b><mark>&lt;option&gt;</mark</b> tag can be used without any attributes, but you usually need the value attribute, which indicates what is sent to the server on form submission. |
+|               | Tip: If you have a long list of options, you can group related options within the <b><mark>&lt;optgroup&gt;</mark</b> tag. |
 |               | See <a href="https://www.w3schools.com/tags/tag_option.asp">option tag</a> |
-|`<p>`          | The `<p>` tag defines a paragraph. |
-|               | Browsers automatically add a single blank line before and after each `<p>` element. |
+|<b><mark>&lt;p&gt;</mark</b>          | The <b><mark>&lt;p&gt;</mark</b> tag defines a paragraph. |
+|               | Browsers automatically add a single blank line before and after each <b><mark>&lt;p&gt;</mark</b> element. |
 |               | Tip: Use CSS to style paragraphs. |
 |               | See <a href="https://www.w3schools.com/tags/tag_p.asp">p tag</a> |
-|`<param>`      | The `<param>` tag is used to define parameters for an `<object>` element. |
+|<b><mark>&lt;param&gt;</mark</b>      | The <b><mark>&lt;param&gt;</mark</b> tag is used to define parameters for an <b><mark>&lt;object&gt;</mark</b> element. |
 |               | See <a href="https://www.w3schools.com/tags/tag_param.asp">param tag</a> |
 
 | Attribute | Value | Description |
@@ -3087,59 +3097,59 @@ Optional tags, cont'd
 
 |Tag            |Description  |
 |---------------|-------------|
-|`<rp>`         | The `<rp>` tag can be used to provide parentheses around a ruby text, to be shown by browsers that do not support ruby annotations. |
-|               | Use `<rp>` together with `<ruby>` and `<rt>`: The `<ruby>` element consists of one or more characters that needs an explanation/pronunciation, and an `<rt>` element that gives that information, and an optional `<rp>` element that defines what to show for browsers that not support ruby annotations. |
+|<b><mark>&lt;rp&gt;</mark</b>         | The <b><mark>&lt;rp&gt;</mark</b> tag can be used to provide parentheses around a ruby text, to be shown by browsers that do not support ruby annotations. |
+|               | Use <b><mark>&lt;rp&gt;</mark</b> together with <b><mark>&lt;ruby&gt;</mark</b> and <b><mark>&lt;rt&gt;</mark</b>: The <b><mark>&lt;ruby&gt;</mark</b> element consists of one or more characters that needs an explanation/pronunciation, and an <b><mark>&lt;rt&gt;</mark</b> element that gives that information, and an optional `&lt;rp&gt;</mark</b> element that defines what to show for browsers that not support ruby annotations. |
 |               | See <a href="https://www.w3schools.com/tags/tag_rp.asp">rp tag</a> |
-|`<rt>`         | The `<rt>` tag defines an explanation or pronunciation of characters (for East Asian typography) in a ruby annotation.
-|               | Use `<rt>` together with `<ruby>` and `<rp>`: The `<ruby>` element consists of one or more characters that needs an explanation/pronunciation, and an `<rt>` element that gives that information, and an optional `<rp>` element that defines what to show for browsers that not support ruby annotations.  |
+|<b><mark>&lt;rt&gt;</mark</b>         | The <b><mark>&lt;rt&gt;</mark</b> tag defines an explanation or pronunciation of characters (for East Asian typography) in a ruby annotation.
+|               | Use <b><mark>&lt;rt&gt;</mark</b> together with <b><mark>&lt;ruby&gt;</mark</b> and <b><mark>&lt;rp&gt;</mark</b>: The <b><mark>&lt;ruby&gt;</mark</b> element consists of one or more characters that needs an explanation/pronunciation, and an <b><mark>&lt;rt&gt;</mark</b> element that gives that information, and an optional <b><mark>&lt;rp&gt;</mark</b> element that defines what to show for browsers that not support ruby annotations.  |
 |               | See <a href="https://www.w3schools.com/tags/tag_rt.asp">rt tag</a> |
-|`<source>`     | The `<source>` tag is used to specify multiple media resources for media elements, such as `<video>`, `<audio>`, and `<picture>`. |
-|               | The `<source>` tag allows you to specify alternative video/audio/image files which the browser may choose from, based on browser support or viewport width. The browser will choose the first `<source>` it supports. |
+|<b><mark>&lt;source&gt;</mark</b>     | The <b><mark>&lt;source&gt;</mark</b> tag is used to specify multiple media resources for media elements, such as <b><mark>&lt;video&gt;</mark</b>, <b><mark>&lt;audio&gt;</mark</b>, and <b><mark>&lt;picture&gt;</mark</b>. |
+|               | The <b><mark>&lt;source&gt;</mark</b> tag allows you to specify alternative video/audio/image files which the browser may choose from, based on browser support or viewport width. The browser will choose the first <b><mark>&lt;source&gt;</mark</b> it supports. |
 |               | See <a href="https://www.w3schools.com/tags/tag_source.asp">source tag</a> |
-|`<tbody>`      | The `<tbody>` tag is used to group the body content in an HTML table. |
-|               | The `<tbody>` element is used in conjunction with the `<thead>` and `<tfoot>` elements to specify each part of a table (body, header, footer). |
+|<b><mark>&lt;tbody&gt;</mark</b>      | The <b><mark>&lt;tbody&gt;</mark</b> tag is used to group the body content in an HTML table. |
+|               | The <b><mark>&lt;tbody&gt;</mark</b> element is used in conjunction with the <b><mark>&lt;thead&gt;</mark</b> and <b><mark>&lt;tfoot&gt;</mark</b> elements to specify each part of a table (body, header, footer). |
 |               | Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page. |
-|               | Note: The `<tbody>` element must have one or more `<tr>` tags inside. |
-|               | The `<tbody>` tag must be used in the following context: As a child of a `<table>` element, after any `<caption>`, `<colgroup>`, and `<thead>` elements. |
-|               | Tip: The `<thead>`, `<tbody>`, and `<tfoot>` elements will not affect the layout of the table by default. However, you can use CSS to style these elements (see example below)!  |
+|               | Note: The <b><mark>&lt;tbody&gt;</mark</b> element must have one or more <b><mark>&lt;tr&gt;</mark</b> tags inside. |
+|               | The <b><mark>&lt;tbody&gt;</mark</b> tag must be used in the following context: As a child of a <b><mark>&lt;table&gt;</mark</b> element, after any <b><mark>&lt;caption&gt;</mark</b>, <b><mark>&lt;colgroup&gt;</mark</b>, and <b><mark>&lt;thead&gt;</mark</b> elements. |
+|               | Tip: The <b><mark>&lt;thead&gt;</mark</b>, <b><mark>&lt;tbody&gt;</mark</b>, and <b><mark>&lt;tfoot&gt;</mark</b> elements will not affect the layout of the table by default. However, you can use CSS to style these elements (see example below)!  |
 |               | See <a href="https://www.w3schools.com/tags/tag_tbody.asp">tbody tag</a> |
-|`<td>`         | The `<td>` tag defines a standard data cell in an HTML table. |
+|<b><mark>&lt;td&gt;</mark</b>         | The <b><mark>&lt;td&gt;</mark</b> tag defines a standard data cell in an HTML table. |
 |               | An HTML table has two kinds of cells: |
-|               |   - Header cells - contains header information (created with the `<th>` element) |
-|               |   - Data cells - contains data (created with the `<td>` element) |
-|               | The text in `<td>` elements are regular and left-aligned by default. |
-|               | The text in `<th>` elements are bold and centered by default. |
+|               |   - Header cells - contains header information (created with the <b><mark>&lt;th&gt;</mark</b> element) |
+|               |   - Data cells - contains data (created with the <b><mark>&lt;td&gt;<b><mark> element) |
+|               | The text in <b><mark>&lt;td&gt;</mark</b> elements are regular and left-aligned by default. |
+|               | The text in <b><mark>&lt;th&gt;</mark</b> elements are bold and centered by default. |
 |               | See <a href="https://www.w3schools.com/tags/tag_td.asp">td tag</a> |
-|`<tfoot>`      | The `<tfoot>` tag is used to group footer content in an HTML table. |
-|               | The `<tfoot>` element is used in conjunction with the `<thead>` and `<tbody>` elements to specify each part of a table (footer, header, body). |
+|<b><mark>&lt;tfoot&gt;</mark</b>      | The <b><mark>&lt;tfoot&gt;</mark</b> tag is used to group footer content in an HTML table. |
+|               | The <b><mark>&lt;tfoot&gt;</mark</b> element is used in conjunction with the <b><mark>&lt;thead&gt;</mark</b> and <b><mark>&lt;tbody&gt;</mark</b> elements to specify each part of a table (footer, header, body). |
 |               | Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page. |
-|               | Note: The `<tfoot>` element must have one or more `<tr>` tags inside. |
-|               | The `<tfoot>` tag must be used in the following context: As a child of a `<table>` element, after any `<caption>`, `<colgroup>`, `<thead>`, and `<tbody>` elements. |
-|               | Tip: The `<thead>`, `<tbody>`, and `<tfoot>` elements will not affect the layout of the table by default. However, you can use CSS to style these elements (see example below)! |
+|               | Note: The <b><mark>&lt;tfoot&gt;</mark</b> element must have one or more <b><mark>&lt;tr&gt;</mark</b> tags inside. |
+|               | The <b><mark>&lt;tfoot&gt;</mark</b> tag must be used in the following context: As a child of a <b><mark>&lt;table&gt;</mark</b> element, after any <b><mark>&lt;caption&gt;</mark</b>, <b><mark>&lt;colgroup&gt;</mark</b>, <b><mark>&lt;thead&gt;</mark</b>, and <b><mark>&lt;tbody&gt;</mark</b> elements. |
+|               | Tip: The <b><mark>&lt;thead&gt;</mark</b>, <b><mark>&lt;tbody&gt;</mark</b>, and <b><mark>&lt;tfoot&gt;</mark</b> elements will not affect the layout of the table by default. However, you can use CSS to style these elements (see example below)! |
 |               | See <a href="https://www.w3schools.com/tags/tag_tfoot.asp">tfoot tag</a> |
-|`<th>`         | The `<th>` tag defines a header cell in an HTML table. |
+|<b><mark>&lt;th&gt;</mark</b>         | The <b><mark>&lt;th&gt;</mark</b> tag defines a header cell in an HTML table. |
 |               | An HTML table has two kinds of cells: |
-|               |   - Header cells - contains header information (created with the `<th>` element) |
-|               |   - Data cells - contains data (created with the `<td>` element) |
-|               | The text in `<th>` elements are bold and centered by default. |
-|               | The text in `<td>` elements are regular and left-aligned by default. |
+|               |   - Header cells - contains header information (created with the <b><mark>&lt;th&gt;</mark</b> element) |
+|               |   - Data cells - contains data (created with the <b><mark>&lt;td&gt;</mark</b> element) |
+|               | The text in <b><mark>&lt;th&gt;</mark</b> elements are bold and centered by default. |
+|               | The text in <b><mark>&lt;td&gt;</mark</b> elements are regular and left-aligned by default. |
 |               | See <a href="https://www.w3schools.com/tags/tag_th.asp">th tag</a> |
-|`<thead>`      | The `<thead>` tag is used to group header content in an HTML table. |
-|               | The `<thead>` element is used in conjunction with the `<tbody>` and `<tfoot>` elements to specify each part of a table (header, body, footer). |
+|<b><mark>&lt;thead&gt;</mark</b>      | The <b><mark>&lt;thead&gt;</mark</b> tag is used to group header content in an HTML table. |
+|               | The <b><mark>&lt;thead&gt;</mark</b> element is used in conjunction with the <b><mark>&lt;tbody&gt;</mark</b> and <b><mark>&lt;tfoot&gt;` elements to specify each part of a table (header, body, footer). |
 |               | Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page. |
-|               | Note: The `<thead>` element must have one or more `<tr>` tags inside. |
-|               | The `<thead>` tag must be used in the following context: As a child of a `<table>` element, after any `<caption>` and `<colgroup>` elements, and before any `<tbody>`, `<tfoot>`, and `<tr>` elements. |
-|               | Tip: The `<thead>`, `<tbody>`, and `<tfoot>` elements will not affect the layout of the table by default. However, you can use CSS to style these elements (see example below)! |
+|               | Note: The <b><mark>&lt;thead&gt;</mark</b> element must have one or more <b><mark>&lt;tr&gt;</mark</b> tags inside. |
+|               | The <b><mark>&lt;thead&gt;</mark</b> tag must be used in the following context: As a child of a <b><mark>&lt;table&gt;</mark</b> element, after any <b><mark>&lt;caption&gt;</mark</b> and <b><mark>&lt;colgroup&gt;</mark</b> elements, and before any <b><mark>&lt;tbody&gt;</mark</b>, <b><mark>&lt;tfoot&gt;</mark</b>, and <b><mark>&lt;tr&gt;</mark</b> elements. |
+|               | Tip: The <b><mark>&lt;thead&gt;</mark</b>, <b><mark>&lt;tbody&gt;</mark</b>, and <b><mark>&lt;tfoot&gt;<b><mark> elements will not affect the layout of the table by default. However, you can use CSS to style these elements (see example below)! |
 |               | See <a href="https://www.w3schools.com/tags/tag_thead.asp">thead tag</a> |
-|`<tr>`         | The `<tr>` tag defines a row in an HTML table. |
-|               | A `<tr>` element contains one or more `<th>` or `<td>` elements. |
+|<b><mark>&lt;tr&gt;</mark</b>         | The <b><mark>&lt;tr&gt;</mark</b> tag defines a row in an HTML table. |
+|               | A <b><mark>&lt;tr&gt;</mark</b> element contains one or more <b><mark>&lt;th&gt;</mark</b> or <b><mark>&lt;td&gt;</mark</b> elements. |
 |               | See <a href="https://www.w3schools.com/tags/tag_tr.asp">tr tag</a> |
-|`<track>`      | The `<track>` tag specifies text tracks for `<audio>` or `<video>` elements. |
+|<b><mark>&lt;track&gt;</mark</b>      | The <b><mark>&lt;track&gt;</mark</b> tag specifies text tracks for <b><mark>&lt;audio&gt;</mark</b> or <b><mark>&lt;video&gt;</mark</b> elements. |
 |               | This element is used to specify subtitles, caption files or other files containing text, that should be visible when the media is playing. |
 |               | Tracks are formatted in WebVTT format (.vtt files). |
 |               | See <a href="https://www.w3schools.com/tags/tag_track.asp">track tag</a> |
-|`<wbr>`        | The `<wbr>` (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break. |
-|               | Tip: When a word is too long, the browser might break it at the wrong place. You can use the `<wbr>` element to add word break opportunities. |
+|<b><mark>&lt;wbr&gt;</mark</b>        | The <b><mark>&lt;wbr&gt;</mark</b> (Word Break Opportunity) tag specifies where in a text it would be ok to add a line-break. |
+|               | Tip: When a word is too long, the browser might break it at the wrong place. You can use the <b><mark>&lt;wbr&gt;</mark</b> element to add word break opportunities. |
 |               | See <a href="https://www.w3schools.com/tags/tag_wbr.asp">wbr tag</a> |
 
 <div align="right">
@@ -4958,7 +4968,9 @@ potential of introducing errors.</p>
 
 <!-- end of html tables -->
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="06-html-lists">06. HTML Lists</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>An HTML list is a record of related information used to display the data or 
 any information on web pages in the ordered or unordered form.</p>
 
@@ -5219,7 +5231,9 @@ and definition list. We have explained all three list types with examples.</p>
 <html>
 <body>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Remove the Iframe Border</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To remove the default border of the iframe, use CSS:</p>
 
 <iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe></pre>
@@ -5346,14 +5360,17 @@ function showPosition(position) {
   "<br>Longitude: " + position.coords.longitude;
 }
 ```
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="13-html-dragndrop">13. HTML Drag 'n Drop</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Drag and Drop is a very interactive and user-friendly concept that makes it easier to move an object to a different location by grabbing it. This allows the user to click and hold the mouse button over an element, drag it to another location, and release the mouse button to drop the element there.
 
 With HTML5, implementing drag-and-drop functionality has become easier and more streamlined, as it supports built-in drag-and-drop events. These events can be applied to any element with minimal coding.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="14-html-webworker">14. HTML Web Worker</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Web Workers are a simple means for web content to run scripts in background threads. The worker thread can perform tasks without interfering with the user interface. In addition, they can make network requests using the fetch() or XMLHttpRequest APIs. Once created, a worker can send messages to the JavaScript code that created it by posting messages to an event handler specified by that code (and vice versa).
 
 This article provides a detailed introduction to using web workers.
@@ -5363,6 +5380,7 @@ The worker context is represented by a DedicatedWorkerGlobalScope object in the 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="15-html-access">15. HTML Accessibility</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Always write HTML code with accessibility in mind!
 
 Provide the user a good way to navigate and interact with your site. Make your HTML code as semantic as possible.
@@ -5370,6 +5388,7 @@ Web accessibility is about building digital spaces that are inclusive and naviga
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="16-misc">16. Miscellaneous</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The Miscellaneous Tags field allows you to add metadata, scripts, or additional CSS styles to a page's Head section. Information in this field must conform to HTML standards. Miscellaneous Tags can help with search by telling SEO engines what the exact content of the pages is. Keywords help group together types of articles by important phrases.   
 Important Note 
 Page tags are entered in HTML format, whereas keywords is simple text content
