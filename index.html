@@ -80,7 +80,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="1-intro">
   <ol type="1">
-    <li>Introduction</h2>
+    <li>Introduction</li></h2>
       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       <h2>Q. What is difference between HTML and XHTML?</h2>
       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -197,14 +197,14 @@ id names are case insensitive. In standards mode they are case sensitive.</p>
 <p>There are five new form elements in the HTML5 forms specification: &lt;datalist&gt;, 
 &lt;output&gt;, &lt;progress&gt;, and &lt;meter&gt;.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol type="1">
-  <li>Datalist Tag</h4>
+<h4>
+  <ol type="1">
+    <li>Datalist Tag</li>
+  </ol></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Allows to attach a list of suggestions to a text input element. As soon as the user begins to 
 type in the text field, the list of suggestions appears and the user can choose from the 
 suggestions with the mouse.</p>
-  </li>
-</ol>
 <div class="sourceCode" id="cb2"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Enter your favorite browser name:<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;text&quot;</span><span class="ot"> list</span><span class="op">=</span><span class="st">&quot;browsers&quot;</span><span class="ot"> name</span><span class="op">=</span><span class="st">&quot;favorite_browser&quot;</span><span class="dt">&gt;</span></span>
@@ -216,13 +216,11 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">option</span><span class="ot"> value</span><span class="op">=</span><span class="st">&quot;Safari&quot;</span><span class="dt">&gt;</span></span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">datalist</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="2" type="1">
-<li>Meter Tag</h4>
+<h4><ol start="2" type="1"><li>Meter Tag</li></ol></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Indicates a numeric value that falls within a range. The tag supports a number of attributes: 
 value: If you don't specify a value, the first numeric value inside the &lt;meter&gt;&lt;/meter&gt; 
-pair becomes the value.</p></li>
-</ol>
+pair becomes the value.</p>
 <ul>
   <li><b>max</b>: The maximum possible value of the item.</li>
   <li><b>min</b>: The minimum possible value of the item.</li>
@@ -235,11 +233,13 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Total Score: <span class="dt">&lt;</span><span class="kw">meter</span><span class="ot"> value</span><span class="op">=</span><span class="st">&quot;6&quot;</span><span class="ot"> min</span><span class="op">=</span><span class="st">&quot;0&quot;</span><span class="ot"> max</span><span class="op">=</span><span class="st">&quot;10&quot;</span><span class="dt">&gt;</span>6 out of 10<span class="dt">&lt;/</span><span class="kw">meter</span><span class="dt">&gt;&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Pollution Level: <span class="dt">&lt;</span><span class="kw">meter</span><span class="ot"> low</span><span class="op">=</span><span class="st">&quot;60&quot;</span><span class="ot"> high</span><span class="op">=</span><span class="st">&quot;80&quot;</span><span class="ot"> max</span><span class="op">=</span><span class="st">&quot;100&quot;</span><span class="ot"> value</span><span class="op">=</span><span class="st">&quot;85&quot;</span><span class="dt">&gt;</span>Very High<span class="dt">&lt;/</span><span class="kw">meter</span><span class="dt">&gt;&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="3" type="1"><li>Output Tag</h4>
+<h4>
+  <ol start="3" type="1">
+    <li>Output Tag</li>
+  </ol>
+</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It indicates a section of the page that can be modified by a script (usually JavaScript).</p>
-</li>
-</ol>
 <div class="sourceCode" id="cb4"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">form</span><span class="ot"> oninput</span><span class="op">=</span><span class="st">&quot;result.value=parseInt(a.value)+parseInt(b.value)&quot;</span><span class="dt">&gt;</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;range&quot;</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;a&quot;</span><span class="ot"> value</span><span class="op">=</span><span class="st">&quot;50&quot;</span><span class="dt">&gt;</span> +</span>
@@ -248,9 +248,10 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">form</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><ol start="4" type="1">
-<li>Progress Tag</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
+<li>Progress Tag</li>
 </ol>
+</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Indicates how much of a task has been completed (often marked as a percentage). It is expected 
 to be modified through JavaScript code.</p>
 
@@ -609,7 +610,7 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb12-1"><a href=
 <h2>Q. What are the physical tags and logical tags in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol type="1"><li>Physical Tags:</h4>
+<h4><ol type="1"><li>Physical Tags:</li></ol></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Physical tags are used to indicate how a particular character is to be formatted. Any physical 
 style tag may contain any item allowed in text, including conventional text, images, line breaks, 
@@ -668,7 +669,7 @@ etc.</p>
   </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="2" type="1"><li>Logical Tags:</h4>
+<h4><ol start="2" type="1"><li>Logical Tags:</li></ol></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Logical tags are used to tell the browser what kind of text is written inside the 
 tags. Logical tags are also known as Structural tags because they specify the structure 
@@ -831,14 +832,13 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb14-1"><a href=
 <h2>Q. What does <mark><b>async</b></mark> and <mark><b>defer</b></mark> refer in script tag?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol type="1"><li>Async:</h4>
+<h4><ol type="1"><li>Async:</li></ol></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Downloads the script file during HTML parsing and will pause the HTML parser to 
 execute it when it has finished downloading.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="sourceCode" id="cb15"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- </span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">    With async (asynchronous), browser will continue to load the HTML </span></span>
@@ -847,14 +847,13 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb15-1"><a href=
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- Google Analytics is usually added like this --&gt;</span></span>
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> async src</span><span class="op">=</span><span class="st">&quot;https://google-analytics.com/analytics.js&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="2" type="1"><li>Defer:</h4>
+<h4><ol start="2" type="1"><li>Defer:</li></ol></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Defer downloads the script file during HTML parsing and will only execute it after 
 the HTML parser has completed. Not all browsers support this.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="sourceCode" id="cb16"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- </span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">    With defer, browser will run your script when the page finished parsing. </span></span>
@@ -1116,7 +1115,7 @@ class="sourceCode js"><code class="sourceCode javascript"><span id="cb26-1"><a h
 <h2>Q. Why use IndexedDB instead of WebSQL in HTML5?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><ol type="1"><li>WebSQL</h3>
+<h3><ol type="1"><li>WebSQL</li></ol></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>It is an API that is only supported in Chrome and Safari (and Android
 and iOS by extension). It provides an asynchronous, transactional
@@ -1170,7 +1169,7 @@ records in a table matching the same structure.
 </li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><ol start="2" type="1"><li>IndexedDB</h3>
+<h3><ol start="2" type="1"><li>IndexedDB</li></ol></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 It is the successor to both <b>LocalStorage</b> and <b>WebSQL</b>,
@@ -1210,12 +1209,8 @@ Decent browser support: Chrome, Firefox, mobile FF, IE10.
 <h4>Disadvantages</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-Very complex API resulting in large amounts of nested callbacks.
-</li>
-</ul></li>
-</ol></li>
-</ol>
+  <li>Very complex API resulting in large amounts of nested callbacks.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain Application Cache in HTML5. OR What is a manifest file in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1425,9 +1420,8 @@ options you've given. For the datalist element, it is suggested that the
 user select one of the options you've given, but he can actually enter
 anything he wants in the input.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol type="1"><li>Select:</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
+<h4><ol type="1"><li>Select:</li></ol></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="sourceCode" id="cb35"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">select</span><span class="ot"> name</span><span class="op">=</span><span class="st">&quot;browser&quot;</span><span class="dt">&gt;</span></span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">option</span><span class="ot"> value</span><span class="op">=</span><span class="st">&quot;firefox&quot;</span><span class="dt">&gt;</span>Firefox<span class="dt">&lt;/</span><span class="kw">option</span><span class="dt">&gt;</span></span>
@@ -1437,9 +1431,8 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb35-1"><a href=
 <span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">option</span><span class="ot"> value</span><span class="op">=</span><span class="st">&quot;safari&quot;</span><span class="dt">&gt;</span>Safari<span class="dt">&lt;/</span><span class="kw">option</span><span class="dt">&gt;</span></span>
 <span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">select</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="2" type="1"><li>Datalist:</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
+<h4><ol start="2" type="1"><li>Datalist:</li></ol></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="sourceCode" id="cb36"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> type</span><span class="op">=</span><span class="st">&quot;text&quot;</span><span class="ot"> list</span><span class="op">=</span><span class="st">&quot;browsers&quot;</span><span class="dt">&gt;</span></span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">datalist</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;browsers&quot;</span><span class="dt">&gt;</span></span>
@@ -1904,7 +1897,7 @@ suitable HTML5 element or attribute exists.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="assets/lib/img/frame-full.jpg" alt="Browser Engine" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol type="1"><li>JavaScript:</h4>
+<h4><ol type="1"><li>JavaScript:</li></ol></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Typically JavaScript is used to handle work that will result in visual
 changes, whether it's jQuery's animate function, sorting a data set, or
@@ -1912,14 +1905,14 @@ adding DOM elements to the page. It doesn't have to be JavaScript that
 triggers a visual change, though: CSS Animations, Transitions, and the
 Web Animations API are also commonly used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="2" type="1"><li>Style:</h4>
+<h4><ol start="2" type="1"><li>Style:</li></ol></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This is the process of figuring out which CSS rules apply to which
 elements based on matching selectors, for example, .headline or .nav
 &gt; .nav__item. From there, once rules are known, they are applied and
 the final styles for each element are calculated.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="3" type="1"><li>Layout:</h4>
+<h4><ol start="3" type="1"><li>Layout:</li></ol></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Once the browser knows which rules apply to an element it can begin to
 calculate how much space it takes up and where it is on screen. The
@@ -1928,25 +1921,20 @@ the width of the &lt;body&gt; element typically affects its children's
 widths and so on all the way up and down the tree, so the process can be
 quite involved for the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="4" type="1"><li>Paint:</h4>
+<h4><ol start="4" type="1"><li>Paint:</li></ol></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Painting is the process of filling in pixels. It involves drawing out
 text, colors, images, borders, and shadows, essentially every visual
 part of the elements. The drawing is typically done onto multiple
 surfaces, often called layers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="5" type="1"><li>Compositing:</h4>
+<h4><ol start="5" type="1"><li>Compositing:</li></ol></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Since the parts of the page were drawn into potentially multiple layers
 they need to be drawn to the screen in the correct order so that the
 page renders correctly. This is especially important for elements that
 overlap another, since a mistake could result in one element appearing
-over the top of another incorrectly.</p></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol>
+over the top of another incorrectly.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. Explain about HTML Layout Engines used by browsers?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2036,25 +2024,26 @@ Internet Explorer browser and Microsoft Outlook email client.
 resize, hide, shrink, or enlarge, a website, to make it look good on all
 devices (desktops, tablets, and phones).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol type="1"><li>Setting the viewport:</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
+<h4><ol type="1"><li>Setting the viewport:</li></ol></h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="sourceCode" id="cb42"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> name</span><span class="op">=</span><span class="st">&quot;viewport&quot;</span><span class="ot"> content</span><span class="op">=</span><span class="st">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="2" type="1"><li>Responsive Images:</h4>
+<h4><ol start="2" type="1"><li>Responsive Images:</li></ol></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>If the CSS width property is set to 100%, the image will be responsive
-and scale up and down.</p></li>
-</ol>
+and scale up and down.</p>
 <div class="sourceCode" id="cb43"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;img.png&quot;</span><span class="ot"> style</span><span class="op">=</span><span class="st">&quot;width:100%;&quot;</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="3" type="1"><li>Show different Images depending on Browser Width:</h4>
+<h4>
+  <ol start="3" type="1">
+    <li>Show different Images depending on Browser Width:</li>
+  </ol>
+</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The HTML &lt;picture&gt; element allows you to define different images
-for different browser window sizes.</p></li>
-</ol>
+for different browser window sizes.</p>
 <div class="sourceCode" id="cb44"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">picture</span><span class="dt">&gt;</span></span>
 <span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">source</span><span class="ot"> srcset</span><span class="op">=</span><span class="st">&quot;img_small.jpg&quot;</span><span class="ot"> media</span><span class="op">=</span><span class="st">&quot;(max-width: 600px)&quot;</span><span class="dt">&gt;</span></span>
@@ -2063,23 +2052,24 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb44-1"><a href=
 <span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;img_small.jpg&quot;</span><span class="ot"> alt</span><span class="op">=</span><span class="st">&quot;Image&quot;</span><span class="dt">&gt;</span></span>
 <span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">picture</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="4" type="1"><li>Responsive Text Size:</h4>
+<h4><ol start="4" type="1"><li>Responsive Text Size:</li></ol></h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 The text size can be set with a “vw” unit, which means the “viewport
 width”. That way the text size will follow the size of the browser
 window.
-</p></li>
-</ol>
+</p>
 <div class="sourceCode" id="cb45"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h1</span><span class="ot"> style</span><span class="op">=</span><span class="st">&quot;font-size:10vw&quot;</span><span class="dt">&gt;</span>Hello World<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><ol start="5" type="1"><li>Media Queries:</h4>
+<h4>
+<ol start="5" type="1">
+<li>Media Queries:</li>
+</ol>
+</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Using media queries you can define completely different styles for
 different browser sizes.</p>
-</li>
-</ol>
 <div class="sourceCode" id="cb46"><pre
 class="sourceCode css"><code class="sourceCode css"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">/* Use a media query to add a breakpoint at 800px: */</span></span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="im">@media</span> <span class="an">screen</span> <span class="kw">and</span> <span class="fu">(</span><span class="kw">max-width</span><span class="ch">:</span> <span class="dv">800</span><span class="dt">px</span><span class="fu">)</span> {</span>
@@ -2105,15 +2095,15 @@ Yes
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol type="1">
-<li>High Resolution Time API
+<li>High Resolution Time API</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 The High Resolution Time API provides the current time in
 sub-millisecond resolution and such that it is not subject to system
 clock skew or adjustments.
-</p></li>
-</ol>
+</p>
 <p>
 It exposes only one method, that belongs to the
 <mark>window.performance</mark> object, called <mark>now()</mark>. It
@@ -2127,16 +2117,15 @@ class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb48
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="2" type="1">
-<li>User Timing API
+<li>User Timing API</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 It allows us to accurately measure and report the performance of a
 section of JavaScript code. It deals with two main concepts: mark and
 measure. The former represents an instant (timestamp), while the latter
-represents the time elapsed between two marks.
-</p></li>
-</ol>
+represents the time elapsed between two marks.</p>
 <div class="sourceCode" id="cb49"><pre
 class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="bu">performance</span><span class="op">.</span><span class="fu">mark</span>(<span class="st">&quot;startFoo&quot;</span>)<span class="op">;</span></span>
 <span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="co">// A time consuming function</span></span>
@@ -2147,7 +2136,8 @@ class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb49
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="3" type="1">
-<li>Network Information API
+<li>Network Information API</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -2251,7 +2241,8 @@ agent ( saveData )
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="4" type="1">
-<li>Vibration API
+<li>Vibration API</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -2260,16 +2251,15 @@ It exposes only one method, <mark>vibrate()</mark>, that belongs to the
 specifying the duration of the vibration in milliseconds. The parameter
 can be either an integer or an array of integers. In the second case,
 it's interpreted as alternating vibration times and pauses.
-</p></li>
-</ol></li>
-</ol>
+</p>
 <div class="sourceCode" id="cb50"><pre
 class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Vibrate once for 2 seconds</span></span>
 <span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="bu">navigator</span><span class="op">.</span><span class="fu">vibrate</span>(<span class="dv">2000</span>)<span class="op">;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="5" type="1">
-<li>Battery Status API
+<li>Battery Status API</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -2281,15 +2271,15 @@ charged, the seconds remaining until the battery is fully discharged,
 and the current level of the battery. These properties belongs to the
 <mark>battery</mark> property of the <mark>window.navigator</mark>
 object.
-</p></li>
-</ol>
+</p>
 <div class="sourceCode" id="cb51"><pre
 class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Retrieves the percentage of the current level of the device&#39;s battery</span></span>
 <span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> percentageLevel <span class="op">=</span> <span class="bu">navigator</span><span class="op">.</span><span class="at">battery</span><span class="op">.</span><span class="at">level</span> <span class="op">*</span> <span class="dv">100</span><span class="op">;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="6" type="1">
-<li>Page Visibility API
+<li>Page Visibility API</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -2297,15 +2287,15 @@ The Page Visibility API enables us to determine the current visibility
 state of the page. The Page Visibility API is especially useful for
 saving resources and improving performance by letting a page avoid
 performing unnecessary tasks when the document isn't visible.
-</p></li>
-</ol>
+</p>
 <div class="sourceCode" id="cb52"><pre
 class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co">//document.hidden retuns true if page is not visible.</span></span>
 <span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&#39;Page Visibility: &#39;</span><span class="op">+</span><span class="bu">document</span><span class="op">.</span><span class="at">hidden</span>)<span class="op">;</span> </span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="7" type="1">
-<li>Fullscreen API
+<li>Fullscreen API</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -2313,9 +2303,7 @@ The Fullscreen API provides a way to request fullscreen display from the
 user, and exit this mode when desired. This API exposes two methods,
 <mark>requestFullscreen()</mark> and <mark>exitFullscreen()</mark>,
 allowing us to request an element to become fullscreen and to exit
-fullscreen.
-</p></li>
-</ol>
+fullscreen.</p>
 <div class="sourceCode" id="cb53"><pre
 class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="bu">document</span><span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">&quot;keypress&quot;</span><span class="op">,</span> <span class="kw">function</span>(e) {</span>
 <span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (e<span class="op">.</span><span class="at">keyCode</span> <span class="op">===</span> <span class="dv">13</span>) { <span class="co">// Enter Key</span></span>
@@ -2488,10 +2476,10 @@ photos, or create animations.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><ol type="1">
-<li>Colors, Styles, and Shadows:
-</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
+<li>Colors, Styles, and Shadows:</li>
 </ol>
+</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table>
 <colgroup>
 <col style="width: 14%" />
@@ -2537,7 +2525,8 @@ shape.</td>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="2" type="1">
-<li>Line Styles:
+<li>Line Styles:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
@@ -2594,7 +2583,8 @@ Sets or returns the maximum miter length..
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="3" type="1">
-<li>Rectangles:
+<li>Rectangles:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
@@ -2647,13 +2637,12 @@ Clears the specified pixels within a given rectangle.
 </tr>
 </tbody>
 </table>
-</div></li>
-</ol></li>
-</ol>
+</div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="4" type="1">
-<li>Paths:
+<li>Paths:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
@@ -2752,7 +2741,8 @@ Creates an arc/curve between two tangents.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="5" type="1">
-<li>Transformations:
+<li>Transformations:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
@@ -2818,7 +2808,8 @@ transform().
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="6" type="1">
-<li>Text:
+<li>Text:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div role="region" tabindex="0">
@@ -2890,10 +2881,7 @@ Returns an object that contain the width of the specified text.
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 01: HTML5 Canvas for Text</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol></li>
-</ol></li>
-</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="sourceCode" id="cb57"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span>Text<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">canvas</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;text&quot;</span><span class="ot"> width</span><span class="op">=</span><span class="st">&quot;200&quot;</span><span class="ot"> height</span><span class="op">=</span><span class="st">&quot;100&quot;</span><span class="ot"> </span><span class="dt">&gt;&lt;/</span><span class="kw">canvas</span><span class="dt">&gt;</span></span>
@@ -2956,16 +2944,15 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb60-1"><a href=
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol type="1">
-<li>SVG:
+<li>SVG:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 The Scalable Vector Graphics (SVG) is an XML-based image format that is
 used to define two-dimensional vector based graphics for the web. Unlike
 raster image (e.g. .jpg, .gif, .png, etc.), a vector image can be scaled
-up or down to any extent without losing the image quality.
-</p></li>
-</ol>
+up or down to any extent without losing the image quality.</p>
 <p>
 There are following advantages of using SVG over other image formats
 like JPEG, GIF, PNG, etc.
@@ -3015,7 +3002,8 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb61-1"><a href=
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="2" type="1">
-<li>Canvas:
+<li>Canvas:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -3028,8 +3016,7 @@ paths, boxes, circles, text &amp; adding images.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="sourceCode" id="cb62"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
 <span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="dt">&gt;</span></span>
@@ -3291,14 +3278,15 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb64-1"><a href=
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol type="1">
-<li>Deprecated Tags:
+<li>Deprecated Tags:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 The following elements are not available in HTML5 anymore and their
 function is better handled by CSS.
-</p></li>
-</ol>
+</p>
+
 <div role="region" tabindex="0">
 <table>
 <caption>
@@ -3489,10 +3477,10 @@ Defins underlined text.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="2" type="1">
-<li>Deprecated Attributes:
-</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
+<li>Deprecated Attributes:</li>
 </ol>
+</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table>
 <colgroup>
 <col style="width: 48%" />
@@ -3731,7 +3719,8 @@ browser sniffing.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol type="1">
-<li>Using Modernizr with CSS:
+<li>Using Modernizr with CSS:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -3740,8 +3729,7 @@ the root element (&lt;html&gt; for websites). This means adding the
 class for each feature when it is supported, and adding it with a no-
 prefix when it is not (e.g. <mark>.feature</mark> or
 <mark>.no-feature</mark>).
-</p></li>
-</ol>
+</p>
 <div class="sourceCode" id="cb65"><pre
 class="sourceCode css"><code class="sourceCode css"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.no-cssgradients</span> <span class="fu">.header</span> {</span>
 <span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background</span><span class="ch">:</span> <span class="fu">url(</span><span class="st">&quot;images/glossybutton.png&quot;</span><span class="fu">)</span><span class="op">;</span></span>
@@ -3753,13 +3741,13 @@ class="sourceCode css"><code class="sourceCode css"><span id="cb65-1"><a href="#
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="2" type="1">
-<li>Using Modernizr with JavaScript:
+<li>Using Modernizr with JavaScript:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 <mark>Modernizr</mark> keeps track of the results of all of it's feature
-detections via the <mark>Modernizr</mark> object.</li>
-</ol>
+detections via the <mark>Modernizr</mark> object.</p>
 <div class="sourceCode" id="cb66"><pre
 class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (Modernizr<span class="op">.</span><span class="at">canvas</span>) {</span>
 <span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">alert</span>(<span class="st">&quot;This browser supports HTML5 canvas!&quot;</span>)<span class="op">;</span></span>
@@ -3783,7 +3771,8 @@ Side Rendering) and SSR (Server Side Rendering) (Server Side Rendering).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol type="1">
-<li>Client Side Rendering:
+<li>Client Side Rendering:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -3792,11 +3781,9 @@ in the browser using JavaScript. Instead of getting all the content from
 the HTML file itself, the server sends HTML with an empty body and
 script tags that contain links to JavaScript bundles that the browser
 will use to render the content.
-</p></li>
-</ol>
-<p>
-Typical page load behaviour in CSR —
 </p>
+<p>Typical page load behaviour in CSR —</p>
+
 <ul>
 <li>
 Browser requests the server for HTML,
@@ -3821,7 +3808,8 @@ time due to lower bandwidth and higher latency.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="2" type="1">
-<li>Server Side Rendering:
+<li>Server Side Rendering:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -3829,8 +3817,7 @@ When rendering on the server side, the HTML is rendered on the server
 and sent to the client. The content that we need to display on the
 screen becomes available immediately after the HTML is parsed; hence,
 primary rendering of content is faster than CSR.
-</p></li>
-</ol>
+</p>
 <p>
 Typical page load behaviour in SSR —
 </p>
@@ -3867,7 +3854,8 @@ the server already has the content.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="7-html-iframe">
 <ol start="7" type="1">
-<li>HTML iFrame
+<li>HTML iFrame</li>
+</ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -3889,8 +3877,7 @@ providing a solid foundation for your iframe usage.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="sourceCode" id="cb67"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">iframe</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;URL&quot;</span><span class="ot"> title</span><span class="op">=</span><span class="st">&quot;description&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">iframe</span><span class="dt">&gt;</span></span></code></pre></div>
 <p>
@@ -3991,7 +3978,8 @@ increased memory and other computing resources.</i></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol type="1">
-<li>rel=“nofollow”
+<li>rel=“nofollow”</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -3999,8 +3987,7 @@ When <mark><b>rel=“nofollow”</b></mark> tag is used, it instruct the
 search engines not to pass any PageRank from one page to the other. It
 does not allow it to pass the authority to the specific website. The
 main advantage of using this attribute is to control the spam attack.
-</p></li>
-</ol>
+</p>
 <p>
 There may be times, when you do not have control over what people
 publish on your websites, for example some blog comments and some kind
@@ -4014,7 +4001,8 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb69-1"><a href=
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="2" type="1">
-<li>rel=“noreferrer”
+<li>rel=“noreferrer”</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -4025,14 +4013,14 @@ traffic came from a click on your link.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="sourceCode" id="cb70"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;https://www.website.com&quot;</span><span class="ot"> rel</span><span class="op">=</span><span class="st">&quot;noreferrer&quot;</span><span class="dt">&gt;</span>Link to yoursite.com<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="3" type="1">
-<li>rel=“noopener”
+<li>rel=“noopener”</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -4043,8 +4031,7 @@ malicious links to take control over an opened tab.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="sourceCode" id="cb71"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;https://www.website.com&quot;</span><span class="ot"> target</span><span class="op">=</span><span class="st">&quot;_blank&quot;</span><span class="ot"> rel</span><span class="op">=</span><span class="st">&quot;noopener&quot;</span><span class="dt">&gt;</span>Link to yoursite.com<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4088,13 +4075,15 @@ Here are all the HTML tags that still matter:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="2-html-tags">
 <ol start="2" type="1">
-<li>HTML Tags
+<li>HTML Tags</li>
+</ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
 <ol type="1">
-<li>Title tag:
+<li>Title tag:</li>
+</ol>
 </h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -4102,15 +4091,14 @@ Title tags are used by search engines to determine the subject of a page
 and display it in SERP. As a rule of thumb, titles that are under 60
 characters long will fit on most screens. In HTML, a title tag looks
 like this:
-</p></li>
-</ol></li>
-</ol>
+</p>
 <div class="sourceCode" id="cb73"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>Your Title Goes Here<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
 <ol start="2" type="1">
-<li>Meta description tag:
+<li>Meta description tag:</li>
+</ol>
 </h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -4119,28 +4107,28 @@ in search results. The function of meta description is similar to the
 title. It provides a little more detail about your page and it helps
 users decide whether to visit your page or not. In HTML, a meta
 description tag looks like this:
-</p></li>
-</ol>
+</p>
 <div class="sourceCode" id="cb74"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> name</span><span class="op">=</span><span class="st">&quot;description&quot;</span><span class="ot"> content</span><span class="op">=</span><span class="st">&quot;Your description goes here&quot;</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
 <ol start="3" type="1">
-<li>Heading tags:
+<li>Heading tags:</li>
+</ol>
 </h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 Headings (H1-H6) are used to split your page into sections or chapters.
 Each heading is like a small title within the page. In HTML, a heading
 looks like this:
-</p></li>
-</ol>
+</p>
 <div class="sourceCode" id="cb75"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h1</span><span class="dt">&gt;</span>Your heading goes here<span class="dt">&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
 <ol start="4" type="1">
-<li>Image alt attribute:
+<li>Image alt attribute:</li>
+</ol>
 </h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -4151,14 +4139,14 @@ engines (by telling them what a particular image means) and to people
 (by displaying an alternative text in case a particular image cannot be
 loaded or by helping screen readers convey images). In HTML it may look
 like this:
-</p></li>
-</ol>
+</p>
 <div class="sourceCode" id="cb76"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;url&quot;</span><span class="ot"> alt</span><span class="op">=</span><span class="st">&quot;Your image description goes here&quot;</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
 <ol start="5" type="1">
-<li>Open Graph tags:
+<li>Open Graph tags:</li>
+</ol>
 </h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -4169,14 +4157,14 @@ when shared via social channels. This possibility may help you enhance
 the performance of your links on social media, thus driving more
 click-throughs and increasing conversions. In HTML, it can look like
 this:
-</p></li>
-</ol>
+</p>
 <div class="sourceCode" id="cb77"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> name</span><span class="op">=</span><span class="st">&quot;og:title&quot;</span><span class="ot"> property</span><span class="op">=</span><span class="st">&quot;og:title&quot;</span><span class="ot"> content</span><span class="op">=</span><span class="st">&quot;Your Open Graph Title Goes Here&quot;</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
 <ol start="6" type="1">
-<li>Robots tag:
+<li>Robots tag:</li>
+</ol>
 </h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -4185,14 +4173,14 @@ engines which pages on your site should be indexed and which should not.
 Its functions are similar to robots.txt, but robots.txt gives
 suggestions. Whereas robots tags give instructions. In HTML, it can look
 like this:
-</p></li>
-</ol>
+</p>
 <div class="sourceCode" id="cb78"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">meta</span><span class="ot"> name</span><span class="op">=</span><span class="st">&quot;robots&quot;</span><span class="ot"> content</span><span class="op">=</span><span class="st">&quot;index, follow&quot;</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
 <ol start="7" type="1">
-<li>Canonical tag:
+<li>Canonical tag:</li>
+</ol>
 </h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -4202,14 +4190,14 @@ problems caused by identical or “duplicate” content appearing on
 multiple URLs. Practically speaking, the canonical tag tells search
 engines which version of a URL you want to appear in search results. In
 HTML, it may look like this:
-</p></li>
-</ol>
+</p>
 <div class="sourceCode" id="cb79"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">link</span><span class="ot"> href</span><span class="op">=</span><span class="st">&quot;URL&quot;</span><span class="ot"> rel</span><span class="op">=</span><span class="st">&quot;canonical&quot;</span><span class="dt">&gt;</span></span></code></pre></div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>
 <ol start="8" type="1">
-<li>HTML5 semantic tags:
+<li>HTML5 semantic tags:</li>
+</ol>
 </h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -4220,8 +4208,7 @@ makes web pages more informative and adaptable, allowing browsers and
 search engines to better interpret content. For example, instead of
 using &lt;div id=“header”&gt;&lt;/div&gt; you can use a
 &lt;header&gt;&lt;/hrader&gt; tag.
-</p></li>
-</ol>
+</p>
 <p align="center">
 <img src="assets/images/semantic-tags.png" alt="HTML5 semantic tags" width="300px" />
 </p>
@@ -6159,7 +6146,8 @@ Fires when the user opens or closes the &lt;details&gt; element.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="4-html-forms">
 <ol start="4" type="1">
-<li>Form Elements
+<li>Form Elements</li>
+</ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -6170,8 +6158,7 @@ the other hand, is versatile and can be used to capture various types of
 input data such as text, password, email, and more, simply by altering
 its type attribute. Now, let’s all the list of HTML Form Elements one by
 one:
-</p></li>
-</ol>
+</p>
 <table>
 <colgroup>
 <col style="width: 12%" />
@@ -6358,14 +6345,14 @@ HTML Forms Example
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol type="1">
-<li>Basic HTML Forms Example:
+<li>Basic HTML Forms Example:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 <b>Example:</b> This HTML forms collects the user personal information
 such as username and password with the button to submit the form.
-</p></li>
-</ol>
+</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -6398,15 +6385,15 @@ such as username and password with the button to submit the form.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="2" type="1">
-<li>HTML Forms Example:
+<li>HTML Forms Example:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
 <b>Example:</b> This HTML form collects user personal information
 including name, email, password, gender, date of birth, and address. It
 features proper styling for input fields and submission button.
-</p></li>
-</ol>
+</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -6532,10 +6519,8 @@ features proper styling for input fields and submission button.
   alt="Form 03."
   style="width:40%" >
 </p>
-<p>
-Here are some of the key attributes that can be used with the
-&lt;form&gt; element:
-</p>
+<p>Here are some of the key attributes that can be used with the
+&lt;form&gt; element:</p>
 <ol>
 <li>
 action: This attribute specifies where to send the form-data when a form
@@ -6607,7 +6592,8 @@ accessible web applications.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="5-html-tables">
 <ol start="5" type="1">
-<li>Tables
+<li>Tables</li>
+</ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>What is an HTML Table?</h3>
@@ -6621,8 +6607,7 @@ also used to create databases.
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML Table Code Example</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!-- index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -7565,7 +7550,8 @@ interesting and have the potential of introducing errors.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="6-html-lists">
 <ol start="6" type="1">
-<li>HTML Lists
+<li>HTML Lists</li>
+</ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>
@@ -7576,8 +7562,7 @@ or any information on web pages in the ordered or unordered form.
 <h3>HTML List Example</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Basic Implementation of HTML lists.</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -7623,15 +7608,9 @@ or any information on web pages in the ordered or unordered form.
 <h4>Table of Content</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol>
-<li>
-HTML Unordered List or Bulleted List
-</li>
-<li>
-HTML Ordered List
-</li>
-<li>
-HTML Description List
-</li>
+  <li>HTML Unordered List or Bulleted List</li>
+  <li>HTML Ordered List</li>
+  <li>HTML Description List</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>HTML List Tags</h3>
@@ -7901,27 +7880,24 @@ types with examples.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="7-html-iframes">
 <ol start="7" type="1">
-<li>HTML iFrames
-</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
+<li>HTML iFrames</li>
 </ol>
+</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="8-html-url">
 <ol start="8" type="1">
-<li>HTML URL
+<li>HTML URL</li>
+</ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-A <b>Uniform Resource Locator (URL)</b> is simply the address of a
+<p>A <b>Uniform Resource Locator (URL)</b> is simply the address of a
 website to access the website content like
 <mark>www.geeksforgeeks.org</mark>. But certain characters are allowed
 to be used in the URL like alphabets A-Z and a-z, numbers 0-9, and a few
 special characters. They can be used as is but the rest of the
 characters that are not in this list are used after encoding them to a
 suitable form. URL Encoding is the process of converting the URL into a
-valid format that is accepted by web browsers.
-</p></li>
-</ol>
+valid format that is accepted by web browsers.</p>
 <p>
 <b>URL Encoding</b> takes place by replacing all the characters that are
 not allowed by a <mark>% (percent)</mark> sign followed by two
@@ -7991,7 +7967,8 @@ specified path.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="9-html-svg">
 <ol start="9" type="1">
-<li>HTML SVG Basics
+<li>HTML SVG Basics</li>
+</ol>
 </h2>
 <!-- geeks 4 geeks - https://www.geeksforgeeks.org/html-svg-basics/ -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8109,12 +8086,9 @@ CANVAS doesn’t have support for event handlers.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example 1: Drawing a Line</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-In this example we displays an SVG line on a webpage. It includes an
+<p>In this example we displays an SVG line on a webpage. It includes an
 &lt;h2&gt; header and a blue line drawn diagonally within an SVG
-element.
-</p></li>
-</ol>
+element.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -10732,8 +10706,6 @@ window.onload = draw;</code></pre>
     <li>HTML Storage</li>
   </ol>
 </h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="12-html-apis">
   <ol start="12" type="1">
@@ -10768,6 +10740,10 @@ help accessing data.</p>
                 <ol start="6" type="1">
                   <li>Canvas API - This API lets you draw graphics, on the fly, via JavaScript.</li>
                 </ol>
+				</ol>
+				</ol>
+				</ol>
+				</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Third Party APIs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11412,7 +11388,8 @@ the following JavaScript objects:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="html-serversent-events">
 <ol start="20" type="i">
-<li>HTML Server-Sent Events API
+<li>HTML Server-Sent Events API</li>
+</ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The Server-Sent Events (SSE) API enables pushing messages/updates from a server to the web 
@@ -11421,8 +11398,7 @@ page via HTTP connection.</p>
 <h3>Server-Sent Events - One Way Messaging</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A server-sent event is when a web page automatically gets
-messages/updates from a server.</p></li>
-</ol>
+messages/updates from a server.</p>
 <p>Normally, a web page has to request data from the server, but with
 server-sent events, the updates are pushed automatically.</p>
 <p>Examples: Facebook/Twitter updates, stock market updates, news feeds, sport results, etc.</p>
@@ -11567,9 +11543,6 @@ are also available:</p>
   </ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-</li>
-</ol>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="16-misc">
   <ol start="16" type="1">
     <li>Miscellaneous</li>
@@ -11585,10 +11558,10 @@ Last editted: 5/6/2025 +12pm<br>
 Last editted: 5/9/2025 +9am<br>
 Last editted: 5/19/2025 +11pm<br>
 Last editted: 5/26/2025 +12pm<br>
-Last editted: 6/16/2025 +12am</h6>
+Last editted: 6/16/2025 +12am<br>
+Last editted: 8/6/2025 +11am</h6>
 <p>The End…</p>
-</li>
-</ol>
+
 </footer>
 </body>
 </html>
