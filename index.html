@@ -4819,12 +4819,9 @@ browser.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Explain the process the browser used when evaluating the content of this attribute.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The <mark><b>srcset</b></mark> attribute allows to define a list of
-different image resources along with size information so that browser
-can pick the most appropriate image based on the actual device's
-resolution.
-</p>
+<p>The <mark><b>srcset</b></mark> attribute allows to define a list of different image 
+resources along with size information so that browser can pick the most appropriate image 
+based on the actual device's resolution.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Syntax:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4839,18 +4836,15 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb87-1"><a href=
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol type="1">
-<li>Using display density descriptor:
+<li>Using display density descriptor:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-<mark><b>srcset</b></mark> provides a comma-separated list of image
-resources along with display density it should be used, for example1x,
-2x etc.
-</p>
+<p><mark><b>srcset</b></mark> provides a comma-separated list of image resources along with 
+display density it should be used, for example1x, 2x etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
-</ol>
 <div class="sourceCode" id="cb88"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">&quot;image.jpg&quot;</span><span class="ot"> </span></span>
 <span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a><span class="ot">     srcset</span><span class="op">=</span><span class="st">&quot;image.jpg,</span></span>
@@ -4859,14 +4853,12 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb88-1"><a href=
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>
 <ol start="2" type="1">
-<li>Using width descriptor:
+  <li>Using width descriptor:</li>
+</ol>
 </h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The syntax is similar to the display density descriptor, but instead of
-display density values, we provide the actual width of the image.
-</p></li>
-</ol>
+<p>The syntax is similar to the display density descriptor, but instead of display density 
+values, we provide the actual width of the image.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4879,120 +4871,80 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb89-1"><a href=
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Q. What is accessibility &amp; ARIA role means in a web application?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The <mark><b>Accessible Rich Internet Applications (ARIA)</b></mark>
+<p>The <mark><b>Accessible Rich Internet Applications (ARIA)</b></mark>
 Suite, defines a way to make Web content and Web applications more
 accessible to people with disabilities. It especially helps with dynamic
 content and advanced user interface controls developed with HTML,
-JavaScript, and related technologies.
-</p>
-<p>
-Screen readers work with regular HTML, but adding ARIA can provide
+JavaScript, and related technologies.</p>
+<p>Screen readers work with regular HTML, but adding ARIA can provide
 screen reader users with greater context and interactivity with the
 content on the page. ARIA has no effect on how elements are displayed or
 behave in browsers. It does not add new functionality, and is meant to
-act only as an extra descriptive layer for screen readers.
-</p>
-<p>
-Without WAI-ARIA certain functionality used in Web sites is not
+act only as an extra descriptive layer for screen readers.</p>
+<p>Without WAI-ARIA certain functionality used in Web sites is not
 available to some users with disabilities, especially people who rely on
 screen readers and people who cannot use a mouse. WAI-ARIA addresses
 these accessibility challenges, for example, by defining ways for
 functionality to be provided to assistive technology. With WAI-ARIA,
 developers can make advanced Web applications accessible and usable to
-people with disabilities.
-</p>
-<p>
-ARIA attributes are divided into two categories: roles, and states &amp;
-properties.
-</p>
+people with disabilities.</p>
+<p>ARIA attributes are divided into two categories: roles, and states &amp; properties.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-An ARIA role is added via a <mark><b>role=“&lt;ROLE TYPE&gt;”</b></mark>
+<p>An ARIA role is added via a <mark><b>role=“&lt;ROLE TYPE&gt;”</b></mark>
 attribute, and does not ever change for an element once it is set. There
-are four categories of ARIA roles:
-</p>
+are four categories of ARIA roles:</p>
+
 <ul>
-<li>
-landmark
-</li>
-<li>
-document
-</li>
-<li>
-widget
-</li>
-<li>
-abstract
-</li>
+  <li>landmark</li>
+  <li>document</li>
+  <li>widget</li>
+  <li>abstract</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Landmark ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Much like semantic HTML elements, landmark ARIA Roles are used to give
+<p>Much like semantic HTML elements, landmark ARIA Roles are used to give
 users of assistive technology a better way to navigate and identify the
-different parts of a web page.
-</p>
+different parts of a web page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Example:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="sourceCode" id="cb90"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a> <span class="dt">&lt;</span><span class="kw">nav</span><span class="ot"> class</span><span class="op">=</span><span class="st">&#39;mobile-nav&#39;</span><span class="ot"> role</span><span class="op">=</span><span class="st">&#39;navigation&#39;</span><span class="ot"> aria-label</span><span class="op">=</span><span class="st">&#39;Mobile Menu&#39;</span><span class="dt">&gt;</span> List of Links <span class="dt">&lt;/</span><span class="kw">nav</span><span class="dt">&gt;</span></span></code></pre></div>
-<p>
-While seeming redundant, is actually useful for screen readers. It
+<p>While seeming redundant, is actually useful for screen readers. It
 wouldn't read the aria-label on this navigation, which is really helpful
 for giving greater context to visually impaired users, without the
-<mark><b>role=“navigation”</b></mark>.
-</p>
-The different landmark roles you can use are as follows, copied from the
-W3C Wiki Page:
+<mark><b>role=“navigation”</b></mark>.</p>
+<p>The different landmark roles you can use are as follows, copied from the
+W3C Wiki Page:</p>
+
 <ul>
-<li>
-<b>banner</b>: A region that contains the prime heading or internal
-title of a page.
-</li>
-<li>
-<b>complementary</b>: Any section of the document that supports the main
-content, yet is separate and meaningful on its own.
-</li>
-<li>
-<b>contentinfo</b>: A region that contains information about the parent
-document such as copyrights and links to privacy statements.
-</li>
-<li>
-<b>form</b>: A region of the document that represents a collection of
-form-associated elements, some of which can represent editable values
-that can be submitted to a server for processing.
-</li>
-<li>
-<b>main</b>: Main content in a document. In almost all cases a page will
-have only one <mark><b>role=“main”</b></mark>.
-</li>
-<li>
-<b>navigation</b>: A collection of links suitable for use when
-navigating the document or related documents.
-</li>
-<li>
-<b>search</b>: The search tool of a Web document.
-</li>
-<li>
-<b>application</b>: A region declared as a web application, as opposed
-to a web document.
-</li>
+  <li><b>banner</b>: A region that contains the prime heading or internal title of a page.</li>
+  <li><b>complementary</b>: Any section of the document that supports the main content, yet is 
+    separate and meaningful on its own.</li>
+  <li><b>contentinfo</b>: A region that contains information about the parent document such as 
+    copyrights and links to privacy statements.</li>
+  <li><b>form</b>: A region of the document that represents a collection of form-associated 
+    elements, some of which can represent editable values that can be submitted to a server 
+	for processing.</li>
+  <li><b>main</b>: Main content in a document. In almost all cases a page will have only one 
+    <mark><b>role=“main”</b></mark>.</li>
+  <li><b>navigation</b>: A collection of links suitable for use when navigating the document or 
+    related documents.</li>
+  <li><b>search</b>: The search tool of a Web document.</li>
+  <li><b>application</b>: A region declared as a web application, as opposed to a web document.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Document ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Document roles describe the structure of the content on the page, as
+<p>Document roles describe the structure of the content on the page, as
 opposed to the structure of the whole page, which landmark roles
 describe. The roles in bold are the ones we think are the most common
 document aria roles, and the ones which are useful to think about
-including in your HTML.
-</p>
+including in your HTML.</p>
+
 <ul>
 <li>
 <b>article</b>: A section of a page that consists of a composition that
@@ -5058,13 +5010,12 @@ technologies.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Widget ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Widget Roles are used to describe what are often javascript-based
+<p>Widget Roles are used to describe what are often javascript-based
 interfaces, or the more complicated parts of your web page's interface.
 The roles that are starred are the ones we think are the most common
 elements widget aria roles, and the ones which are useful useful to
-think about including in your HTML.
-</p>
+think about including in your HTML.</p>
+
 <ul>
 <li>
 <b>alert</b>: A message with important, and usually time-sensitive,
@@ -5152,33 +5103,24 @@ where each tab is contained in a tablist.
 </li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>
-Abstract ARIA Roles:
-</h3>
+<h3>Abstract ARIA Roles:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Abstract aria roles are the basis of how the other ARIA roles are
-defined. These are not to be used in HTML.
-</p>
+<p>Abstract aria roles are the basis of how the other ARIA roles are
+defined. These are not to be used in HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>ARIA States &amp; Properties:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-ARIA states and properties are often used to support ARIA roles that
+<p>ARIA states and properties are often used to support ARIA roles that
 exist on a page. ARIA Properties often describe relationships with other
-elements, and for the most part, do not change once they're set.
-</p>
-<p>
-ARIA States are more dynamic and are typically updated with JavaScript
+elements, and for the most part, do not change once they're set.</p>
+<p>ARIA States are more dynamic and are typically updated with JavaScript
 as a user interacts with a page. Screen readers are notified when these
 states change, and can announce these changes to users after an
-interaction takes place.
-</p>
-<p>
-While there are 35 aria properties and states the W3C defines and which
+interaction takes place.</p>
+<p>While there are 35 aria properties and states the W3C defines and which
 you can read more about on the W3C site, here are the ones we believe to
-most commonly used and practical for most web pages/applications.
-</p>
+most commonly used and practical for most web pages/applications.</p>
+
 <ul>
 <li>
 <b>aria-activedescendant</b>: Identifies the currently active descendant
@@ -5331,380 +5273,198 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb91-1"><a href=
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="3-html-events">
 <ol start="3" type="1">
-<li>HTML Events
+<li>HTML Events</li>
+</ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Types of Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>There are muliple types; Window, Form, Keyboard, Mouse, Drag, Clipboard, Media, &amp; Miscellaneous.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4 id="global-events">
-Global Event Attributes
-</h4>
+<h4 id="global-events">Global Event Attributes</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-HTML has the ability to let events trigger actions in a browser, like
-starting a JavaScript when a user clicks on an element.
-</p>
+<p>HTML has the ability to let events trigger actions in a browser, like
+starting a JavaScript when a user clicks on an element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Below are the global event attributes that can be added to HTML elements
-to define event actions.
-</p>
+<p>Below are the global event attributes that can be added to HTML elements to define event actions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="window-events">Window Event Attributes</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Events triggered for the window object (applies to the &lt;body&gt;
-tag):
-</p>
-<div role="region" tabindex="0">
-<table>
-<caption>
-Window Event Attributes
-</caption>
-<thead>
-<tr>
-<th>
-Attribute
-</th>
-<th>
-Value
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-onafterprint
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run after the document is printed.
-</td>
-</tr>
-<tr>
-<td>
-onbeforeprint
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run before the document is printed .
-</td>
-</tr>
-<tr>
-<td>
-onbeforeunload
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when the document is about to be unloaded.
-</td>
-</tr>
-<tr>
-<td>
-onerror
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when an error occurs.
-</td>
-</tr>
-<td>
-onhashchange
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when there has been changes to the anchor part of the a
-URL.
-</td>
-</tr>
-<tr>
-<td>
-onload
-</td>
-<td>
-script
-</td>
-<td>
-Fires after the page is finished loading .
-</td>
-</tr>
-<tr>
-<td>
-onmessage
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when the message is triggered.
-</td>
-</tr>
-<tr>
-<td>
-onoffline
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when the browser starts to work offline.
-</td>
-</tr>
-</tbody>
-</table>
-</div></li>
-</ol>
+<p>Events triggered for the window object (applies to the &lt;body&gt; tag):</p>
 
 <div role="region" tabindex="0">
-<table>
-<caption>
-Form Events
-</caption>
-<thead>
-<tr>
-<th>
-Attribute
-</th>
-<th>
-Value
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-ononline
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when the browser starts to work online.
-</td>
-</tr>
-<tr>
-<td>
-onpagehide
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when a user navigates away from a page.
-</td>
-</tr>
-<tr>
-<td>
-onpageshow
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when a user navigates to a page.
-</td>
-</tr>
-<td>
-onpopstate
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when the window’s history changes.
-</td>
-</tr>
-<tr>
-<td>
-onresize
-</td>
-<td>
-script
-</td>
-<td>
-Fires when the browser window is resized.
-</td>
-</tr>
-<tr>
-<td>
-onstorage
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when a Web Storage area is updated.
-</td>
-</tr>
-<tr>
-<td>
-onunload
-</td>
-<td>
-script
-</td>
-<td>
-Fires once a page has unloaded (or the browser window has been closed).
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>Window Event Attributes</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>onafterprint</td>
+        <td>script</td>
+        <td>Script to be run after the document is printed.</td>
+      </tr>
+      <tr>
+        <td>onbeforeprint</td>
+        <td>script</td>
+        <td>Script to be run before the document is printed .</td>
+      </tr>
+      <tr>
+        <td>onbeforeunload</td>
+        <td>script</td>
+        <td>Script to be run when the document is about to be unloaded.</td>
+      </tr>
+      <tr>
+        <td>onerror</td>
+        <td>script</td>
+        <td>Script to be run when an error occurs.</td>
+      </tr>
+	  <tr>
+        <td>onhashchange</td>
+        <td>script</td>
+        <td>Script to be run when there has been changes to the anchor part of the a URL.</td>
+      </tr>
+      <tr>
+        <td>onload</td>
+        <td>script</td>
+        <td>Fires after the page is finished loading.</td>
+      </tr>
+      <tr>
+        <td>onmessage</td>
+        <td>script</td>
+        <td>Script to be run when the message is triggered.</td>
+      </tr>
+      <tr>
+        <td>onoffline</td>
+        <td>script</td>
+        <td>Script to be run when the browser starts to work offline.</td>
+      </tr>
+    </tbody>
+  </table>
+</div></li>
+
+<div role="region" tabindex="0">
+  <table>
+    <caption>Form Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ononline</td>
+        <td>script</td>
+        <td>Script to be run when the browser starts to work online.</td>
+      </tr>
+      <tr>
+        <td>onpagehide</td>
+        <td>script</td>
+        <td>Script to be run when a user navigates away from a page.</td>
+      </tr>
+      <tr>
+        <td>onpageshow</td>
+        <td>script</td>
+        <td>Script to be run when a user navigates to a page.</td>
+      </tr>
+	  <tr>
+        <td>onpopstate</td>
+        <td>script</td>
+        <td>Script to be run when the window’s history changes.</td>
+      </tr>
+      <tr>
+        <td>onresize</td>
+        <td>script</td>
+        <td>Fires when the browser window is resized.</td>
+      </tr>
+      <tr>
+        <td>onstorage</td>
+        <td>script</td>
+        <td>Script to be run when a Web Storage area is updated.</td>
+      </tr>
+      <tr>
+        <td>onunload</td>
+        <td>script</td>
+        <td>Fires once a page has unloaded (or the browser window has been closed).</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="form-events">Form Events</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Events triggered by actions inside a HTML form (applies to almost all
-HTML elements, but is most used in form elements):
-</p>
+<p>Events triggered by actions inside a HTML form (applies to almost all HTML elements, but 
+is most used in form elements):</p>
+
 <div role="region" tabindex="0">
-<table>
-<caption>
-Form Events
-</caption>
-<thead>
-<tr>
-<th>
-Attribute
-</th>
-<th>
-Value
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-onblur
-</td>
-<td>
-script
-</td>
-<td>
-Fires the moment that the element loses focus.
-</td>
-</tr>
-<tr>
-<td>
-onchange
-</td>
-<td>
-script
-</td>
-<td>
-Fires the moment when the value of the element is changed.
-</td>
-</tr>
-<tr>
-<td>
-oncontextmenu
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when a context menu is triggered.
-</td>
-</tr>
-<td>
-onfocus
-</td>
-<td>
-script
-</td>
-<td>
-Fires the moment when the element gets focus.
-</td>
-</tr>
-<tr>
-<td>
-oninput
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when an element gets user input.
-</td>
-</tr>
-<tr>
-<td>
-oninvalid
-</td>
-<td>
-script
-</td>
-<td>
-Script to be run when an element is invalid.
-</td>
-</tr>
-<td>
-onreset
-</td>
-<td>
-script
-</td>
-<td>
-Fires when the Reset button in a form is clicked.
-</td>
-</tr>
-<tr>
-<td>
-onsearch
-</td>
-<td>
-script
-</td>
-<td>
-Fires when the user writes something in a search field (for
-&lt;input=“search”&gt;).
-</td>
-</tr>
-<tr>
-<td>
-onselect
-</td>
-<td>
-script
-</td>
-<td>
-Fires after some text has been selected in an element.
-</td>
-</tr>
-<tr>
-<td>
-onsubmit
-</td>
-<td>
-script
-</td>
-<td>
-Fires when a form is submitted.
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>Form Events</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>onblur</td>
+        <td>script</td>
+        <td>Fires the moment that the element loses focus.</td>
+      </tr>
+      <tr>
+        <td>onchange</td>
+        <td>script</td>
+        <td>Fires the moment when the value of the element is changed.</td>
+      </tr>
+      <tr>
+        <td>oncontextmenu</td>
+        <td>script</td>
+        <td>Script to be run when a context menu is triggered.</td>
+      </tr>
+	  <tr>
+        <td>onfocus</td>
+        <td>script</td>
+        <td>Fires the moment when the element gets focus.</td>
+      </tr>
+      <tr>
+        <td>oninput</td>
+        <td>script</td>
+        <td>Script to be run when an element gets user input.</td>
+      </tr>
+      <tr>
+        <td>oninvalid</td>
+        <td>script</td>
+        <td>Script to be run when an element is invalid.</td>
+      </tr>
+	  <tr>
+        <td>onreset</td>
+        <td>script</td>
+        <td>Fires when the Reset button in a form is clicked.</td>
+      </tr>
+      <tr>
+        <td>onsearch</td>
+        <td>script</td>
+        <td>Fires when the user writes something in a search field (for &lt;input=“search”&gt;).</td>
+      </tr>
+      <tr>
+        <td>onselect</td>
+        <td>script</td>
+        <td>Fires after some text has been selected in an element.</td>
+      </tr>
+      <tr>
+        <td>onsubmit</td>
+        <td>script</td>
+        <td>Fires when a form is submitted.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4 id="keyboard-events">Keyboard Events</h4>
@@ -10712,123 +10472,69 @@ Close the SVG image with <mark>&lt;/svg&gt;</mark>.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>SVG Shapes</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-SVG has some predefined shape elements that can be used by developers:
-</p>
+<p>SVG has some predefined shape elements that can be used by developers:</p>
 <ul>
-<li>
-Rectangle <mark>&lt;rect&gt;</mark>
-</li>
-<li>
-Circle <mark>&lt;circle&gt;</mark>
-</li>
-<li>
-Ellipse <mark>&lt;ellipse&gt;</mark>
-</li>
-<li>
-Line <mark>&lt;line&gt;</mark>
-</li>
-<li>
-Polyline <mark>&lt;polyline&gt;</mark>
-</li>
-<li>
-Polygon <mark>&lt;polygon&gt;</mark>
-</li>
-<li>
-Path <mark>&lt;path&gt;</mark>
-</li>
+  <li>Rectangle <mark>&lt;rect&gt;</mark></li>
+  <li>Circle <mark>&lt;circle&gt;</mark></li>
+  <li>Ellipse <mark>&lt;ellipse&gt;</mark></li>
+  <li>Line <mark>&lt;line&gt;</mark></li>
+  <li>Polyline <mark>&lt;polyline&gt;</mark></li>
+  <li>Polygon <mark>&lt;polygon&gt;</mark></li>
+  <li>Path <mark>&lt;path&gt;</mark></li>
 </ul>
-<p>
-The following chapters will explain each element, starting with the
-<mark>&lt;rect&gt;</mark> element.
-</p>
+<p>The following chapters will explain each element, starting with the <mark>&lt;rect&gt;</mark> 
+element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>SVG Rectangle - &lt;rect&gt;</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The <mark>&lt;rect&gt;</mark> element is used to create a rectangle and
-variations of a rectangle shape.
-</p>
-<p>
-The <mark>&lt;rect&gt;</mark> element has six basic attributes to
-position and shape the rectangle:
-</p>
+<p>The <mark>&lt;rect&gt;</mark> element is used to create a rectangle and variations of 
+a rectangle shape.</p>
+<p>The <mark>&lt;rect&gt;</mark> element has six basic attributes to position and shape 
+the rectangle:</p>
+
 <div role="region" tabindex="0">
-<table>
-<caption>
-SVG Rectangle - &lt;rect&gt;
-</caption>
-<thead>
-<tr>
-<th>
-Attribute
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<b>width</b>
-</td>
-<td>
-Required. The width of the rectangle.
-</td>
-</tr>
-<tr>
-<td>
-<b>height</b>
-</td>
-<td>
-Required. The height of the rectangle.
-</td>
-</tr>
-<tr>
-<td>
-x
-</td>
-<td>
-The x-position for the top-left corner of the rectangle.
-</td>
-</tr>
-<tr>
-<td>
-y
-</td>
-<td>
-The y-position for the top-left corner of the rectangle.
-</td>
-</tr>
-<tr>
-<td>
-rx
-</td>
-<td>
-The x radius of the corners of the rectangle (used to round the
-corners). Default is 0.
-</td>
-</tr>
-<tr>
-<td>
-ry
-</td>
-<td>
-The y radius of the corners of the rectangle (used to round the
-corners). Default is 0.
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>SVG Rectangle - &lt;rect&gt;</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>width</b></td>
+        <td>Required. The width of the rectangle.</td>
+      </tr>
+      <tr>
+        <td><b>height</b></td>
+        <td>Required. The height of the rectangle.</td>
+      </tr>
+      <tr>
+        <td>x</td>
+        <td>The x-position for the top-left corner of the rectangle.</td>
+      </tr>
+      <tr>
+        <td>y</td>
+        <td>The y-position for the top-left corner of the rectangle.</td>
+      </tr>
+      <tr>
+        <td>rx</td>
+        <td>The x radius of the corners of the rectangle (used to round the corners). 
+		  Default is 0.</td>
+      </tr>
+      <tr>
+        <td>ry</td>
+        <td>The y radius of the corners of the rectangle (used to round the corners). 
+		  Default is 0.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>An SVG Rectangle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-This example creates a rectangle with the six basic attributes and a
-fill color:
-</p>
+<p>This example creates a rectangle with the six basic attributes and a fill color:</p>
 <pre><code>&lt;svg width=&quot;300&quot; height=&quot;130&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;rect width=&quot;200&quot; height=&quot;100&quot; x=&quot;10&quot; y=&quot;10&quot; rx=&quot;20&quot; ry=&quot;20&quot; fill=&quot;blue&quot; /&gt;
 &lt;/svg&gt;</code></pre>
@@ -10837,31 +10543,19 @@ fill color:
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-The <mark>width</mark> and <mark>height</mark> attributes of the
-<mark>&lt;rect&gt;</mark> element define the height and the width of the
-rectangle.
-</li>
-<li>
-The <mark>x</mark> and <mark>y</mark> attributes defines the x- and
-y-position of the top-left corner of the rectangle (x=“10” places the
-rectangle 10px from the left margin and y=“10” places the rectangle 10px
-from the top margin) in the SVG canvas.
-</li>
-<li>
-The <mark>rx</mark> and <mark>ry</mark> attributes defines the radius of
-the corners of the rectangle.
-</li>
-<li>
-The <mark>fill</mark> attribute defines the fill color of the rectangle.
-</li>
+  <li>The <mark>width</mark> and <mark>height</mark> attributes of the <mark>&lt;rect&gt;</mark> 
+    element define the height and the width of the rectangle.</li>
+  <li>The <mark>x</mark> and <mark>y</mark> attributes defines the x- and y-position of the 
+    top-left corner of the rectangle (x=“10” places the rectangle 10px from the left margin 
+	and y=“10” places the rectangle 10px from the top margin) in the SVG canvas.</li>
+  <li>The <mark>rx</mark> and <mark>ry</mark> attributes defines the radius of the corners of 
+    the rectangle.</li>
+  <li>The <mark>fill</mark> attribute defines the fill color of the rectangle.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>A Rectangle With Border</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Let’s look at another example that contains some new attributes:
-</p>
+<p>Let’s look at another example that contains some new attributes:</p>
 <pre><code>&lt;svg width=&quot;320&quot; height=&quot;130&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;rect width=&quot;300&quot; height=&quot;100&quot; x=&quot;10&quot; y=&quot;10&quot; style=&quot;fill:rgb(0,0,255);stroke-width:3;stroke:red&quot; /&gt;
 &lt;/svg&gt;</code></pre>
@@ -10869,29 +10563,15 @@ Let’s look at another example that contains some new attributes:
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-The <mark>style</mark> attribute is used to define CSS properties for
-the rectangle.
-</li>
-<li>
-The CSS <mark>fill</mark> property defines the fill color of the
-rectangle.
-</li>
-<li>
-The CSS <mark>stroke-width</mark> property defines the width of the
-border of the rectangle.
-</li>
-<li>
-The CSS <mark>stroke</mark> property defines the color of the border of
-the rectangle.
-</li>
+  <li>The <mark>style</mark> attribute is used to define CSS properties for the rectangle.</li>
+  <li>The CSS <mark>fill</mark> property defines the fill color of the rectangle.</li>
+  <li>The CSS <mark>stroke-width</mark> property defines the width of the border of the rectangle.</li>
+  <li>The CSS <mark>stroke</mark> property defines the color of the border of the rectangle.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>A Rectangle With Opacity</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Let’s look at another example that contains some new attributes:
-</p>
+<p>Let’s look at another example that contains some new attributes:</p>
 <pre><code>&lt;svg width=&quot;300&quot; height=&quot;170&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;rect width=&quot;150&quot; height=&quot;150&quot; x=&quot;10&quot; y=&quot;10&quot;
   style=&quot;fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9&quot; /&gt;
@@ -10902,21 +10582,15 @@ Let’s look at another example that contains some new attributes:
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-The CSS <mark>fill-opacity</mark> property defines the opacity of the
-fill color (legal range: 0 to 1)
-</li>
-<li>
-The CSS <mark>stroke-opacity</mark> property defines the opacity of the
-stroke color (legal range: 0 to 1)
-</li>
+  <li>The CSS <mark>fill-opacity</mark> property defines the opacity of the fill color 
+    (legal range: 0 to 1)</li>
+  <li>The CSS <mark>stroke-opacity</mark> property defines the opacity of the stroke color 
+    (legal range: 0 to 1)</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Another Rectangle With Opacity</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Define the opacity for the whole element:
-</p>
+<p>Define the opacity for the whole element:</p>
 <pre><code>&lt;svg width=&quot;300&quot; height=&quot;170&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;rect width=&quot;150&quot; height=&quot;150&quot; x=&quot;10&quot; y=&quot;10&quot;
   style=&quot;fill:blue;stroke:pink;stroke-width:5;opacity:0.5&quot; /&gt;
@@ -10927,17 +10601,13 @@ Define the opacity for the whole element:
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-The CSS <mark>opacity</mark> property defines the opacity value for the
-whole element (legal range: 0 to 1).
-</li>
+  <li>The CSS <mark>opacity</mark> property defines the opacity value for the whole element 
+    (legal range: 0 to 1).</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>A Rectangle With Rounded Corners</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-Last example, create a rectangle with rounded corners:
-</p>
+<p>Last example, create a rectangle with rounded corners:</p>
 <pre><code>&lt;svg width=&quot;300&quot; height=&quot;170&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;rect width=&quot;150&quot; height=&quot;150&quot; x=&quot;10&quot; y=&quot;10&quot; rx=&quot;20&quot; ry=&quot;20&quot;
   style=&quot;fill:red;stroke:black;stroke-width:5;opacity:0.5&quot; /&gt;
@@ -10947,62 +10617,38 @@ Last example, create a rectangle with rounded corners:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>SVG Circle - &lt;circle&gt;</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The &lt;circle&gt; element is used to create a circle.
-</p>
-<p>
-The &lt;circle&gt; element has three basic attributes to position and
-set the size of the circle:
-</p>
+<p>The &lt;circle&gt; element is used to create a circle.</p>
+<p>The &lt;circle&gt; element has three basic attributes to position and set the size of the circle:</p>
+
 <div role="region" tabindex="0">
-<table>
-<caption>
-SVG Circle - &lt;circle&gt;
-</caption>
-<thead>
-<tr>
-<th>
-Attribute
-</th>
-<th>
-Description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-r
-</td>
-<td>
-Required. The radius of the circle.
-</td>
-</tr>
-<tr>
-<td>
-cx
-</td>
-<td>
-The x-axis center of the circle. Default is 0.
-</td>
-</tr>
-<tr>
-<td>
-cy
-</td>
-<td>
-The y-axis center of the circle. Default is 0.
-</td>
-</tr>
-</tbody>
-</table>
+  <table>
+    <caption>SVG Circle - &lt;circle&gt;</caption>
+    <thead>
+      <tr>
+        <th>Attribute</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>r</td>
+        <td>Required. The radius of the circle.</td>
+      </tr>
+      <tr>
+        <td>cx</td>
+        <td>The x-axis center of the circle. Default is 0.</td>
+      </tr>
+      <tr>
+        <td>cy</td>
+        <td>The y-axis center of the circle. Default is 0.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>An SVG Circle</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The following example creates a circle:
-</p>
+<p>The following example creates a circle:</p>
 <pre><code>&lt;svg height=&quot;100&quot; width=&quot;100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;circle r=&quot;45&quot; cx=&quot;50&quot; cy=&quot;50&quot; fill=&quot;red&quot; /&gt;
 &lt;/svg&gt;</code></pre>
@@ -11012,24 +10658,15 @@ The following example creates a circle:
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-The <mark>r</mark> attribute defines the radius of the circle.
-</li>
-<li>
-The <mark>cx</mark> and <mark>cy</mark> attributes define the x- and
-y-axes center of the circle. If they are omitted, the circle’s center is
-set to (0,0).
-</li>
-<li>
-The <mark>fill</mark> attribute defines the color of the circle.
-</li>
+  <li>The <mark>r</mark> attribute defines the radius of the circle.</li>
+  <li>The <mark>cx</mark> and <mark>cy</mark> attributes define the x- and y-axes center 
+    of the circle. If they are omitted, the circle’s center is set to (0,0).</li>
+  <li>The <mark>fill</mark> attribute defines the color of the circle.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>An SVG Circle with Border</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The following example creates a circle with border:
-</p>
+<p>The following example creates a circle with border:</p>
 <pre><code>&lt;svg height=&quot;100&quot; width=&quot;100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;circle r=&quot;45&quot; cx=&quot;50&quot; cy=&quot;50&quot; fill=&quot;red&quot; stroke=&quot;green&quot; stroke-width=&quot;3&quot; /&gt;
 &lt;/svg&gt;</code></pre>
@@ -11039,21 +10676,13 @@ The following example creates a circle with border:
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-The <mark>stroke</mark> attribute defines the color of the border around
-the circle.
-</li>
-<li>
-The <mark>stroke-width</mark> attribute defines the width of the border
-around the circle.
-</li>
+  <li>The <mark>stroke</mark> attribute defines the color of the border around the circle.</li>
+  <li>The <mark>stroke-width</mark> attribute defines the width of the border around the circle.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>An SVG Circle with Opacity</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>
-The following example creates a circle with opacity:
-</p>
+<p>The following example creates a circle with opacity:</p>
 <pre><code>&lt;svg height=&quot;100&quot; width=&quot;100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
   &lt;circle r=&quot;45&quot; cx=&quot;50&quot; cy=&quot;50&quot; fill=&quot;red&quot; stroke=&quot;green&quot; stroke-width=&quot;3&quot; opacity=&quot;0.5&quot; /&gt;
 &lt;/svg&gt;</code></pre>
@@ -11063,21 +10692,17 @@ The following example creates a circle with opacity:
 <h5>Code explanation:</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>
-The <mark>opacity</mark> attribute defines the opacity of the circle.
-</li>
+  <li>The <mark>opacity</mark> attribute defines the opacity of the circle.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="10-html-canvas">
-<ol start="10" type="1">
-<li>HTML Canvas
+  <ol start="10" type="1">
+    <li>HTML Canvas</li>
+  </ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Using
-<canvas>
-, here’s how you might draw a black box with rounded corners and a
-2-pixel white stroke:</li>
-</ol>
+<p>Using &lt;canvas&gt;, here’s how you might draw a black box with rounded corners and a
+2-pixel white stroke:</p>
 <pre><code>function draw() {
   var canvas = document.getElementById(&#39;draw-in-me&#39;);
   if (canvas.getContext) {
@@ -11103,8 +10728,9 @@ window.onload = draw;</code></pre>
 <!-- image 10-image001.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="11-html-storage">
-<ol start="11" type="1">
-<li>HTML Storage
+  <ol start="11" type="1">
+    <li>HTML Storage</li>
+  </ol>
 </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
 </ol>
@@ -11146,12 +10772,6 @@ help accessing data.</p>
 <h3>Third Party APIs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Third party APIs are not built into your browser.</p></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol></li>
-</ol>
 <p>To use these APIs, you will have to download the code from the Web.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Examples:</h4>
@@ -11946,7 +11566,8 @@ are also available:</p>
     <li>HTML Accessibility</li>
   </ol>
 </h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~--></li>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="16-misc">
